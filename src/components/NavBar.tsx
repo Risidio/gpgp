@@ -50,14 +50,12 @@ const links = [
 
 const NavBar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
-  const [selectedItem, setSelectedItem] = useState('');
   const [isAnimating, setIsAnimating] = useState(false);
   const [isOpen, setIsOpen] = useState("");
 
   const handleSelectItem = (item: string) => {
     if (isAnimating) return;
     setIsAnimating(true);
-    setSelectedItem(item);
     setTimeout(() => {
       setIsOpenMenu(!isOpenMenu);
       setIsAnimating(false);
@@ -67,7 +65,7 @@ const NavBar = () => {
 
   const resetSelectItem = () => {
     if(isAnimating) return;
-    setSelectedItem('');
+    
     if(isOpenMenu){
         setTimeout(() => {
           setIsOpenMenu(!isOpenMenu);
@@ -75,15 +73,6 @@ const NavBar = () => {
           setIsOpen("")
       }, 400);
     }
-  };
-
-  const toggleMenu = () => {
-    if (isAnimating) return;
-    setIsAnimating(true);
-    setTimeout(() => {
-      setIsOpenMenu(!isOpenMenu);
-      setIsAnimating(false);
-    }, 400);
   };
 
   const handleMobileDropDownShow = (menu: string) => {
