@@ -22,7 +22,6 @@ module.exports = {
        backgroundImage: {
          'hero-back': "url('./assets/images/gpgp-map.png')",
          'artist-back': "url('./assets/images/artist-frame.png')",
-
        }
     },
   },

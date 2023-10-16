@@ -3,12 +3,14 @@ import MyLink from '../base/MyLink'
 const Artist = () => {
   return (
     <div  className="flex flex-col justify-center items-center py-10 px-5 w-full sm:w-[500px] sm:bg-white bg-gpgp-blue sm:text-black text-white">
-        <div className="">
-            <img
-                src={require("../../assets/images/john-dahlsen.png")}
-                alt="Dr John Dahlsen"
-                className="w-48 h-44 rounded-full border p-1"
-            />
+        <div className="bg-artist-back bg-no-repeat w-[300px] h-[300px] bg-[length:300px_300px] rounded-full p-12">
+            <div className="bg-white rounded-full w-full p-3">
+                    <img
+                        src={require("../../assets/images/john-dahlsen.png")}
+                        alt="Dr John Dahlsen"
+                        className="w-44 h-44 rounded-[50%]"
+                    />
+              </div>
         </div>
 
          <h1 className="text-xl font-semibold py-3 uppercase">
