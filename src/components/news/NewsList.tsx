@@ -44,15 +44,15 @@ const NewsList = () => {
 
   // Pagination
   const totalItems = items.length;
-
   const handlePageChange = (pageNumber: number) => setCurrentPage(pageNumber);
+  
   return (
     <div className="min-h-screen w-full">
-         <Tabs
-              items={[...tabCategories]} 
+        <Tabs
+             items={[...tabCategories]} 
               currentCategory={currentCategory}
-              onCategoryChange={handleCategoryChange}
-            />
+             onCategoryChange={handleCategoryChange}
+         />
         <LatestNews/>
         {items.map((category, index) => (
                 <NewsCategory 

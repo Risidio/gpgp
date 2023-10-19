@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
 import { News } from "./pages/News";
 import NewsDetail from "./components/news/NewsDetail";
+import NewsCategoryList from "./components/news/NewsCategoryList";
+import { NewsLayout } from "./components/news/NewsLayout";
 
 const App= () => {
   return (
@@ -11,8 +13,11 @@ const App= () => {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/news" element={<News/>} />
-        <Route path="/news/:id" element={<NewsDetail/>} />
+        <Route path="/news" element={<NewsLayout />}>
+          <Route index element={<News />} />
+          <Route path=":id" element={<NewsDetail />} />
+          <Route path="category/:categoryId" element={<NewsCategoryList />} />
+        </Route>
       </Routes>
       <Footer/>
     </Router>

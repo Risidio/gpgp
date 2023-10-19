@@ -4,7 +4,7 @@ import MyLink from "../base/MyLink";
 const NewsInfo = () => {
   return (
     <div className="w-full flex justify-center sm:p-9 md:p-10 p-5">
-       <div className="grid sm:grid-cols-4 grid-cols-1">
+       <div className="grid sm:grid-cols-4 grid-cols-1 gap-x-5">
           <div className="col-span-3">
               <h1 className="sm:text-[1.4rem] text-lg font-bold tracking-[.25em]">
                   Predatory Tides: Confronting Plastic’s <br/>
@@ -46,7 +46,7 @@ const NewsInfo = () => {
                         <img
                             src={require("../../assets/images/news/news1.jpg")}
                             alt=""
-                            className="w-full h-56 rounded-sm"
+                            className="w-full sm:h-56 h-44 rounded-sm"
                         />
                         <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2 z-50">
                             The Tide of Plastic: A Growing Threat  The Tide of Plastic: A Growing Threat 
@@ -57,7 +57,7 @@ const NewsInfo = () => {
                         <img
                             src={require("../../assets/images/news/news2.png")}
                             alt=""
-                            className="w-full h-56 rounded-sm"
+                            className="w-full sm:h-56 h-44 rounded-sm"
                         />
                         <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2 z-50">
                             The Tide of Plastic: A Growing Threat  The Tide of Plastic: A Growing Threat 
@@ -68,7 +68,7 @@ const NewsInfo = () => {
                         <img
                             src={require("../../assets/images/news/news3.jpg")}
                             alt=""
-                            className="w-full h-56 rounded-sm"
+                            className="w-full sm:h-56 h-44 rounded-sm"
                         />
                         <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2 z-50">
                             The Tide of Plastic: A Growing Threat  The Tide of Plastic: A Growing Threat 
@@ -79,7 +79,7 @@ const NewsInfo = () => {
                         <img
                             src={require("../../assets/images/news/news4.jpg")}
                             alt=""
-                            className="w-full h-56 rounded-sm"
+                            className="w-full sm:h-56 h-44 rounded-sm"
                         />
                         <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2 z-50">
                             The Tide of Plastic: A Growing Threat  The Tide of Plastic: A Growing Threat 
