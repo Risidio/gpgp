@@ -1,4 +1,4 @@
-export const LatestNews = () => {
+const LatestNews = () => {
   return (
     <div className="w-full flex flex-col sm:p-9 p-5">
          <div className="flex justify-between items-center pb-5">
@@ -133,3 +133,5 @@ export const LatestNews = () => {
      </div>
   )
 }
+
+export default LatestNews;

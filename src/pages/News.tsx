@@ -1,6 +1,6 @@
 import BackgroundWave from '../components/BackgroundWave'
 import Container from '../components/Container'
-import { NewsList } from '../components/news/NewsList'
+import NewsList from '../components/news/NewsList'
 
 export const News = () => {
   return (
@@ -13,8 +13,8 @@ export const News = () => {
         </section>
 
         <Container>
-          <NewsList/>
-       </Container>
+           <NewsList/>
+        </Container>
 
        <BackgroundWave/>
     </>

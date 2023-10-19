@@ -1,4 +1,5 @@
 import { HiChevronRight } from "react-icons/hi"
+import { Link } from "react-router-dom";
 
 interface NewsCategoryProps {
    category: {
@@ -7,7 +8,7 @@ interface NewsCategoryProps {
    }
 }
 
-export const NewsCategory = ({ category} : NewsCategoryProps) => {
+const NewsCategory = ({ category} : NewsCategoryProps) => {
   return (
     <div className="w-full flex flex-col sm:p-9 md:p-10 p-5">
         <div className="flex justify-between items-center pb-5">
@@ -24,11 +25,13 @@ export const NewsCategory = ({ category} : NewsCategoryProps) => {
 
         <div className="grid grid-cols-3 gap-5">
              <div>
-                <img
-                   src={require("../../assets/images/news.png")}
-                   alt={category.title}
-                   className="hover:opacity-90 transition duration-300 ease-in-out rounded-md"
-                />
+               <Link to={`/news/123`}>
+                     <img
+                        src={require("../../assets/images/news.png")}
+                        alt={category.title}
+                        className="hover:opacity-90 transition duration-300 ease-in-out rounded-md"
+                     /> 
+                </Link>
                 <p className="py-3 sm:text-base text-sm">
                    {category.description}
                 </p>
@@ -59,3 +62,5 @@ export const NewsCategory = ({ category} : NewsCategoryProps) => {
      </div>
   )
 }
+
+export default NewsCategory;
