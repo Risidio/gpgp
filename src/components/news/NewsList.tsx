@@ -32,7 +32,7 @@ const NewsList = () => {
 
   // Get the category of items
   const tabCategories: string[] = [];
-  categories.map((item) => {tabCategories.push(item.title.toUpperCase())});
+  categories.map((item) => tabCategories.push(item.title.toUpperCase()));
 
   const handleCategoryChange = (category: string) => {
         setCurrentCategory(category);

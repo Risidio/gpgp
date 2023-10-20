@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Tabs from "../shared/Tabs";
 import { useState } from "react"
 import Pagination from "../shared/Pagination";
@@ -47,7 +47,7 @@ const NewsCategoryList = () => {
       <div className="w-full flex flex-col sm:p-9 md:p-10 p-5">
         <Tabs
              items={[...tabCategories]} 
-             currentCategory={params.categoryId!}
+             currentCategory={currentCategory}
              onCategoryChange={handleCategoryChange}
              redirectTo
              showAllLabel={false}
