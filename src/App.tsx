@@ -6,6 +6,9 @@ import { News } from "./pages/News";
 import NewsDetail from "./components/news/NewsDetail";
 import NewsCategoryList from "./components/news/NewsCategoryList";
 import { NewsLayout } from "./components/news/NewsLayout";
+import Contribute from "./pages/Contribute";
+import InvitationArtist from "./pages/InvitationArtist";
+import InvitationSponsor from "./pages/InvitationSponsor";
 
 const App= () => {
   return (
@@ -14,10 +17,13 @@ const App= () => {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/news" element={<NewsLayout />}>
-          <Route index element={<News />} />
-          <Route path=":id" element={<NewsDetail />} />
-          <Route path="category/:categoryId" element={<NewsCategoryList />} />
+           <Route index element={<News />} />
+           <Route path=":id" element={<NewsDetail />} />
+           <Route path="category/:categoryId" element={<NewsCategoryList />} />
         </Route>
+        <Route path="/contribute" element={<Contribute />} />
+        <Route path="/contribute/inviteArtist" element={<InvitationArtist />} />
+        <Route path="/contribute/inviteSponsor" element={<InvitationSponsor />} />
       </Routes>
       <Footer/>
     </Router>
