@@ -5,12 +5,11 @@ import { twMerge } from 'tailwind-merge';
 
 export const NewsLayout = () => {
   const params = useParams(); 
-  const classes = params.id ? "sm:bg-gpgp-blue sm:text-white bg-white text-black" : "";
-  
+  const classes = "sm:bg-gpgp-blue sm:text-white bg-white text-black";
   return (
     <>
-        <div className={!params.id ? "" : "sm:block hidden"}>
-          <BackgroundWave/>
+        <div className="sm:block hidden">
+           <BackgroundWave/>
         </div>
 
         <section className={twMerge("flex flex-col items-center bg-gpgp-blue text-white", classes)}>
