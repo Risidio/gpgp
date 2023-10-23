@@ -1,6 +1,6 @@
 import ContentManage from './ContentManage'
 import ProjectImg from "../../assets/images/project.png"
-import ChallengeImg from "../../assets/images/challenge.png"
+import ChallengeImg from "../../assets/images/challenge.jpg"
 import InvitationImg from "../../assets/images/invitation.png"
 
 const contents = [
