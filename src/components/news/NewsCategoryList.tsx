@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Tabs from "../shared/Tabs";
 import { useState } from "react"
 import Pagination from "../shared/Pagination";
@@ -91,9 +91,6 @@ const NewsCategoryList = () => {
             </div>
         )}
       </div>
-
-
-      111111111
     </div>
     )
 }

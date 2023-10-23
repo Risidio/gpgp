@@ -2,6 +2,9 @@ import { Outlet, useParams } from 'react-router-dom'
 import Container from '../Container'
 import BackgroundWave from '../BackgroundWave'
 import { twMerge } from 'tailwind-merge';
+import NewsFooter from './NewsFooter';
+import LatestNews from './LatestNews';
+import BottomLatestNews from './BottomLatestNews';
 
 export const NewsLayout = () => {
   const params = useParams(); 
@@ -21,7 +24,13 @@ export const NewsLayout = () => {
         <Container>
             <Outlet/>
         </Container>
-        <BackgroundWave/>
+      
+        <NewsFooter>
+           {!params.categoryId 
+               ? <BackgroundWave/>
+               : <BottomLatestNews/>
+              }
+        </NewsFooter>
     </>
   )
 }
