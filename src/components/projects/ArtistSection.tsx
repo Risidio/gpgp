@@ -1,4 +1,3 @@
-import MyLink from "../base/MyLink";
 import JD from "../../assets/images/john-dahlsen.png";
 
 const ArtistSection = () => {
@@ -22,7 +21,7 @@ const ArtistSection = () => {
               />
             </svg>
             <div>
-              <img src={JD} className="md:absolute bottom-[0px] w-[] h-[]" />
+              <img src={JD} alt={JD} className="md:absolute bottom-[0px]" />
             </div>
           </div>
 
