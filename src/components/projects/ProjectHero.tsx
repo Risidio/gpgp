@@ -11,7 +11,7 @@ const ProjectHero = () => {
             </h1>
           </div>
           <img
-            src={gpgpMapImage}
+            src={gpgpMapImage} alt="GPGP Map Image"
             className="md:hidden w-[316px] h-[194px] mx-auto sm:mb-[14.3px]"
           />
           <div>

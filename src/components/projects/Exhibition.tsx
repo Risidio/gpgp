@@ -36,7 +36,7 @@ const Exhibition = () => {
             </MyLink>
           </div>
           <div className="h-[200px] w-[250px] md:w-[100%] mx-auto md:mx-0 md:h-[100%] order-1 md:order-2">
-            <img className="w-[100%] max-h-[100%]" src={Rectange251}></img>
+            <img className="w-[100%] max-h-[100%]" alt="Exhibition" src={Rectange251}/>
           </div>
         </div>
       </div>

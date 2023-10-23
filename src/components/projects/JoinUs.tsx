@@ -48,7 +48,7 @@ const JoinUs = () => {
             </div>
           </div>
           <div className="h-[200px] w-[250px] md:w-[100%] mx-auto md:mx-0 md:h-[100%] order-1 md:order-2">
-            <img className="w-[100%] max-h-[100%]" src={SeaSeal}></img>
+            <img className="w-[100%] max-h-[100%]" src={SeaSeal} alt="Sea Seal"/>
           </div>
         </div>
       </div>
