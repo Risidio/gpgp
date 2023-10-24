@@ -30,7 +30,7 @@ const categories = [
 const NewsCategoryList = () => {
   const params = useParams();
   const [currentPage, setCurrentPage] = useState(1);
-  const [, setCurrentCategory] = useState(params.categoryId!);
+  const [currentCategory, setCurrentCategory] = useState(params.categoryId!);
   const fakeData = new Array(12).fill(1);
 
   // Get the category of items
