@@ -18,7 +18,7 @@ const ProjectHero = () => {
             <h5 className="font-[500] text-[16px] md:text-[32px] my-0 text-center">
               contribute to the global effort
             </h5>
-            <h5 className="font-[500] text-[16px] md:text-[32px] my-0 text-center">
+            <h5 className="font-[500] text-[16px] md:text-[32px] md:my-[] text-center">
               Create a better world
             </h5>
           </div>

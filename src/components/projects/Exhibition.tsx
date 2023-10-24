@@ -10,6 +10,8 @@ const Exhibition = () => {
         </h1>
         <div className="w-[100%] grid md:grid-cols-2 mt-[15px] md:mt-[70px] md:border-y-[1px] md:border-black">
           <div className="w-[100%] order-2 md:order-1 md:pt-[60px] md:py-[60px] px-[40px] md:px-[80px] flex flex-col gap-y-6">
+          <div className="hidden md:block w-[260px] h-[100px] bg-gpgp-blue rotate-90 absolute left-[-160px] mt-[100px] rounded-[40px]"></div>
+
             <p className="text-justify text-center md:text-left text-[11px] md:text-[16px]">
               <b>The GPGP exhibition</b> comprises 2,450 physical art pieces,
               thoughtfully organised to replicate the satellite depiction of the
