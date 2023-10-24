@@ -21,6 +21,10 @@ const categories = [
         title: "Events",
         description: "The Tide of Plastic A Growing Threat"
     },
+    {
+        title: "Test",
+        description: "The Tide of Plastic A Growing Threat"
+    },
 ];
 
 const NewsList = () => {
@@ -32,7 +36,7 @@ const NewsList = () => {
 
   // Get the category of items
   const tabCategories: string[] = [];
-  categories.map((item) => {tabCategories.push(item.title.toUpperCase())});
+  categories.map((item) => tabCategories.push(item.title.toUpperCase()));
 
   const handleCategoryChange = (category: string) => {
         setCurrentCategory(category);
@@ -40,17 +44,18 @@ const NewsList = () => {
   };
 
   // Filter the data
-  items = currentCategory !== "All" ? items.filter((item) => item.title.toLowerCase() === currentCategory.toLowerCase()) : items;
+  items = currentCategory !== "All" 
+                          ? items.filter((item) => item.title.toLowerCase() === currentCategory.toLowerCase())
+                          : items;
 
   // Pagination
   const totalItems = items.length;
   const handlePageChange = (pageNumber: number) => setCurrentPage(pageNumber);
-  
   return (
     <div className="min-h-screen w-full">
         <Tabs
              items={[...tabCategories]} 
-              currentCategory={currentCategory}
+             currentCategory={currentCategory}
              onCategoryChange={handleCategoryChange}
          />
         <LatestNews/>

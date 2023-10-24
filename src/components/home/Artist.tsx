@@ -1,6 +1,6 @@
 import MyLink from '../base/MyLink'
 
-const Artist = () => {
+const Artist = ({...props}) => {
   return (
     <div  className="flex flex-col justify-center items-center py-10 px-5 w-full sm:w-[500px] sm:bg-white bg-gpgp-blue sm:text-black text-white">
         <div className="bg-artist-back bg-no-repeat w-[300px] h-[300px] bg-[length:300px_300px] rounded-full p-12">

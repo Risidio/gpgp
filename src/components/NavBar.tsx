@@ -8,7 +8,7 @@ import { HiChevronDown } from "react-icons/hi";
 const links = [
     {
       name: "Project",
-      href: "#",
+      href: "/project",
       submenu: [
         {
           name: "Overview",

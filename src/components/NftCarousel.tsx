@@ -35,7 +35,7 @@ const images = [
 
 const NftCarousel = () => {
   return (
-    <div className="w-full flex justify-between">
+    <div className="w-[100%] flex justify-between">
          <ImgCarousel items={images} />
      </div>
   )
