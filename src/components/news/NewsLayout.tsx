@@ -3,7 +3,6 @@ import Container from '../Container'
 import BackgroundWave from '../BackgroundWave'
 import { twMerge } from 'tailwind-merge';
 import NewsFooter from './NewsFooter';
-import LatestNews from './LatestNews';
 import BottomLatestNews from './BottomLatestNews';
 
 export const NewsLayout = () => {
