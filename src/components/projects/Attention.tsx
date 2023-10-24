@@ -28,6 +28,8 @@ const Attention = () => {
               It's time to take responsibility for our actions and work towards
               a sustainable future.
             </p>
+            <div className="hidden md:block w-[260px] h-[100px] bg-gpgp-blue rotate-90 absolute right-[-160px] mt-[100px] rounded-[40px]"></div>
+
           </div>
         </div>
       </div>

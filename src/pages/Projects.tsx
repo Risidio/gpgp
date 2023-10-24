@@ -8,7 +8,7 @@ import GpgpSection from "../components/projects/GpgpSection";
 import ProjectHero from "../components/projects/ProjectHero";
 import JoinUs from './../components/projects/JoinUs';
 
-const Projects = () => {
+const Project = () => {
   return (
     <>
       <Container>
@@ -46,4 +46,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Project;

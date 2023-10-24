@@ -1,4 +1,5 @@
 import JD from "../../assets/images/john-dahlsen.png";
+import Artist from "../home/Artist";
 
 const ArtistSection = () => {
   return (
@@ -50,9 +51,13 @@ const ArtistSection = () => {
               plastic waste he uses the ocean debris to create visually stunning
               compositions evoking harmony and balance on the plastic pollution.
             </p>
+            <div className="hidden md:block w-[260px] h-[100px] bg-gpgp-blue rotate-90 absolute right-[-160px] mt-[100px] rounded-[40px]"></div>
+
           </div>
         </div>
       </div>
+
+      
     </>
   );
 };
