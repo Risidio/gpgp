@@ -21,6 +21,10 @@ const categories = [
        title: "Events",
        description: "The Tide of Plastic A Growing Threat"
    },
+   {
+    title: "Test",
+    description: "The Tide of Plastic A Growing Threat"
+   },
 ];
 
 const NewsCategoryList = () => {
@@ -44,7 +48,7 @@ const NewsCategoryList = () => {
     const handlePageChange = (pageNumber: number) => setCurrentPage(pageNumber);
 
   return (
-      <div className="w-full flex flex-col sm:p-9 md:p-10 p-5">
+    <div className="min-h-screen w-full">
         <Tabs
              items={[...tabCategories]} 
              currentCategory={currentCategory}
@@ -52,11 +56,10 @@ const NewsCategoryList = () => {
              redirectTo
              showAllLabel={false}
          />
-
+      <div className="w-full flex flex-col p-5">
          <h2 className="font-semibold text-lg uppercase py-5">
              {params.categoryId}
          </h2>
-
          <div className="group relative py-10 shadow-md">
             <img
                   src={require("../../assets/images/news/main-news.png")}
@@ -67,7 +70,6 @@ const NewsCategoryList = () => {
                   The Tide of Plastic: A Growing Threat  The Tide of Plastic: A Growing Threat 
             </span>
          </div>
-
          <div className="grid grid-cols-3 gap-5">
              {fakeData.map(item => (
                  <NewsCard
@@ -89,6 +91,7 @@ const NewsCategoryList = () => {
             </div>
         )}
       </div>
+    </div>
     )
 }
 

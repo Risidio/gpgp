@@ -2,15 +2,17 @@ import { Outlet, useParams } from 'react-router-dom'
 import Container from '../Container'
 import BackgroundWave from '../BackgroundWave'
 import { twMerge } from 'tailwind-merge';
+import NewsFooter from './NewsFooter';
+import LatestNews from './LatestNews';
+import BottomLatestNews from './BottomLatestNews';
 
 export const NewsLayout = () => {
   const params = useParams(); 
-  const classes = params.id ? "sm:bg-gpgp-blue sm:text-white bg-white text-black" : "";
-  
+  const classes = "sm:bg-gpgp-blue sm:text-white bg-white text-black";
   return (
     <>
-        <div className={!params.id ? "" : "sm:block hidden"}>
-          <BackgroundWave/>
+        <div className="sm:block hidden">
+           <BackgroundWave/>
         </div>
 
         <section className={twMerge("flex flex-col items-center bg-gpgp-blue text-white", classes)}>
@@ -22,7 +24,13 @@ export const NewsLayout = () => {
         <Container>
             <Outlet/>
         </Container>
-        <BackgroundWave/>
+      
+        <NewsFooter>
+           {!params.categoryId 
+               ? <BackgroundWave/>
+               : <BottomLatestNews/>
+              }
+        </NewsFooter>
     </>
   )
 }
