@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Tabs from "../shared/Tabs";
 import { useState } from "react"
 import Pagination from "../shared/Pagination";
@@ -26,12 +26,12 @@ const categories = [
 const NewsCategoryList = () => {
   const params = useParams();
   const [currentPage, setCurrentPage] = useState(1);
-  const [currentCategory, setCurrentCategory] = useState(params.categoryId!);
+  const [, setCurrentCategory] = useState(params.categoryId!);
   const fakeData = new Array(12).fill(1);
 
   // Get the category of items
   const tabCategories: string[] = [];
-  categories.map((item) => {tabCategories.push(item.title.toUpperCase())});
+  categories.map(item => tabCategories.push(item.title.toUpperCase()));
 
   const handleCategoryChange = (category: string) => {
       setCurrentCategory(category);
