@@ -16,7 +16,7 @@ const LatestNews = () => {
                            alt=""
                            className="w-full h-[470px] shadow-md opacity-95 hover:opacity-90 transition duration-300 ease-in-out"
                         />
-                       <span className="absolute bottom-1 text-xl drop-shadow-sm font-semibold text-white p-5 z-50">
+                       <span className="absolute bottom-1 text-[1.1rem] drop-shadow-sm font-semibold text-white p-5 z-50">
                            The Tide of Plastic: A Growing Threat  The Tide of Plastic: A Growing Threat 
                        </span>
                      </div>
