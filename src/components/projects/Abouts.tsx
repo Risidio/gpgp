@@ -4,7 +4,7 @@ import MyLink from "../base/MyLink";
 const About = () => {
   return (
     <>
-      <div className="h-[413px] w-[100%] bg-project-page-mobile-wave md:bg-project-page-wave bg-no-repeat bg-cover md:h-[1208.5px] md:pt-[395px]">
+      <div className="h-[390px] w-[100%] mt-[10px] bg-project-page-mobile-wave md:bg-project-page-wave bg-no-repeat bg-cover md:h-[1208.5px] md:pt-[395px]">
         <div className="flex flex-col items-center text-white">
           <h1 className="mt-[80px] md:mt-[30px] text-[16px] uppercase md:text-[40px] font-[600] leading-[23.38px] md:leading-[48px]">
             About the Project
@@ -21,7 +21,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="hidden md:block mt-[35px]">
+        <div className="hidden md:block mt-[40px]">
           <NftCarousel />
           <div className="mt-[85px] flex flex-col items-center">
             <MyLink

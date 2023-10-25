@@ -17,7 +17,7 @@ const GpgpSection = () => {
               North Pacific Ocean for decades.
             </p>
 
-            <p className="text-justified hidden md:block">
+            <p className="text-justified hidden md:block font-[400]">
               Contrary to the common perception of a vast floating garbage
               island, the Great Pacific Garbage Patch mainly comprises dispersed
               microscopic plastic particles, or microplastics, interspersed with
