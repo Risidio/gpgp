@@ -1,5 +1,6 @@
 import ArtistFormBg from "./ArtistFormBg";
 import SponsorFormBg from "./SponsorFormBg";
+
 import CustomFileInput from "./CustomFileInput";
 
 interface FormField {
@@ -7,14 +8,36 @@ interface FormField {
   type: string;
   width: string;
   id: string;
+  // Add other properties if needed
 }
 
-const InvitationForm = ({ formField , WavePattern }: { formField: FormField[] , WavePattern:String}) => {
+
+interface SponsorFormLegend {
+  heading: string;
+  contact: string;
+}
+
+export default function InvitationForm({
+  formField,
+  WavePattern,
+  SponsorFormLegend,
+}: {
+  formField: FormField[];
+  WavePattern: string;
+  SponsorFormLegend?: SponsorFormLegend;
+}) {
   return (
     <div className="relative mt-16">
-      {WavePattern==="Artist" ? <ArtistFormBg /> : <SponsorFormBg /> }
+      {WavePattern === "Artist" ? <ArtistFormBg /> : <SponsorFormBg />}
       <div className="w-full absolute top-[105px] xsm:top-[139px] sm:top-[175px] md:top-[242px] lg:top-[280px] xl:top-[310px] left-0">
         <div className="px-16 flex flex-col items-center">
+          {SponsorFormLegend && <div className="flex flex-col text-white items-center text-center ">
+            <h3 className="text-[2rem] md:text-[2.6rem] font-semibold mb-4">{SponsorFormLegend.heading}</h3>
+            <h4 className="text-[1rem] md:text-[1.6rem]">{SponsorFormLegend.contact}</h4>
+            <h2 className="text-[1rem] md:text-[1.7rem] m-10">OR</h2>
+            <h4 className="text-[1rem] md:text-[1.5rem] xl:text-[1.7rem] font-semibold mb-4">Leave your details and we’ll contact you </h4>
+
+            </div>}
           <form className="flex flex-wrap -mx-2">
             {formField.map((field) =>
               field.width === "half" ? (
@@ -51,10 +74,7 @@ const InvitationForm = ({ formField , WavePattern }: { formField: FormField[] , 
                       className="border rounded px-3 py-2 w-full text-black"
                     />
                   ) : field.type === "file" ? (
-                    <CustomFileInput
-                      label={field.label}
-                      id={field.id}
-                    />
+                    <CustomFileInput label={field.label} id={field.id} />
                   ) : (
                     <input
                       type={field.type}
@@ -67,7 +87,7 @@ const InvitationForm = ({ formField , WavePattern }: { formField: FormField[] , 
               )
             )}
           </form>
-          <button className="mt-20 border w-[150px] h-[50px] rounded-lg bg-white text-gpgp-blue font-bold text-[1.3rem] tracking-[3px]">
+          <button className="mt-[150px] border w-[150px] h-[50px] rounded-lg bg-white text-gpgp-blue font-bold text-[1.3rem] tracking-[3px]">
             Send
           </button>
         </div>
@@ -75,5 +95,3 @@ const InvitationForm = ({ formField , WavePattern }: { formField: FormField[] , 
     </div>
   );
 }
-
-export default InvitationForm;

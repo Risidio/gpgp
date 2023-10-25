@@ -47,6 +47,7 @@ export default function CustomFileInput({ label, id }: CustomFileInputProps) {
             </div>
 
 {/* These 2 button funtionalities which I kept as additionals in the future , you can remove these if these don't play out in this project */}
+
             {/* <div className=" min-w-[250px] flex flex-row justify-between items-center px-1 font-semibold">
               <button
                 className=" text-[#0a24719f] hover:text-black"

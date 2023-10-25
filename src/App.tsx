@@ -9,7 +9,8 @@ import { NewsLayout } from "./components/news/NewsLayout";
 import Contribute from "./pages/Contribute";
 import InvitationArtist from "./pages/InvitationArtist";
 import InvitationSponsor from "./pages/InvitationSponsor";
-import Project from "./pages/Projects";
+import Projects from "./pages/Projects";
+import Gallery from "./pages/Gallery";
 
 const App= () => {
   return (
@@ -25,7 +26,8 @@ const App= () => {
         <Route path="/contribute" element={<Contribute />} />
         <Route path="/contribute/inviteArtist" element={<InvitationArtist />} />
         <Route path="/contribute/inviteSponsor" element={<InvitationSponsor />} />
-        <Route path="/project" element={<Project/>} />
+        <Route path="/projects" element={<Projects/>} />
+        <Route path="/gallery" element={<Gallery/>} />
       </Routes>
       <Footer/>
     </Router>

@@ -15,7 +15,7 @@ export default function SponsorFormBg() {
           fill="#0A2471"
         />
       </svg>
-      <div className=" mt-[-4px] xsm:min-h-[1400px] sm:min-h-[730px] md:min-h-[699px] lg:min-h-[356px]  xl:min-h-[369px] min-h-[1600px]  bg-gpgp-blue "></div>
+      <div className=" mt-[-4px] xxsm:min-h-[1400px]  xsm:min-h-[1200px] sm:min-h-[730px] md:min-h-[649px] lg:min-h-[356px]  xl:min-h-[209px] min-h-[1500px]  bg-gpgp-blue "></div>
     </>
   );
 }
