@@ -6,7 +6,7 @@ export default function SponsorWave() {
       <svg
         width="100%"
         height="100%"
-        viewBox="0 0 1440 800"
+        viewBox="0 0 1440 1476"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -54,7 +54,7 @@ export default function SponsorWave() {
           </filter>
         </defs>
       </svg>
-      {/* <div className=" mt-[-4px] sm:min-h-[530px]  min-h-[537px]  bg-gpgp-blue "></div> */}
+      <div className=" mt-[-4px] sm:min-h-[530px]  min-h-[537px]  bg-gpgp-blue "></div>
     </>
   );
 }

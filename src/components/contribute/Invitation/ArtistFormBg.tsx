@@ -1,10 +1,12 @@
-const ArtistFormBg = () => {
+import React from "react";
+
+export default function ArtistFormBg() {
   return (
     <>
       <svg
         width="100%"
         height="100%"
-        viewBox="0 0 1440 900"
+        viewBox="0 0 1440 1652"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -52,9 +54,7 @@ const ArtistFormBg = () => {
           </filter>
         </defs>
       </svg>
-      <div className="mt-[-4px] xsm:min-h-[1000px] sm:min-h-[730px] md:min-h-[699px] lg:min-h-[356px] xl:min-h-[369px] min-h-[1600px] bg-gpgp-blue"></div>
+      <div className=" mt-[-4px] xsm:min-h-[1400px] sm:min-h-[730px] md:min-h-[699px] lg:min-h-[356px]  xl:min-h-[369px] min-h-[1600px]  bg-gpgp-blue "></div>
     </>
   );
 }
-
-export default ArtistFormBg;

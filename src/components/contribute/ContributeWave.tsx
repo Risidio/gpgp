@@ -1,11 +1,13 @@
-const ContributeWave = () => {
+import React from "react";
+
+export default function ContributeWave() {
   return (
     <>
       <svg
         width="100%"
         height="100%"
-        className=""
-        viewBox="0 0 1440 1200"
+        className="mt-[7px]"
+        viewBox="0 0 1440 1548"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -53,9 +55,7 @@ const ContributeWave = () => {
           </filter>
         </defs>
       </svg>
-      {/* <div className="mt-[-4px] sm:min-h-[530px] xl:min-h-[369px] min-h-[589px] bg-gpgp-blue"></div> */}
+      <div className=" mt-[-4px] sm:min-h-[530px] xl:min-h-[369px] min-h-[589px]  bg-gpgp-blue "></div>
     </>
   );
 }
-
-export default ContributeWave;
