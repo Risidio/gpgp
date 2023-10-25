@@ -41,7 +41,7 @@ const Footer = ({classes= "bg-gpgp-blue"}: FooterProps) => {
            {/* Mobile-view */}
             <div className="w-full sm:hidden flex flex-col items-center px-5">
                <div className={twMerge("w-full grid grid-cols-2 justify-between items-start text-white",`${isFooterWhite && "sm:text-white text-black"}`)}>
-                  <SocialMedia color="bg-gpgp-blue"/>
+                  <SocialMedia color={`${isFooterWhite ? "bg-gpgp-blue" : "white"}`} />
                   <div className="flex flex-col items-end">
                       <ul className="text-sm space-y-4 text-right">
                         <li>Sitemap</li>

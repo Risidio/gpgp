@@ -3,11 +3,11 @@ import SaveOceanCampaignImage from "../../assets/images/save-ocean-campaign-plas
 const Attention = () => {
   return (
     <>
-      <div className="bg-gpgp-blue md:bg-[white]">
-        <h1 className="text-center text-[white] md:text-[black] pt-[40px] md:pt-[0px] font-[600] font-[600] md:text-[40px] md:leading-[48px] md:mt-[100.5px]">
-          Why does it need attention?
+      <div className="w-full h-full bg-gpgp-blue md:bg-[white]">
+        <h1 className="text-center text-[white] md:text-[black] pt-[40px] md:pt-[0px] md:text-[2rem] md:leading-[48px] md:mt-[100.5px]">
+           Why does it need attention?
         </h1>
-        <div className="w-[100%] grid md:grid-cols-2 mt-[15px] md:mt-[70px] md:border-y-[1px] md:border-black">
+        <div className="w-full grid md:grid-cols-2 mt-[15px] md:mt-[70px] md:border-y-[1px] md:border-black">
           <div className="order-1 h-[200px] w-[250px] mx-auto md:mx-0 md:w-[100%] md:h-[100%]">
             <img className="w-[100%] max-h-[100%]" src={SaveOceanCampaignImage} alt={"Save the ocean campaign"}/>
           </div>
@@ -21,7 +21,7 @@ const Attention = () => {
             <p className="hidden md:block text-justified">
               The research conducted by oceanographers and ecologists suggests
               that a significant proportion of the marine debris, approximately
-              70%, sinks to the ocean's bottom.{" "}
+              70%, sinks to the ocean's bottom.
               <b>This makes the case of the GPGP even more alarming</b>.
             </p>
             <p className="mb-[25px] md:mb-[0px] text-white md:text-[black] text-center md:text-left text-[11px] md:text-[16px]">
@@ -29,7 +29,6 @@ const Attention = () => {
               a sustainable future.
             </p>
             <div className="hidden md:block w-[260px] h-[100px] bg-gpgp-blue rotate-90 absolute right-[-160px] mt-[100px] rounded-[40px]"></div>
-
           </div>
         </div>
       </div>

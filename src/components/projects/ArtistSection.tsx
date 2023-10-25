@@ -5,8 +5,8 @@ const ArtistSection = () => {
   return (
     <>
       <div className="hidden md:block bg-gpgp-blue md:bg-[white]">
-        <h1 className="text-center pt-[40px] md:pt-[0px] font-[600] lg:font-[600] md:font-[600] lg:text-[40px] lg:leading-[48px] lg:mt-[100.5px]">
-          The Artist
+        <h1 className="text-center text-[white] md:text-[black] pt-[40px] md:pt-[0px] md:text-[2rem] md:leading-[48px] md:mt-[100.5px]">
+           The Artist
         </h1>
         <div className="w-[100%] md:h-[481px] grid md:grid-cols-2 mt-[15px] md:mt-[90px] md:border-y-[1px] md:border-black">
           <div className="md:ml-[66px] h-[100%] md:w-[578px] relative">
@@ -57,9 +57,8 @@ const ArtistSection = () => {
         </div>
       </div>
       <div className="block md:hidden">
-        <Artist/>
+         <Artist/>
       </div>
-      
     </>
   );
 };

@@ -23,7 +23,7 @@ const Project = () => {
         <GpgpSection/>
       </section>
 
-      <section>
+       <section>
         <Attention/>
       </section>
 
@@ -42,7 +42,7 @@ const Project = () => {
       <section>
         <ContributionSection/>
       </section>
-    </>
+     </>
   );
 };
 

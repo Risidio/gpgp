@@ -4,9 +4,9 @@ import MyLink from "../base/MyLink";
 const GpgpSection = () => {
   return (
     <>
-      <div className="w-[100%] h-[100%]">
-        <h1 className="text-center text-[16px] pt-[30px] leading-[48px] uppercase font-[600] md:font-[600] md:text-[40px] md:leading-[48px] md:mt-[100.5px]">
-          What is GPGP?
+      <div className="w-full h-full">
+         <h1 className="text-center text-[white] md:text-[black] pt-[40px] md:pt-[0px] md:text-[2rem] md:leading-[48px] md:mt-[100.5px]">
+           What is GPGP?
         </h1>
         <div className="w-[100%] grid md:grid-cols-2 mt-[15px] md:mt-[70px] md:border-y-[1px] md:border-black">
           <div className="w-[100%] order-2 md:order-1 md:py-[60px] px-[40px] md:px-[80px] flex flex-col gap-y-6">
@@ -34,9 +34,9 @@ const GpgpSection = () => {
           </div>
           <div className="h-[200px] w-[250px] md:w-[100%] mx-auto md:mx-0 md:h-[100%] order-1 md:order-2 mb-[30px] md:mb-0">
             <img
-              className="w-[100%] h-[100%]"
-              src={challengeImage}
-              alt={"The Challenge"}
+                className="w-[100%] h-[100%]"
+                src={challengeImage}
+                alt="The Challenge"
             />
           </div>
         </div>
