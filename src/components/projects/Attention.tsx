@@ -11,7 +11,7 @@ const Attention = () => {
           <div className="order-1 h-[200px] w-[250px] mx-auto md:mx-0 md:w-[100%] md:h-[100%]">
             <img className="w-[100%] max-h-[100%]" src={SaveOceanCampaignImage} alt={"Save the ocean campaign"}/>
           </div>
-          <div className="w-[100%] order-2 md:order-1 md:pt-[60px] md:py-[60px] px-[40px] md:px-[80px] flex flex-col gap-y-6">
+          <div className="w-[100%] order-2 md:order-1 md:py-[60px] px-[40px] md:px-[80px] flex flex-col gap-y-6">
             <p className="text-white md:text-[black] text-center md:text-left text-[11px] md:text-[16px]">
               The Great Pacific Garbage Patch is a pressing environmental issue
               that requires immediate attention. It has already caused
