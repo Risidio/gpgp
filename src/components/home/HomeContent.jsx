@@ -1,6 +1,6 @@
 import ContentManage from './ContentManage'
 import ProjectImg from "../../assets/images/project.png"
-import ChallengeImg from "../../assets/images/challenge.jpg"
+import ChallengeImg from "../../assets/images/challenge.png"
 import InvitationImg from "../../assets/images/invitation.png"
 
 const contents = [
@@ -38,7 +38,6 @@ const contents = [
         id: 3
     },
 ]
-
 const HomeContent = () => {
     return (
         <>

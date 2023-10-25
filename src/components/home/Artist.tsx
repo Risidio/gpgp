@@ -13,8 +13,8 @@ const Artist = ({...props}) => {
               </div>
         </div>
 
-         <h1 className="text-xl font-semibold py-3 uppercase">
-        John Dahlsen
+         <h1 className="text-xl font-semibold  uppercase">
+           John Dahlsen
          </h1>
        
          <span className="text-base tracking-[1px] font-semibold py-1 uppercase">

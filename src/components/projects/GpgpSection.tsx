@@ -1,4 +1,4 @@
-import challengeImage from "../../assets/images/challenge.jpg";
+import challengeImage from "../../assets/images/challenge.png";
 import MyLink from "../base/MyLink";
 
 const GpgpSection = () => {

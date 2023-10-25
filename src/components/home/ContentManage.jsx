@@ -12,15 +12,17 @@ const ContentManage = ({ contents }) => {
                         className={`sm:flex hidden justify-center items-center py-10 w-full m-5 flex-col sm:px-10
                                     ${content.ImgPos === 'left' ? "sm:flex-row" : "sm:flex-row-reverse"}`}
                     >
-                        <div className="sm:w-[50%] w-full flex items-center sm:justify-start justify-center">
+                        <div className={`sm:w-[60%] w-full flex items-center justify-center
+                                         ${content.ImgPos === 'left' ? "sm:justify-start" : "sm:justify-end "}
+                                       `}>
                             <img
                                 src={content.Img}
-                                alt={`img${content.id}`}
+                                alt={content.name}
                                 className="object-cover shadow-sm shadow-black w-[70%]"
                             />
                         </div>
 
-                        <div className={`sm:w-[50%] flex flex-col sm:justify-start justify-center sm:text-left text-center`}>
+                        <div className={`sm:w-[40%] flex flex-col sm:justify-start justify-center sm:text-left text-center`}>
                             <h1 className="text-2xl font-semibold">
                                 {content.name}
                         </h1>
