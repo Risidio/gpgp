@@ -27,7 +27,14 @@ export const getFooterDetail = (routeToFind: string) => {
             fontColor: "black",
             fontColorMobile: "text-black",
             hrStyle: ""
-        }        
+        },
+        {
+            route: "/contact",
+            style: "bg-white",
+            fontColor: "black",
+            fontColorMobile: "text-black",
+            hrStyle: ""
+        }             
     ]
 
     for (const path of whiteFooterPaths) {

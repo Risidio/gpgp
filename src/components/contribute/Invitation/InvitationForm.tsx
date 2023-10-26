@@ -24,6 +24,7 @@ export default function InvitationForm({
   formField: FormField[];
   WavePattern: string;
   SponsorFormLegend?: SponsorFormLegend;
+  Classes?: any;
 }) {
   return (
     <div className="relative mt-16">

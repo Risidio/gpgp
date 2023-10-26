@@ -11,6 +11,7 @@ import InvitationArtist from "./pages/InvitationArtist";
 import InvitationSponsor from "./pages/InvitationSponsor";
 import Projects from "./pages/Projects";
 import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
 
 const App= () => {
   return (
@@ -28,6 +29,7 @@ const App= () => {
         <Route path="/contribute/inviteSponsor" element={<InvitationSponsor />} />
         <Route path="/projects" element={<Projects/>} />
         <Route path="/gallery" element={<Gallery/>} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer/>
     </Router>

@@ -2,7 +2,7 @@ interface ContributeHeroProps {
   HeroContent: {
     heading: string;
     subheading?: string;
-    HeroLegend: string[];
+    HeroLegend?: string[];
   };
   classes: {
     container?: string;
@@ -42,7 +42,7 @@ export default function ContributeHero({
            </h3>
         : ""}
 
-        {HeroContent.HeroLegend.map((item, index) => (
+        {HeroContent && HeroContent?.HeroLegend?.map((item, index) => (
           <p
             className={` text-[0.8rem] w-[150%] sm:text-[1.2rem] xsm:w-[120%] sm:w-[75%] font-be-vietnam mb-3 tracking-normal sm:tracking-wide z-8 md:z-10 opacity-100 ${paragraph}`}
             key={index}
