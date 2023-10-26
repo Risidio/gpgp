@@ -1,12 +1,12 @@
 import Container from "../components/Container";
-import About from "../components/projects/Abouts";
-import ArtistSection from "../components/projects/ArtistSection";
-import Attention from "../components/projects/Attention";
-import ContributionSection from "../components/projects/Contribution";
-import Exhibition from "../components/projects/Exhibition";
-import GpgpSection from "../components/projects/GpgpSection";
-import ProjectHero from "../components/projects/ProjectHero";
-import JoinUs from './../components/projects/JoinUs';
+import About from "../components/project/Abouts";
+import ArtistSection from "../components/project/ArtistSection";
+import Attention from "../components/project/Attention";
+import ContributionSection from "../components/project/Contribution";
+import Exhibition from "../components/project/Exhibition";
+import GpgpSection from "../components/project/GpgpSection";
+import ProjectHero from "../components/project/ProjectHero";
+import JoinUs from '../components/project/JoinUs';
 
 const Project = () => {
   return (
