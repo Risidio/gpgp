@@ -1,5 +1,5 @@
 import JD from "../../assets/images/john-dahlsen.png";
-import Artist from './../home/Artist';
+import Artist from '../home/Artist';
 
 const ArtistSection = () => {
   return (
