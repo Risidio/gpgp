@@ -11,12 +11,14 @@ interface FooterProps{
 }
 
 const Footer = ({classes= "bg-gpgp-blue"}: FooterProps) => {
-  const footerStyles = getFooterDetail(useLocation().pathname)
-  const isFooterWhite = footerStyles ? true : false;
-  const fontColor = isFooterWhite ? "text-black" : "text-white"
+  const footerStyles = getFooterDetail(useLocation().pathname) || null
+ // const isFooterWhite = footerStyles && footerStyles.fontColor ? true : false;
+  const fontColor = (footerStyles && footerStyles.fontColor) ? footerStyles.fontColor : "white";
+  const fontColorMobile = (footerStyles && footerStyles.fontColorMobile) ? footerStyles.fontColorMobile : "white";
+  console.log(fontColor)
 
   return (
-    <footer className={isFooterWhite ? "bg-white" : classes}>
+    <footer className={footerStyles ? footerStyles!.style : classes}>
        <Container hasSection={false} classes={twMerge("bg-gpgp-blue flex flex-col", `${footerStyles ? footerStyles!.style : ""}`)}>
             <div className="lg:w-full md:w-[75%] sm:w-[90%] w-full mx-auto">
                <hr className={twMerge("h-px my-8 border-0 bg-white",`${footerStyles ? footerStyles!.hrStyle : ""}`)}/>
@@ -25,16 +27,16 @@ const Footer = ({classes= "bg-gpgp-blue"}: FooterProps) => {
             <div className="w-full sm:flex sm:flex-col hidden">
                 <div className="w-full grid grid-cols-3 justify-between p-5">
                     <Logo className="flex justify-start items-start w-20 h-20"/> 
-                    <SocialMedia color={`${isFooterWhite ? "bg-gpgp-blue" : "white"}`} />
+                    <SocialMedia color={`${fontColor ? fontColor: "bg-gpgp-blue"}`} />
                     <ContactInfo classes={fontColor} />
                 </div>
 
-                <div className={`w-full grid grid-cols-3 justify-between ${fontColor} pt-10 pb-3`}>
+                <div className={`w-full grid grid-cols-3 justify-between text-${fontColor} pt-10 pb-3`}>
                     <div className="text-right font-thin col-span-2 px-5 text-[0.9rem]">
                         2023 JohnDahlsen & Infinart All Rights Reserved - Designed by Risidio
                     </div>
                   
-                    <div className={`grid grid-cols-2 gap-x-2 ${fontColor} font-thin text-[0.9rem]`}>
+                    <div className={`grid grid-cols-2 gap-x-2 text-${fontColor} font-thin text-[0.9rem]`}>
                         <p>Privacy Policy</p>
                         <p>Terms of Service</p>
                     </div>
@@ -43,9 +45,8 @@ const Footer = ({classes= "bg-gpgp-blue"}: FooterProps) => {
 
            {/* Mobile-view */}
             <div className="w-full sm:hidden flex flex-col items-center px-5">
-               <div className={twMerge("w-full grid grid-cols-2 justify-between items-start text-white",
-                               `${isFooterWhite&& "sm:text-white text-black"}`)}>
-                  <SocialMedia color={`${isFooterWhite ? "bg-gpgp-blue" : "white"}`} />
+               <div className={twMerge("w-full grid grid-cols-2 justify-between items-start text-white", fontColorMobile)}>
+                  <SocialMedia color={fontColorMobile} />
                   <div className="flex flex-col items-end">
                       <ul className="text-sm space-y-4 text-right">
                         <li>Sitemap</li>
@@ -54,10 +55,10 @@ const Footer = ({classes= "bg-gpgp-blue"}: FooterProps) => {
                         <li>News</li>
                         <li>Contacts</li>
                       </ul>
-                      <Logo className="flex items-start w-16 h-16" logo={isFooterWhite ? "logo-blue.png": "logo-white.png"}/> 
+                      <Logo className="flex items-start w-16 h-16" logo={fontColor ? "logo-blue.png": "logo-white.png"}/> 
                   </div>
               </div>
-              <div className={twMerge("w-full text-center text-white font-thin py-5 text-[0.9rem]",`${isFooterWhite && "sm:text-white text-black"}`)}>
+              <div className={twMerge("w-full text-center text-white font-thin py-5 text-[0.9rem]",`${fontColor && "sm:text-white text-black"}`)}>
                    2023 JohnDahlsen & Infinart All Rights Reserved - Designed by Risidio
               </div>
            </div>

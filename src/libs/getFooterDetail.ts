@@ -3,21 +3,29 @@ export const getFooterDetail = (routeToFind: string) => {
         {
             route: "/",
             style: "sm:bg-gpgp-blue bg-white",
+            fontColor: "white",
+            fontColorMobile: "text-black",
             hrStyle: "sm:bg-white bg-gpgp-blue",
         },
         {
             route: "/contribute",
             style: "bg-white",
+            fontColor: "black",
+            fontColorMobile: "text-white",
             hrStyle: ""
         },
         {
             route: "/contribute/inviteArtist",
             style: "bg-white",
+            fontColor: "black",
+            fontColorMobile: "text-black",
             hrStyle: ""
         },
         {
             route: "/contribute/inviteSponsor",
             style: "bg-white",
+            fontColor: "black",
+            fontColorMobile: "text-black",
             hrStyle: ""
         }        
     ]
@@ -28,5 +36,5 @@ export const getFooterDetail = (routeToFind: string) => {
        } 
     }
 
-    return "";
+    return;
 }
