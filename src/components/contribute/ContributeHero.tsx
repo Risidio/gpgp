@@ -1,5 +1,3 @@
-import React from "react";
-
 interface ContributeHeroProps {
   HeroContent: {
     heading: string;
@@ -37,9 +35,12 @@ export default function ContributeHero({
         <h1 className={`z-2 md:z-10 opacity-100 font-be-vietnam font-bold text-[1.7rem] xsm:text-[2.4rem] uppercase ${heading}`}>
           {HeroContent.heading}
         </h1>
-       {HeroContent.subheading ? <h3 className={`text-[1rem] xsm:text-[1.3rem] font-be-vietnam font-bold mb-2 sm:mb-5 z-2 md:z-10 opacity-100 ${subheading} `}>
-          {HeroContent.subheading}
-        </h3>: ""}
+       {HeroContent.subheading 
+          ? <h3 
+              className={`text-[1rem] xsm:text-[1.3rem] font-be-vietnam font-bold mb-2 sm:mb-5 z-2 md:z-10 opacity-100 ${subheading} `}>
+              {HeroContent.subheading}
+           </h3>
+        : ""}
 
         {HeroContent.HeroLegend.map((item, index) => (
           <p

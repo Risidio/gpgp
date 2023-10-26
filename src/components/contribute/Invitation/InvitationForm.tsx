@@ -11,7 +11,6 @@ interface FormField {
   // Add other properties if needed
 }
 
-
 interface SponsorFormLegend {
   heading: string;
   contact: string;
@@ -30,14 +29,15 @@ export default function InvitationForm({
     <div className="relative mt-16">
       {WavePattern === "Artist" ? <ArtistFormBg /> : <SponsorFormBg />}
       <div className="w-full absolute top-[105px] xsm:top-[139px] sm:top-[175px] md:top-[242px] lg:top-[280px] xl:top-[310px] left-0">
-        <div className="px-16 flex flex-col items-center">
-          {SponsorFormLegend && <div className="flex flex-col text-white items-center text-center ">
-            <h3 className="text-[2rem] md:text-[2.6rem] font-semibold mb-4">{SponsorFormLegend.heading}</h3>
-            <h4 className="text-[1rem] md:text-[1.6rem]">{SponsorFormLegend.contact}</h4>
-            <h2 className="text-[1rem] md:text-[1.7rem] m-10">OR</h2>
-            <h4 className="text-[1rem] md:text-[1.5rem] xl:text-[1.7rem] font-semibold mb-4">Leave your details and we’ll contact you </h4>
-
-            </div>}
+       <div className="px-16 flex flex-col items-center">
+          {SponsorFormLegend && (
+             <div className="flex flex-col text-white items-center text-center ">
+                  <h3 className="text-[1.5rem] md:text-[1.8rem] font-semibold mb-4">{SponsorFormLegend.heading}</h3>
+                  <h4 className="text-[0.9rem] md:text-[1rem]">{SponsorFormLegend.contact}</h4>
+                  <h2 className="text-[1rem] md:text-[1.3rem] m-10">OR</h2>
+                  <h4 className="text-[0.9rem] md:text-[1.2rem] xl:text-[1.5rem] font-semibold mb-4">Leave your details and we’ll contact you </h4>
+            </div>
+            )}
           <form className="flex flex-wrap -mx-2">
             {formField.map((field) =>
               field.width === "half" ? (

@@ -7,7 +7,7 @@
     <defs>
         <filter id="filter0_i_48_388" x="-2" y="0" width="430" height="417"
             filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
             <feColorMatrix in="SourceAlpha" type="matrix"
                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
