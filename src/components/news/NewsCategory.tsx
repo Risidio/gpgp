@@ -27,8 +27,9 @@ const NewsCategory = ({ category} : NewsCategoryProps) => {
         </div>
 
         <div className="grid grid-cols-3 gap-5">
-             {new Array(3).fill(1).map(item => (
+             {new Array(3).fill(1).map((item, index) => (
                  <NewsCard
+                     key={index}
                      title={category.title}
                      href={`/news/${category.description}`}
                      imageUrl="news.png"

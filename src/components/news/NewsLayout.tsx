@@ -1,9 +1,9 @@
 import { Outlet, useParams } from 'react-router-dom'
 import Container from '../Container'
-import BackgroundWave from '../BackgroundWave'
 import { twMerge } from 'tailwind-merge';
 import NewsFooter from './NewsFooter';
 import BottomLatestNews from './BottomLatestNews';
+import NewBackgroundWave from './NewBackgroundWave';
 
 export const NewsLayout = () => {
   const params = useParams(); 
@@ -11,7 +11,7 @@ export const NewsLayout = () => {
   return (
     <>
         <div className="sm:block hidden">
-           <BackgroundWave/>
+           <NewBackgroundWave/>
         </div>
 
         <section className={twMerge("flex flex-col items-center bg-gpgp-blue text-white", classes)}>
@@ -26,7 +26,7 @@ export const NewsLayout = () => {
       
         <NewsFooter>
            {!params.categoryId 
-               ? <BackgroundWave/>
+               ? <NewBackgroundWave/>
                : <BottomLatestNews/>
               }
         </NewsFooter>

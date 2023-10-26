@@ -71,8 +71,9 @@ const NewsCategoryList = () => {
             </span>
          </div>
          <div className="grid grid-cols-3 gap-5">
-             {fakeData.map(item => (
+             {fakeData.map((item, index) => (
                  <NewsCard
+                     key={index}
                      title="The Tide of Plastic: A Growing Threat"
                      href={`/news/${params.categoryId}`}
                      imageUrl="news.png"

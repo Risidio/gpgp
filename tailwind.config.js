@@ -26,6 +26,7 @@ module.exports = {
         "project-page-mobile-wave": "url('./assets/svg/projectwavemobile.svg')",
         "project-challenge-image": "url('./assets/images/challenge.png')",
         "project-artist-web-back": "url('./assets/images/JD2.jpg')",
+        "news-page-wave": "url('./assets/svg/newswave.svg')",
       },
     },
   },
