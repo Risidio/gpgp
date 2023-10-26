@@ -1,5 +1,3 @@
-import React from "react";
-
 import ContributeHero from "../components/contribute/ContributeHero";
 import InvitationForm from "../components/contribute/Invitation/InvitationForm";
 
@@ -58,7 +56,7 @@ export default function Contact() {
         classes={{
           container: "mb-[-400px]",
           image: "opacity-40 blur-md md:z-[-2px] z-[-4px]",
-          heading: " mb-9 sm:mb-16 ",
+          heading: "mb-9 sm:mb-16",
           paragraph: "",
         }}
       />
@@ -68,7 +66,7 @@ export default function Contact() {
         WavePattern={WavePattern}
         SponsorFormLegend={SponsorFormLegend}
         Classes={{
-            container: " top-[200px] xsm:top-[190px] sm:top-[300px] md:top-[380px] lg:top-[440px] xl:top-[520px]",
+            container: "top-[200px] xsm:top-[190px] sm:top-[300px] md:top-[380px] lg:top-[440px] xl:top-[520px]",
             heading: "",
             subheading: "",
             paragraph: "",
