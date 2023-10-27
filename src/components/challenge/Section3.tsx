@@ -1,11 +1,11 @@
-import FlatLayCompotion from "../../assets/images/flat-lay-composition-different-colored-plastic-bags.jpg";
+import FlatLayComposition from "../../assets/images/flat-lay-composition-different-colored-plastic-bags.jpg";
 
 const Section3 = () => {
   return (
     <>
       <div className="">
         <div className="flex flex-col items-center justify-center md:p-[100px]">
-          <h1 className="text-[#050B1D] text-center font-be-vietnam md:text-4xl font-bold md:leading-[147.51%]">
+          <h1 className="hidden md:block text-[#050B1D] text-center font-be-vietnam md:text-4xl font-bold leading-[147.51%]">
             Heading in the right direction
           </h1>
         </div>
@@ -27,12 +27,20 @@ const Section3 = () => {
               </p>
             </div>
           </div>
-          <div className="w-full h-[200px] md:h-[602px] order-1">
+          <div className="w-full h-[200px] md:h-[602px] order-1 bg-[length:100%_100%] bg-flat-lay-composition md:bg-none md:border-y-[0px] border-gpgp-blue">
             <img
-              src={FlatLayCompotion}
-              className="w-full h-[100%] md:w-[740px] md:h-[100%]"
+              src={FlatLayComposition}
+              className="hidden md:block w-full h-[100%] md:w-[740px] md:h-[100%]"
               alt="Flat Lay Composition Different Colored"
             />
+            <div className="md:hidden w-full h-full inset-0 bg-black bg-opacity-30">
+              <div className="md:hidden w-full h-full flex flex-col justify-center items center">
+                <h1 className="text-center text-white text-[32px] uppercase font-bold leading-[32px]">
+                  Heading in <br />
+                  the right direction
+                </h1>
+              </div>
+            </div>
           </div>
         </div>
       </div>
