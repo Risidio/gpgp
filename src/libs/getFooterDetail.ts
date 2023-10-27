@@ -38,7 +38,7 @@ export const getFooterDetail = (routeToFind: string) => {
     ]
 
     for (const path of whiteFooterPaths) {
-       if(path.route == routeToFind) {
+       if(path.route === routeToFind) {
           return path;
        } 
     }
