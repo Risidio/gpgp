@@ -145,7 +145,7 @@ const NavBar = () => {
              onClick={() => resetSelectItem()}
              >
             <Logo className="w-14" />
-            <h1 className="sm:flex hidden ml-3 text-2xl tracking-widest font-semibold">
+            <h1 className="sm:flex hidden ml-3 text-2xl  tracking-widest font-semibold">
                 GPGP
             </h1>
         </Link>

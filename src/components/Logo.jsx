@@ -6,7 +6,7 @@ export default function Logo({className}) {
             <img
                  src={require("../assets/images/logo-blue.png")}
                  alt="gpgp"
-                 className="object-center py-5"
+                 className="object-center pt-3"
              />
         </div>
     )
