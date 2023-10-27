@@ -26,7 +26,7 @@ const links = [
     },
     {
       name: "Contribute",
-      href: "#",
+      href: "/contribute",
       submenu: [
         {
           name: "Take part",

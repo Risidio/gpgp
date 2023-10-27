@@ -36,6 +36,8 @@ module.exports = {
         "artist-contribute-mobile-wave": "url('./assets/svg/sponsorwavemobile.svg')",
         "sponsor-contribute-wave": "url('./assets/svg/sponsorwave.svg')",
         "sponsor-contribute-mobile-wave": "url('./assets/svg/sponsorwavemobile.svg')",
+        "flat-lay-composition": "url('./assets/images/flat-lay-composition-different-colored-plastic-bags.jpg')",
+        "trashed-plastics": "url('./assets/images/trashedPlasticObjects.jpg')",
       },
     },
   },

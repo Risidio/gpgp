@@ -18,7 +18,7 @@ const Section4 = () => {
 
           <MyLink
             to=""
-            className="mx-auto uppercase mb-[20px] md:mb-[48.62px] md:mb-[0px] px-[17px] py-[11px] bg-gpgp-blue text-white hover:text-white text-[12px] md:text-[16px] w-[110px] md:w-56 tracking-[3.3px] h-[38px] md:h-16 md:text-base leading-[147.51%]"
+            className="mx-auto uppercase mb-[20px] md:mb-[48.62px] md:mb-[0px] px-[17px] py-[11px] bg-gpgp-blue text-white hover:text-white text-[12px] md:text-[16px] w-[120px] md:w-56 tracking-[3.3px] h-[38px] md:h-16 md:text-base leading-[147.51%]"
           >
             Join Us
           </MyLink>

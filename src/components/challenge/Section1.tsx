@@ -32,10 +32,6 @@ const Section1 = () => {
             Explore
           </MyLink>
         </div>
-
-        <h1 className="hidden md:block pt-[200px] text-[#050B1D] text-center font-be-vietnam text-4xl font-bold leading-[147.51%]">
-          Who is facing the consequences of plastics?
-        </h1>
       </div>
     </>
   );

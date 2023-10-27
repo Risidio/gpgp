@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import Container from "./Container";
-import Logo from "./Logo"
+import Logo from "./Logo";
 import ContactInfo from "./footer/ContactInfo";
 import SocialMedia from "./footer/SocialMedia";
 import { twMerge } from "tailwind-merge";
@@ -62,7 +62,7 @@ const Footer = ({classes= "bg-gpgp-blue"}: FooterProps) => {
            </div>
        </Container> 
     </footer>
-  )
-}
+  );
+};
 
 export default Footer;
