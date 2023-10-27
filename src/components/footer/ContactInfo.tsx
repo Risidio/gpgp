@@ -1,6 +1,10 @@
-const ContactInfo = () => {
+interface ContactInfoProps {
+   classes?: string
+}
+
+const ContactInfo = ({classes ="white"}: ContactInfoProps) => {
   return (
-    <div className="grid grid-cols-2 gap-x-2 text-white md:mt-[30px]">
+    <div className={`grid grid-cols-2 gap-x-2 text-${classes} md:mt-[30px]`}>
       <div>
         <h4 className="font-normal">Sitemap</h4>
         <ul className="text-sm space-y-4 [&>*:first-child]:pt-5">
