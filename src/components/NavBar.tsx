@@ -30,11 +30,11 @@ const links = [
       submenu: [
         {
           name: "Take part",
-          href: "",
+          href: "/contribute",
         },
         {
           name: "Invest",
-          href: ""
+          href: "/contribute/inviteArtist"
         }
       ]
     },

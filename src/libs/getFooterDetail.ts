@@ -11,7 +11,7 @@ export const getFooterDetail = (routeToFind: string) => {
             route: "/contribute",
             style: "bg-white",
             fontColor: "black",
-            fontColorMobile: "text-white",
+            fontColorMobile: "text-black",
             hrStyle: ""
         },
         {

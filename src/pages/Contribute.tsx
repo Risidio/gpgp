@@ -29,10 +29,9 @@ export default function Contribute() {
           heading: " mb-9 sm:mb-16 ",
           paragraph: "",
         }}
-      />{" "}
-
+      />
       
-      <div className="relative  lg:min-h-[750px]  sm:min-h-[700px] ">
+      <div className="relative lg:min-h-[750px] sm:min-h-[700px] ">
         <ContributeCarousel/>
       </div>
     </div>
