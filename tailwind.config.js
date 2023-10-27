@@ -29,6 +29,7 @@ module.exports = {
         "challenge-web-wave-header": "url('./assets/svg/challengewebwaveheader.svg')",
         "blue-plastic-bag": "url('./assets/images/BluePlasticBag.jpg')",
         "flat-lay-assortment": "url('./assets/images/flat-lay-assortment-different-colored-plastic-bags.jpg')",
+        "news-page-wave": "url('./assets/images/newswave.png')",
       },
     },
   },
