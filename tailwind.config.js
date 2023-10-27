@@ -28,6 +28,7 @@ module.exports = {
         "project-artist-web-back": "url('./assets/images/JD2.jpg')",
         "challenge-web-wave-header": "url('./assets/svg/challengewebwaveheader.svg')",
         "blue-plastic-bag": "url('./assets/images/BluePlasticBag.jpg')",
+        "flat-lay-assortment": "url('./assets/images/flat-lay-assortment-different-colored-plastic-bags.jpg')",
       },
     },
   },
