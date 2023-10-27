@@ -12,6 +12,7 @@ import InvitationSponsor from "./pages/InvitationSponsor";
 import Project from "./pages/Project";
 import Gallery from "./pages/Gallery";
 import Challenge from "./pages/Challenge";
+import Contact from "./pages/Contact";
 
 const App= () => {
   return (
@@ -30,6 +31,7 @@ const App= () => {
         <Route path="/project" element={<Project/>} />
         <Route path="/gallery" element={<Gallery/>} />
         <Route path="/challenge" element={<Challenge/>} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer/>
     </Router>

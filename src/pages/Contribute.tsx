@@ -2,10 +2,7 @@
 import ContributeCarousel from "../components/contribute/ContributeCarousel";
 import ContributeHero from "../components/contribute/ContributeHero";
 
-
 export default function Contribute() {
-
-
   const HeroContent = {
     heading: "Contribute",
     // subheading: "",

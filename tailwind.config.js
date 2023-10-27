@@ -30,6 +30,8 @@ module.exports = {
         "blue-plastic-bag": "url('./assets/images/BluePlasticBag.jpg')",
         "flat-lay-assortment": "url('./assets/images/flat-lay-assortment-different-colored-plastic-bags.jpg')",
         "news-page-wave": "url('./assets/images/newswave.png')",
+        "contact-page-wave": "url('./assets/svg/contactwave.svg')",
+        "contact-page-mobile-wave": "url('./assets/svg/contactwavemobile.svg')",
       },
     },
   },

@@ -1,33 +1,30 @@
-import React from "react";
-
-export default function ContributeWave() {
+export default function ContactFormBg() {
   return (
     <>
       <svg
         width="100%"
         height="100%"
-        className="mt-[7px]"
-        viewBox="0 0 1440 1548"
+        viewBox="0 0 1439 1427"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g filter="url(#filter0_i_71_420)">
+        <g filter="url(#filter0_i_363_976)">
           <path
-            d="M1440 1548L1440 510.256C1186 695.5 1095 136 743 358.926C368.001 596.417 130.08 -0.000221397 0.000270661 -0.000244141L0.000492687 17.3926L0.000197925 1548L1440 1548Z"
+            d="M1440 1427L1440 398.349C1067.5 769.029 1136.22 82.8689 743 280.208C267.262 518.957 130.08 2.27438e-05 0.000249505 0L0.000472198 13.5784L0.000198712 1427L1440 1427Z"
             fill="#0A2471"
           />
         </g>
         <defs>
           <filter
-            id="filter0_i_71_420"
-            x="0.000244141"
+            id="filter0_i_363_976"
+            x="0"
             y="0"
             width="1440"
-            height="1552"
+            height="1431"
             filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB"
           >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -50,12 +47,12 @@ export default function ContributeWave() {
             <feBlend
               mode="normal"
               in2="shape"
-              result="effect1_innerShadow_71_420"
+              result="effect1_innerShadow_363_976"
             />
           </filter>
         </defs>
       </svg>
-      <div className=" mt-[-4px] sm:min-h-[530px] xl:min-h-[369px] min-h-[589px]  bg-gpgp-blue "></div>
+      <div className=" mt-[-7px] min-h-[1270px]  xsm:min-h-[970px]  sm:min-h-[730px] md:min-h-[649px] lg:min-h-[376px]  xl:min-h-[209px]   bg-gpgp-blue "></div>
     </>
   );
 }
