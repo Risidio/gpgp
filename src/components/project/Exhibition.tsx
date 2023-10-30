@@ -9,36 +9,41 @@ const Exhibition = () => {
           Exhibition
         </h1>
         <div className="w-[100%] grid md:grid-cols-2 mt-[15px] md:mt-[70px] md:border-y-[1px] md:border-black">
-          <div className="w-[100%] order-2 md:order-1 md:pt-[60px] md:py-[60px] px-[40px] md:px-[80px] flex flex-col gap-y-6">
-          <div className="hidden md:block w-[260px] h-[100px] bg-gpgp-blue rotate-90 absolute left-[-160px] mt-[100px] rounded-[40px]"></div>
-
-            <p className="md:text-[black] text-center md:text-left text-[12px] md:text-[16px]">
+          <div className="w-[100%] order-2 md:order-1 mt-[23px] md:mt-[0px] md:pt-[60px] md:py-[60px] px-[40px] md:px-[80px] flex flex-col gap-y-6">
+            <div className="hidden md:block w-[260px] h-[20px] bg-gpgp-blue rotate-90 absolute left-[-120px] mt-[130px] rounded-tl-[40px] rounded-tr-[40px]"></div>
+            <p className="md:text-[black] text-center md:text-left text-[15px] leading-[30px] md:leading-[32px] md:text-[16px]">
               <b>The GPGP exhibition</b> comprises 2,450 physical art pieces,
               thoughtfully organised to replicate the satellite depiction of the
-              Great Pacific Garbage Patch. <span className="hidden md:block">Within this presentation, 888 of
-              these physical art pieces, referred to as 'tiles,' collectively
-              constitute the central element of the Garbage Patch's satellite
-              representation.</span>
+              Great Pacific Garbage Patch.{" "}
+              <span className="hidden md:block">
+                Within this presentation, 888 of these physical art pieces,
+                referred to as 'tiles,' collectively constitute the central
+                element of the Garbage Patch's satellite representation.
+              </span>
             </p>
-            <p className="text-center block md:hidden text-[12px] md:text-[16px]">
+            <p className="text-center block md:hidden text-[15px] leading-[30px] md:leading-[32px] md:text-[16px]">
               Within this presentation, 888 of these physical art pieces,
               referred to as 'tiles,' collectively constitute the central
               element of the Garbage Patch's satellite representation.
             </p>
-            <p className="hidden md:block text-justified">
+            <p className="hidden md:block text-center md:text-left leading-[32px]">
               Each tile embodies a unique artistic expression, serving as a
               poignant and evocative symbol of the expansive scope and critical
               implications associated with plastic pollution.
             </p>
             <MyLink
               to=""
-              className="uppercase mb-[48.62px] md:mb-[0px] bg-gpgp-blue px-[17px] py-[11px] md:bg-white text-white text-[12px] md:text-[16px] md:text-gpgp-blue md:w-56 tracking-[3.3px] md:h-16 md:tracking-[.35em] text-base mx-auto md:mx-0"
+              className="uppercase mb-[48.62px] md:mb-[0px] bg-gpgp-blue px-[17px] py-[11px] md:bg-white text-white text-[12px] md:text-[16px] md:text-gpgp-blue md:w-56 tracking-[3.3px] md:tracking-[.35em] text-base mx-auto md:mx-0"
             >
               Explore
             </MyLink>
           </div>
-          <div className="h-[200px] w-[250px] md:w-[100%] mx-auto md:mx-0 md:h-[100%] order-1 md:order-2 mb-[15px] md:mb-0">
-            <img className="w-[100%] max-h-[100%]" alt="Exhibition" src={Rectange251}/>
+          <div className="h-[200px] md:w-[100%] mx-auto md:mx-0 md:h-[100%] order-1 md:order-2 mb-[15px] md:mb-[0px]">
+            <img
+              className="w-[100%] max-h-[100%]"
+              alt="Exhibition"
+              src={Rectange251}
+            />
           </div>
         </div>
       </div>

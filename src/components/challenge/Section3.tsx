@@ -10,7 +10,7 @@ const Section3 = () => {
           </h1>
         </div>
         <div className="grid md:grid-cols-2 md:border-y-[1px] md:border-gpgp-blue">
-          <div className="order-2">
+          <div className="order-2 md:order-1">
             <div className="flex flex-col items-center gap-y-[20px] mt-[35px] mx-[23px] md:mt-[80px] justify-center md:ml-[64px] md:mr-[87px]">
               <p className="text-center md:text-left text-[#050B1D] font-be-vietnam text-[15px] md:text-base leading-[200%] tracking-[-0.32px]">
                 The progress achieved in addressing the issue of plastic
@@ -27,7 +27,7 @@ const Section3 = () => {
               </p>
             </div>
           </div>
-          <div className="w-full h-[200px] md:h-[602px] order-1 bg-[length:100%_100%] bg-flat-lay-composition md:bg-none md:border-y-[0px] border-gpgp-blue">
+          <div className="w-full h-[200px] md:h-[602px] order-1 md:order-2 bg-[length:100%_100%] bg-flat-lay-composition md:bg-none md:border-y-[0px] border-gpgp-blue">
             <img
               src={FlatLayComposition}
               className="hidden md:block w-full h-[100%] md:w-[740px] md:h-[100%]"
