@@ -20,6 +20,7 @@ export default function InvitationForm({
   formField,
   WavePattern,
   SponsorFormLegend,
+  Classes
 }: {
   formField: FormField[];
   WavePattern: string;
