@@ -10,8 +10,7 @@ const JoinUs = () => {
         </h1>
         <div className="w-[100%] grid md:grid-cols-2 mt-[15px] md:mt-[70px] md:border-y-[1px] md:border-black">
           <div className="w-[100%] order-2 md:order-1 md:py-[60px] px-[40px] md:px-[80px] flex flex-col gap-y-6">
-          <div className="hidden md:block w-[260px] h-[100px] bg-gpgp-blue rotate-90 absolute left-[-160px] mt-[100px] rounded-[40px]"></div>
-
+            <div className="hidden md:block w-[260px] h-[20px] bg-gpgp-blue rotate-90 absolute left-[-120px] mt-[130px] rounded-tl-[40px] rounded-tr-[40px]"></div>
             <p className="hidden md:block text-justified">
               <b>The Great Pacific Garbage Patch</b> presents a distinctive
               platform for the expression of artistic endeavours, serving as a
@@ -29,9 +28,14 @@ const JoinUs = () => {
               Join us and contribute to the global effort!
             </p>
 
-            <p className="text-center md:text-left text-[12px] md:text-[16px] block md:hidden">
+            <p className="text-center md:text-left text-[15px] md:text-[16px] leading-[30px] md:leading-[32px] block md:hidden">
               The Great Pacific Garbage Patch offers a unique opportunity to
               channel your artistic talents towards a project.
+            </p>
+
+            <p className="block md:hidden font-bold text-center md:text-left text-[15px] md:text-[16px] leading-[30px] md:leading-[32px] block md:hidden">
+              Artists of all form - painters, sculptors, photographers are
+              invited to submit their works for consideration.
             </p>
 
             <div className="flex flex-row gap-[16px] md:gap-[38px] md:justify-start justify-center">
@@ -48,11 +52,9 @@ const JoinUs = () => {
                 Invest
               </MyLink>
             </div>
-
-            
           </div>
-          <div className="h-[200px] w-[250px] md:w-[100%] mx-auto md:mx-0 md:h-[100%] order-1 md:order-2 mb-[30px] md:mb-0">
-            <img className="w-[100%] h-[100%]" src={SeaSeal} alt="Sea Seal"/>
+          <div className="h-[200px] md:w-[100%] mx-auto md:mx-0 md:h-[100%] order-1 md:order-2 mb-[30px] md:mb-0">
+            <img className="w-[100%] h-[100%]" src={SeaSeal} alt="Sea Seal" />
           </div>
         </div>
       </div>
