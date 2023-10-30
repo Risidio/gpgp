@@ -2,10 +2,7 @@
 import ContributeCarousel from "../components/contribute/ContributeCarousel";
 import ContributeHero from "../components/contribute/ContributeHero";
 
-
 export default function Contribute() {
-
-
   const HeroContent = {
     heading: "Contribute",
     // subheading: "",
@@ -32,10 +29,9 @@ export default function Contribute() {
           heading: " mb-9 sm:mb-16 ",
           paragraph: "",
         }}
-      />{" "}
-
+      />
       
-      <div className="relative  lg:min-h-[750px]  sm:min-h-[700px] ">
+      <div className="relative lg:min-h-[750px] sm:min-h-[700px] ">
         <ContributeCarousel/>
       </div>
     </div>

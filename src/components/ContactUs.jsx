@@ -4,7 +4,7 @@ import { TextArea } from './base/Textarea';
 
 const ContactUs = () => {
   return (
-    <div className="flex justify-center flex-col mt-10 py-5 lg:w-[80%] sm:w-[600px] w-full text-white sm:p-0 px-10">
+    <div className="sm:flex hidden justify-center flex-col mt-10 py-5 lg:w-[80%] sm:w-[600px] w-full text-white sm:p-0 px-10">
          <h4 className="text-center font-normal tracking-[1px] uppercase">
              Contact us
          </h4>

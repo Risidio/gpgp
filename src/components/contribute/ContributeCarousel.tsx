@@ -61,11 +61,8 @@ const ContributeCarousel = () => {
     };
     
     return (
-        <div className="relative  min-h-[906px]  xxsm:min-h-[850px]  xsm:min-h-[940px] sm:min-h-[1192px] md:min-h-[1360px] lg:min-h-[1652px] xl:min-h-[1700px] overflow-hidden">
+      <div className="relative  min-h-[906px]  xxsm:min-h-[850px]  xsm:min-h-[940px] sm:min-h-[1192px] md:min-h-[1360px] lg:min-h-[1652px] xl:min-h-[1700px] overflow-hidden">
       <div className="w-full h-full relative">
-
-
-
         {/* Aritist Section */}
         {/* This Section gets content from Invitation array on [0] */}
         <div

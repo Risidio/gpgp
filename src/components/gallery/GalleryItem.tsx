@@ -14,11 +14,11 @@ export const GalleryItem: React.FC<GalleryItemProps> = ({
           <Link to={imageUrl}>
             <img
                   src={imageUrl}
-                  className="w-full"
+                  className="w-full rounded-md shadow-sm"
                   alt={title}
               />
               <div className="font-normal text-base py-5 text-center text-gpgp-darkblue">
-                {title}
+                 {title}
               </div>
            </Link>
   )

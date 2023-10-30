@@ -32,6 +32,13 @@ const Home = () => {
                <Artist/>
            </Container>
 
+           <div className="sm:hidden block">
+              <div className="font-semibold text-base text-center pt-20 uppercase">
+                  <p>contribute to the global effort</p>
+                  <p className="py-3">Create a better world</p>
+              </div>
+           </div>
+
            <div className="sm:pt-0 pt-20">
                <BackgroundWave/>
            </div>

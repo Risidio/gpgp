@@ -2,7 +2,7 @@ import MyLink from '../base/MyLink'
 
 const Artist = ({...props}) => {
   return (
-    <div  className="flex flex-col justify-center items-center py-10 px-5 w-full sm:w-[500px] sm:bg-white bg-gpgp-blue sm:text-black text-white">
+    <div className="flex flex-col justify-center items-center py-10 px-5 w-full sm:w-[500px] sm:mx-auto sm:bg-white bg-gpgp-blue sm:text-black text-white">
         <div className="bg-artist-back bg-no-repeat w-[300px] h-[300px] bg-[length:300px_300px] rounded-full p-12">
             <div className="bg-white rounded-full w-full p-3">
                     <img
@@ -13,12 +13,12 @@ const Artist = ({...props}) => {
               </div>
         </div>
 
-         <h1 className="text-xl font-semibold py-3 uppercase">
-        John Dahlsen
+         <h1 className="text-xl font-semibold  uppercase">
+           John Dahlsen
          </h1>
        
          <span className="text-base tracking-[1px] font-semibold py-1 uppercase">
-        The Artist
+            The Artist
          </span>
 
         <p className="mt-9 text-center leading-8 sm:text-base text-sm font-medium whitespace-pre-line">

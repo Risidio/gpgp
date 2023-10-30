@@ -1,61 +1,66 @@
-import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Container from "./Container";
 import Logo from "./Logo";
 import ContactInfo from "./footer/ContactInfo";
 import SocialMedia from "./footer/SocialMedia";
+import { twMerge } from "tailwind-merge";
+import { getFooterDetail } from "../libs/getFooterDetail";
 
-const Footer = () => {
+interface FooterProps{
+   classes?: string
+}
+
+const Footer = ({classes= "bg-gpgp-blue"}: FooterProps) => {
+  const footerStyles = getFooterDetail(useLocation().pathname) || null
+  const fontColor = (footerStyles && footerStyles.fontColor) ? footerStyles.fontColor : "white";
+  const fontColorMobile = (footerStyles && footerStyles.fontColorMobile) ? footerStyles.fontColorMobile : "white";
+
   return (
-    <footer className="bg-gpgp-blue">
-      <Container hasSection={false} classes="bg-gpgp-blue flex flex-col">
-        <div className="lg:w-full md:w-[75%] sm:w-[90%] w-full mx-auto">
-          <hr className="h-px my-8 border-0 bg-white" />
-        </div>
+    <footer className={footerStyles ? footerStyles!.style : classes}>
+       <Container hasSection={false} classes={twMerge("bg-gpgp-blue flex flex-col", `${footerStyles ? footerStyles!.style : ""}`)}>
+            <div className="lg:w-full md:w-[75%] sm:w-[90%] w-full mx-auto">
+               <hr className={twMerge("h-px my-8 border-0 bg-white",`${footerStyles ? footerStyles!.hrStyle : ""}`)}/>
+            </div>
+            {/* Desktop-view */}
+            <div className="w-full sm:flex sm:flex-col hidden">
+                <div className="w-full grid grid-cols-3 justify-between p-5">
+                    <Logo className="flex justify-start items-start w-20 h-20"/> 
+                    <SocialMedia color={`${fontColor ? fontColor: "bg-gpgp-blue"}`} />
+                    <ContactInfo classes={fontColor} />
+                </div>
 
-        {/* Desktop-view */}
-        <div className="w-full sm:flex sm:flex-col hidden">
-          <div className="w-full grid grid-cols-3 justify-between p-5">
-            <Logo className="flex justify-start items-start w-20 h-20" />
-            <SocialMedia />
-            <ContactInfo />
-          </div>
-
-          <div className="w-full grid grid-cols-3 justify-between text-white pt-10 pb-3">
-            <div className="text-right font-thin col-span-2 px-5 text-[0.9rem]">
-              2023 JohnDahlsen & Infinart All Rights Reserved - Designed by
-              Risidio
+                <div className={`w-full grid grid-cols-3 justify-between text-${fontColor} pt-10 pb-3`}>
+                    <div className="text-right font-thin col-span-2 px-5 text-[0.9rem]">
+                        2023 JohnDahlsen & Infinart All Rights Reserved - Designed by Risidio
+                    </div>
+                  
+                    <div className={`grid grid-cols-2 gap-x-2 text-${fontColor} font-thin text-[0.9rem]`}>
+                        <p>Privacy Policy</p>
+                        <p>Terms of Service</p>
+                    </div>
+                  </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-x-2 text-white font-thin text-[0.9rem]">
-              <p>Privacy Policy</p>
-              <p>Terms of Service</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Mobile-view */}
-        <div className="w-full sm:hidden flex flex-col items-center px-5">
-          <div className="w-full grid grid-cols-2 justify-between items-start text-white">
-            <SocialMedia />
-            <div className="flex flex-col items-end">
-              <ul className="text-sm space-y-4 text-right">
-                <Link className="block" to="">Sitemap</Link>
-                <Link className="block" to="project">Project</Link>
-                <Link className="block" to="challenge">Challenge</Link>
-                <Link className="block" to="contribute">Contribute</Link>
-                <Link className="block" to="news">News</Link>
-                <Link className="block" to="contacts">Contacts</Link>
-              </ul>
-              <Logo className="flex items-start w-16 h-16" />
-            </div>
-          </div>
-
-          <div className="w-full text-center text-white font-thin py-5 text-[0.9rem]">
-            2023 JohnDahlsen & Infinart All Rights Reserved - Designed by
-            Risidio
-          </div>
-        </div>
-      </Container>
+           {/* Mobile-view */}
+            <div className="w-full sm:hidden flex flex-col items-center px-5">
+               <div className={twMerge("w-full grid grid-cols-2 justify-between items-start text-white", fontColorMobile)}>
+                  <SocialMedia color={fontColorMobile} />
+                  <div className="flex flex-col items-end">
+                      <ul className="text-sm space-y-4 text-right">
+                        <li>Sitemap</li>
+                        <li>Project</li>
+                        <li>Contribute</li>
+                        <li>News</li>
+                        <li>Contacts</li>
+                      </ul>
+                      <Logo className="flex items-start w-16 h-16" logo={fontColor ? "logo-blue.png": "logo-white.png"}/> 
+                  </div>
+              </div>
+              <div className={twMerge("w-full text-center text-white font-thin py-5 text-[0.9rem]",`${fontColor && "sm:text-white text-black"}`)}>
+                   2023 JohnDahlsen & Infinart All Rights Reserved - Designed by Risidio
+              </div>
+           </div>
+       </Container> 
     </footer>
   );
 };

@@ -16,13 +16,14 @@ const BottomLatestNews = () => {
                      Latest News
                   </h2>
                   <div className="grid grid-cols-3 gap-10">
-                     {fakeData.map(item => (
-                           <NewsCard
-                                 title="The Tide of Plastic: A Growing Threat"
-                                 href={`/news/${item.id}`}
-                                 imageUrl="news/latest-news.png"
-                                 classes="text-white"
-                              />
+                     {fakeData.map((item, index) => (
+                        <NewsCard
+                              key={index}
+                              title="The Tide of Plastic: A Growing Threat"
+                              href={`/news/${item.id}`}
+                              imageUrl="news/latest-news.png"
+                              classes="text-white"
+                           />
                      ))}
                   </div>
              </div>
