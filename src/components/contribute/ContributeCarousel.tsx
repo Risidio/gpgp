@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import MyLink from "../base/MyLink";
 import ContributeWave from "./ContributeWave";
 import SponsorWave from "./SponsorWave";
-import invitationImage from "../../assets/images/invitationTile.png";
+import CarouselImg from "../../assets/images/CarouselImg.png";
 import InvitationCarouselDotActive from "../../assets/images/InvitationCarouselDotActive.png";
 import InvitationCarouselDot from "../../assets/images/InvitationCarouselDot.png";
 
@@ -15,7 +15,7 @@ const ContributeCarousel = () => {
         head: `Calling All Artists Submit Your Work`,
         body: `Are you an artist passionate about environmental conservation and sustainable living? We invite you to submit your artwork, whether it's paintings, sculptures, photographs, or any other medium, to be featured in our awareness campaigns and fundraising initiatives. Your creativity can help us inspire change and bring attention to this critical cause.`,
       },
-      Img: invitationImage,
+      Img: CarouselImg,
       Btn: {
         heading: "Submit Your Work",
         link: "/contribute/inviteArtist",
@@ -28,7 +28,7 @@ const ContributeCarousel = () => {
         head: `Do you believe in the power of art and innovation to drive environmental change?`,
         body: `If you're an investor who wants to support a project with a significant ecological and social impact, we encourage you to apply to become a vital partner in the GPGP Art Project. Your investment will help us clean up and prevent further pollution in the Great Pacific Garbage Patch. Join us in fostering a cleaner, healthier ocean ecosystem and a more sustainable future.`,
       },
-      Img: invitationImage,
+      Img: CarouselImg,
       Btn: {
         heading: "Become a Sponsor",
         link: "/contribute/inviteSponsor",
@@ -73,12 +73,16 @@ const ContributeCarousel = () => {
           <div className="absolute top-[120px]  xxsm:top-[150px] xsm:top-[240px] sm:top-[370px] md:top-[440px] lg:top-[580px]  xl:top-[690px] left-0  text-white min-h-150px w-full p-5 ">
             <div className="flex flex-col items-center">
               <h1 className="text-[1.5rem] mb-0 xl:text-[2.3rem] xl:mb-9 lg:text-[2rem] lg:mb-8 md:text-[1.7rem] uppercase text-white font-be-vietnam text-center tracking-wide">
-                {Invitation[0].heading}
+                {Invitation[0]?.heading}
               </h1>
 
-              <img src={Invitation[0].Img} alt="gpgpTile" className="p-7" />
+              <img
+                src={Invitation[0]?.Img}
+                alt="gpgpTile"
+                className="p-7 object-contain"
+              />
 
-              <div className="flex flex-row">
+              <div className="flex mt-3 flex-row">
                 <button
                   onClick={() => {
                     handleWaveChange();
@@ -110,15 +114,15 @@ const ContributeCarousel = () => {
                   {Invitation[0].description?.head}
                 </h3>
 
-                <p className="text-center leading-5 text-[0.8rem] md:text-[1rem] w-[90%] xl:w-[70%] lg:w-[75%] md:w-[82%] sm:w-[86%] mt-5 md:mt-12">
-                  {Invitation[0].description.body}
+                <p className="text-center text-[0.8rem] md:text-[1rem] md:mb-4  md:leading-6 w-[90%] xl:w-[70%] xl:leading-7 lg:w-[75%] md:w-[82%] sm:w-[86%] mt-5 md:mt-12">
+                  {Invitation[0].description?.body}
                 </p>
 
                 <MyLink
-                  to={Invitation[0].Btn.link}
-                  className={`flex items-center text-gpgp-blue mt-4 w-[170px] xsm:w-[300px] h-[50px] text-[0.8rem] xsm:text-[1.3rem] py-2 bg-white uppercase xsm:mt-16`}
+                  to={Invitation[0].Btn?.link}
+                  className={`flex items-center text-gpgp-blue mt-4 sm:mt-7 w-[170px] xsm:w-[300px] h-[50px] text-[0.8rem] xsm:text-[1.3rem] py-2 bg-white uppercase xsm:mt-16`}
                 >
-                  {Invitation[0].Btn.heading}
+                  {Invitation[0].Btn?.heading}
                 </MyLink>
               </div>
             </div>
@@ -140,12 +144,16 @@ const ContributeCarousel = () => {
           <div className="absolute top-[120px]  xxsm:top-[150px] xsm:top-[240px] sm:top-[370px] md:top-[400px] lg:top-[540px]  xl:top-[650px] left-0  text-white min-h-150px w-full p-5 ">
             <div className="flex flex-col items-center">
               <h1 className="text-[1.5rem] mb-0 xl:text-[2.3rem] xl:mb-9 lg:text-[2rem] lg:mb-8 md:text-[1.7rem] text-white font-be-vietnam text-center tracking-wide">
-                {Invitation[1].heading}
+                {Invitation[1]?.heading}
               </h1>
 
-              <img src={Invitation[1].Img} alt="gpgpTile" className="p-7" />
+              <img
+                src={Invitation[1]?.Img}
+                alt="gpgpTile"
+                className="p-7 object-contain relative"
+              />
 
-              <div className="flex flex-row">
+              <div className="flex mt-2 flex-row">
                 <button
                   onClick={() => {
                     handleWaveChange();
@@ -173,18 +181,18 @@ const ContributeCarousel = () => {
 
               <div className="text-center flex flex-col items-center mt-4 xl:mt-12 lg:mt-10 md:mt-8 sm:mt-6 text-white w-[95%] xl:w-[50%] lg:w-[69%] md:w-[75%]">
                 <h3 className="text-[1.1rem] sm:text-[1.3rem] lg:text-[1.5rem] font-semibold mb-2">
-                  {Invitation[1].description.head}
+                  {Invitation[1].description?.head}
                 </h3>
 
-                <p className="text-center leading-5 text-[0.8rem] md:text-[1rem] w-[90%] xl:w-[70%] lg:w-[75%] md:w-[82%] sm:w-[86%] mt-5 md:mt-12">
+                <p className="text-center  text-[0.8rem] md:text-[1rem] md:mb-4  md:leading-6  w-[90%] xl:w-[70%] xl:leading-7 lg:w-[75%] md:w-[82%] sm:w-[86%] mt-5 md:mt-12">
                   {Invitation[1].description?.body}
                 </p>
 
                 <MyLink
-                  to={Invitation[1].Btn.link}
-                  className={`flex items-center text-gpgp-blue mt-4 w-[170px] xsm:w-[300px] h-[50px] text-[0.8rem] xsm:text-[1.3rem] py-2 bg-white uppercase xsm:mt-16`}
+                  to={Invitation[1].Btn?.link}
+                  className={`flex items-center text-gpgp-blue mt-4 sm:mt-7 w-[170px] xsm:w-[300px] h-[50px] text-[0.8rem] xsm:text-[1.3rem] py-2 bg-white uppercase xsm:mt-16`}
                 >
-                  {Invitation[1].Btn.heading}
+                  {Invitation[1].Btn?.heading}
                 </MyLink>
               </div>
             </div>

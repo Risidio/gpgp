@@ -25,13 +25,13 @@ export default function Contribute() {
         HeroContent={HeroContent}
         classes={{
           container: "",
-          image: "opacity-40 md:z-[-2px] z-[-4px]",
-          heading: " mb-9 sm:mb-16 ",
-          paragraph: "",
+          image: "opacity-40 md:z-[-2px] z-[-4px] hidden",
+          heading: " sm:text-[2.2rem] mb-9 sm:mb-16 ",
+          paragraph: "leading-6",
         }}
       />
       
-      <div className="relative lg:min-h-[750px] sm:min-h-[700px] ">
+      <div className="relative mt-14 xxsm:mt-0 lg:min-h-[750px] sm:min-h-[700px] ">
         <ContributeCarousel/>
       </div>
     </div>
