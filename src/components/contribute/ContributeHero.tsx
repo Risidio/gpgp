@@ -44,7 +44,7 @@ export default function ContributeHero({
 
         {HeroContent && HeroContent?.HeroLegend?.map((item, index) => (
           <p
-            className={` text-[0.8rem] w-[150%] sm:text-[1.2rem] xsm:w-[120%] sm:w-[75%] font-be-vietnam mb-3 tracking-normal sm:tracking-wide z-8 md:z-10 opacity-100 ${paragraph}`}
+            className={` text-[0.8rem]  w-[140%] sm:text-[1.2rem] xsm:w-[120%] sm:w-[96%] font-be-vietnam mb-3 tracking-normal sm:tracking-wide z-8 md:z-10 opacity-100 ${paragraph}`}
             key={index}
           >
             {item}
