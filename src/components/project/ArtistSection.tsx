@@ -5,7 +5,7 @@ const ArtistSection = () => {
   return (
     <>
       <div className="w-full hidden xl:block bg-gpgp-blue xl:bg-[white]">
-        <h1 className="uppercase text-center pt-[40px] md:pt-[0px] font-[600] lg:font-[600] md:font-[600] lg:text-[40px] lg:leading-[48px] lg:mt-[100.5px]">
+        <h1 className="uppercase text-center md:pt-[0px] font-[600] lg:font-[600] md:font-[600] lg:text-[40px] lg:leading-[48px] lg:mt-[64px]">
           The Artist
         </h1>
         <div className="w-[100%] md:h-[481px] grid md:grid-cols-2 mt-[15px] md:mt-[90px] md:border-y-[1px] md:border-black">
