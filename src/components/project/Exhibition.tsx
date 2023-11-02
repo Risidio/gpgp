@@ -45,7 +45,7 @@ const Exhibition = () => {
               src={Rectange251}
             />
           </div> */}
-          <div className="h-[200px] w-[315px] mx-auto md:mx-0 md:w-[100%] md:h-[100%] order-1 md:order-2 mb-[30px] md:mb-0">
+          <div className="w-full h-[200px] w-[315px] mx-auto md:mx-0 md:w-[100%] md:h-[100%] order-1 md:order-2 mb-[30px] md:mb-0">
             <img
               className="w-[100%] h-[100%]"
               src={Rectange251}

@@ -4,7 +4,7 @@ import MyLink from "../base/MyLink";
 const About = () => {
   return (
     <>
-      <div className="bg-h-[100%] bg-w-[100%] bg-project-page-mobile-wave lg:bg-project-page-wave bg-no-repeat bg-cover md:pb-[50px] xl:pb-[80px] xxxl:pb-[80px]">
+      <div className="w-full bg-h-[100%] bg-w-[100%] bg-project-page-mobile-wave lg:bg-project-page-wave bg-no-repeat bg-cover md:pb-[50px] xl:pb-[80px] xxxl:pb-[80px]">
         <div className="flex flex-col text-white pt-[125px] md:pt-[200px] lg:pt-[300px] xl:pt-[360px] xxl:pt-[350px] xxxl:pt-[600px] xxxxl:pt-[600px]">
           <h1 className="text-center mt-[25px] sm:mt-[50px] md:mt-[40px] lg:mt-[60px] xl:mt-[20px] xxl:mt-[100px] xxxl:mt-[93.38px] text-[16px] uppercase md:text-[40px] xxxl:text-[64px] font-[600] leading-[23.38px] md:leading-[48px]">
             About the Project

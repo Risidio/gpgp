@@ -3,7 +3,7 @@ import SaveOceanCampaignImage from "../../assets/images/save-ocean-campaign-plas
 const Attention = () => {
   return (
     <>
-      <div className="bg-gpgp-blue md:bg-[white]">
+      <div className="w-full bg-gpgp-blue md:bg-[white]">
         <h1 className="text-center text-[white] pt-[30px] uppercase md:text-[black] md:mt-[64px] md:pt-[0px] font-[600] font-[600] md:text-[40px] md:leading-[48px]">
           Why does it need attention?
         </h1>
