@@ -59,7 +59,7 @@ export default function InvitationSponsor() {
         HeroContent={HeroContent}
         classes={{
           container: "mb-12",
-          image: "opacity-50 z-[-14px]",
+          image: "opacity-50 z-[-14px] visible sm:hidden",
           heading: "mb-7 sm:mb-10",
           subheading: "font-be-vietnam ",
           paragraph: "",
