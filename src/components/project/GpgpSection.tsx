@@ -5,7 +5,7 @@ const GpgpSection = () => {
   return (
     <>
       <div className="w-[100%] h-[100%]">
-        <h1 className="text-center text-[16px] pt-[30px] leading-[48px] uppercase font-[600] md:font-[600] md:text-[40px] md:leading-[48px] md:mt-[100.5px]">
+        <h1 className="text-center text-[16px] md:mt-[64px] leading-[48px] uppercase font-[600] md:font-[600] md:text-[40px] md:leading-[48px]">
           What is GPGP?
         </h1>
         <div className="w-[100%] grid md:grid-cols-2 mt-[15px] md:mt-[70px] md:border-y-[1px] md:border-black">
@@ -32,7 +32,7 @@ const GpgpSection = () => {
               Learn more
             </MyLink>
           </div>
-          <div className="h-[200px] md:w-[100%] mx-auto md:mx-0 md:h-[100%] order-1 md:order-2 mb-[30px] md:mb-0">
+          <div className="h-[200px] w-[315px] mx-auto md:mx-0 md:w-[100%] md:h-[100%] order-1 md:order-2 mb-[30px] md:mb-0">
             <img
               className="w-[100%] h-[100%]"
               src={challengeImage}
