@@ -59,7 +59,7 @@ const ContributeCarousel = () => {
   };
 
   return (
-    <div className="relative  min-h-[906px]  xxsm:min-h-[850px]  xsm:min-h-[940px] sm:min-h-[1192px] md:min-h-[1360px] lg:min-h-[1652px] xl:min-h-[1700px] overflow-hidden">
+    <div className="relative  min-h-[906px]  xxsm:min-h-[850px]  xsm:min-h-[940px] sm:min-h-[1192px] md:min-h-[1360px] lg:min-h-[1652px] xl:min-h-[1780px] overflow-hidden">
       <div className="w-full h-full relative">
         {/* Aritist Section */}
         {/* This Section gets content from Invitation array on [0] */}
@@ -70,7 +70,7 @@ const ContributeCarousel = () => {
         >
           <ContributeWave />
 
-          <div className="absolute top-[120px]  xxsm:top-[150px] xsm:top-[240px] sm:top-[370px] md:top-[440px] lg:top-[580px]  xl:top-[690px] left-0  text-white min-h-150px w-full p-5 ">
+          <div className="absolute top-[120px]  xxsm:top-[150px] xsm:top-[240px] sm:top-[370px] md:top-[440px] lg:top-[580px]  xl:top-[680px] left-0  text-white min-h-150px xl:p-[65px] w-full p-5 ">
             <div className="flex flex-col items-center">
               <h1 className="text-[1.5rem] mb-0 xl:text-[2.3rem] xl:mb-9 lg:text-[2rem] lg:mb-8 md:text-[1.7rem] uppercase text-white font-be-vietnam text-center tracking-wide">
                 {Invitation[0]?.heading}

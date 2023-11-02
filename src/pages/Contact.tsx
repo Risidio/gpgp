@@ -54,8 +54,8 @@ export default function Contact() {
       <ContributeHero
         HeroContent={HeroContent}
         classes={{
-          container: "mb-[-450px]",
-          image: "opacity-40 blur-md md:z-[-2px] z-[-4px]",
+          container: "mb:[-150px] md:mb-[-450px]",
+          image: "hidden opacity-40 blur-md md:z-[-2px] z-[-4px]",
           heading: "mb-9 sm:mb-16",
           paragraph: "",
         }}

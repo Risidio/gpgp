@@ -86,7 +86,7 @@ const InvitationArtist = () => {
         HeroContent={HeroContent}
         classes={{
           container: "mb-12",
-          image: "opacity-50 z-[-14px] visible sm:hidden",
+          image: "opacity-50 z-[-14px] hidden",
           heading: "mb-7 sm:mb-10",
           subheading: "font-be-vietnam ",
           paragraph: "",
