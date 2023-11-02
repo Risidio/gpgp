@@ -1,11 +1,11 @@
-<svg width="428" height="413" viewBox="0 0 428 413" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="428" height="640" viewBox="0 0 428 553" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-[100%]">
     <g filter="url(#filter0_i_48_388)">
         <path
-            d="M428 413L428 59.5998C316.767 115.06 337.289 12.3985 219.868 41.9238C77.8073 77.6448 36.8433 -5.42436e-05 -1.99993 -6.10352e-05L-1.99986 2.03146L-1.99982 413L428 413Z"
+            d="M426.5 553L428 59.5998C316.767 115.06 337.289 12.3984 219.868 41.9238C77.8073 77.6448 36.8433 -0.000115279 -1.9999 -0.00012207L-1.99984 2.03143L-1.99986 553L426.5 553Z"
             fill="#0A2471" />
     </g>
     <defs>
-        <filter id="filter0_i_48_388" x="-2" y="0" width="430" height="417"
+        <filter id="filter0_i_48_388" x="-2" y="0" width="430" height="557"
             filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />

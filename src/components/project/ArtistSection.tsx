@@ -4,8 +4,8 @@ import Artist from "../home/Artist";
 const ArtistSection = () => {
   return (
     <>
-      <div className="hidden md:block bg-gpgp-blue md:bg-[white]">
-        <h1 className="text-center pt-[40px] md:pt-[0px] font-[600] lg:font-[600] md:font-[600] lg:text-[40px] lg:leading-[48px] lg:mt-[100.5px]">
+      <div className="hidden lg:block bg-gpgp-blue lg:bg-[white]">
+        <h1 className="uppercase text-center pt-[40px] md:pt-[0px] font-[600] lg:font-[600] md:font-[600] lg:text-[40px] lg:leading-[48px] lg:mt-[100.5px]">
           The Artist
         </h1>
         <div className="w-[100%] md:h-[481px] grid md:grid-cols-2 mt-[15px] md:mt-[90px] md:border-y-[1px] md:border-black">
@@ -55,7 +55,7 @@ const ArtistSection = () => {
           </div>
         </div>
       </div>
-      <div className="block md:hidden">
+      <div className="block lg:hidden">
         <Artist />
       </div>
     </>
