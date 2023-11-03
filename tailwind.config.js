@@ -5,6 +5,9 @@ module.exports = {
     "./public/index.html", // Add the HTML file where classes might be used
   ],
   theme: {
+    fontFamily: {
+      BeVietnam: ['"Be Vietnam"', "sans-serif"],
+    },
     extend: {
       screens: {
         xxsm: "240px",

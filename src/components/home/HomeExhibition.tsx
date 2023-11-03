@@ -1,4 +1,4 @@
-import guyAtExhibition from "../../assets/images/exhibition-visitor.png"
+import guyAtExhibition from "../../assets/images/Rectangle251.jpg"
 
 interface HomeExhibitionProps {
    classes?: string;
