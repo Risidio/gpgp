@@ -34,9 +34,9 @@ export default function InvitationForm({
     BackPattern = SponsorFormBg
     }
   return (
-    <div className="relative mt-16 h-auto">
+    <div className={`relative ${WavePattern === "Contact" && "mt-[-90px]"} md:mt-16 h-auto`}>
       <BackPattern>
-        <div className={`w-full  pt-[250px] xl:pt[650px] ${WavePattern === "Contact" && "md:pt-[500px] pt-[150px]"}`}>
+        <div className={`w-full  pt-[250px] xl:pt[650px] ${WavePattern === "Contact" && "md:pt-[650px] xl:pt-[550px] xxl:pt-[600px] xxxl:pt-[640px] xxxxl:pt-[950px] pt-[150px]"}`}>
         <div className="px-16 xl:pr-28 flex flex-col items-center  -mb-10">
             {SponsorFormLegend && (
                 <div className="flex flex-col text-white items-center text-center ">

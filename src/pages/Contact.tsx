@@ -56,7 +56,7 @@ export default function Contact() {
         classes={{
           container: "mb:[-150px] md:mb-[-450px]",
           image: "hidden opacity-40 blur-md md:z-[-2px] z-[-4px]",
-          heading: "mb-9 sm:mb-16",
+          heading: "mb-[20.25rem] sm:mb-[24rem]",
           paragraph: "",
         }}
       />

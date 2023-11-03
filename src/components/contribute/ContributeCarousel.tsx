@@ -70,7 +70,7 @@ const ContributeCarousel = () => {
         >
           <ContributeWave />
 
-          <div className="absolute top-[120px]  xxsm:top-[150px] xsm:top-[240px] sm:top-[370px] md:top-[440px] lg:top-[580px]  xl:top-[680px] left-0  text-white min-h-150px xl:p-[65px] w-full p-5 ">
+          <div className="absolute top-[120px]  xxsm:top-[150px] xsm:top-[240px] sm:top-[370px] md:top-[440px] lg:top-[580px]  xl:top-[610px] xxl:top-[570px] xxxl:top-[670px] xxxxl:top-[725px] left-0  text-white min-h-150px xl:p-[65px] w-full p-5 ">
             <div className="flex flex-col items-center">
               <h1 className="text-[1.5rem] mb-0 xl:text-[2.3rem] xl:mb-9 lg:text-[2rem] lg:mb-8 md:text-[1.7rem] uppercase text-white font-be-vietnam text-center tracking-wide">
                 {Invitation[0]?.heading}
