@@ -1,5 +1,3 @@
-import Container from "../Container";
-import HomeExhibition from "./HomeExhibition";
 import NftCarousel from "../NftCarousel";
 import MyLink from "../base/MyLink";
 
