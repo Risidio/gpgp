@@ -48,9 +48,9 @@ export default function InvitationSponsor() {
   ];
 
   const SponsorFormLegend = {
-             heading: "Get in touch with us",
-             contact: "infinart@risidio.com"
-        }
+    heading: "Get in touch with us",
+    contact: "infinart@risidio.com",
+  };
 
   const WavePattern = "Sponsor";
   return (
@@ -58,17 +58,20 @@ export default function InvitationSponsor() {
       <ContributeHero
         HeroContent={HeroContent}
         classes={{
-          container: "mb-12",
-          image: "opacity-50 z-[-14px] visible sm:hidden",
-          heading: "mb-7 sm:mb-10",
-          subheading: "font-be-vietnam ",
-          paragraph: "",
+          container: "mb-[2.7rem] sm:-mb-8",
+          image: "opacity-50 z-[-14px] hidden",
+          heading:
+            "sm:text-[2.2rem] lg:text-[2.4rem] xxl:text-[3rem] mb-7 sm:mb-10",
+          subheading:
+            "font-be-vietnam text-[1.2rem] md:text-[1.7rem] xxxl:text-[2rem] ",
+          paragraph:
+            "w-[148%] leading-[1rem] sm:leading-6 xxl:text-[1.5rem] xxl:leading-[2rem]",
         }}
       />
-      <InvitationForm 
-            formField={formFields}
-            WavePattern={WavePattern} 
-            SponsorFormLegend={SponsorFormLegend}
+      <InvitationForm
+        formField={formFields}
+        WavePattern={WavePattern}
+        SponsorFormLegend={SponsorFormLegend}
       />
     </div>
   );
