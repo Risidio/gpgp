@@ -25,14 +25,14 @@ export default function ContributeHero({
 }: ContributeHeroProps) {
   return (
     <div className={`w-[100%] flex justify-center items-center px-8 sm:p-16 relative mb-[-150px] ${container}`}>
-      <div className={`flex flex-col justify-center items-center text-center w-[80%] min-h-[500px]`}>
+      <div className={`flex flex-col justify-center items-center text-center w-[80%] text-black min-h-[500px]`}>
         <img
           src={require("../../assets/images/contributeHero.png")}
           alt="GPGP-map"
           className={`absolute p-16 filter blur-sm ${image}`}
         />
 
-        <h1 className={`z-2 md:z-10 opacity-100 font-be-vietnam font-bold text-[1.5rem] xsm:text-[2rem] uppercase ${heading}`}>
+        <h1 className={`z-2 md:z-10 opacity-100 font-be-vietnam font-bold text-[1.5rem] xsm:text-[2rem]  uppercase ${heading}`}>
           {HeroContent.heading}
         </h1>
        {HeroContent.subheading 
