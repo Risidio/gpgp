@@ -1,4 +1,3 @@
-
 import ContributeCarousel from "../components/contribute/ContributeCarousel";
 import ContributeHero from "../components/contribute/ContributeHero";
 
@@ -24,15 +23,15 @@ export default function Contribute() {
       <ContributeHero
         HeroContent={HeroContent}
         classes={{
-          container: "",
+          container: "mb-[-70px] xsm:mb-[-150px]",
           image: "opacity-40 md:z-[-2px] z-[-4px] hidden",
           heading: " sm:text-[2.2rem] mb-9 sm:mb-16 ",
-          paragraph: "leading-6",
+          paragraph: "w-[148%] leading-[1rem] sm:leading-6",
         }}
       />
-      
-      <div className="relative mt-14 xxsm:mt-0 lg:min-h-[750px] sm:min-h-[700px] ">
-        <ContributeCarousel/>
+
+      <div className="relative mt-14 xsm:mt-[-150px] lg:min-h-[750px] sm:min-h-[700px] ">
+        <ContributeCarousel />
       </div>
     </div>
   );
