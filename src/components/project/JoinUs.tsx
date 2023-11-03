@@ -4,7 +4,7 @@ import MyLink from "../base/MyLink";
 const JoinUs = () => {
   return (
     <>
-      <div className="">
+      <div className="w-full">
         <h1 className="text-center pt-[30px] text-[16px] leading-[48px] uppercase font-[600] md:font-[600] md:text-[40px] md:leading-[48px] md:mt-[100.5px]">
           Join Us
         </h1>

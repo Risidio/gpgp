@@ -5,7 +5,7 @@ const Exhibition = () => {
   return (
     <>
       <div className="">
-        <h1 className="text-center pt-[30px] md:pt-[0px] font-[600] lg:font-[600] md:font-[600] lg:text-[40px] lg:leading-[48px] lg:mt-[100.5px]">
+        <h1 className="text-center uppercase text-[white] md:text-[black] font-[600] font-[600] md:text-[40px] md:leading-[48px] md:mt-[64px]">
           Exhibition
         </h1>
         <div className="w-[100%] grid md:grid-cols-2 mt-[15px] md:mt-[70px] md:border-y-[1px] md:border-black">
@@ -38,11 +38,18 @@ const Exhibition = () => {
               Explore
             </MyLink>
           </div>
-          <div className="h-[200px] md:w-[100%] mx-auto md:mx-0 md:h-[100%] order-1 md:order-2 mb-[15px] md:mb-[0px]">
+          {/* <div className="h-[200px] w-[315px] md:w-[100%] mx-auto md:mx-0 md:h-[100%] order-1 md:order-2 mb-[15px] md:mb-[0px]">
             <img
               className="w-[100%] max-h-[100%]"
               alt="Exhibition"
               src={Rectange251}
+            />
+          </div> */}
+          <div className="w-full h-[200px] w-[315px] mx-auto md:mx-0 md:w-[100%] md:h-[100%] order-1 md:order-2 mb-[30px] md:mb-0">
+            <img
+              className="w-[100%] h-[100%]"
+              src={Rectange251}
+              alt={"The Challenge"}
             />
           </div>
         </div>

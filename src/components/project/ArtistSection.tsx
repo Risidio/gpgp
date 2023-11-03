@@ -4,8 +4,8 @@ import Artist from "../home/Artist";
 const ArtistSection = () => {
   return (
     <>
-      <div className="hidden md:block bg-gpgp-blue md:bg-[white]">
-        <h1 className="text-center pt-[40px] md:pt-[0px] font-[600] lg:font-[600] md:font-[600] lg:text-[40px] lg:leading-[48px] lg:mt-[100.5px]">
+      <div className="w-full hidden xl:block bg-gpgp-blue xl:bg-[white]">
+        <h1 className="uppercase text-center pt-[40px] md:pt-[0px] font-[600] lg:font-[600] md:font-[600] lg:text-[40px] lg:leading-[48px] lg:mt-[100.5px]">
           The Artist
         </h1>
         <div className="w-[100%] md:h-[481px] grid md:grid-cols-2 mt-[15px] md:mt-[90px] md:border-y-[1px] md:border-black">
@@ -26,7 +26,7 @@ const ArtistSection = () => {
             </div>
           </div>
 
-          <div className="py-[60px] px-[40px] md:px-[80px] flex flex-col gap-y-6">
+          <div className="py-[60px] px-[40px] md:px-[0px] flex flex-col gap-y-6">
             <p className="text-white md:text-[black] text-center md:text-left text-[11px] md:text-[16px] hidden md:block">
               <b>Dr. John Dahlsen</b> stands as a globally recognised figure in
               the realm of environmental artistry and scholarly authorship.
@@ -55,7 +55,7 @@ const ArtistSection = () => {
           </div>
         </div>
       </div>
-      <div className="block md:hidden">
+      <div className="block xl:hidden">
         <Artist />
       </div>
     </>
