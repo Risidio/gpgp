@@ -1,53 +1,56 @@
-import Hero from '../components/Hero'
-import Exhibition from '../components/home/Exhibition'
-import HomeContent from '../components/home/HomeContent'
-import Container from '../components/Container'
-import HomeExhibition from '../components/home/HomeExhibition'
-import Artist from '../components/home/Artist'
-import BackgroundWave from '../components/BackgroundWave'
-import ContactUs from '../components/ContactUs'
+import Hero from "../components/Hero";
+import Exhibition from "../components/home/Exhibition";
+import HomeContent from "../components/home/HomeContent";
+import Container from "../components/Container";
+import HomeExhibition from "../components/home/HomeExhibition";
+import Artist from "../components/home/Artist";
+import BackgroundWave from "../components/BackgroundWave";
+import ContactUs from "../components/ContactUs";
+import About from "../components/project/Abouts";
 
 const Home = () => {
-    return (
-        <>
-           <Container>
+  return (
+    <>
+      {/* <Container>
                <Hero/>
-           </Container>
+           </Container> */}
 
-           <BackgroundWave/>
+      <section>
+        <Hero />
+      </section>
 
-           <section className="bg-gpgp-blue">
-              <Exhibition/>
-           </section>
+      <section>
+        <Exhibition />
+      </section>
 
-           <div className="sm:block hidden">
-              <HomeExhibition />
-           </div>
+      <div className="sm:block hidden">
+        <HomeExhibition />
+      </div>
 
-           <Container>
-               <HomeContent/>
-           </Container>
+      <Container>
+        <HomeContent />
+      </Container>
 
-           <Container>
-               <Artist/>
-           </Container>
+      <Container>
+        <Artist />
+      </Container>
 
-           <div className="sm:hidden block">
-              <div className="font-semibold text-base text-center pt-20 uppercase">
-                  <p>contribute to the global effort</p>
-                  <p className="py-3">Create a better world</p>
-              </div>
-           </div>
+      <div className="sm:hidden block">
+        <div className="font-semibold text-base text-center pt-20 uppercase">
+          <p>contribute to the global effort</p>
+          <p className="py-3">Create a better world</p>
+        </div>
+      </div>
 
-           <div className="sm:pt-0 pt-20">
-               <BackgroundWave/>
-           </div>
+      <div className="sm:pt-0 pt-20">
+        <BackgroundWave />
+      </div>
 
-           <Container sectionClass="bg-gpgp-blue" classes="bg-gpgp-blue">
-               <ContactUs/>
-           </Container>
-       </>
-  )
-}
+      <Container sectionClass="bg-gpgp-blue" classes="bg-gpgp-blue">
+        <ContactUs />
+      </Container>
+    </>
+  );
+};
 
-export default Home
+export default Home;

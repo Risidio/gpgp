@@ -11,7 +11,7 @@ const HomeExhibition = ({ classes="" }: HomeExhibitionProps) => {
              <img
                 src={guyAtExhibition}
                 alt="guyAtExhibtion"
-                className="-mt-20"
+                className=""
               />
       </section>
    </>
