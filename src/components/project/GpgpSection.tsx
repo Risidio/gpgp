@@ -11,13 +11,13 @@ const GpgpSection = () => {
         <div className="w-[100%] grid md:grid-cols-2 mt-[15px] md:mt-[70px] md:border-y-[1px] md:border-black">
           <div className="w-[100%] order-2 md:order-1 md:py-[60px] px-[40px] md:px-[80px] flex flex-col gap-y-6">
             <div className="hidden md:block w-[260px] h-[20px] bg-gpgp-blue rotate-90 absolute left-[-120px] mt-[130px] rounded-tl-[40px] rounded-tr-[40px]"></div>
-            <p className="text-center md:text-left text-[15px] leading-[30px] md:leading-[32px] md:text-[16px]">
+            <p className="text-center md:text-left text-[15px] md:text-[16px] lg:text-[20px] xxxl:text-[28px] leading-[30px] md:leading-[32px] lg:leading-[35px]">
               <b>The Great Pacific Garbage Patch</b> is a massive accumulation
               of plastic waste and marine debris that has been swirling in the
               North Pacific Ocean for decades.
             </p>
 
-            <p className="text-justified hidden md:block md:text-left text-[16px] leading-[32px] font-[400]">
+            <p className="text-justified hidden md:block md:text-left text-[16px] lg:text-[20px] xxxl:text-[28px] leading-[32px] lg:leading-[35px] font-[400]">
               Contrary to the common perception of a vast floating garbage
               island, the Great Pacific Garbage Patch mainly comprises dispersed
               microscopic plastic particles, or microplastics, interspersed with

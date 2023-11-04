@@ -4,7 +4,7 @@ import Artist from "../home/Artist";
 const ArtistSection = () => {
   return (
     <>
-      <div className="w-full hidden xl:block bg-gpgp-blue xl:bg-[white]">
+      <div className="w-full hidden xxl:block bg-gpgp-blue xl:bg-[white]">
         <h1 className="uppercase text-center md:pt-[0px] font-[600] lg:font-[600] md:font-[600] lg:text-[40px] lg:leading-[48px] lg:mt-[64px]">
           The Artist
         </h1>
@@ -27,19 +27,19 @@ const ArtistSection = () => {
           </div>
 
           <div className="py-[60px] px-[40px] md:px-[0px] flex flex-col gap-y-6">
-            <p className="text-white md:text-[black] text-center md:text-left text-[11px] md:text-[16px] hidden md:block">
+            <p className="text-white md:text-[black] text-center md:text-left text-[11px] md:text-[16px] lg:text-[28px] xxxl:text-[28px] hidden md:block">
               <b>Dr. John Dahlsen</b> stands as a globally recognised figure in
               the realm of environmental artistry and scholarly authorship.
             </p>
 
-            <p className="text-justified hidden md:block">
+            <p className="text-justified hidden md:block lg:text-[28px] xxxl:text-[28px]">
               His accolades encompass prestigious distinctions such as the 2000
               Wynne Prize. His artistic oeuvre prominently revolves around the
               thematic resonance of oceanic detritus, particularly plastic
               waste.
             </p>
 
-            <p className="hidden md:block">
+            <p className="hidden md:block lg:text-[28px] xxxl:text-[28px]">
               Through adroitly controlling discarded marine materials, John
               Dahlsen crafts visually captivating compositions imbued with
               profound commentary on the pervasive concern of plastic pollution,
@@ -55,7 +55,7 @@ const ArtistSection = () => {
           </div>
         </div>
       </div>
-      <div className="block xl:hidden">
+      <div className="block xxl:hidden">
         <Artist />
       </div>
     </>
