@@ -4,9 +4,7 @@ import HomeContent from "../components/home/HomeContent";
 import Container from "../components/Container";
 import HomeExhibition from "../components/home/HomeExhibition";
 import Artist from "../components/home/Artist";
-import BackgroundWave from "../components/BackgroundWave";
 import ContactUs from "../components/ContactUs";
-import About from "../components/project/Abouts";
 
 const Home = () => {
   return (

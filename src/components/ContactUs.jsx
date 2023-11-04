@@ -1,8 +1,7 @@
 import { Input } from "./base/Input";
 import { Button } from "./base/Button";
 import { TextArea } from "./base/Textarea";
-import MyLink from "./base/MyLink";
-import NftCarousel from "./NftCarousel";
+
 
 const ContactUs = () => {
   return (
