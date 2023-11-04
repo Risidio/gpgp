@@ -16,11 +16,9 @@ const Footer = ({classes= "bg-gpgp-blue"}: FooterProps) => {
   const fontColorMobile = (footerStyles && footerStyles.fontColorMobile) ? footerStyles.fontColorMobile : "white";
 
   return (
-    <footer className={footerStyles ? footerStyles!.style : classes}>
+    <footer className={`${footerStyles ? footerStyles!.style : classes} border-t border-[white]`}>
        <Container hasSection={false} classes={twMerge("bg-gpgp-blue flex flex-col", `${footerStyles ? footerStyles!.style : ""}`)}>
-            <div className="lg:w-full md:w-[75%] sm:w-[90%] w-full mx-auto">
-               <hr className={twMerge("h-px my-8 border-0 bg-white",`${footerStyles ? footerStyles!.hrStyle : ""}`)}/>
-            </div>
+            
             {/* Desktop-view */}
             <div className="w-full sm:flex sm:flex-col hidden">
                 <div className="w-full grid grid-cols-3 justify-between p-5">

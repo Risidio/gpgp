@@ -11,10 +11,6 @@ import About from "../components/project/Abouts";
 const Home = () => {
   return (
     <>
-      {/* <Container>
-               <Hero/>
-           </Container> */}
-
       <section>
         <Hero />
       </section>
@@ -23,7 +19,7 @@ const Home = () => {
         <Exhibition />
       </section>
 
-      <div className="sm:block hidden">
+      <div className="m-0">
         <HomeExhibition />
       </div>
 
@@ -42,13 +38,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="sm:pt-0 pt-20">
-        <BackgroundWave />
-      </div>
-
-      <Container sectionClass="bg-gpgp-blue" classes="bg-gpgp-blue">
+      <section>
         <ContactUs />
-      </Container>
+      </section>
     </>
   );
 };

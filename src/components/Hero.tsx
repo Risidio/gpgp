@@ -29,44 +29,44 @@ const Hero = () => {
         </div>
       </div> */}
 
-      <div className="sm:flex hidden w-full m-0 px-[64.5px] pb-[20px]">
+      <div className="md:flex hidden w-full m-0 px-[64.5px] xxxl:px-[0px] xxxxl:justify-center xxxxl:items-center md:px-[20px] pb-[20px]">
         <div className="flex flex-col uppercase xl:px-0 sm:px-5">
-          <h1 className="text-[40px] font-bold">
+          <h1 className="text-[40px] md:text-[20px] lg:text-[30px] xl:text-[35px] xxl:text-[40px] xxxl:text-[60px] font-bold">
             The great pacific garbage patch art project
           </h1>
-          <h2 className="text-[24px] font-semibold">
+          <h2 className="text-[24px] md:text-[18px] lg:text-[22px] xl:text-[25px] xxl:text-[30px] xxxl:text-[50px] font-semibold">
             Enviromental artist john dahlsen & infinart
           </h2>
           <div className="flex flex-row">
-            <div className="w-full flex flex-col">
-              <h4 className="text-[24px] font-semibold my-auto">
+            <div className="w-[30%] lg:w-[50%] md:w-[25%] flex flex-col">
+              <h4 className="text-[24px] md:text-[18px] lg:text-[20px] xl:text-[22px] xxl:text-[24px] xxxl:text-[40px] font-semibold my-auto">
                 The art inspiring global action
               </h4>
-              <div className="w-[40%] flex justify-start gap-x-2">
-                <MyLink to="" className="uppercase py-2 w-44">
-                  gallery
+              <div className="flex justify-start gap-x-2">
+                <MyLink to="/gallery" className="uppercase py-2 xl:py-[20px] xl:w-[400px] w-44">
+                <p className="xl:text-[40px]">gallery</p>
                 </MyLink>
                 <MyLink
                   to=""
-                  className="uppercase py-2 bg-gpgp-blue text-white hover:bg-white hover:text-gpgp-blue w-44"
+                  className="uppercase py-2 xl:w-[400px] bg-gpgp-blue text-white hover:bg-white hover:text-gpgp-blue w-44"
                 >
-                  join us
+                  <p className="xl:text-[40px]">join us</p>
                 </MyLink>
               </div>
             </div>
 
-            <div className="w-full flex items-center pl-[71px]">
+            <div className="w-full flex items-center pl-[71px] sm:pl-[100px] md:pl-[40px] lg:pl-[50px] xl:pl-[100px] xxl:pl-[120px] xxxl:pl-[140px] xxxl:pl-[200px]">
               <img
                 src={gpgpMapImage}
                 alt={"GPGP Map"}
-                className="w-[1280px] h-[459px] mx-auto"
+                className="sm:h-[300px] w-[1280px] md:w-[1200px] xxxl:w-[1700px] xxxxl:w-[2560px]  h-[459px] md:h-[300px] xxl:h-[400px] xxxl:h-[600px] xxxl:h-[700px] mx-auto"
               />
             </div>
           </div>
         </div>
       </div>
 
-      <div className="sm:hidden flex flex-col justify-center items-center px-10 uppercase">
+      <div className="md:hidden flex flex-col justify-center items-center px-10 uppercase">
         <h1 className="text-center text-[1rem] font-semibold pt-10">
           The great pacific garbage patch art project
         </h1>
