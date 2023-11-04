@@ -14,7 +14,7 @@ const ImgCarousel = ({items}: ImgCarouselProps) => {
             showArrows={false} // Hide arrows
             pagination={false} // Hide dots
             enableAutoPlay={true} // Enable auto-play
-            autoPlaySpeed={100} // Set auto-play speed (in milliseconds)
+            autoPlaySpeed={10} // Set auto-play speed (in milliseconds)
             className="carousel"
          >
             {items.map((item, index) => (
