@@ -17,19 +17,19 @@ const Attention = () => {
           </div>
 
           <div className="w-[100%] order-2 md:order-1 mt-[26px] md:mt-[60px] md:pt-[0px] md:py-[60px] px-[40px] md:px-[80px] flex flex-col gap-y-6">
-            <p className="text-white md:text-[black] text-center md:text-left text-[15px] leading-[30px] md:leading-[32px] md:text-[16px]">
+            <p className="text-white md:text-[black] text-center md:text-left text-[15px] lg:text-[20px] xxxl:text-[28px] leading-[30px] md:leading-[32px] lg:leading-[35px] md:text-[16px]">
               The Great Pacific Garbage Patch is a pressing environmental issue
               that requires immediate attention. It has already caused
               significant harm to marine life and the ecosystem, and its impact
               will only worsen if we do nothing.
             </p>
-            <p className="hidden md:block text-center md:text-left text-[15px] leading-[30px] md:leading-[32px] md:text-[16px]">
+            <p className="hidden md:block text-center md:text-left text-[15px] lg:text-[20px] xxxl:text-[28px] leading-[30px] md:leading-[32px] lg:leading-[35px] md:text-[16px]">
               The research conducted by oceanographers and ecologists suggests
               that a significant proportion of the marine debris, approximately
               70%, sinks to the ocean's bottom.{" "}
               <b>This makes the case of the GPGP even more alarming</b>.
             </p>
-            <p className="mb-[25px] md:mb-[0px] text-white md:text-[black] text-center md:text-left text-[15px] leading-[30px] md:leading-[32px] md:text-[16px]">
+            <p className="mb-[25px] md:mb-[0px] text-white md:text-[black] text-center md:text-left text-[15px] lg:text-[20px] xxxl:text-[28px] leading-[30px] md:leading-[32px] lg:leading-[35px] md:text-[16px]">
               It's time to take responsibility for our actions and work towards
               a sustainable future.
             </p>
