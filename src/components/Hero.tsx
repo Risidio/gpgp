@@ -43,14 +43,14 @@ const Hero = () => {
                 The art inspiring global action
               </h4>
               <div className="flex justify-start gap-x-2">
-                <MyLink to="/gallery" className="uppercase py-2 xl:py-[20px] xl:w-[400px] w-44">
-                <p className="xl:text-[40px]">gallery</p>
+                <MyLink to="/gallery" className="uppercase w-44 py-2">
+                <p className="lg:text-[20px]">gallery</p>
                 </MyLink>
                 <MyLink
                   to=""
-                  className="uppercase py-2 xl:w-[400px] bg-gpgp-blue text-white hover:bg-white hover:text-gpgp-blue w-44"
+                  className="uppercase py-2 w-44 bg-gpgp-blue text-white hover:bg-white hover:text-gpgp-blue"
                 >
-                  <p className="xl:text-[40px]">join us</p>
+                  <p className="lg:text-[20px]">join us</p>
                 </MyLink>
               </div>
             </div>
