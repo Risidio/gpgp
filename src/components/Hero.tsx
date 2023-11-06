@@ -42,24 +42,24 @@ const Hero = () => {
               <h4 className="text-[24px] md:text-[18px] lg:text-[20px] xl:text-[22px] xxl:text-[24px] xxxl:text-[40px] font-semibold my-auto">
                 The art inspiring global action
               </h4>
-              <div className="flex justify-start gap-x-2">
-                <MyLink to="/gallery" className="uppercase py-2 xl:py-[20px] xl:w-[400px] w-44">
+              <div className="flex justify-start gap-x-2 xxxl:gap-x-4">
+                <MyLink to="/gallery" className="uppercase py-2 xl:py-[20px] xl:w-[400px] w-44 xxxl:w-[450px]">
                 <p className="xl:text-[40px]">gallery</p>
                 </MyLink>
                 <MyLink
                   to=""
-                  className="uppercase py-2 xl:w-[400px] bg-gpgp-blue text-white hover:bg-white hover:text-gpgp-blue w-44"
+                  className="uppercase py-2 xl:w-[400px] bg-gpgp-blue text-white hover:bg-white hover:text-gpgp-blue w-44 xxxl:w-[450px]"
                 >
                   <p className="xl:text-[40px]">join us</p>
                 </MyLink>
               </div>
             </div>
 
-            <div className="w-full flex items-center pl-[71px] sm:pl-[100px] md:pl-[40px] lg:pl-[50px] xl:pl-[100px] xxl:pl-[120px] xxxl:pl-[140px] xxxl:pl-[200px]">
+            <div className="w-full flex items-center pl-[71px] sm:pl-[100px] md:pl-[40px] lg:pl-[50px] xl:pl-[100px] xxl:pl-[120px] xxxl:pl-[140px] xxxxl:pl-[200px]">
               <img
                 src={gpgpMapImage}
                 alt={"GPGP Map"}
-                className="sm:h-[300px] w-[1280px] md:w-[1200px] xxxl:w-[1700px] xxxxl:w-[2560px]  h-[459px] md:h-[300px] xxl:h-[400px] xxxl:h-[600px] xxxl:h-[700px] mx-auto"
+                className="sm:h-[300px] w-[1280px] md:w-[1200px] xxxl:w-[1700px] xxxxl:w-[2560px]  h-[459px] md:h-[300px] xxl:h-[400px] xxxl:h-[600px] xxxxl:h-[700px] xxxl:object-contain mx-auto"
               />
             </div>
           </div>
