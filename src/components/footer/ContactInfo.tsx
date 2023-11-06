@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+
 interface ContactInfoProps {
    classes?: string
 }
@@ -8,8 +11,8 @@ const ContactInfo = ({classes ="white"}: ContactInfoProps) => {
       <div>
         <h4 className="font-normal">Sitemap</h4>
         <ul className="text-sm space-y-4 [&>*:first-child]:pt-5">
-          <li>Project</li>
-          <li>Challenge</li>
+          <li><Link to={"/project"}>Project</Link></li>
+          <li><Link to={"/challenge"}>Challenge</Link></li>
         </ul>
       </div>
 

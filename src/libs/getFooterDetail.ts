@@ -4,9 +4,10 @@ export const getFooterDetail = (routeToFind: string) => {
             route: "/",
             style: "sm:bg-gpgp-blue bg-white",
             fontColor: "white",
-            fontColorMobile: "text-black",
+            fontColorMobile: "sm:text-white text-black",
             hrStyle: "sm:bg-white bg-gpgp-blue",
         },
+        
         {
             route: "/contribute",
             style: "bg-white",
@@ -21,6 +22,7 @@ export const getFooterDetail = (routeToFind: string) => {
             fontColorMobile: "text-black",
             hrStyle: ""
         },
+       
         {
             route: "/contribute/inviteSponsor",
             style: "bg-white",

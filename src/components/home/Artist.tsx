@@ -30,10 +30,10 @@ const Artist = ({ ...props }) => {
 
       <div className="mt-12">
         <MyLink
-          className="uppercase py-5 w-44 mx-auto h-12 ml-0 text-base sm:bg-gpgp-blue bg-white sm:text-white text-gpgp-blue sm:hover:text-white/80 hover:text-gpgp-blue"
+          className="uppercase py-5 w-52 lg:w-64 xxxl:w-80 mx-auto h-12 xxxl:h-16 ml-0 text-base sm:bg-gpgp-blue bg-white sm:text-white text-gpgp-blue sm:hover:text-white/80 hover:text-gpgp-blue"
           to="#"
         >
-          <p className="text-[#1F2D5A] sm:text-white text-center font-Inter text-[20px] font-bold leading-[147.51%] tracking-[0.5px] uppercase">
+          <p className="text-[#1F2D5A] sm:text-white text-center font-Inter text-[20px] xxxl:text-[1.5rem] font-bold leading-[147.51%] tracking-[0.5px]  uppercase">
             Find out more
           </p>
         </MyLink>

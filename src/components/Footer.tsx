@@ -20,7 +20,7 @@ const Footer = ({classes= "bg-gpgp-blue"}: FooterProps) => {
        <Container hasSection={false} classes={twMerge("bg-gpgp-blue flex flex-col", `${footerStyles ? footerStyles!.style : ""}`)}>
             
             {/* Desktop-view */}
-            <div className="w-full sm:flex sm:flex-col hidden">
+            <div className="w-full sm:flex sm:flex-col pt-7 hidden">
                 <div className="w-full grid grid-cols-3 justify-between p-5">
                     <Logo className="flex justify-start items-start w-20 h-20"/> 
                     <SocialMedia color={`${fontColor ? fontColor: "bg-gpgp-blue"}`} />
@@ -40,7 +40,7 @@ const Footer = ({classes= "bg-gpgp-blue"}: FooterProps) => {
             </div>
 
            {/* Mobile-view */}
-            <div className="w-full sm:hidden flex flex-col items-center px-5">
+            <div className="w-full sm:hidden flex flex-col items-center pt-16 px-5">
                <div className={twMerge("w-full grid grid-cols-2 justify-between items-start text-white", fontColorMobile)}>
                   <SocialMedia color={fontColorMobile} />
                   <div className="flex flex-col items-end">
@@ -54,7 +54,12 @@ const Footer = ({classes= "bg-gpgp-blue"}: FooterProps) => {
                       <Logo className="flex items-start w-16 h-16" logo={fontColor ? "logo-blue.png": "logo-white.png"}/> 
                   </div>
               </div>
-              <div className={twMerge("w-full text-center text-white font-thin py-5 text-[0.9rem]",`${fontColor && "sm:text-white text-black"}`)}>
+              <div className={twMerge("w-full text-center text-white font-thin py-5 text-[0.9rem]",`
+              ${fontColor && "sm:text-white text-black"}
+              ${useLocation().pathname === "/project"  ? "text-white" : "text-black"}
+              ${useLocation().pathname === "/challenge"  ? "text-white" : "text-black"}
+              
+              `)}>
                    2023 JohnDahlsen & Infinart All Rights Reserved - Designed by Risidio
               </div>
            </div>
