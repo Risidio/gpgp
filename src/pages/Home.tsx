@@ -9,7 +9,7 @@ import ContactUs from "../components/ContactUs";
 const Home = () => {
   return (
     <>
-      <section>
+      <section className="my-5 xxxl:mx-3">
         <Hero />
       </section>
 

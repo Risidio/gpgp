@@ -26,20 +26,20 @@ const ArtistSection = () => {
             </div>
           </div>
 
-          <div className="py-[60px] px-[40px] md:px-[0px] flex flex-col gap-y-6">
-            <p className="text-white md:text-[black] text-center md:text-left text-[11px] md:text-[16px] lg:text-[28px] xxxl:text-[28px] hidden md:block">
+          <div className="py-[60px] px-[40px] md:px-[10px] xxl:pl-[0px] xxl:pr-[20px] flex flex-col gap-y-6">
+            <p className="text-white md:text-[black] text-center md:text-left text-[15px] lg:text-[20px] xxxl:text-[28px] leading-[30px] md:leading-[32px] lg:leading-[35px] md:text-[16px]">
               <b>Dr. John Dahlsen</b> stands as a globally recognised figure in
               the realm of environmental artistry and scholarly authorship.
             </p>
 
-            <p className="text-justified hidden md:block lg:text-[28px] xxxl:text-[28px]">
+            <p className="text-justified hidden md:block text-center md:text-left text-[15px] lg:text-[20px] xxxl:text-[28px] leading-[30px] md:leading-[32px] lg:leading-[35px] md:text-[16px] xxxl:text-[28px]">
               His accolades encompass prestigious distinctions such as the 2000
               Wynne Prize. His artistic oeuvre prominently revolves around the
               thematic resonance of oceanic detritus, particularly plastic
               waste.
             </p>
 
-            <p className="hidden md:block lg:text-[28px] xxxl:text-[28px]">
+            <p className="hidden md:block text-center md:text-left text-[15px] lg:text-[20px] xxxl:text-[28px] leading-[30px] md:leading-[32px] lg:leading-[35px] md:text-[16px] xxxl:text-[28px]">
               Through adroitly controlling discarded marine materials, John
               Dahlsen crafts visually captivating compositions imbued with
               profound commentary on the pervasive concern of plastic pollution,
