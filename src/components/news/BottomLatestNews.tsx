@@ -1,4 +1,3 @@
-import BackgroundWave from "../BackgroundWave";
 import Container from "../Container";
 import { NewsCard } from "./NewsCard";
 const fakeData = new Array(3).fill(1);
