@@ -10,10 +10,10 @@ const Section2 = () => {
           </h1>
         </div>
         <div className="grid md:grid-cols-2 md:border-y-[1px] md:border-gpgp-blue">
-          <div className="w-full h-[200px] md:h-full order-1 bg-[length:100%_100%] bg-trashed-plastics md:bg-none md:border-y-[0px] border-gpgp-blue">
+          <div className="w-full h-[200px] md:h-full order-1 bg-trashed-plastics md:bg-none md:border-y-[0px] border-gpgp-blue">
             <img
               src={TrashedPlasticObjects}
-              className="hidden md:block w-full h-full md:w-[740px] lg:w-full md:h-[100%]"
+              className="hidden md:block w-full h-full md:w-[740px] lg:w-full"
               alt="Trashed Plastic Objects"
             />
             <div className="md:hidden w-full h-full inset-0 bg-black bg-opacity-30">

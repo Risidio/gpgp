@@ -30,7 +30,7 @@ const Section3 = () => {
           <div className="w-full h-[200px] md:h-full order-1 md:order-2 bg-[length:100%_100%] bg-flat-lay-composition md:bg-none md:border-y-[0px] border-gpgp-blue">
             <img
               src={FlatLayComposition}
-              className="hidden md:block w-full h-[100%] md:w-[740px] lg:w-full md:h-[100%]"
+              className="hidden md:block w-full h-[100%] md:w-[740px] lg:w-full"
               alt="Flat Lay Composition Different Colored"
             />
             <div className="md:hidden md:w-0 w-full h-full inset-0 bg-black bg-opacity-30">

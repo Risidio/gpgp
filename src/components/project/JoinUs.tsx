@@ -47,9 +47,9 @@ const JoinUs = () => {
               </MyLink>
               <MyLink
                 to=""
-                className="uppercase mb-[48.62px] md:mb-[0px] bg-gpgp-blue px-[17px] py-[11px] text-white text-[12px] md:text-[16px] md:w-56 tracking-[3.3px] md:h-16 md:tracking-[.35em] text-base"
+                className="md:hidden lg:block uppercase mb-[48.62px] md:mb-[0px] bg-gpgp-blue px-[17px] py-[11px] text-white text-[12px] md:text-[16px] md:w-56 tracking-[3.3px] md:h-16 md:tracking-[.35em] text-base"
               >
-                Invest
+                Invite
               </MyLink>
             </div>
           </div>

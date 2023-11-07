@@ -9,7 +9,7 @@ const ContentManage = ({ contents }) => {
           {/* Desktop-view */}
           <div
             key={content.id}
-            className={`lg:flex hidden lg:items-center py-[150px] w-full m-5 flex-col sm:px-10
+            className={`lg:flex hidden lg:items-center py-[100px] w-full m-5 flex-col sm:px-10
                                     ${
                                       content.ImgPos === "left"
                                         ? "sm:flex-row"
@@ -32,11 +32,11 @@ const ContentManage = ({ contents }) => {
               />
             </div>
 
-            <div className={`w-full flex flex-col text-left`}>
-              <h1 className="text-[#050B1D] font-BeVietnam text-4xl font-normal font-semibold leading-[75%] tracking-[-1.28px]">
+            <div className={`w-full flex flex-col text-left xxl:gap-y-4`}>
+              <h1 className="text-[#050B1D] font-BeVietnam text-[16px] md:text-[18px] lg:text-[25px] xl:text-[30px] xxl:text-[35px] xxxl:text-[64px] font-[600] leading-[23.38px] md:leading-[30px] font-semibold">
                 {content.name}
               </h1>
-              <div className="text-[#050B1D] font-BeVietnam text-[16px] lg:text-[18px] xl:text-[25px] font-normal leading-[32px] my-[50px]">
+              <div className="text-[#050B1D] font-BeVietnam text-[16px] lg:text-[18px] xl:text-[25px] xxxl:text-[28px] font-normal leading-[32px] xxl:leading-[38px] my-[20px]">
                 <p>{content.description}</p>
               </div>
 
