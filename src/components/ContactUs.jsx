@@ -74,7 +74,7 @@ const ContactUs = () => {
           </div>
 
           <div className="text-white w-full sm:py-0 pt-7">
-            <div className="text-sm py-1">E-mail</div>
+            <div className="text-sm py-1">Email</div>
             <Input type="email" />
           </div>
         </div>

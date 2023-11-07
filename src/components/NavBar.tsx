@@ -172,7 +172,7 @@ const NavBar = () => {
                 key={index}
                 className="group relative text-black my-0 hover:shadow-sm hover:text-white hover:cursor-pointer hover:bg-gpgp-blue rounded-md uppercase"
               >
-                <div className="flex items-center text-sm gap-1 px-3 py-2 w-full">
+                <div className="flex items-center text-sm xxxxl:text-[25px] gap-1 px-3 py-2 w-full">
                   <Link to={link.href} onClick={() => resetSelectItem()}>
                     {link.name}
                   </Link>
@@ -197,7 +197,7 @@ const NavBar = () => {
                 key={index}
                 className="group relative text-black my-0 hover:cursor-pointer hover:text-gpgp-blue uppercase"
               >
-                <div className="flex items-center text-sm gap-1 px-3 py-2 w-full">
+                <div className="flex items-center text-sm xxxxl:text-[25px] gap-1 px-3 py-2 w-full">
                   <Link to={link.href}>{link.name}</Link>
                 </div>
               </div>
