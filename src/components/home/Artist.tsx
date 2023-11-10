@@ -2,7 +2,7 @@ import MyLink from "../base/MyLink";
 
 const Artist = ({ ...props }) => {
   return (
-    <div className="flex flex-col justify-center items-center py-10 px-5 w-full sm:w-[500px] sm:mx-auto sm:bg-white bg-gpgp-blue sm:text-black text-white">
+    <div className="flex flex-col justify-center items-center py-10 px-5 xxl:px-[10px] w-full sm:w-[500px] sm:mx-auto sm:bg-white bg-gpgp-blue sm:text-black text-white">
       <div className="bg-artist-back bg-no-repeat w-[300px] h-[300px] bg-[length:300px_300px] rounded-full p-12">
         <div className="bg-white rounded-full w-full p-3">
           <img
@@ -13,11 +13,11 @@ const Artist = ({ ...props }) => {
         </div>
       </div>
 
-      <h1 className="text-white sm:text-[#050B1D] text-center font-BeVietnam text-4xl font-semibold leading-[75%] tracking-[-1.28px]">
+      <h1 className="text-white sm:text-[#050B1D] text-center text-4xl font-semibold leading-[75%] tracking-[-1.29px]">
         John Dahlsen
       </h1>
 
-      <span className="text-white sm:text-[#050B1D] text-center font-Inter text-[18px] font-bold leading-[147.51%] tracking-[4px] uppercase">
+      <span className="text-white sm:text-[#050B1D] text-center font-Inter text-[18px] font-bold leading-[147.51%] tracking-[4px] uppercase mt-[15px]">
         The Artist
       </span>
 

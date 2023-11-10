@@ -57,6 +57,7 @@ module.exports = {
         "flat-lay-composition":
           "url('./assets/images/flat-lay-composition-different-colored-plastic-bags.jpg')",
         "trashed-plastics": "url('./assets/images/trashedPlasticObjects.jpg')",
+        "news-background-wave": "url('./assets/svg/newswave.svg')"
       },
     },
   },

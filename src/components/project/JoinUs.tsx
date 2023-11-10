@@ -11,20 +11,20 @@ const JoinUs = () => {
         <div className="w-[100%] grid md:grid-cols-2 mt-[15px] md:mt-[70px] md:border-y-[1px] md:border-black">
           <div className="w-[100%] order-2 md:order-1 md:py-[60px] px-[40px] md:px-[80px] flex flex-col gap-y-6">
             <div className="hidden md:block w-[260px] h-[20px] bg-gpgp-blue rotate-90 absolute left-[-120px] mt-[130px] rounded-tl-[40px] rounded-tr-[40px]"></div>
-            <p className="hidden md:block text-justified">
+            <p className="hidden md:block text-center md:text-left text-[15px] lg:text-[20px] xxxl:text-[28px] leading-[30px] md:leading-[32px] lg:leading-[35px] md:text-[16px]">
               <b>The Great Pacific Garbage Patch</b> presents a distinctive
               platform for the expression of artistic endeavours, serving as a
               medium to not only manifest creativity but also underscore the
               paramount importance of ecological custodianship.
             </p>
 
-            <p className="hidden md:block text-justified">
+            <p className="hidden md:block text-center md:text-left text-[15px] lg:text-[20px] xxxl:text-[28px] leading-[30px] md:leading-[32px] lg:leading-[35px] md:text-[16px]">
               <b>We invite artists of all disciplines</b>, including painters,
               sculptors, photographers, and mixed media practitioners, to submit
               a maximum of three artistic pieces for consideration.
             </p>
 
-            <p className="hidden md:block md:font-[600px] md:leading-[48px]">
+            <p className="hidden md:block md:font-[600px] md:text-left text-[15px] lg:text-[20px] xxxl:text-[28px] leading-[30px] md:leading-[32px] lg:leading-[35px] md:text-[16px]">
               Join us and contribute to the global effort!
             </p>
 
@@ -47,9 +47,9 @@ const JoinUs = () => {
               </MyLink>
               <MyLink
                 to=""
-                className="uppercase mb-[48.62px] md:mb-[0px] bg-gpgp-blue px-[17px] py-[11px] text-white text-[12px] md:text-[16px] md:w-56 tracking-[3.3px] md:h-16 md:tracking-[.35em] text-base"
+                className="md:hidden lg:block uppercase mb-[48.62px] md:mb-[0px] bg-gpgp-blue px-[17px] py-[11px] text-white text-[12px] md:text-[16px] md:w-56 tracking-[3.3px] md:h-16 md:tracking-[.35em] text-base"
               >
-                Invest
+                Invite
               </MyLink>
             </div>
           </div>

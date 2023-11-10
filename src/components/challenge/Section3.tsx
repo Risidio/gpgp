@@ -30,10 +30,10 @@ const Section3 = () => {
           <div className="w-full h-[200px] md:h-full order-1 md:order-2 bg-[length:100%_100%] bg-flat-lay-composition md:bg-none md:border-y-[0px] border-gpgp-blue">
             <img
               src={FlatLayComposition}
-              className="hidden md:block w-full h-[100%] md:w-[740px] md:h-[100%]"
+              className="hidden md:block w-full h-[100%] md:w-[740px] lg:w-full"
               alt="Flat Lay Composition Different Colored"
             />
-            <div className="md:hidden w-full h-full inset-0 bg-black bg-opacity-30">
+            <div className="md:hidden md:w-0 w-full h-full inset-0 bg-black bg-opacity-30">
               <div className="md:hidden w-full h-full flex flex-col justify-center items center">
                 <h1 className="text-center text-white text-[32px] uppercase font-bold leading-[32px]">
                   Heading in <br />
