@@ -1,12 +1,12 @@
 import React from 'react'
 
-export default function Logo({className, logo="NavLogo.png"}) {
+export default function Logo({className, logo="NewNavLogo.png"}) {
     return (
         <div className={className}>
             <img
                  src={require(`../assets/images/${logo}`)}
                  alt="gpgp"
-                 className="object-center w-14 lg:w-[90px]  py-5"
+                 className="object-center w-[80px] lg:w-[90px] xxl:w-[100px] xxxl:w-[110px] xxxxl:w-[130px]  py-5"
              />
         </div>
     )

@@ -67,7 +67,7 @@ const ContactUs = () => {
       </div>
 
       <div className="flex justify-between flex-col items-center    ">
-        <div className="flex items-center flex-col w-[89%] lg:w-[67%]   md:border md:mx-5 px-[50px] xxxl:px-[50px]  xxxxl:px-[80px] my-5 xxxl:py-7">
+        <div className="flex items-center flex-col w-[89%] lg:w-[67%]   md:border-2 rounded-[12px] md:mx-5 px-[50px] xxxl:px-[50px]  xxxxl:px-[80px] my-5 xxxl:py-7">
           <div className="flex w-full justify-between sm:flex-row flex-col sm:space-x-5 pt-8 lg:pt-7 py-5">
             <div className="w-full">
               <div className="text-white text-sm py-1">Name</div>
