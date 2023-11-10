@@ -71,6 +71,8 @@ const ContactUs = () => {
           <div className="flex w-full justify-between sm:flex-row flex-col sm:space-x-5 pt-8 lg:pt-7 py-5">
             <div className="w-full">
               <div className="text-white text-sm py-1">Name</div>
+
+
               <Input />
             </div>
 
@@ -85,26 +87,25 @@ const ContactUs = () => {
             <Input />
           </div>
 
-<<<<<<< HEAD
           <div className="text-white w-full py-5">
             <div className="text-sm py-1">Purpose</div>
             <TextArea />
-=======
-          <div className="text-white w-full sm:py-0 pt-7">
-            <div className="text-sm py-1">Email</div>
-            <Input type="email" />
->>>>>>> origin/master
-          </div>
+            <div className="text-white w-full sm:py-0 pt-7">
+              <div className="text-sm py-1">Email</div>
+              <Input type="email" />
+            </div>
 
-          <div className="flex w-full py-5 justify-center">
-            <Button className="flex items-center text-gpgp-blue px-10 py-2 lg:w-[20%] lg:text-[1.4rem] bg-white uppercase">
-              Send
-            </Button>
+            <div className="flex w-full py-5 justify-center">
+              <Button className="flex items-center text-gpgp-blue px-10 py-2 lg:w-[20%] lg:text-[1.4rem] bg-white uppercase">
+                Send
+              </Button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   );
+
 };
 
 export default ContactUs;
