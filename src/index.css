@@ -28,7 +28,7 @@
 /* Regular */
 @font-face {
     font-family: be-vietnam;
-    src: url(../public/fonts/be-vietnam/BeVietnam-Regular.ttf) format('truetype'),
+    src: url(../public/fonts/be-vietnam/BeVietnam-Regular.ttf) format('truetype');
 }
 
 /* Bold */
@@ -41,12 +41,14 @@
 /* Semi-Bold */
 @font-face {
     font-family: be-vietnam-semibold;
+    font-weight: 400;
     src: url(../public/fonts/be-vietnam/BeVietnam-SemiBold.ttf) format('truetype');
 }
 
 /* Extra-Bold */
 @font-face {
     font-family: be-vietnam-xbold;
+    font-weight: 700;   
     src: url(../public/fonts/be-vietnam/BeVietnam-ExtraBold.ttf) format('truetype');
 }
 

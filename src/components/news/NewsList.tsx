@@ -53,12 +53,13 @@ const NewsList = () => {
   const handlePageChange = (pageNumber: number) => setCurrentPage(pageNumber);
   return (
     <div className="min-h-screen w-full">
+       
+        <LatestNews/>
         <Tabs
              items={[...tabCategories]} 
              currentCategory={currentCategory}
              onCategoryChange={handleCategoryChange}
          />
-        <LatestNews/>
         {items.map((category, index) => (
                 <NewsCategory 
                       key={index}

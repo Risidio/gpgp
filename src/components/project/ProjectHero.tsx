@@ -1,9 +1,9 @@
-import gpgpMapImage from "../../assets/images/gpgp-map-mobile.png";
+import gpgpMapImage from "../../assets/images/new_gpgp_hero.jpg";
 
 const ProjectHero = () => {
   return (
     <>
-      <div className="sm:flex w-[100%] mb-[-20px] md:mb-[-10px] lg:mb-[-200px] xl:mb-[-100px] xxl:mb-[-80px] xxxl:mb-[-320px] xxxxl:mb-[-220px]">
+      {/* <div className="sm:flex w-[100%] mb-[-20px] md:mb-[-10px] lg:mb-[-200px] xl:mb-[-100px] xxl:mb-[-80px] xxxl:mb-[-320px] xxxxl:mb-[-220px]">
         <div className="h-[100%] w-[100%] z-[4px] opacity-[1] md:z-[400] z-[400]">
           <div className="flex flex-col w-[100%] items-center justify-center mx-auto uppercase font-[700] md:leading-[59px] md:text-[40px] lg:gap-y-[0px]">
             <div className="mt-[44.21px] lg:mt-[35px]">
@@ -21,6 +21,19 @@ const ProjectHero = () => {
                 contribute to the global effort<br/>
                 Create a better world
               </h6>
+            </div>
+          </div>
+        </div>
+      </div> */}
+      <div>
+        <div className="flex flex-col gap-y-[10px]">
+          <div className="text-center flex flex-col">
+            <h1 className="uppercase font-[be-vietnam-xbold] font-bold text-[36px] leading-[53.1px]">The Great Pacific Garbage Patch Art Project </h1>
+            <p className="uppercase font-[be-vietnam-semibold] text-[20px] leading-[30px] tracking-normal">Contribute to the global effort. Create a better world</p>
+          </div>
+          <div className="">
+            <div className="flex flex-col justify-center items-center pt-[40px]">
+              <img src={gpgpMapImage} alt="GPGP Map"/>
             </div>
           </div>
         </div>

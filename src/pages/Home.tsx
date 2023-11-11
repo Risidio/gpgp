@@ -17,7 +17,7 @@ const Home = () => {
         <Exhibition />
       </section>
 
-      <div className="m-0">
+      <div>
         <HomeExhibition />
       </div>
 

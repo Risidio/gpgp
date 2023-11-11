@@ -55,8 +55,8 @@ module.exports = {
         "sponsor-contribute-mobile-wave":
           "url('./assets/svg/sponsorwavemobile.svg')",
         "flat-lay-composition":
-          "url('./assets/images/flat-lay-composition-different-colored-plastic-bags.jpg')",
-        "trashed-plastics": "url('./assets/images/trashedPlasticObjects.jpg')",
+          "url('./assets/images/flat-lay-composition-different-colored-plastic-bags.png')",
+        "trashed-plastics": "url('./assets/images/trashedPlasticObjects.png')",
         "news-background-wave": "url('./assets/svg/newswave.svg')"
       },
     },

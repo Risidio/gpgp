@@ -75,7 +75,7 @@ const ContentManage = ({ contents }) => {
               {content.description}
             </p>
 
-            <div className="mt-[60px]">
+            <div className="mt-[40px]">
               <MyLink
                 className={`"uppercase py-2 w-36 mx-auto h-16 ml-0 text-base
                                        ${

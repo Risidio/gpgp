@@ -49,13 +49,13 @@ const NewsCategoryList = () => {
 
   return (
     <div className="min-h-screen w-full">
-        <Tabs
+        {/* <Tabs
              items={[...tabCategories]} 
              currentCategory={currentCategory}
              onCategoryChange={handleCategoryChange}
              redirectTo
              showAllLabel={false}
-         />
+         /> */}
       <div className="w-full flex flex-col p-5">
          <h2 className="font-semibold text-lg uppercase py-5">
              {params.categoryId}
