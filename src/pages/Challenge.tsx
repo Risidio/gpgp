@@ -16,7 +16,7 @@ const Challenge = () => {
             <Section3/>
             <Section4/>
             <Section5/>
-        </>
+        </> 
      );
 }
  
