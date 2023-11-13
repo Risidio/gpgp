@@ -29,7 +29,7 @@ const InvitationArtist = () => {
       width: "half",
       id: "email",
     },
-  
+
     {
       label: "Phone Number",
       type: "tel",
@@ -59,19 +59,28 @@ const InvitationArtist = () => {
 
   const WavePattern = "Artist";
   return (
-    <div >
+    <div>
       <ContributeHero
         HeroContent={HeroContent}
         classes={{
           container: "mb-[2.7rem] sm:-mb-8",
           image: "opacity-50 z-[-14px] hidden",
-          heading: "sm:text-[2.2rem] lg:text-[2.4rem] xxl:text-[3rem] mb-7 sm:mb-10",
-          subheading: "font-be-vietnam text-[1.2rem] md:text-[1.7rem] mb-[1rem] xxxl:text-[2rem]",
-          paragraph: "w-[148%] leading-[1.2rem] sm:leading-7 xxl:text-[1.5rem] xxl:leading-[2rem] xxxl:text-[1.7rem] xxxl:leading-[2.2rem]",
+          heading:
+            "sm:text-[2.2rem] lg:text-[2.4rem] xxl:text-[3rem] mb-7 sm:mb-10",
+          subheading:
+            "font-be-vietnam text-[1.2rem] md:text-[1.7rem] mb-[1rem] xxxl:text-[2rem]",
+          paragraph:
+            "w-[148%] leading-[1.2rem] sm:leading-7 xxl:text-[1.5rem] xxl:leading-[2rem] xxxl:text-[1.7rem] xxxl:leading-[2.2rem]",
         }}
       />
 
-      <InvitationForm formField={formFields} WavePattern={WavePattern} />
+      <InvitationForm
+        formField={formFields}
+        WavePattern={WavePattern}
+        Classes={{
+          FormBtn: "bg-white text-[#0A2471]",
+        }}
+      />
     </div>
   );
 };

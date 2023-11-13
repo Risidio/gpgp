@@ -40,7 +40,12 @@ const Project = () => {
       </section>
 
       <section>
-        <ContributionSection/>
+        <ContributionSection classes={{
+          container: "",
+          heading: "",
+          subheading: ""
+         
+        }}/>
       </section>
     </>
   );

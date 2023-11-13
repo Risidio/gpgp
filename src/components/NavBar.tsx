@@ -3,6 +3,9 @@ import styles from "../assets/styles/animations.module.css";
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
 import { HiChevronDown } from "react-icons/hi";
+import MobileLogo from "./MobileLogo";
+
+ 
 
 // All the links as static data
 const links = [
@@ -89,7 +92,7 @@ const NavBar = () => {
           className="flex items-center pl-4 sm:hidden"
           onClick={() => resetSelectItem()}
         >
-          <Logo className="w-max" />
+          <MobileLogo className="w-max" />
         </Link>
         {isOpenMenu && (
           <div

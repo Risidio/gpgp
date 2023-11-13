@@ -66,17 +66,17 @@ export default function Contact() {
         formField={formFields}
         WavePattern={WavePattern}
         SponsorFormLegend={SponsorFormLegend}
-        Classes={{
-          container:
-            "pt-0 top-[20px] xsm:top-[20px] sm:top-[20px] md:top-[0px] lg:top-[-100px] xl:top-[0px]",
-          heading: "",
-          subheading: "",
-          paragraph: "",
-        }}
+        
       />
 
       <section className="hidden md:block">
-        <ContributionSection />
+        <ContributionSection
+          classes={{
+            container: "mt-0  xxxxl:pt-[400px]",
+            heading: "",
+            subheading: "",
+          }}
+        />
       </section>
     </div>
   );
