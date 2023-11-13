@@ -45,12 +45,12 @@ const Exhibition = () => {
             <img
               className="w-[100%] h-[100%] hidden md:block"
               src={GalleryImageWeb}
-              alt={"The Gallery Web Picture"}
+              alt={"The Gallery Web"}
             />
             <img
               className="w-[100%] h-[100%] md:hidden"
               src={GalleryImage}
-              alt={"The Gallery Mobile Picture"}
+              alt={"The Gallery Mobile"}
             />
           </div>
         </div>

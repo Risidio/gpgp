@@ -38,7 +38,7 @@ const Hero = () => {
 
           <div className="">
             <div className="flex justify-center">
-              <img src={gpgpMapImage} alt="GPGP Image" />
+              <img src={gpgpMapImage} alt="GPGP" />
             </div>
           </div>
         </div>

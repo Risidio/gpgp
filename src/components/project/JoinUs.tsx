@@ -109,13 +109,13 @@ const JoinUs = () => {
             <img
               className="w-[100%] h-[100%] hidden md:block"
               src={SeaSealWeb}
-              alt={"The SeaSeal Web Picture"}
+              alt={"The SeaSeal Web"}
             />
             <div>
               <img
                 className="w-[100%] h-[100%] md:hidden"
                 src={SeaSeal}
-                alt={"The SeaSeal Mobile Picture"}
+                alt={"The SeaSeal Mobile"}
               />
             </div>
           </div>

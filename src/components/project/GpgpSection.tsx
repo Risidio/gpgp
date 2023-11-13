@@ -45,12 +45,12 @@ const GpgpSection = () => {
             <img
               className="w-[100%] h-[100%] hidden md:block"
               src={challengeImageWeb}
-              alt={"The Challenge Web Picture"}
+              alt={"The Challenge Web"}
             />
             <img
               className="w-[100%] h-[100%] md:hidden"
               src={challengeImage}
-              alt={"The Challenge Mobile Picture"}
+              alt={"The Challenge Mobile"}
             />
           </div>
         </div>
