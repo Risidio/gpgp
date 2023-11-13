@@ -1,11 +1,10 @@
-import ContributeHero from "../components/contribute/ContributeHero";
 import InvitationForm from "../components/contribute/Invitation/InvitationForm";
 import ContributionSection from "../components/project/Contribution";
 
 export default function Contact() {
-  const HeroContent = {
-    heading: "Contacts",
-  };
+  // const HeroContent = {
+  //   heading: "Contacts",
+  // };
 
   const formFields = [
     {
