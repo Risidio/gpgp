@@ -16,36 +16,7 @@ const InvitationArtist = () => {
       width: "half",
       id: "full-name",
     },
-    {
-      label: "Title",
-      type: "text",
-      width: "half",
-      id: "title",
-    },
-    {
-      label: "Date of Birth",
-      type: "date",
-      width: "half",
-      id: "date-of-birth",
-    },
-    {
-      label: "Location",
-      type: "text",
-      width: "half",
-      id: "location",
-    },
-    {
-      label: "Phone Number",
-      type: "tel",
-      width: "half",
-      id: "phone-number",
-    },
-    {
-      label: "Email",
-      type: "email",
-      width: "half",
-      id: "email",
-    },
+
     {
       label: "Profession",
       type: "text",
@@ -53,10 +24,17 @@ const InvitationArtist = () => {
       id: "profession",
     },
     {
-      label: "Field of Arts",
-      type: "text",
+      label: "Email",
+      type: "email",
       width: "half",
-      id: "field-of-arts",
+      id: "email",
+    },
+  
+    {
+      label: "Phone Number",
+      type: "tel",
+      width: "half",
+      id: "phone-number",
     },
     {
       label: "Title of the artwork",
@@ -81,15 +59,15 @@ const InvitationArtist = () => {
 
   const WavePattern = "Artist";
   return (
-    <div>
+    <div >
       <ContributeHero
         HeroContent={HeroContent}
         classes={{
           container: "mb-[2.7rem] sm:-mb-8",
           image: "opacity-50 z-[-14px] hidden",
           heading: "sm:text-[2.2rem] lg:text-[2.4rem] xxl:text-[3rem] mb-7 sm:mb-10",
-          subheading: "font-be-vietnam text-[1.2rem] md:text-[1.7rem] xxxl:text-[2rem]",
-          paragraph: "w-[148%] leading-[1rem] sm:leading-6 xxl:text-[1.5rem] xxl:leading-[2rem]",
+          subheading: "font-be-vietnam text-[1.2rem] md:text-[1.7rem] mb-[1rem] xxxl:text-[2rem]",
+          paragraph: "w-[148%] leading-[1.2rem] sm:leading-7 xxl:text-[1.5rem] xxl:leading-[2rem] xxxl:text-[1.7rem] xxxl:leading-[2.2rem]",
         }}
       />
 

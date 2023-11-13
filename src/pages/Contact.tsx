@@ -1,5 +1,6 @@
 import ContributeHero from "../components/contribute/ContributeHero";
 import InvitationForm from "../components/contribute/Invitation/InvitationForm";
+import ContributionSection from "../components/project/Contribution";
 
 export default function Contact() {
   const HeroContent = {
@@ -51,7 +52,7 @@ export default function Contact() {
 
   return (
     <div className="flex flex-col">
-      <ContributeHero
+      {/* <ContributeHero
         HeroContent={HeroContent}
         classes={{
           container: "mb:[-150px] md:mb-[-450px]",
@@ -59,19 +60,24 @@ export default function Contact() {
           heading: "mb-[20.25rem] sm:mb-[24rem] text-black",
           paragraph: "",
         }}
-      />
+      /> */}
 
       <InvitationForm
         formField={formFields}
         WavePattern={WavePattern}
         SponsorFormLegend={SponsorFormLegend}
         Classes={{
-            container: "top-[100px] xsm:top-[190px] sm:top-[300px] md:top-[380px] lg:top-[440px] xl:top-[520px]",
-            heading: "",
-            subheading: "",
-            paragraph: "",
-          }}
+          container:
+            "pt-0 top-[20px] xsm:top-[20px] sm:top-[20px] md:top-[0px] lg:top-[-100px] xl:top-[0px]",
+          heading: "",
+          subheading: "",
+          paragraph: "",
+        }}
       />
+
+      <section className="hidden md:block">
+        <ContributionSection />
+      </section>
     </div>
   );
 }

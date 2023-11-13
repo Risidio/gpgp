@@ -20,7 +20,7 @@ const Footer = ({classes= "bg-gpgp-blue"}: FooterProps) => {
        <Container hasSection={false} classes={twMerge("bg-gpgp-blue flex flex-col", `${footerStyles ? footerStyles!.style : ""}`)}>
             
             {/* Desktop-view */}
-            <div className="w-full sm:flex sm:flex-col pt-7 hidden">
+            <div className="w-full sm:flex sm:flex-col pt-16 hidden">
                 <div className="w-full grid grid-cols-3 justify-between p-5">
                     <Logo className="flex justify-start items-start w-20 h-20"/> 
                     <SocialMedia color={`${fontColor ? fontColor: "bg-gpgp-blue"}`} />

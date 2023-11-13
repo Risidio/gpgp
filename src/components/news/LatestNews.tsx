@@ -2,7 +2,7 @@ const LatestNews = () => {
   return (
     <div className="w-full flex flex-col sm:p-9 p-5">
          <div className="flex justify-between items-center pb-5">
-            <h2 className="font-semibold text-lg uppercase">
+            <h2 className="font-semibold text-[1.4rem] xxl:text-[2rem] uppercase">
                 Latest News
             </h2>
           </div>
@@ -14,7 +14,7 @@ const LatestNews = () => {
                         <img
                            src={require("../../assets/images/news/news2.png")}
                            alt=""
-                           className="w-full h-[470px] shadow-md opacity-95 hover:opacity-90 transition duration-300 ease-in-out"
+                           className="w-full h-[470px] shadow-md opacity-95 object-cover hover:opacity-90 transition duration-300 ease-in-out"
                         />
                        <span className="absolute bottom-1 text-[1.1rem] drop-shadow-sm font-semibold text-white p-5 z-50">
                            The Tide of Plastic: A Growing Threat  The Tide of Plastic: A Growing Threat 
@@ -26,7 +26,7 @@ const LatestNews = () => {
                         <img
                            src={require("../../assets/images/news/news1.jpg")}
                            alt=""
-                           className="w-full h-56 shadow-md"
+                           className="w-full h-56 object-cover shadow-md"
                            />
                           <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2 z-50">
                                The Tide of Plastic: A Growing Threat  The Tide of Plastic: A Growing Threat 
@@ -37,7 +37,7 @@ const LatestNews = () => {
                         <img
                            src={require("../../assets/images/news/news3.jpg")}
                            alt=""
-                           className="w-full h-56 shadow-md"
+                           className="w-full h-56 object-cover shadow-md"
                            />
                           <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2 z-50">
                                The Tide of Plastic: A Growing Threat  The Tide of Plastic: A Growing Threat 
@@ -48,7 +48,7 @@ const LatestNews = () => {
                         <img
                            src={require("../../assets/images/news/news4.jpg")}
                            alt=""
-                           className="w-full h-56 shadow-md"
+                           className="w-full h-56 object-cover shadow-md"
                            />
                           <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2 z-50">
                                The Tide of Plastic: A Growing Threat  The Tide of Plastic: A Growing Threat 
@@ -59,7 +59,7 @@ const LatestNews = () => {
                         <img
                            src={require("../../assets/images/news/news5.jpg")}
                            alt=""
-                           className="w-full h-56 shadow-md"
+                           className="w-full h-56 object-cover shadow-md"
                            />
                           <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2 z-50">
                                The Tide of Plastic: A Growing Threat  The Tide of Plastic: A Growing Threat 
@@ -76,7 +76,7 @@ const LatestNews = () => {
                       <img
                         src={require("../../assets/images/news/news2.png")}
                         alt=""
-                        className="w-full h-60 shadow-md"
+                        className="w-full h-60 object-cover shadow-md"
                         />
                        <span className="absolute bottom-1 text-sm drop-shadow-sm font-semibold text-white p-3 z-50">
                            The Tide of Plastic: A Growing Threat  The Tide of Plastic: A Growing Threat 
@@ -87,7 +87,7 @@ const LatestNews = () => {
                       <img
                         src={require("../../assets/images/news/news1.jpg")}
                         alt=""
-                        className="w-full h-60 shadow-md"
+                        className="w-full h-60 object-cover shadow-md"
                          />
                        <span className="absolute bottom-1 text-sm drop-shadow-sm font-semibold text-white p-3 z-50">
                            The Tide of Plastic: A Growing Threat  The Tide of Plastic: A Growing Threat 
@@ -99,7 +99,7 @@ const LatestNews = () => {
                     <img
                        src={require("../../assets/images/news/news3.jpg")}
                        alt=""
-                       className="w-full h-40 shadow-md"
+                       className="w-full h-40 object-cover shadow-md"
                     />
                     <span className="absolute bottom-0 text-sm drop-shadow-sm font-semibold text-white p-3 z-50">
                      The Tide of Plastic: A Growing Threat  The Tide of Plastic: A Growing Threat 
@@ -110,7 +110,7 @@ const LatestNews = () => {
                     <img
                        src={require("../../assets/images/news/news4.jpg")}
                        alt=""
-                       className="w-full h-40 shadow-md"
+                       className="w-full h-40 object-cover shadow-md"
                     />
                     <span className="absolute bottom-0 text-sm drop-shadow-sm font-semibold text-white p-3 z-50">
                      The Tide of Plastic: A Growing Threat  The Tide of Plastic: A Growing Threat 
@@ -121,7 +121,7 @@ const LatestNews = () => {
                     <img
                        src={require("../../assets/images/news/news5.jpg")}
                        alt=""
-                       className="w-full h-40 shadow-md"
+                       className="w-full h-40 object-cover shadow-md"
                     />
                     <span className="absolute bottom-0 text-sm drop-shadow-sm font-semibold text-white p-3 z-50">
                      The Tide of Plastic: A Growing Threat  The Tide of Plastic: A Growing Threat 

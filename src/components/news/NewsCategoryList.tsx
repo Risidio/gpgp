@@ -3,6 +3,7 @@ import Tabs from "../shared/Tabs";
 import { useState } from "react"
 import Pagination from "../shared/Pagination";
 import { NewsCard } from "./NewsCard";
+import NewsBoard from "./NewsBoard";
 
 const categories = [
    {
@@ -48,8 +49,8 @@ const NewsCategoryList = () => {
     const handlePageChange = (pageNumber: number) => setCurrentPage(pageNumber);
 
   return (
-    <div className="min-h-screen w-full">
-        {/* <Tabs
+    <div className="min-h-screen w-full mt-[15px]">
+        <Tabs
              items={[...tabCategories]} 
              currentCategory={currentCategory}
              onCategoryChange={handleCategoryChange}
@@ -57,19 +58,10 @@ const NewsCategoryList = () => {
              showAllLabel={false}
          /> */}
       <div className="w-full flex flex-col p-5">
-         <h2 className="font-semibold text-lg uppercase py-5">
+         <h2 className="font-semibold text-center text-[1rem] md:text-[1.5rem]  xxxl:text-[2rem] xxxxl:text-[2.2rem] uppercase py-5">
              {params.categoryId}
          </h2>
-         <div className="group relative py-10 shadow-md">
-            <img
-                  src={require("../../assets/images/news/main-news.png")}
-                  alt=""
-                  className="w-full h-[400px] rounded-sm"
-            />
-            <span className="absolute bottom-10 text-[1.5rem] drop-shadow-sm font-semibold text-white p-2 z-50">
-                  The Tide of Plastic: A Growing Threat  The Tide of Plastic: A Growing Threat 
-            </span>
-         </div>
+         <NewsBoard/>
          <div className="grid grid-cols-3 gap-5">
              {fakeData.map((item, index) => (
                  <NewsCard

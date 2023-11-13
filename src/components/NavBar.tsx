@@ -29,11 +29,11 @@ const links = [
     href: "/contribute",
     submenu: [
       {
-        name: "Take part",
-        href: "/contribute",
+        name: "Sponsor",
+        href: "/contribute/inviteSponsor",
       },
       {
-        name: "Invest",
+        name: "Artist",
         href: "/contribute/inviteArtist",
       },
     ],
@@ -82,7 +82,7 @@ const NavBar = () => {
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-white transition ease transform duration-300`;
   return (
     <div className="px-2 lg:px-4 sm:px-12 py-2 flex justify-between  items-center bg-gpgp-blue sm:bg-white">
-      <nav className="flex w-full md:flex sm:px-0 md:px-3 items-center justify-between">
+      <nav className="flex w-full md:flex px-0 py-0 md:px-4 md:py-3 items-center justify-between">
         {/* phone Navbar */}
         <Link
           to="/"
@@ -157,22 +157,20 @@ const NavBar = () => {
 
         <Link
           to="/"
-          className="flex items-center sm:pl-0 md:pl-4"
+          className="hidden sm:flex items-center sm:pl-0 xxxxl:w-[320px] md:pl-4"
           onClick={() => resetSelectItem()}
         >
-          <h1 className="sm:flex hidden ml-3 sm:mr-1  text-2xl lg:text-3xl tracking-widest font-semibold">
-            GPGP
-          </h1>
+          <Logo className="w-max" />
         </Link>
 
-        <div className="hidden sm:flex text-xl font-semibold">
+        <div className="hidden sm:flex text-xl  font-semibold">
           {links.map((link, index) =>
             link.submenu ? (
               <div
                 key={index}
                 className="group relative text-black my-0 hover:shadow-sm hover:text-white hover:cursor-pointer hover:bg-gpgp-blue rounded-md uppercase"
               >
-                <div className="flex items-center text-sm xxxxl:text-[25px] gap-1 px-3 py-2 w-full">
+                <div className="flex items-center text-sm lg:text-[1rem] xxl:text-[1.2rem] xxxxl:text-[1.3rem] gap-1 px-3 py-2 w-full">
                   <Link to={link.href} onClick={() => resetSelectItem()}>
                     {link.name}
                   </Link>
@@ -197,20 +195,14 @@ const NavBar = () => {
                 key={index}
                 className="group relative text-black my-0 hover:cursor-pointer hover:text-gpgp-blue uppercase"
               >
-                <div className="flex items-center text-sm xxxxl:text-[25px] gap-1 px-3 py-2 w-full">
+                <div className="flex items-center text-sm lg:text-[1rem] xxl:text-[1.2rem] xxxxl:text-[1.3rem] gap-1 px-3 py-2 w-full">
                   <Link to={link.href}>{link.name}</Link>
                 </div>
               </div>
             )
           )}
         </div>
-        <Link
-          to="/"
-          className=" sm:flex items-center pl-4 hidden sm:visible"
-          onClick={() => resetSelectItem()}
-        >
-          <Logo className="w-max" />
-        </Link>
+       
 
         {/* hamburger menu */}
         <div className="inline-block sm:hidden text-white py-1 px-3 h-auto">
