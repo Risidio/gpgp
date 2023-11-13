@@ -2,9 +2,7 @@ import InvitationForm from "../components/contribute/Invitation/InvitationForm";
 import ContributionSection from "../components/project/Contribution";
 
 export default function Contact() {
-  // const HeroContent = {
-  //   heading: "Contacts",
-  // };
+
 
   const formFields = [
     {
@@ -51,15 +49,6 @@ export default function Contact() {
 
   return (
     <div className="flex flex-col">
-      {/* <ContributeHero
-        HeroContent={HeroContent}
-        classes={{
-          container: "mb:[-150px] md:mb-[-450px]",
-          image: "hidden opacity-40 blur-md md:z-[-2px] z-[-4px]",
-          heading: "mb-[20.25rem] sm:mb-[24rem] text-black",
-          paragraph: "",
-        }}
-      /> */}
 
       <InvitationForm
         formField={formFields}
