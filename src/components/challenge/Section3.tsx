@@ -28,7 +28,7 @@ const Section3 = () => {
               </p>
             </div>
           </div>
-          <div className="w-full h-[200px] md:h-full order-1 md:order-2 bg-[length:100%_100%] bg-flat-lay-composition md:bg-none md:border-y-[0px] border-gpgp-blue">
+          <div className="w-full h-[200px] md:h-full order-1 md:order-2 bg-[length:100%_100%] bg-flat-lay-composition-mobile md:bg-none md:border-y-[0px] border-gpgp-blue">
             <img
               src={FlatLayComposition}
               className="hidden md:block w-full h-[100%] md:w-[740px] lg:w-full"

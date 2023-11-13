@@ -3,9 +3,9 @@ import TrashedPlasticObjects from "../../assets/images/trashedPlasticObjects.png
 const Section2 = () => {
   return (
     <>
-      <div className="">
+      <div className="pb-[40px] md:pb-none">
         <div className="grid md:grid-cols-2">
-          <div className="w-full h-[200px] md:h-full order-1 bg-trashed-plastics md:bg-none">
+          <div className="w-full h-[200px] md:h-full order-1 bg-trashed-plastics-mobile md:bg-none">
             <img
               src={TrashedPlasticObjects}
               className="hidden md:block w-full h-full md:w-[740px] lg:w-full"

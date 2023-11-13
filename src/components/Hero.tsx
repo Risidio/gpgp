@@ -4,7 +4,7 @@ import gpgpMapImage from "../assets/images/new_gpgp_hero.jpg";
 const Hero = () => {
   return (
     <>
-      <div className="hidden lg:block px-[80px]">
+      <div className="hidden lg:block px-[80px] py-[60px]">
         <div className="grid grid-cols-2">
           <div className="flex flex-col justify-between">
             <div className="flex flex-col gap-y-[7px]">
@@ -21,23 +21,23 @@ const Hero = () => {
             </div>
             <div className="flex flex-row gap-x-[19px] py-[16px]">
               <MyLink
-                to=""
-                className="px-[63px] py-[20px] border border-[1px] border-gpgp-blue"
+                to="/gallery"
+                className="px-[50px] py-[15px] border border-[1px] border-gpgp-blue"
               >
-                <p className="uppercase text-[16px] font-bold leading-[23.6px] tracking-[3px]">
+                <p className="uppercase text-[16px] font-[be-vietnam-bold] leading-[23.6px] tracking-[3px]">
                   Gallery
                 </p>
               </MyLink>
-              <MyLink to="" className="px-[63px] py-[20px] bg-gpgp-blue">
-                <p className="uppercase text-white text-[16px] font-bold leading-[23.6px] tracking-[3px]">
+              <MyLink to="/contribute" className="px-[50px] py-[15px] bg-gpgp-blue">
+                <p className="uppercase text-white text-[16px] font-[be-vietnam-bold] leading-[23.6px] tracking-[3px] lg:tracking-[1.5px]">
                   Join Us
                 </p>
               </MyLink>
             </div>
           </div>
 
-          <div className="p-">
-            <div className="flex justify-center items-center">
+          <div className="">
+            <div className="flex justify-center">
               <img src={gpgpMapImage} alt="GPGP Image" />
             </div>
           </div>

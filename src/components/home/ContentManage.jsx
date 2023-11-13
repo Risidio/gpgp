@@ -33,10 +33,10 @@ const ContentManage = ({ contents }) => {
             </div>
 
             <div className={`w-full flex flex-col text-left xxl:gap-y-4`}>
-              <h1 className="text-[#050B1D] font-BeVietnam text-[16px] md:text-[18px] lg:text-[25px] xl:text-[30px] xxl:text-[35px] xxxl:text-[64px] font-[600] leading-[23.38px] md:leading-[30px] font-semibold">
+              <h1 className="text-[#050B1D] font-[be-vietnam-bold] text-[16px] md:text-[18px] lg:text-[25px] xl:text-[30px] xxl:text-[35px] xxxl:text-[64px] font-[600] leading-[23.38px] md:leading-[30px] font-semibold">
                 {content.name}
               </h1>
-              <div className="text-[#050B1D] font-BeVietnam text-[16px] lg:text-[18px] xl:text-[25px] xxxl:text-[28px] font-normal leading-[32px] xxl:leading-[38px] my-[20px]">
+              <div className="text-[#050B1D] font-[be-vietnam-bold] text-[16px] lg:text-[18px] xl:text-[25px] xxxl:text-[28px] font-normal leading-[32px] xxl:leading-[38px] my-[20px]">
                 <p>{content.description}</p>
               </div>
 
@@ -44,7 +44,7 @@ const ContentManage = ({ contents }) => {
                 className="uppercase py-2 items-center sm:w-56 w-36 mx-auto h-16 ml-0 text-base"
                 to={content.Btn.link}
               >
-                <p className="text-[#1F2D5A] text-center font-Inter text-[20px] font-bold leading-[147.51%] tracking-[9.9px] uppercase">
+                <p className="text-[#1F2D5A] text-center font-[be-vietnam-bold] xxsm:text-[16px] md:text-[20px] font-bold leading-[147.51%] tracking-[9.9px] uppercase">
                   {content.Btn.name}
                 </p>
               </MyLink>

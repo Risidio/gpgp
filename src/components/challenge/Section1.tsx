@@ -9,7 +9,7 @@ const Section1 = () => {
             Due to their small size, microplastics are nearly <br />
             <b>impossible to monitor, track, or remove.</b>
           </p>
-          <div className="hidden md:block w-[698px] h-[10px] flex-shrink-0 rounded-[40px] bg-gpgp-blue"></div>
+          <div className="hidden md:block w-[698px] h-[10px] flex-shrink-0 rounded-[40px] bg-gpgp-blue px-[20px]"></div>
 
           <div className="md:w-[80%]">
             <p className="text-center text-[#050B1D] font-[be-vietnam] text-[16px] md:text-[32px] lg:text-[22px] xl:text-[24px] xxl:text-[25px] xxxxl:text-[35px] leading-[200%] tracking-[-0.75px] md:tracking-[0.99px]">

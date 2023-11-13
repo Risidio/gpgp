@@ -30,7 +30,7 @@ const Home = () => {
       </Container>
 
       <div className="sm:hidden block">
-        <div className="font-semibold text-base text-center pt-20 uppercase">
+        <div className="font-[be-vietnam-semibold] text-white text-base text-center pt-20 uppercase">
           <p>contribute to the global effort</p>
           <p className="py-3">Create a better world</p>
         </div>
