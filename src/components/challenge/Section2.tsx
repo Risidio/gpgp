@@ -27,20 +27,20 @@ const Section2 = () => {
               </h1>
             </div>
             <div className="flex flex-col items-center gap-y-[20px] mt-[35px] mx-[23px] justify-center md:ml-[64px] md:mr-[87px] md:pb-[40px]">
-              <p className="text-center md:text-left text-[#050B1D] font-[be-vietnam] text-[15px] lg:text-[22px] xl:text-[24px] xxl:text-[25px] xxxxl:text-[35px] md:text-base leading-[200%] lg:leading-[30px] xl:leading-[40px] xxl:leading-[45px] xxxl:leading-[50px] xxxxl:leading-[60px] tracking-[-0.32px]">
+              <p className="text-center md:text-left text-[#050B1D] font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
                 The problem of plastic ending up in oceans affects countries and
                 regions around the world. It is a global issue that impacts
                 marine life, ecosystems, and human populations. Countries with
                 extensive coastlines, high population density, and inadequate
                 waste management systems are particularly affected.
               </p>
-              <p className="text-center md:text-left text-[#050B1D] font-[be-vietnam] text-[15px] lg:text-[22px] xl:text-[24px] xxl:text-[25px] xxxxl:text-[35px] md:text-base leading-[200%] lg:leading-[30px] xl:leading-[40px] xxl:leading-[45px] xxxl:leading-[50px] xxxxl:leading-[60px] tracking-[-0.65px]">
+              <p className="text-center md:text-left text-[#050B1D] font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
                 Some of the major contributors to plastic pollution in oceans
                 include highly populated countries with rapidly growing
                 economies and inadequate waste disposal infrastructure, such as{" "}
                 <b>China, Indonesia, the Philippines, Vietnam, and Thailand.</b>
               </p>
-              <p className="text-center md:text-left text-[#050B1D] font-[be-vietnam] text-[15px] lg:text-[22px] xl:text-[24px] xxl:text-[25px] xxxxl:text-[35px] md:text-base leading-[200%] lg:leading-[30px] xl:leading-[40px] xxl:leading-[45px] xxxl:leading-[50px] xxxxl:leading-[60px] tracking-[-0.65px]">
+              <p className="text-center md:text-left text-[#050B1D] font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
                 Communities located near coastlines and rivers are particularly
                 affected by the problem of plastic pollution in oceans. These
                 communities often bear the brunt of plastic debris washing up on
