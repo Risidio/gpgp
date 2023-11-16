@@ -15,7 +15,7 @@ const Exhibition = () => {
               Exhibition
             </h1>
             <div className="w-[100%] md:py-[60px] px-[15px] md:px-[80px] flex flex-col gap-y-[40px]">
-              <p className="font-[be-vietnam] text-center md:text-left text-[16px] lg:text-[18px] xl:text-[25px] xxxl:text-[28px] xxxl:text-[28px] leading-[30px] md:leading-[32px] lg:leading-[35px]">
+              <p className="font-[be-vietnam] text-center md:text-left text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
                 <b>The GPGP exhibition</b> comprises 2,450 physical art pieces,
                 thoughtfully organised to replicate the satellite depiction of
                 the Great Pacific Garbage Patch. Within this presentation, 888
@@ -24,7 +24,7 @@ const Exhibition = () => {
                 Patch's satellite representation.
               </p>
 
-              <p className="font-[be-vietnam] text-justified hidden md:block md:text-left text-[16px] lg:text-[18px] xl:text-[25px] xxxl:text-[28px] leading-[32px] lg:leading-[35px] font-[400]">
+              <p className="font-[be-vietnam] text-justified hidden md:block md:text-left text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
                 Each tile embodies a unique artistic expression, serving as a
                 poignant and evocative symbol of the expansive scope and
                 critical implications associated with plastic pollution.
@@ -34,7 +34,7 @@ const Exhibition = () => {
                 to=""
                 className="uppercase mb-[48.62px] md:mb-[0px] bg-gpgp-blue px-[17px] py-[11px] md:bg-white text-white md:text-gpgp-blue md:w-56 tracking-[3.3px] md:h-16 md:tracking-[.35em] text-base mx-auto md:mx-0"
               >
-                <p className="font-[be-vietnam] text-[15px] md:text-[16px]">
+                <p className="font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
                   {" "}
                   Explore
                 </p>

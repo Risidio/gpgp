@@ -1,12 +1,12 @@
+import Contribution from "../components/Contribution";
 import InvitationForm from "../components/contribute/Invitation/InvitationForm";
-import ContributionSection from "../components/project/Contribution";
 
 export default function Contact() {
   // const HeroContent = {
   //   heading: "Contacts",
   // };
 
-  const formFields = [
+  const formFields = [ 
     {
       label: "Full Name",
       type: "text",
@@ -74,9 +74,7 @@ export default function Contact() {
         }}
       />
 
-      <section className="hidden md:block">
-        <ContributionSection />
-      </section>
+      <Contribution/>
     </div>
   );
 }

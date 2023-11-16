@@ -44,16 +44,18 @@ const About = () => {
               About the Project
             </h1>
             <div className="py-[10px] lg:py-[20px] lg:py-[50px] xxxl:py-[60px] xl:py-[30px] px-[39px] sm:px-[39px] md:px-[150px] lg:px-[210px] xl:px-[200px] xxl:px-[380px] xxxl:px-[600px] xxxxl:px-[800px]">
-              <p className="text-center text-[15px] md:text-[16px] lg:text-[19px] xl:text-[20px] xxxxl:text-[30px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
+              <p className="text-center text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
                 The GPGP project represents a collaborative endeavour between
                 InfinArt and the esteemed environmental artist John Dahlsen. It
                 serves as an innovative exhibition with the primary objective of
                 fostering heightened awareness concerning plastic pollution,
-                with a specific focus on the Great Pacific Garbage Patch. This
-                pioneering initiative uniquely melds artistic expression,
-                educational outreach, and community engagement to provide a
-                groundbreaking experience that effectively confronts the urgent
-                environmental involvement at hand.
+                with a specific focus on the Great Pacific Garbage Patch.{" "}
+                <span className="hidden md:inline">
+                  This pioneering initiative uniquely melds artistic expression,
+                  educational outreach, and community engagement to provide a
+                  groundbreaking experience that effectively confronts the
+                  urgent environmental involvement at hand.
+                </span>
               </p>
             </div>
           </div>
@@ -65,9 +67,9 @@ const About = () => {
           <div className="hidden md:flex flex-col items-center pb-[60px] md:pb-[30px] md:pt-[30px] pt-[10px]">
             <MyLink
               to=""
-              className="px-[63px] py-[15px] border border-[1px] border-gpgp-blue"
+              className="uppercase mb-[48.62px] md:mb-[0px] bg-gpgp-blue px-[10px] py-[11px] md:bg-white text-white md:text-gpgp-blue md:w-60 tracking-[3.3px] md:h-16 md:tracking-[.35em] text-base mx-auto md:mx-0"
             >
-              <p className="uppercase text-[16px] font-[be-vietnam-bold] leading-[23.6px] tracking-[3px]">
+              <p className="font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
                 SEE ALL
               </p>
             </MyLink>

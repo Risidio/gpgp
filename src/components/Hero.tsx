@@ -20,17 +20,28 @@ const Hero = () => {
               </p>
             </div>
             <div className="flex flex-row gap-x-[19px] py-[16px]">
-              <MyLink
+              {/* <MyLink
                 to="/gallery"
                 className="px-[50px] py-[15px] border border-[1px] border-gpgp-blue"
               >
                 <p className="uppercase text-[16px] font-[be-vietnam-bold] leading-[23.6px] tracking-[3px]">
                   Gallery
                 </p>
+              </MyLink> */}
+             <MyLink
+                to="/gallery"
+                className="uppercase mb-[48.62px] md:mb-[0px] bg-gpgp-blue px-[10px] py-[11px] md:bg-white text-white md:text-gpgp-blue md:w-60 tracking-[3.3px] md:h-16 md:tracking-[.35em] text-base mx-auto md:mx-0"
+              >
+                <p className="font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
+                 Gallery
+                </p>
               </MyLink>
-              <MyLink to="/contribute" className="px-[50px] py-[15px] bg-gpgp-blue">
-                <p className="uppercase text-white text-[16px] font-[be-vietnam-bold] leading-[23.6px] tracking-[3px] lg:tracking-[1.5px]">
-                  Join Us
+              <MyLink
+                to="/contribute"
+                className="uppercase mb-[48.62px] md:mb-[0px] bg-gpgp-blue px-[10px] py-[11px] text-white md:w-60 tracking-[3.3px] md:h-16 md:tracking-[.35em] text-base mx-auto md:mx-0"
+              >
+                <p className="font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
+                  Join
                 </p>
               </MyLink>
             </div>

@@ -37,8 +37,8 @@ const Attention = () => {
           </div>
         </div>
       </div> */}
-      <div className="w-[100%] h-[100%] bg-gpgp-blue md:bg-white mt-[30px] md:mt-[0px] pb-[30px] md:pb-[0px]">
-        <h1 className="md:hidden pt-[20px] text-white md:text-black md:pt-[0px] text-center text-[16px] md:mt-[64px] leading-[48px] uppercase font-[be-vietnam-xbold] font-[600] md:font-[600] md:text-[40px] md:leading-[48px]">
+      <div className="w-[100%] h-[100%] mt-[30px] md:mt-[0px] pb-[30px] md:pb-[0px]">
+        <h1 className="md:hidden pt-[20px] md:text-black md:pt-[0px] text-center text-[16px] md:mt-[64px] leading-[48px] uppercase font-[be-vietnam-xbold] font-[600] md:font-[600] md:text-[40px] md:leading-[48px]">
           Why does it need attention?
         </h1>
         <div className="w-[100%] grid md:grid-cols-2 mt-[15px] md:mt-[70px]">
@@ -60,14 +60,14 @@ const Attention = () => {
               Why does it need attention?
             </h1>
             <div className="w-[100%] order-2 md:order-1 md:py-[60px] px-[15px] md:px-[80px] flex flex-col gap-y-[40px]">
-              <p className="font-[be-vietnam] text-white md:text-black text-center md:text-left text-[16px] lg:text-[18px] xl:text-[25px] xxxl:text-[28px] xxxl:text-[28px] leading-[30px] md:leading-[32px] lg:leading-[35px]">
+              <p className="font-[be-vietnam] md:text-black text-center md:text-left text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
                 The Great Pacific Garbage Patch is a pressing environmental
                 issue that requires immediate attention. It has already caused
                 significant harm to marine life and the ecosystem, and its
                 impact will only worsen if we do nothing.
               </p>
 
-              <p className="font-[be-vietnam] text-justified hidden md:block md:text-left text-[16px] lg:text-[18px] xl:text-[25px] xxxl:text-[28px] leading-[32px] lg:leading-[35px] font-[400]">
+              <p className="font-[be-vietnam] text-justified hidden md:block md:text-left text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
                 The research conducted by oceanographers and ecologists suggests
                 that a significant proportion of the marine debris,
                 approximately 70%, sinks to the ocean's bottom.{" "}
@@ -76,7 +76,7 @@ const Attention = () => {
                 </b>
               </p>
 
-              <p className="font-[be-vietnam-bold] text-white md:text-black md:font-[be-vietnam] text-center md:text-left text-[16px] lg:text-[18px] xl:text-[25px] xxxl:text-[28px] leading-[32px] lg:leading-[35px] font-[400]">
+              <p className="font-[be-vietnam-bold] md:text-black md:font-[be-vietnam] text-center md:text-left text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
                 It's time to take responsibility for our actions and work
                 towards a sustainable future.
               </p>

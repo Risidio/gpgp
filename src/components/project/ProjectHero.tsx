@@ -14,7 +14,7 @@ const ProjectHero = () => {
               <img src={gpgpMapImage} alt="GPGP Map"/>
             </div>
           </div>
-          <p className="md:hidden text-center uppercase font-[be-vietnam-semibold] text-[16px] leading-[23.6px] md:text-[20px] md:leading-[30px] tracking-normal">Contribute to the global effort<br/> Create a better world</p>
+          <p className="md:hidden text-center font-[be-vietnam-semibold] text-[16px] leading-[23.6px] md:text-[20px] md:leading-[30px] tracking-normal">Contribute To The Global Effort<br/> Create a better world</p>
         </div>
       </div>
     </>
