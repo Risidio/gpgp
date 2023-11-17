@@ -2,7 +2,7 @@ import { Outlet, useParams } from "react-router-dom";
 import Container from "../Container";
 import NewsFooter from "./NewsFooter";
 import BottomLatestNews from "./BottomLatestNews";
-import NewBackgroundWave from "./NewBackgroundWave";
+import Contribution from "../Contribution";
 
 export const NewsLayout = () => {
   const params = useParams();
@@ -22,7 +22,7 @@ export const NewsLayout = () => {
       </Container>
 
       <NewsFooter>
-        {!params.categoryId ? <NewBackgroundWave /> : <BottomLatestNews />}
+        {!params.categoryId ? <Contribution/> : <BottomLatestNews />}
       </NewsFooter>
     </>
   );

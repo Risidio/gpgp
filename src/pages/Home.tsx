@@ -1,3 +1,5 @@
+import { PrismicRichText, useFirstPrismicDocument } from '@prismicio/react'
+
 import Hero from "../components/Hero";
 import Exhibition from "../components/home/Exhibition";
 import HomeContent from "../components/home/HomeContent";
@@ -5,8 +7,10 @@ import Container from "../components/Container";
 import HomeExhibition from "../components/home/HomeExhibition";
 import Artist from "../components/home/Artist";
 import ContactUs from "../components/ContactUs";
+import Contribution from "../components/Contribution";
 
 const Home = () => {
+ 
   return (
     <>
       <section className="my-5 xxxl:mx-3">
@@ -21,20 +25,17 @@ const Home = () => {
         <HomeExhibition />
       </div>
 
-      <Container>
+      <section>
         <HomeContent />
-      </Container>
+      </section>
 
       <Container>
         <Artist />
       </Container>
 
-      <div className="sm:hidden block">
-        <div className="font-[be-vietnam-semibold] text-white text-base text-center pt-20 uppercase">
-          <p>contribute to the global effort</p>
-          <p className="py-3">Create a better world</p>
-        </div>
-      </div>
+      <section>
+        <Contribution/>
+      </section>
 
       <section>
         <ContactUs />

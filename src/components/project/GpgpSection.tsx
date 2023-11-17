@@ -15,13 +15,13 @@ const GpgpSection = () => {
               What is the GPGP?
             </h1>
             <div className="w-[100%] md:py-[60px] px-[15px] md:px-[80px] flex flex-col gap-y-[40px]">
-              <p className="font-[be-vietnam] text-center md:text-left text-[16px] lg:text-[18px] xl:text-[25px] xxxl:text-[28px] xxxl:text-[28px] leading-[30px] md:leading-[32px] lg:leading-[35px]">
+              <p className="font-[be-vietnam] text-center md:text-left text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
                 <b>The Great Pacific Garbage Patch</b> is a massive accumulation
                 of plastic waste and marine debris that has been swirling in the
                 North Pacific Ocean for decades.
               </p>
 
-              <p className="font-[be-vietnam] text-justified hidden md:block md:text-left text-[16px] lg:text-[18px] xl:text-[25px] xxxl:text-[28px] leading-[32px] lg:leading-[35px] font-[400]">
+              <p className="font-[be-vietnam] text-justified hidden md:block md:text-left text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
                 Contrary to the common perception of a vast floating garbage
                 island, the Great Pacific Garbage Patch mainly comprises
                 dispersed microscopic plastic particles, or microplastics,
@@ -32,10 +32,10 @@ const GpgpSection = () => {
 
               <MyLink
                 to=""
-                className="uppercase mb-[48.62px] md:mb-[0px] bg-gpgp-blue px-[17px] py-[11px] md:bg-white text-white md:text-gpgp-blue md:w-56 tracking-[3.3px] md:h-16 md:tracking-[.35em] text-base mx-auto md:mx-0"
+                className="uppercase mb-[48.62px] md:mb-[0px] bg-gpgp-blue px-[10px] py-[11px] md:bg-white text-white md:text-gpgp-blue md:w-60 tracking-[3.3px] md:h-16 md:tracking-[.35em] text-base mx-auto md:mx-0"
               >
-                <p className="font-[be-vietnam] text-[15px] md:text-[16px]">
-                  {" "}
+                <p className="font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
+                  
                   Learn more
                 </p>
               </MyLink>

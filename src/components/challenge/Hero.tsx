@@ -9,7 +9,7 @@ const Hero = () => {
         </div>
         <div className="hidden md:block flex flex-col justify-center items-center">
           <div className="md:px-[200px] lg:px-[250px] xl:px-[400px] xxxl:px-[600px] xxxxl:px-[700px] pt-[100px]">
-            <p className="font-[be-vietnam-semibold] text-[16px] xxl:text-[25px] xxxxl:text-[35px] leading-[32px] xxl:leading-[40px] xxxxl:leading-[50px] tracking-[0.9px] text-center">
+            <p className="font-[be-vietnam-semibold] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400] text-center">
               Imagine a vast floating island of discarded plastic waste{" "}
               <span className="text-[#0A2471]">twice the size of Texas</span>,
               right in the heart of the Pacific Ocean –the Great Pacific Garbage
@@ -24,21 +24,21 @@ const Hero = () => {
             <h1 className="hidden md:block uppercase text-[white] md:mt-[100px] text-center font-be-vietnam text-[20px] md:text-4xl font-bold leading-[35.40px] md:leading-[147.51%] md:normal-case">
               Plastic revolution
             </h1>
-            <p className="text-center text-[#050B1D] md:text-white font-be-vietnam md:text-base text-[16px] md:text-[21.5px] xxl:text-[25px] xxxxl:text-[35px] md:font-medium leading-[200%] md:leading-[30px] xxl:leading-[40px] xxxxl:leading-[50px] tracking-[-0.4px]">
+            <p className="text-center text-[#050B1D] md:text-white font-be-vietnam md:text-base text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
               When first invented, plastic was seen as revolutionary because it
               offered a cheap, durable, hygienic product that could be used for
               a variety of purposes. However, the ever-increasing production
               would cause unforeseen consequences. Especially concerning is what
               plastics are made from.
             </p>
-            <p className="text-center text-[#050B1D] md:text-white font-be-vietnam md:text-base text-[16px] md:text-[21.5px] xxl:text-[25px] xxxxl:text-[35px] md:font-medium leading-[200%] md:leading-[30px] xxl:leading-[40px] xxxxl:leading-[50px] tracking-[-0.32px]">
+            <p className="text-center text-[#050B1D] md:text-white font-be-vietnam text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
               Almost all single-use plastics are made from fossil fuels. So, the
               carbon footprint of the plastics is vast, by one estimate,
               emissions from producing and incinerating plastics could amount to
               56 gigatons of carbon — almost 50 times the annual emissions of
               all of the coal power plants.
             </p>
-            <p className="text-center text-[#050B1D] md:text-white text-[16px] md:text-[21.5px] xxl:text-[25px] xxxxl:text-[35px] font-be-vietnam md:text-base md:font-medium leading-[200%] md:leading-[30px] xxl:leading-[40px] xxxxl:leading-[50px] tracking-[-0.32px]">
+            <p className="text-center text-[#050B1D] md:text-white text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
               Plastic is a complex material which is durable and can be broken
               down easily in order to decompose. But can never completely break
               down, in fact, every piece ever made still exists today in the

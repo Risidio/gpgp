@@ -1,8 +1,8 @@
 import Container from "../components/Container";
 import Information from "../components/gallery/Information";
-import ContributionSection from "../components/gallery/Contribution";
 import GalleryHero from "../components/gallery/GalleryHero";
 import Slides from "../components/gallery/Slides";
+import Contribution from "../components/Contribution";
 
 const Gallery = () => {
   return (
@@ -20,7 +20,7 @@ const Gallery = () => {
       </Container>
 
       <section>
-        <ContributionSection/>
+        <Contribution/>
       </section>
     </>
   );
