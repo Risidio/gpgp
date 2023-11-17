@@ -27,7 +27,7 @@ export default function InvitationForm({
   Classes,
 }: {
   formField: FormField[];
-  WavePattern: string;
+  WavePattern: string | undefined;
   SponsorFormLegend?: SponsorFormLegend;
   Classes?: Classes;
 }) {
