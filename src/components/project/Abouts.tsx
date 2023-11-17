@@ -49,7 +49,7 @@ const About = () => {
                 InfinArt and the esteemed environmental artist John Dahlsen. It
                 serves as an innovative exhibition with the primary objective of
                 fostering heightened awareness concerning plastic pollution,
-                with a specific focus on the Great Pacific Garbage Patch.{" "}
+                with a specific focus on the Great Pacific Garbage Patch.
                 <span className="hidden md:inline">
                   This pioneering initiative uniquely melds artistic expression,
                   educational outreach, and community engagement to provide a

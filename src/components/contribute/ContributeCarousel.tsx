@@ -73,7 +73,7 @@ const ContributeCarousel = () => {
 
           <div className="absolute top-[120px]  xxsm:top-[150px] xsm:top-[240px] sm:top-[370px] md:top-[440px] lg:top-[580px]  xl:top-[610px] xxl:top-[570px] xxxl:top-[770px] xxxxl:top-[900px] left-0  text-white min-h-150px  xl:p-[65px] w-full p-5 ">
             <div className="flex flex-col items-center">
-              <h1 className="text-[1.5rem] mb-0 xl:text-[2.3rem] xl:mb-9 lg:text-[2rem] lg:mb-8  md:text-[1.7rem] xxl:text-[3rem] uppercase text-white font-be-vietnam text-center tracking-wide">
+              <h1 className="font-[be-vietnam] text-[1.5rem] mb-0 xl:text-[2.3rem] xl:mb-9 lg:text-[2rem] lg:mb-8  md:text-[1.7rem] xxl:text-[3rem] uppercase text-white font-be-vietnam text-center tracking-wide">
                 {Invitation[0]?.heading}
               </h1>
 
@@ -111,17 +111,17 @@ const ContributeCarousel = () => {
               </div>
 
               <div className="text-center flex flex-col items-center mt-4 xl:mt-12 lg:mt-10 md:mt-8 sm:mt-6 text-white w-[95%] xl:w-[50%] lg:w-[69%] md:w-[75%]">
-                <h3 className="text-[1.1rem] sm:text-[1.3rem] lg:text-[1.5rem] xl:text-[2rem] font-semibold mb-2">
+                <h3 className="font-[be-vietnam] text-[1.1rem] sm:text-[1.3rem] lg:text-[1.5rem] xl:text-[2rem] font-semibold mb-2">
                   {Invitation[0].description?.head}
                 </h3>
 
-                <p className="text-center text-[0.8rem] md:text-[1rem] md:mb-4  md:leading-6 w-[90%] xl:w-[70%] xl:leading-7 xxl:leading-[1.85rem] xxl:text-[1.3rem] lg:w-[75%] md:w-[82%] sm:w-[86%] mt-5 md:mt-12">
+                <p className="font-[be-vietnam] text-center text-[16px] xl:text-[20px] xxxl:text-[25px] md:mb-4 leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] w-[90%] xl:w-[70%] lg:w-[75%] md:w-[82%] sm:w-[86%] mt-5 md:mt-12">
                   {Invitation[0].description?.body}
                 </p>
 
                 <MyLink
                   to={Invitation[0].Btn?.link}
-                  className={`flex items-center text-gpgp-blue mt-4 sm:mt-7 w-[170px] xsm:w-[300px] h-[50px] text-[0.8rem] xsm:text-[1.3rem] py-2 bg-white uppercase xsm:mt-16`}
+                  className={`font-[be-vietnam] flex items-center text-gpgp-blue mt-4 sm:mt-7 w-[170px] xsm:w-[300px] h-[50px] text-[0.8rem] xsm:text-[1.3rem] py-2 bg-white uppercase xsm:mt-16`}
                 >
                   {Invitation[0].Btn?.heading}
                 </MyLink>

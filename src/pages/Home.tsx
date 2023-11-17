@@ -8,6 +8,7 @@ import ContactUs from "../components/ContactUs";
 import Contribution from "../components/Contribution";
 
 const Home = () => {
+ 
   return (
     <>
       <section className="my-5 xxxl:mx-3">

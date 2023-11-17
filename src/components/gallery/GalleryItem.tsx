@@ -17,7 +17,7 @@ export const GalleryItem: React.FC<GalleryItemProps> = ({
                   className="w-full rounded-md shadow-sm"
                   alt={title}
               />
-              <div className="font-[be-vietnam] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400] py-5 text-center text-gpgp-darkblue">
+              <div className="text-[16px] xl:text-[20px] xxxl:text-[25px] font-[be-vietnam] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400] py-5 text-center text-gpgp-darkblue">
                  {title}
               </div>
            </Link>

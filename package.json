@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@itseasy21/react-elastic-carousel": "^0.12.3",
+    "@prismicio/client": "^7.3.1",
+    "@prismicio/react": "^2.7.3",
     "@types/node": "^16.18.58",
     "@types/react": "^18.2.25",
     "@types/react-dom": "^18.2.11",
