@@ -47,6 +47,7 @@ const Footer = ({classes= "bg-gpgp-blue"}: FooterProps) => {
                       <ul className="text-sm space-y-4 text-right">
                         <li>Sitemap</li>
                         <li>Project</li>
+                        <li>Challenge</li>
                         <li>Contribute</li>
                         <li>News</li>
                         <li>Contacts</li>
@@ -60,7 +61,7 @@ const Footer = ({classes= "bg-gpgp-blue"}: FooterProps) => {
               ${useLocation().pathname === "/challenge"  ? "text-white" : "text-black"}
               
               `)}>
-                   2023 JohnDahlsen & Infinart All Rights Reserved - Designed by Risidio
+                   <p className="">2023 JohnDahlsen & Infinart All Rights Reserved Designed by Risidio</p>
               </div>
            </div>
        </Container> 

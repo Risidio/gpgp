@@ -55,9 +55,13 @@ module.exports = {
         "sponsor-contribute-mobile-wave":
           "url('./assets/svg/sponsorwavemobile.svg')",
         "flat-lay-composition":
-          "url('./assets/images/flat-lay-composition-different-colored-plastic-bags.jpg')",
-        "trashed-plastics": "url('./assets/images/trashedPlasticObjects.jpg')",
-        "news-background-wave": "url('./assets/svg/newswave.svg')"
+          "url('./assets/images/flat-lay-composition-different-colored-plastic-bags.png')",
+        "flat-lay-composition-mobile":
+          "url('./assets/images/flat-lay-composition-different-colored-plastic-bags-mobile.jpg')",
+        "trashed-plastics": "url('./assets/images/trashedPlasticObjects.png')",
+        "trashed-plastics-mobile":
+          "url('./assets/images/trashedPlasticObjectsMobile.jpg')",
+        "news-background-wave": "url('./assets/svg/newswave.svg')",
       },
     },
   },
