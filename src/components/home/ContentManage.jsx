@@ -79,6 +79,16 @@ const ContentManage = ({ contents }) => {
             <div className="">
               {/* <MyLink
                 className={`"uppercase py-2 w-36 mx-auto h-16 ml-0 text-base
+                                       ${content.ImgPos === "left" &&
+                  "bg-gpgp-blue text-white hover:text-white/90"
+                  }`}
+                to={content.Btn.link}
+              >
+                {content.Btn.name}
+              </MyLink> */}
+              
+              <MyLink
+                className={`"uppercase py-[11px] w-36 mx-auto ml-0 text-base
                                        ${
                                          content.ImgPos === "left" &&
                                          "bg-gpgp-blue text-white hover:text-white/90"

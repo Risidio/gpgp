@@ -11,6 +11,9 @@ interface FormField {
   id: string;
   // Add other properties if needed
 }
+interface Classes {
+  FormBtn?: string;
+}
 
 interface SponsorFormLegend {
   heading: string;
@@ -26,7 +29,7 @@ export default function InvitationForm({
   formField: FormField[];
   WavePattern: string;
   SponsorFormLegend?: SponsorFormLegend;
-  Classes?: any;
+  Classes?: Classes;
 }) {
   let BackPattern = ContactWave;
   if (WavePattern === "Artist") {
@@ -39,13 +42,12 @@ export default function InvitationForm({
 
   useEffect(() => {
     const updateRows = () => {
-      setRows(window.innerWidth >= 640 ? 10 : 1);
+      WavePattern === "Contact" ? setRows(window.innerWidth >= 640 ? 6 : 1) : 
+      setRows(window.innerWidth >= 640 ? 10 : 1)
     };
 
-    // Set initial rows
     updateRows();
 
-    // Add event listener for window resize
     window.addEventListener("resize", updateRows);
 
     // Cleanup the event listener on component unmount
@@ -62,10 +64,9 @@ export default function InvitationForm({
     >
       <BackPattern>
         <div
-          className={`w-full  pt-[250px] xl:pt[650px] ${
-            WavePattern === "Contact" &&
-            "pt-2"
-          }`}
+          className={`w-full ${
+            WavePattern === "Contact" ? "pt-2" : "pt-[250px] xl:pt[650px]"
+          }  `}
         >
           <div className={`px-16 xl:pr-28 flex flex-col items-center   -mb-10`}>
             {SponsorFormLegend && (
@@ -77,7 +78,11 @@ export default function InvitationForm({
                 <h3 className="text-[1.2rem] md:text-[1.6rem] xxl:text-[2rem] xxxl:text-[2.3rem] font-semibold mb-4">
                   {SponsorFormLegend.heading}
                 </h3>
-                <h4 className={`text-[0.9rem] ${WavePattern ==="Contact" && "text-gpgp-blue"} md:text-[1rem] xl:text-[1.5rem]`}>
+                <h4
+                  className={`text-[0.9rem] ${
+                    WavePattern === "Contact" && "text-gpgp-blue"
+                  } md:text-[1rem] xl:text-[1.5rem]`}
+                >
                   {SponsorFormLegend.contact}
                 </h4>
                 <h2 className="text-[1rem] md:text-[1.2rem] xl:text-[1.9rem] m-10">
@@ -102,9 +107,9 @@ export default function InvitationForm({
               </h4>
             )}
             <form
-              className={`flex flex-wrap sm:border md:border-2 ${
+              className={`flex flex-wrap sm:border md:border-[3px] ${
                 WavePattern === "Contact" ? "border-[#0A2471]" : "border-white"
-              } rounded-[13px] sm:px-5 sm:mt-[-32px] pt-10 xl:px-7 pb-4 -mx-2`}
+              } rounded-[33px] sm:px-5 sm:mt-[-32px] pt-10 xl:px-7 pb-4 -mx-2`}
             >
               {formField.map((field) =>
                 field.width === "half" ? (
@@ -126,7 +131,11 @@ export default function InvitationForm({
                       type={field.type}
                       id={field.id}
                       name={field.id}
-                      className={`border ${WavePattern === "Contact" ? "border-[#0A2471]" : "border-white"} rounded px-3 py-2 w-full`}
+                      className={`border ${
+                        WavePattern === "Contact"
+                          ? "border-[#0A2471] rounded-[7px]"
+                          : "border-white"
+                      } rounded px-3 py-2 w-full`}
                     />
                   </div>
                 ) : (
@@ -135,7 +144,7 @@ export default function InvitationForm({
                       htmlFor={field.id}
                       className={`block font-semibold ${
                         WavePattern === "Contact"
-                          ? "text-gpgp-blue"
+                          ? "text-gpgp-blue rounded-[7px]"
                           : "text-white"
                       }`}
                     >
@@ -146,7 +155,11 @@ export default function InvitationForm({
                         name={field.label}
                         id={field.id}
                         rows={field.label === "Message" ? rows : 8}
-                        className={`border ${WavePattern === "Contact" ? "border-[#0A2471]" : "border-white"} rounded px-3 py-2 w-full text-black`}
+                        className={`border ${
+                          WavePattern === "Contact"
+                            ? "border-[#0A2471] rounded-[7px]"
+                            : "border-white"
+                        } rounded px-3 py-2 w-full text-black`}
                       />
                     ) : field.type === "file" ? (
                       <CustomFileInput label={field.label} id={field.id} />
@@ -155,14 +168,22 @@ export default function InvitationForm({
                         type={field.type}
                         id={field.id}
                         name={field.id}
-                        className={`border ${WavePattern === "Contact" ? "border-[#0A2471]" : "border-white"} rounded px-3 py-2 w-full`}
+                        className={`border ${
+                          WavePattern === "Contact"
+                            ? "border-[#0A2471] rounded-[7px]"
+                            : "border-white"
+                        } rounded px-3 py-2 w-full`}
                       />
                     )}
                   </div>
                 )
               )}
             </form>
-            <button className="m-10 border w-[150px] h-[50px] rounded-lg bg-gpgp-blue text-white font-bold text-[1.3rem] tracking-[3px]">
+            <button
+              className={`m-10 border w-[150px] h-[50px] rounded-lg bg-gpgp-blue text-white font-bold text-[1.3rem] tracking-[3px] ${
+                Classes?.FormBtn 
+              }`}
+            >
               Send
             </button>
           </div>

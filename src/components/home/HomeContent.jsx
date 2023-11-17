@@ -9,7 +9,7 @@ const contents = [
         description: "The Great Pacific Garbage Patch (GPGP) environmental art \n project is a collaboration between environmental artist, \n John Dahlsen, and InfinArt. The complete artwork \n comprises 2450 tiles, representing a recent satellite image \n of the Great Pacific Garbage Patch and draws attention to  \n the issue of plastic litter in the oceans, particularly the \n major garbage patches.",
         Btn: {
             name: "EXPLORE",
-            link: "/gallery"
+            link: "/project"
         },
         Img: ProjectImg,
         ImgPos : "left",
@@ -20,7 +20,7 @@ const contents = [
         description: "Plastics are a major contributor to marine debris. The Great \n Pacific Garbage Patch is a pressing environmental issue that \n requires immediate attention. ",
         Btn: {
             name: "SUPPORT",
-            link: "/contribute/inviteSponsor"
+            link: "/challenge"
         },
         Img: ChallengeImg,
         ImgPos : "right",
@@ -31,7 +31,7 @@ const contents = [
         description: "The Great Pacific Garbage Patch offers a unique opportunity \n to channel your artistic talents towards a project. Artists of \n all form - painters, sculptors, photographers are invited to \n submit their works for consideration.",
         Btn: {
             name: "TAKE PART",
-            link: "/contribute/inviteArtist"
+            link: "/contribute"
         },
         Img: InvitationImg,
         ImgPos : "left",

@@ -1,10 +1,9 @@
-import Contribution from "../components/Contribution";
+
 import InvitationForm from "../components/contribute/Invitation/InvitationForm";
+import ContributionSection from "../components/gallery/Contribution";
 
 export default function Contact() {
-  // const HeroContent = {
-  //   heading: "Contacts",
-  // };
+
 
   const formFields = [ 
     {
@@ -50,31 +49,31 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex flex-col">
-      {/* <ContributeHero
-        HeroContent={HeroContent}
-        classes={{
-          container: "mb:[-150px] md:mb-[-450px]",
-          image: "hidden opacity-40 blur-md md:z-[-2px] z-[-4px]",
-          heading: "mb-[20.25rem] sm:mb-[24rem] text-black",
-          paragraph: "",
-        }}
-      /> */}
+    <div className="flex flex-col ">
 
       <InvitationForm
         formField={formFields}
         WavePattern={WavePattern}
         SponsorFormLegend={SponsorFormLegend}
-        Classes={{
-          container:
-            "pt-0 top-[20px] xsm:top-[20px] sm:top-[20px] md:top-[0px] lg:top-[-100px] xl:top-[0px]",
-          heading: "",
-          subheading: "",
-          paragraph: "",
-        }}
+        
       />
 
-      <Contribution/>
+
+      <section className="hidden  md:block">
+        <ContributionSection
+          classes={{
+            container: "  !mt-[-184px] md:z-40 md:relative xxxxl:pt-[400px]",
+            heading: "",
+            subheading: "",
+          }}
+        />
+      </section>
+
+   
+
+
+  
+
     </div>
   );
 }

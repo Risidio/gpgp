@@ -72,6 +72,9 @@ export default function InvitationSponsor() {
         formField={formFields}
         WavePattern={WavePattern}
         SponsorFormLegend={SponsorFormLegend}
+        Classes={{
+          FormBtn:"bg-white text-[#0A2471]"
+        }}
       />
     </div>
   );

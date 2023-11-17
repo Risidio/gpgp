@@ -4,7 +4,6 @@ import ContributeHero from "../components/contribute/ContributeHero";
 export default function Contribute() {
   const HeroContent = {
     heading: "Contribute",
-    // subheading: "",
     HeroLegend: [
       ` The Great Pacific Garbage Patch Art Project is an exciting
       initiative that welcomes both artists and investors to join us in
