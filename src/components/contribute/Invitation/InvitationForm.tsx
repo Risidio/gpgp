@@ -54,7 +54,7 @@ export default function InvitationForm({
     return () => {
       window.removeEventListener("resize", updateRows);
     };
-  }, []); // Empty dependency array to run the effect only once on mount
+  }, [WavePattern]); // Empty dependency array to run the effect only once on mount
 
   return (
     <div
