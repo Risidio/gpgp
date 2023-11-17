@@ -1,5 +1,3 @@
-import { PrismicRichText, useFirstPrismicDocument } from '@prismicio/react'
-
 import Hero from "../components/Hero";
 import Exhibition from "../components/home/Exhibition";
 import HomeContent from "../components/home/HomeContent";
