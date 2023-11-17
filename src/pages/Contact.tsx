@@ -8,6 +8,7 @@ export default function Contact() {
 
 
   const formFields = [ 
+  const formFields = [ 
     {
       label: "Full Name",
       type: "text",

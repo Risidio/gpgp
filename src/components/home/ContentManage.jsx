@@ -95,6 +95,17 @@ const ContentManage = ({ contents }) => {
                                        }`}
                 to={content.Btn.link}
               >
+                {content.Btn.name}
+              </MyLink> */}
+              
+              <MyLink
+                className={`"uppercase py-[11px] w-36 mx-auto ml-0 text-base
+                                       ${
+                                         content.ImgPos === "left" &&
+                                         "bg-gpgp-blue text-white hover:text-white/90"
+                                       }`}
+                to={content.Btn.link}
+              >
                 {content.Btn.name?.toLocaleLowerCase() === "explore"
                   ? "LEARN MORE"
                   : content.Btn.name}
