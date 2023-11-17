@@ -1,13 +1,10 @@
 
-import Contribution from "../components/Contribution";
-
 import InvitationForm from "../components/contribute/Invitation/InvitationForm";
 import ContributionSection from "../components/gallery/Contribution";
 
 export default function Contact() {
 
 
-  const formFields = [ 
   const formFields = [ 
     {
       label: "Full Name",

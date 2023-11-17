@@ -7,7 +7,6 @@ import GpgpSection from "../components/project/GpgpSection";
 import ProjectHero from "../components/project/ProjectHero";
 import JoinUs from '../components/project/JoinUs';
 import Contribution from "../components/Contribution";
-import ContributionSection from "../components/gallery/Contribution";
 
 const Project = () => {
   return (
@@ -41,16 +40,7 @@ const Project = () => {
       </section>
 
       <section>
-
-        <ContributionSection classes={{
-          container: "",
-          heading: "",
-          subheading: ""
-         
-        }}/>
-
         <Contribution/>
-
       </section>
     </>
   );
