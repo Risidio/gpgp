@@ -1,10 +1,13 @@
+
+import Contribution from "../components/Contribution";
+
 import InvitationForm from "../components/contribute/Invitation/InvitationForm";
-import ContributionSection from "../components/project/Contribution";
+import ContributionSection from "../components/gallery/Contribution";
 
 export default function Contact() {
 
 
-  const formFields = [
+  const formFields = [ 
     {
       label: "Full Name",
       type: "text",
@@ -48,7 +51,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col ">
 
       <InvitationForm
         formField={formFields}
@@ -57,15 +60,22 @@ export default function Contact() {
         
       />
 
-      <section className="hidden md:block">
+
+      <section className="hidden  md:block">
         <ContributionSection
           classes={{
-            container: "mt-0  xxxxl:pt-[400px]",
+            container: "  !mt-[-184px] md:z-40 md:relative xxxxl:pt-[400px]",
             heading: "",
             subheading: "",
           }}
         />
       </section>
+
+   
+
+
+  
+
     </div>
   );
 }

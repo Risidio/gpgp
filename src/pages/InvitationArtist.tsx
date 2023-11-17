@@ -70,7 +70,7 @@ const InvitationArtist = () => {
           subheading:
             "font-be-vietnam text-[1.2rem] md:text-[1.7rem] mb-[1rem] xxxl:text-[2rem]",
           paragraph:
-            "w-[148%] leading-[1.2rem] sm:leading-7 xxl:text-[1.5rem] xxl:leading-[2rem] xxxl:text-[1.7rem] xxxl:leading-[2.2rem]",
+            "w-[148%]  leading-[1.2rem] sm:leading-7 xxl:text-[1.5rem] xxl:leading-[2rem] xxxl:text-[1.7rem] xxxl:leading-[2.2rem]",
         }}
       />
 

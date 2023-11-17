@@ -14,6 +14,7 @@ import Gallery from "./pages/Gallery";
 import Challenge from "./pages/Challenge";
 import Contact from "./pages/Contact";
 
+
 const App= () => {
   return (
     <Router>

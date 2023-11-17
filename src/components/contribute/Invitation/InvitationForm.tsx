@@ -42,13 +42,12 @@ export default function InvitationForm({
 
   useEffect(() => {
     const updateRows = () => {
-      setRows(window.innerWidth >= 640 ? 10 : 1);
+      WavePattern === "Contact" ? setRows(window.innerWidth >= 640 ? 6 : 1) : 
+      setRows(window.innerWidth >= 640 ? 10 : 1)
     };
 
-    // Set initial rows
     updateRows();
 
-    // Add event listener for window resize
     window.addEventListener("resize", updateRows);
 
     // Cleanup the event listener on component unmount
@@ -108,9 +107,9 @@ export default function InvitationForm({
               </h4>
             )}
             <form
-              className={`flex flex-wrap sm:border md:border-2 ${
+              className={`flex flex-wrap sm:border md:border-[3px] ${
                 WavePattern === "Contact" ? "border-[#0A2471]" : "border-white"
-              } rounded-[13px] sm:px-5 sm:mt-[-32px] pt-10 xl:px-7 pb-4 -mx-2`}
+              } rounded-[33px] sm:px-5 sm:mt-[-32px] pt-10 xl:px-7 pb-4 -mx-2`}
             >
               {formField.map((field) =>
                 field.width === "half" ? (
@@ -134,7 +133,7 @@ export default function InvitationForm({
                       name={field.id}
                       className={`border ${
                         WavePattern === "Contact"
-                          ? "border-[#0A2471]"
+                          ? "border-[#0A2471] rounded-[7px]"
                           : "border-white"
                       } rounded px-3 py-2 w-full`}
                     />
@@ -145,7 +144,7 @@ export default function InvitationForm({
                       htmlFor={field.id}
                       className={`block font-semibold ${
                         WavePattern === "Contact"
-                          ? "text-gpgp-blue"
+                          ? "text-gpgp-blue rounded-[7px]"
                           : "text-white"
                       }`}
                     >
@@ -158,7 +157,7 @@ export default function InvitationForm({
                         rows={field.label === "Message" ? rows : 8}
                         className={`border ${
                           WavePattern === "Contact"
-                            ? "border-[#0A2471]"
+                            ? "border-[#0A2471] rounded-[7px]"
                             : "border-white"
                         } rounded px-3 py-2 w-full text-black`}
                       />
@@ -171,7 +170,7 @@ export default function InvitationForm({
                         name={field.id}
                         className={`border ${
                           WavePattern === "Contact"
-                            ? "border-[#0A2471]"
+                            ? "border-[#0A2471] rounded-[7px]"
                             : "border-white"
                         } rounded px-3 py-2 w-full`}
                       />
@@ -182,7 +181,7 @@ export default function InvitationForm({
             </form>
             <button
               className={`m-10 border w-[150px] h-[50px] rounded-lg bg-gpgp-blue text-white font-bold text-[1.3rem] tracking-[3px] ${
-                Classes?.FormBtn ?? ""
+                Classes?.FormBtn 
               }`}
             >
               Send

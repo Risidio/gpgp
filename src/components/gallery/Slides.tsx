@@ -104,7 +104,7 @@ const Slides = () => {
   const handlePageChange = (pageNumber: number) => setCurrentPage(pageNumber);
   return (
     <div className="p-10 w-full">
-        <h1 className="font-semibold w-full text-center sm:text-[1.2rem] md:text-[1.2rem] lg:text-[2rem] xl:text-[2.5rem] xxl:text-[45px] text-base uppercase py-10">the Tiles</h1>
+        <h1 className="font-[be-vietnam-bold] w-full text-center sm:text-[1.2rem] md:text-[1.2rem] lg:text-[2rem] xl:text-[2.5rem] xxl:text-[45px] text-base uppercase py-10">the Tiles</h1>
         <div className="w-full py-5">
             <LightGallery
                     speed={500} 
