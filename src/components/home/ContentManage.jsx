@@ -4,10 +4,13 @@ import MyLink from "../base/MyLink";
 const ContentManage = ({ contents }) => {
   return (
     <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col">
       {contents.map((content) => (
+        <div key={content.id}>
         <div key={content.id}>
           {/* Desktop-view */}
           <div
+            className={`lg:flex hidden pt-[200px] px-[80px] w-full flex-col
             className={`lg:flex hidden pt-[200px] px-[80px] w-full flex-col
                                     ${
                                       content.ImgPos === "left"
@@ -38,6 +41,7 @@ const ContentManage = ({ contents }) => {
                 {content.name}
               </h1>
               <div className="py-[50px] text-[#050B1D] font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
+              <div className="py-[50px] text-[#050B1D] font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
                 <p>{content.description}</p>
               </div>
 
@@ -57,7 +61,9 @@ const ContentManage = ({ contents }) => {
             key={`${content.id}-${content.name}`}
             className={`lg:hidden flex flex-col justify-center items-center py-10 px-5 w-full
                               gap-y-[36px] pt-[80px]`}
+                              gap-y-[36px] pt-[80px]`}
           >
+            <h1 className="text-xl font-semibold uppercase">
             <h1 className="text-xl font-semibold uppercase">
               {content.name}
             </h1>
@@ -70,9 +76,12 @@ const ContentManage = ({ contents }) => {
               />
             </div>
             <p className="text-center leading-[34px] tracking-[0.2px] text-[14px] md:text-[20px] md:px-[20px]">
+            <p className="text-center leading-[34px] tracking-[0.2px] text-[14px] md:text-[20px] md:px-[20px]">
               {content.description}
             </p>
 
+            <div className="">
+              {/* <MyLink
             <div className="">
               {/* <MyLink
                 className={`"uppercase py-2 w-36 mx-auto h-16 ml-0 text-base
@@ -95,9 +104,22 @@ const ContentManage = ({ contents }) => {
                 {content.Btn.name?.toLocaleLowerCase() === "explore"
                   ? "LEARN MORE"
                   : content.Btn.name}
+              </MyLink> */}
+              <MyLink
+                className={`"uppercase py-[11px] w-36 mx-auto ml-0 text-base
+                                       ${
+                                         content.ImgPos === "left" &&
+                                         "bg-gpgp-blue text-white hover:text-white/90"
+                                       }`}
+                to={content.Btn.link}
+              >
+                {content.Btn.name?.toLocaleLowerCase() === "explore"
+                  ? "LEARN MORE"
+                  : content.Btn.name}
               </MyLink>
             </div>
           </div>
+        </div>
         </div>
       ))}
     </div>
