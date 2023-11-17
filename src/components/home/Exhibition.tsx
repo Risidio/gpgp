@@ -28,7 +28,7 @@ const Exhibition = () => {
 
           <div className="hidden md:flex flex-col items-center pb-[60px] md:pb-[30px] md:pt-[30px] pt-[10px]">
             <MyLink
-              to=""
+              to="/gallery"
               className="uppercase mb-[48.62px] md:mb-[0px] bg-gpgp-blue px-[10px] py-[11px] md:bg-white text-white md:text-gpgp-blue md:w-60 tracking-[3.3px] md:h-16 md:tracking-[.35em] text-base mx-auto md:mx-0"
             >
               <p className="font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">

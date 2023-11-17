@@ -16,7 +16,7 @@ const ContentManage = ({ contents }) => {
                                     }`}
           >
             <div
-              className={`w-full flex
+              className={`w-full flex lg:px-[30px] xxxxl:px-[0px]
                                          ${
                                            content.ImgPos === "left"
                                              ? "sm:justify-start"
@@ -32,11 +32,12 @@ const ContentManage = ({ contents }) => {
             </div>
 
             <div
-              className={`w-full flex flex-col justify-center text-left gap-y-[20px]`}
+              className={`w-full flex flex-col justify-center lg:px-[30px] xxxxl:px-[0px] text-left gap-y-[20px]`}
             >
               <h1 className="text-[#050B1D] font-[be-vietnam-bold] text-[16px] md:text-[18px] lg:text-[25px] xl:text-[30px] xxl:text-[35px] xxxl:text-[64px] font-[600] leading-[23.38px] md:leading-[30px] font-semibold">
                 {content.name}
               </h1>
+              <div className="py-[50px] text-[#050B1D] font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
               <div className="py-[50px] text-[#050B1D] font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
                 <p>{content.description}</p>
               </div>
@@ -75,6 +76,8 @@ const ContentManage = ({ contents }) => {
 
             <div className="">
               {/* <MyLink
+            <div className="">
+              {/* <MyLink
                 className={`"uppercase py-2 w-36 mx-auto h-16 ml-0 text-base
                                        ${
                                          content.ImgPos === "left" &&
@@ -84,6 +87,7 @@ const ContentManage = ({ contents }) => {
               >
                 {content.Btn.name}
               </MyLink> */}
+              
               <MyLink
                 className={`"uppercase py-[11px] w-36 mx-auto ml-0 text-base
                                        ${
@@ -98,6 +102,7 @@ const ContentManage = ({ contents }) => {
               </MyLink>
             </div>
           </div>
+        </div>
         </div>
       ))}
     </div>
