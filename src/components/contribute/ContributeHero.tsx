@@ -32,12 +32,12 @@ export default function ContributeHero({
           className={`absolute p-16 filter blur-sm ${image}`}
         />
 
-        <h1 className={`z-2 md:z-10 opacity-100 font-be-vietnam font-bold text-[1.5rem] xsm:text-[2rem]  uppercase ${heading}`}>
+        <h1 className={`z-2 md:z-10 opacity-100 font-[be-vietnam] font-bold text-[1.5rem] xsm:text-[2rem]  uppercase ${heading}`}>
           {HeroContent.heading}
         </h1>
        {HeroContent.subheading 
           ? <h3 
-              className={`text-[1rem] xsm:text-[1.2rem] font-be-vietnam font-bold mb-2 sm:mb-5 z-2 md:z-10 opacity-100 ${subheading} `}>
+              className={`xsm:text-[1.2rem] text-[16px] xl:text-[20px] xxxl:text-[25px] font-[be-vietnam] font-bold mb-2 sm:mb-5 z-2 md:z-10 opacity-100 ${subheading} `}>
               {HeroContent.subheading}
            </h3>
         : ""}

@@ -45,7 +45,6 @@ const About = () => {
             </h1>
             <div className="py-[10px] lg:py-[20px] lg:py-[50px] xxxl:py-[60px] xl:py-[30px] px-[39px] sm:px-[39px] md:px-[150px] lg:px-[210px] xl:px-[200px] xxl:px-[380px] xxxl:px-[600px] xxxxl:px-[800px]">
               <p className="text-center text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
-              <p className="text-center text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
                 The GPGP project represents a collaborative endeavour between
                 InfinArt and the esteemed environmental artist John Dahlsen. It
                 serves as an innovative exhibition with the primary objective of
