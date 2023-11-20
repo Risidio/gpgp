@@ -1,8 +1,9 @@
-import SeaSeal from "../../assets/images/ai-generated-realistic-pictures-seals.jpg";
-import SeaSealWeb from "../../assets/images/ai-generated-realistic-pictures-seals-web.jpg";
+// import SeaSeal from "../../assets/images/ai-generated-realistic-pictures-seals.jpg";
+// import SeaSealWeb from "../../assets/images/ai-generated-realistic-pictures-seals-web.jpg";
 import MyLink from "../base/MyLink";
+import { IJoinSectionProps } from "../../types/project";
 
-const JoinUs = () => {
+const JoinUs = ({ contents }: IJoinSectionProps) => {
   return (
     <>
       {/* <div className="w-full">
@@ -122,30 +123,29 @@ const JoinUs = () => {
         </div>
       </div> */}
 
-      <div className="w-[100%] h-[100%]">
+      <div className="w-[100%] h-[100%] lg:mt-[80px]">
         <h1 className="md:hidden text-center text-[16px] mt-[30px] md:mt-[64px] leading-[48px] uppercase font-[be-vietnam-xbold] font-[600] md:font-[600] md:text-[40px] md:leading-[48px]">
-          Join Us
+          {contents?.title[0].text}
         </h1>
         <div className="w-[100%] grid md:grid-cols-2 mt-[15px] md:mt-[70px]">
           <div className="order-2 md:order-1 ">
             <h1 className="hidden md:block px-[40px] md:px-[80px] text-[16px] md:mt-[64px] leading-[48px] font-[be-vietnam-semibold] md:text-[40px] md:leading-[48px]">
-              Join Us
+              {contents?.title[0].text}
             </h1>
             <div className="w-[100%] md:py-[60px] px-[15px] md:px-[80px] flex flex-col gap-y-[40px]">
-              <p className="font-[be-vietnam] text-center md:text-left text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
-                <b>The Great Pacific Garbage Patch</b> is a massive accumulation
-                of plastic waste and marine debris that has been swirling in the
-                North Pacific Ocean for decades.
-              </p>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: contents?.firstparagraph[0].text,
+                }}
+                className="font-[be-vietnam] text-center md:text-left text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]"
+              ></p>
 
-              <p className="font-[be-vietnam] text-justified hidden md:block md:text-left text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
-                Contrary to the common perception of a vast floating garbage
-                island, the Great Pacific Garbage Patch mainly comprises
-                dispersed microscopic plastic particles, or microplastics,
-                interspersed with larger debris. This creates a cloudy
-                appearance in the upper water column rather than a solid surface
-                mass.
-              </p>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: contents?.secondparagraph[0].text,
+                }}
+                className="font-[be-vietnam] text-justified hidden md:block md:text-left text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]"
+              ></p>
 
               <div className="flex mx-auto md:mx-[0px] gap-x-[30px]">
                 {/* <MyLink
@@ -160,18 +160,23 @@ const JoinUs = () => {
                   to=""
                   className="uppercase mb-[48.62px] md:mb-[0px] bg-gpgp-blue px-[10px] py-[11px] md:bg-white text-white md:text-gpgp-blue tracking-[3.3px] md:h-16 md:tracking-[.35em] text-base mx-auto md:mx-0"
                 >
-                  <p className="font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
-                    Submit <span className="hidden md:inline">Work</span>
-                  </p>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: contents?.firstbutton,
+                    }}
+                    className="font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]"
+                  ></p>
                 </MyLink>
                 <MyLink
                   to=""
                   className="uppercase mb-[48.62px] md:mb-[0px] bg-gpgp-blue px-[17px] py-[11px] text-white tracking-[3.3px] md:h-16 md:tracking-[.35em] text-base md:mx-0"
                 >
-                  <p className="font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
-                    {" "}
-                    Invite
-                  </p>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: contents?.secondbutton,
+                    }}
+                    className="font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]"
+                  ></p>
                 </MyLink>
               </div>
             </div>
@@ -179,13 +184,13 @@ const JoinUs = () => {
           <div className="h-[200px] mx-[20px] md:mx-0 md:w-[100%] md:h-[100%] order-1 md:order-2 mb-[30px] md:mb-0">
             <img
               className="w-[100%] h-[100%] hidden md:block"
-              src={SeaSealWeb}
-              alt={"The Seal Web"}
+              src={contents?.image.url}
+              alt={contents?.image.alt}
             />
             <img
               className="w-[100%] h-[100%] md:hidden"
-              src={SeaSeal}
-              alt={"The Seal Mobile"}
+              src={contents?.image.url}
+              alt={contents?.image.alt}
             />
           </div>
         </div>

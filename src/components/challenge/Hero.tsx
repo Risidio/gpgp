@@ -12,10 +12,10 @@ const Hero = () => {
             <p className="font-[be-vietnam-semibold] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400] text-center">
               Imagine a vast floating island of discarded plastic waste{" "}
               <span className="text-[#0A2471]">twice the size of Texas</span>,
-              right in the heart of the Pacific Ocean –the Great Pacific Garbage
+              right in the heart of the Pacific Ocean – the Great Pacific Garbage
               Patch Challenge is not just an environmental mission, but{" "}
               <span className="text-[#0A2471]">a call to action</span> to
-              reclaimand restore our planet's most precious resource.
+              reclaim and restore our planet's most precious resource.
             </p>
           </div>
         </div>

@@ -61,7 +61,7 @@ const Footer = ({classes= "bg-gpgp-blue"}: FooterProps) => {
               ${useLocation().pathname === "/challenge"  ? "text-white" : "text-black"}
               
               `)}>
-                   <p className="">2023 JohnDahlsen & Infinart All Rights Reserved Designed by Risidio</p>
+                   <p className="">2023 John Dahlsen & Infinart All Rights Reserved Designed by Risidio</p>
               </div>
            </div>
        </Container> 

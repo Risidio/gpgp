@@ -7,28 +7,32 @@ import GpgpSection from "../components/project/GpgpSection";
 import ProjectHero from "../components/project/ProjectHero";
 import JoinUs from '../components/project/JoinUs';
 import Contribution from "../components/Contribution";
+import { useSinglePrismicDocument } from "@prismicio/react";
 
 const Project = () => {
+
+  const [document] = useSinglePrismicDocument("project");
+  console.log(document?.data["body"][5].primary);
   return (
     <>
       <Container>
-        <ProjectHero />
+        <ProjectHero contents={document?.data["body"][0].primary}/>
       </Container>
 
       <section>
-        <About />
+        <About contents={document?.data["body"][1].primary}/>
       </section>
 
       <section>
-        <GpgpSection/>
+        <GpgpSection contents={document?.data["body"][2].primary}/>
       </section>
 
       <section>
-        <Attention/>
+        <Attention contents={document?.data["body"][3].primary}/>
       </section>
 
       <section>
-        <Exhibition/>
+        <Exhibition contents={document?.data["body"][4].primary}/>
       </section>
 
       <section>
@@ -36,7 +40,7 @@ const Project = () => {
       </section>
 
       <section>
-        <JoinUs/>
+        <JoinUs contents={document?.data["body"][6].primary}/>
       </section>
 
       <section>
