@@ -2,22 +2,22 @@ import MyLink from "../base/MyLink";
 
 const Artist = ({ ...props }) => {
   return (
-    <div className="flex flex-col justify-center items-center py-10 md:py-[140px] px-5 w-full sm:mx-auto sm:text-black">
-      <div className="bg-artist-back bg-no-repeat w-[300px] h-[300px] bg-[length:300px_300px] rounded-[50%] p-12">
-        <div className="bg-white rounded-full w-full flex flex-col justify-center items-center p-3">
+    <div className="flex flex-col justify-center items-center py-10 md:py-[140px] px-10 w-full sm:mx-auto sm:text-black">
+      <div className="bg-artist-back bg-no-repeat w-[300px] h-[300px] bg-[length:300px_300px] rounded-full p-12">
+        <div className="bg-white rounded-full w-full flex flex-col pt-4 pb-[20px]">
           <img
             src={require("../../assets/images/john-dahlsen.png")}
             alt="Dr John Dahlsen"
-            className="w-44 h-44 rounded-[50%]"
+            className="w-[200px] h-[150px] mt-[10px] rounded-[50%]"
           />
         </div>
       </div>
 
-      <h1 className="sm:text-[#050B1D] text-center text-4xl lg:text-[40px] font-[be-vietnam-bold] leading-[48px] tracking-[-1.29px]">
+      <h1 className="sm:text-[#050B1D] text-center text-[16px] md:text-[18px] lg:text-[25px] xl:text-[30px] xxl:text-[35px] xxxl:text-[64px] font-[be-vietnam-bold] leading-[48px] tracking-[-1.29px]">
         John Dahlsen
       </h1>
 
-      <span className="sm:text-[#050B1D] text-center font-[be-vietnam-xbold] text-[16px] font-bold leading-[147.51%] tracking-[4px] uppercase mt-[15px]">
+      <span className="sm:text-[#050B1D] text-center font-[be-vietnam-xbold] text-[15px] xl:text-[20px] xxxl:text-[25px] font-bold leading-[147.51%] uppercase mt-[20px]">
         The Artist
       </span>
 

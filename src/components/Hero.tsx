@@ -54,22 +54,22 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="lg:hidden flex flex-col justify-center items-center px-10 uppercase">
-        <h1 className="text-center text-[1rem] font-[be-vietnam-xbold] pt-10">
-          The great pacific garbage patch art project
+      <div className="lg:hidden flex flex-col justify-center items-center px-10">
+        <h1 className="text-center text-[1rem] font-[be-vietnam-xbold] pt-10 uppercase">
+          The great pacific <br/>garbage patch art project
         </h1>
-        <h2 className="text-[1rem] py-1 text-center">
-          John Dahlsen & InfinArt
+        <h2 className="text-[1rem] py-1 text-center font-[be-vietnam-semibold]">
+          By John Dahlsen & InfinArt
         </h2>
         <img
           src={require("../assets/images/gpgp-map-mobile.png")}
           alt="gpgp map"
-          className="object-center py-3 w-[282px] h-[175px]"
+          className="object-center py-3 my-5 w-[282px] h-[175px]"
         />
-        <h4 className="text-[1rem] font-semibold text-center mt-[20px]">
-          The art <br /> inspiring global action
+        <h4 className="text-[1rem] font-[be-vietnam] text-center mt-[20px]">
+          The Art Inspiring Global Action
         </h4>
-        <div className="w-full flex justify-center gap-x-2 mt-[48px]">
+        <div className="w-full flex justify-center gap-x-2 mt-[30px]">
           <MyLink to="/gallery" className="uppercase py-2 w-48">
             explore
           </MyLink>
