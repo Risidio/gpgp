@@ -38,14 +38,14 @@ const Attention = ({ contents }: IAttentionSectionProps) => {
           </div>
         </div>
       </div> */}
-      <div className="w-[100%] h-[100%] mt-[30px] md:mt-[0px] pb-[30px] md:pb-[0px]">
+      <div className="w-[100%] h-[100%] mt-[60px] lg:mt-[200px]">
         <h1 className="md:hidden pt-[20px] md:text-black md:pt-[0px] text-center text-[16px] md:mt-[64px] leading-[48px] uppercase font-[be-vietnam-xbold] font-[600] md:font-[600] md:text-[40px] md:leading-[48px]">
           {contents?.title[0].text}
         </h1>
-        <div className="w-[100%] grid md:grid-cols-2 mt-[15px] md:mt-[70px]">
-          <div className="h-[200px] mx-[20px] md:mx-0 md:w-[100%] md:h-[100%] mb-[30px] md:mb-0">
+        <div className="w-[100%] grid md:grid-cols-2 mt-[15px] lg:mt-[70px] md:px-[30px]">
+          <div className="flex flex-col items-center h-[200px] px-[50px] md:px-[0px] md:mx-0 md:w-[100%] md:h-[100%] mb-[30px] md:mb-[0px]">
             <img
-              className="w-[100%] h-[100%] hidden md:block"
+              className="w-[630px] xxxxl:w-[90%] h-[630px] xxxxl:h-[100%] hidden md:block rounded-[20px]"
               src={contents?.image.url}
               alt={contents?.image.alt}
             />
@@ -56,11 +56,11 @@ const Attention = ({ contents }: IAttentionSectionProps) => {
             />
           </div>
 
-          <div>
+          <div className="xxxxl:flex xxxxl:flex-col xxxxl:justify-center">
             <h1 className="hidden md:block px-[40px] md:px-[80px] text-[16px] md:mt-[64px] leading-[48px] font-[be-vietnam-semibold] md:text-[40px] md:leading-[48px]">
               {contents?.title[0].text}
             </h1>
-            <div className="w-[100%] order-2 md:order-1 md:py-[60px] px-[15px] md:px-[80px] flex flex-col gap-y-[40px]">
+            <div className="w-[100%] order-2 md:order-1 md:py-[60px] px-[30px] md:px-[80px] flex flex-col gap-y-[40px]">
               <p
                 dangerouslySetInnerHTML={{
                   __html: contents?.firstparagraph[0].text,
