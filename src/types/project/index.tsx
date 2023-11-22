@@ -1,18 +1,6 @@
-// general interfaces
-
-interface IImage {
-  alt: string;
-  dimensions: { width: number; height: number };
-  url: string;
-}
-
-interface IContents {
-  title: { text: string }[];
-  image: IImage;
-}
+import { IContents, IImage } from "..";
 
 // project hero
-
 export interface IProjectHeroProps {
   contents: IProjectHeroData;
 }
@@ -80,6 +68,7 @@ export interface IJoinSectionProps {
 export interface IJoinData extends IContents {
   firstparagraph: { text: string }[];
   secondparagraph: { text: string }[];
+  thirdparagraph: { text: string }[];
   firstbutton: string;
   secondbutton: string;
 }

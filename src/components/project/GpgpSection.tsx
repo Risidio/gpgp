@@ -6,16 +6,18 @@ import { IGpgpSectionProps } from "../../types/project";
 const GpgpSection = ({ contents }: IGpgpSectionProps) => {
   return (
     <>
-      <div className="w-[100%] h-[100%] mt-[30px] md:mt-[0px]">
+      <div className="w-[100%] h-[100%] mt-[60px] lg:mt-[200px]">
         <h1 className="md:hidden text-center text-[16px] md:mt-[64px] leading-[48px] uppercase font-[be-vietnam-xbold] font-[600] md:font-[600] md:text-[40px] md:leading-[48px]">
           {contents?.title[0].text}
         </h1>
-        <div className="w-[100%] grid md:grid-cols-2 mt-[15px] md:mt-[70px]">
-          <div className="order-2 md:order-1 ">
-            <h1 className="hidden md:block px-[40px] md:px-[80px] text-[16px] md:mt-[64px] leading-[48px] font-[be-vietnam-semibold] md:text-[40px] md:leading-[48px]">
-              {contents?.title[0].text}
-            </h1>
-            <div className="w-[100%] md:py-[60px] px-[15px] md:px-[80px] flex flex-col gap-y-[40px]">
+        <div className="w-[100%] grid md:grid-cols-2 mt-[15px] lg:mt-[70px] md:px-[30px]">
+          <div className="order-2 md:order-1 xxxxl:flex xxxxl:flex-col xxxxl:justify-center">
+            <div className="pl-[30px]">
+              <h1 className="hidden md:block text-[16px] md:mt-[64px] leading-[48px] text-xl font-[be-vietnam-semibold] md:text-[40px] md:leading-[48px]">
+                {contents?.title[0].text}
+              </h1>
+            </div>
+            <div className="w-[100%] md:py-[50px] px-[30px] flex flex-col gap-y-[30px]">
               <p
                 dangerouslySetInnerHTML={{
                   __html: contents?.firstparagraph[0].text,
@@ -28,8 +30,7 @@ const GpgpSection = ({ contents }: IGpgpSectionProps) => {
                   __html: contents?.secondparagraph[0].text,
                 }}
                 className="font-[be-vietnam] text-justified hidden md:block md:text-left text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]"
-              >
-              </p>
+              ></p>
 
               <MyLink
                 to=""
@@ -41,9 +42,9 @@ const GpgpSection = ({ contents }: IGpgpSectionProps) => {
               </MyLink>
             </div>
           </div>
-          <div className="h-[200px] mx-[20px] md:mx-0 md:w-[100%] md:h-[100%] order-1 md:order-2 mb-[30px] md:mb-0">
+          <div className="flex flex-col justify-center xxxxl:justify-end items-center xxxxl:items-end h-[200px] px-[50px] md:px-[0px] xxxxl:pr-[50px] md:w-[100%] md:h-[100%] order-1 md:order-2 mb-[30px] md:mb-0">
             <img
-              className="w-[100%] h-[100%] hidden md:block"
+              className="w-[630px] xxxxl:w-[90%] h-[630px] xxxxl:h-[100%] hidden md:block rounded-[20px]"
               src={challengeImage}
               alt={"The Challenge Web"}
             />

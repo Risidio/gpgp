@@ -1,49 +1,58 @@
+const whiteFooterPaths = [
+  {
+    route: "/contribute",
+    style: "bg-white",
+    fontColor: "black",
+    fontColorMobile: "text-black",
+    hrStyle: "",
+  },
+  {
+    route: "/contribute/inviteArtist",
+    style: "bg-white",
+    fontColor: "black",
+    fontColorMobile: "text-black",
+    hrStyle: "",
+  },
+
+  {
+    route: "/contribute/inviteSponsor",
+    style: "bg-white",
+    fontColor: "black",
+    fontColorMobile: "text-black",
+    hrStyle: "",
+  },
+  {
+    route: "/contact",
+    style: "bg-white",
+    fontColor: "black",
+    fontColorMobile: "text-black",
+    hrStyle: "",
+  },
+  {
+    route: "/",
+    style: "sm:bg-gpgp-blue bg-white",
+    fontColor: "white",
+    fontColorMobile: "sm:text-white text-black",
+    hrStyle: "sm:bg-white bg-gpgp-blue",
+  },
+];
+
 export const getFooterDetail = (routeToFind: string) => {
-    const whiteFooterPaths = [
-        {
-            route: "/",
-            style: "sm:bg-gpgp-blue bg-white",
-            fontColor: "white",
-            fontColorMobile: "sm:text-white text-black",
-            hrStyle: "sm:bg-white bg-gpgp-blue",
-        },
-        
-        {
-            route: "/contribute",
-            style: "bg-white",
-            fontColor: "black",
-            fontColorMobile: "text-black",
-            hrStyle: ""
-        },
-        {
-            route: "/contribute/inviteArtist",
-            style: "bg-white",
-            fontColor: "black",
-            fontColorMobile: "text-black",
-            hrStyle: ""
-        },
-       
-        {
-            route: "/contribute/inviteSponsor",
-            style: "bg-white",
-            fontColor: "black",
-            fontColorMobile: "text-black",
-            hrStyle: ""
-        },
-        {
-            route: "/contact",
-            style: "bg-white",
-            fontColor: "black",
-            fontColorMobile: "text-black",
-            hrStyle: ""
-        }             
-    ]
-
-    for (const path of whiteFooterPaths) {
-       if(path.route === routeToFind) {
-          return path;
-       } 
+  for (const path of whiteFooterPaths) {
+    if (path.route === routeToFind) {
+      return path;
     }
+  }
 
-    return;
-}
+  return null;
+};
+
+export const renderFooterColour = (routeToFind: string) => {
+  const paths = ["/project", "/challenge"];
+
+  for (const path of paths) {
+    if (routeToFind === path) return "text-white";
+  }
+
+  return "text-black";
+};

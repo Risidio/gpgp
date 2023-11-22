@@ -7,7 +7,7 @@ const Exhibition = () => {
       <div className="w-full bg-h-[100%] bg-w-[100%] bg-project-page-wave bg-no-repeat bg-cover md:pb-[50px] xl:pb-[80px] xxxl:pb-[80px]">
         <div className="xxsm:pb-[30px]">
           <div className="flex flex-col text-white pt-[120px] sm:pt-[150px] md:pt-[200px] lg:pt-[250px] xl:pt-[400px] xxl:pt-[400px] xxxl:pt-[380px] xxxxl:pt-[700px]">
-            <h1 className="text-center sm:mt-[30px] md:mt-[40px] lg:mt-[30px] xl:mt-[30px] xxl:mt-[120px] xxxl:mt-[93.38px] text-[16px] md:text-[18px] lg:text-[25px] xl:text-[30px] xxl:text-[35px] xxxl:text-[64px] font-[600] leading-[23.38px] md:leading-[48px]">
+            <h1 className="uppercase md:normal-case text-center sm:mt-[30px] md:mt-[40px] lg:mt-[30px] xl:mt-[30px] xxl:mt-[120px] xxxl:mt-[93.38px] text-[16px] md:text-[18px] lg:text-[25px] xl:text-[30px] xxl:text-[35px] xxxl:text-[64px] font-[600] leading-[23.38px] md:leading-[48px]">
               The Exhibition
             </h1>
             <div className="py-[10px] lg:py-[20px] lg:py-[50px] xxxl:py-[60px] xl:py-[30px] px-[30px] sm:px-[39px] md:px-[150px] lg:px-[210px] xl:px-[200px] xxl:px-[380px] xxxl:px-[500px] xxxxl:px-[800px]">

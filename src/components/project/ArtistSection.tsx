@@ -57,7 +57,7 @@ const ArtistSection = () => {
         </div>
         
       </div> */}
-      <div className="hidden xxl:block w-[100%] h-[100%]">
+      <div className="hidden xxl:block w-[100%] h-[100%] md:mt-[200px]">
         <h1 className="md:hidden text-center text-[16px] md:mt-[64px] leading-[48px] uppercase font-[be-vietnam-xbold] font-[600] md:font-[600] md:text-[40px] md:leading-[48px]">
           The Artist
         </h1>
