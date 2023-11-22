@@ -6,9 +6,7 @@ import Exhibition from "../components/project/Exhibition";
 import GpgpSection from "../components/project/GpgpSection";
 import ProjectHero from "../components/project/ProjectHero";
 import JoinUs from "../components/project/JoinUs";
-import Contribution from "../components/Contribution";
 import { useSinglePrismicDocument } from "@prismicio/react";
-import ContributionSection from "../components/project/Contribution";
 
 const Project = () => {
   const [document] = useSinglePrismicDocument("project");
