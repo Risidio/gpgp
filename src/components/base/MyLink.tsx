@@ -10,7 +10,7 @@ interface MyLinkProps {
 
 const MyLink: React.FC<MyLinkProps> = ({ to, children, className }) => {
   const classes = twMerge(
-       "border rounded-sm border-[#0E0C71] flex justify-center items-center text-sm font-semibold text-gpgp-blue hover:text-gpgp-blue/80 bg-white",
+       "border rounded-sm border-[#0E0C71] flex justify-center items-center font-[be-vietnam-semibold] text-gpgp-blue hover:text-gpgp-blue/80 bg-white",
        className
   );
   return <Link 
