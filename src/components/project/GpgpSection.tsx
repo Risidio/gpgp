@@ -6,7 +6,7 @@ import { IGpgpSectionProps } from "../../types/project";
 const GpgpSection = ({ contents }: IGpgpSectionProps) => {
   return (
     <>
-      <div className="w-[100%] h-[100%] pt-[20px] md:pt-[70px] xxl:pt-0">
+      <div className="w-[100%] h-[100%] pt-[40px] md:pt-[70px] xxl:pt-0">
         <h1 className="xxl:hidden text-center leading-[48px] text-[16px] uppercase font-[be-vietnam-xbold] font-[600] md:font-[600] md:text-[40px]">
           {contents?.title[0].text}
         </h1>

@@ -2,7 +2,7 @@ import MyLink from "../base/MyLink";
 
 const Artist = ({ ...props }) => {
   return (
-    <div className="flex flex-col justify-center items-center py-10 md:py-[140px] px-10 w-full sm:mx-auto sm:text-black">
+    <div className="flex flex-col justify-center items-center py-5 md:py-[40px] px-10 w-full sm:mx-auto sm:text-black">
       <div className="bg-artist-back bg-no-repeat w-[300px] h-[300px] bg-[length:300px_300px] rounded-full p-12">
         <div className="bg-white rounded-full w-full flex flex-col pt-4 pb-[20px]">
           <img
@@ -35,7 +35,7 @@ const Artist = ({ ...props }) => {
       <div className="">
         <MyLink
           to="/contribute"
-          className="uppercase mb-[48.62px] md:mb-[0px] bg-gpgp-blue px-[10px] py-[11px] text-white tracking-[3.3px] md:h-16 md:tracking-[.35em] text-base mx-auto md:mx-0"
+          className="uppercase bg-gpgp-blue px-[10px] py-[11px] text-white tracking-[3.3px] md:h-16 md:tracking-[.35em] text-base mx-auto md:mx-0"
         >
           <p className="font-[be-vietnam-semibold] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
             Find out more

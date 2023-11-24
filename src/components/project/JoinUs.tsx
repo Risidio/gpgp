@@ -6,7 +6,7 @@ import { IJoinSectionProps } from "../../types/project";
 const JoinUs = ({ contents }: IJoinSectionProps) => {
   return (
     <>
-      <div className="w-[100%] h-[100%] pt-[20px] md:pt-[70px] xxl:pt-0">
+      <div className="w-[100%] h-[100%] pt-[20px] md:pt-[80px] xxl:pt-0">
         <h1 className="xxl:hidden text-center leading-[48px] text-[16px] uppercase font-[be-vietnam-xbold] font-[600] md:font-[600] md:text-[40px]">
           {contents?.title[0].text}
         </h1>
@@ -38,7 +38,7 @@ const JoinUs = ({ contents }: IJoinSectionProps) => {
                 dangerouslySetInnerHTML={{
                   __html: contents?.thirdparagraph[0].text,
                 }}
-                className="md:hidden font-[be-vietnam] text-justified hidden md:block text-center text-[16px] xl:text-[20px] xxl:text-left xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]"
+                className="block md:hidden font-[be-vietnam] text-justified text-center text-[16px] xl:text-[20px] xxl:text-left xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]"
               ></p>
               <div className="flex mx-auto xxl:mx-[0px] gap-x-[30px]">
                 <MyLink
