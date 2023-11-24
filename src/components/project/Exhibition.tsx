@@ -6,50 +6,55 @@ import MyLink from "../base/MyLink";
 const Exhibition = ({ contents }: IExhibitionSectionProps) => {
   return (
     <>
-      <div className="w-[100%] h-[100%] mt-[60px] lg:mt-[200px]">
-        <h1 className="md:hidden text-center text-[16px] md:mt-[64px] leading-[48px] uppercase font-[be-vietnam-xbold] font-[600] md:font-[600] md:text-[40px] md:leading-[48px]">
+      <div className="w-[100%] h-[100%] pt-[20px] md:pt-[70px] xxl:pt-0">
+        <h1 className="xxl:hidden text-center leading-[48px] text-[16px] uppercase font-[be-vietnam-xbold] font-[600] md:font-[600] md:text-[40px]">
           {contents?.title[0].text}
         </h1>
-        <div className="w-[100%] grid md:grid-cols-2 mt-[15px] lg:mt-[70px] md:px-[30px]">
-          <div className="order-2 md:order-1 xxxxl:flex xxxxl:flex-col xxxxl:justify-center">
-            <div className="pl-[30px]">
-              <h1 className="hidden md:block text-[16px] md:mt-[64px] leading-[48px] text-xl font-[be-vietnam-semibold] md:text-[40px] md:leading-[48px]">
+        {/* Contents */}
+        <div className="w-[100%] grid xxl:grid-cols-2 px-[40px] sm:px-[65px] py-[30px] xxxxl:py-[50px] md:pt-[55px] xxxl:px-[300px]">
+          {/* Text */}
+          <div className="order-2 xxl:order-1 xxxxl:flex xxxxl:flex-col xxxxl:justify-center">
+            <div className="hidden xxl:block">
+              <h1 className="text-[16px] md:mt-[64px] leading-[48px] text-xl font-[be-vietnam-semibold] md:text-[40px] md:leading-[48px]">
                 {contents?.title[0].text}
               </h1>
             </div>
-            <div className="w-[100%] md:py-[50px] px-[30px] flex flex-col gap-y-[30px]">
+            <div className="flex flex-col w-[100%] gap-y-[30px] md:py-[50px] md:w-[585px] xxl:w-full md:mx-auto xxl:mx-0">
               <p
                 dangerouslySetInnerHTML={{
                   __html: contents?.firstparagraph[0].text,
                 }}
-                className="font-[be-vietnam] text-center md:text-left text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]"
+                className="font-[be-vietnam] text-center text-[16px] xl:text-[20px] xxl:text-left xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]"
               ></p>
 
               <p
                 dangerouslySetInnerHTML={{
                   __html: contents?.secondparagraph[0].text,
                 }}
-                className="font-[be-vietnam] text-justified hidden md:block md:text-left text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]"
+                className="font-[be-vietnam] text-justified hidden md:block text-center text-[16px] xl:text-[20px] xxl:text-left xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]"
               ></p>
 
-              <MyLink
-                to="/gallery"
-                className="uppercase mb-[48.62px] md:mb-[0px] bg-gpgp-blue px-[17px] py-[11px] md:bg-white text-white md:text-gpgp-blue md:w-56 tracking-[3.3px] md:h-16 md:tracking-[.35em] text-base mx-auto md:mx-0"
-              >
-                <p className="font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
-                  {contents?.button}
-                </p>
-              </MyLink>
+              <div className="">
+                <MyLink
+                  to=""
+                  className="uppercase w-56 xxl:w-[300px] bg-gpgp-blue px-[10px] py-[10px] hover:text-white md:hover:text-gpgp-blue md:bg-white text-white md:text-gpgp-blue tracking-[3.3px] md:tracking-[.35em] text-base mx-auto xxl:mx-0"
+                >
+                  <p className="font-[be-vietnam-bold] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
+                    {contents?.button}
+                  </p>
+                </MyLink>
+              </div>
             </div>
           </div>
-          <div className="flex flex-col justify-center xxxxl:justify-end items-center xxxxl:items-end h-[200px] px-[50px] md:px-[0px] xxxxl:pr-[50px] md:w-[100%] md:h-[100%] order-1 md:order-2 mb-[30px] md:mb-0">
+          {/* Image */}
+          <div className="flex flex-col justify-center items-center order-1 h-[196px] md:h-[438px] xxl:h-[100%] md:px-[0px] md:w-[100%] md:h-[100%] xxl:order-2 mb-[30px] md:mb-0 xxxl:items-end">
             <img
-              className="w-[630px] xxxxl:w-[90%] h-[630px] xxxxl:h-[100%] hidden md:block rounded-[20px]"
+              className="hidden rounded-[20px] w-[585px] md:block xxxxl:w-[882px] xxxxl:h-[530px]"
               src={GalleryImageWeb}
               alt={"The Challenge Web"}
             />
             <img
-              className="w-[100%] h-[100%] md:hidden"
+              className="w-[293px] h-[100%] md:hidden"
               src={GalleryImage}
               alt={"The Challenge Mobile"}
             />
