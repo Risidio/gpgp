@@ -1,5 +1,4 @@
-import { IProjectHeroProps } from "../../types/project";
-
+import { IProjectHeroProps } from './../../types/project/index';
 const ProjectHero = ({ contents }: IProjectHeroProps) => {
   return (
     <>

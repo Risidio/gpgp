@@ -7,9 +7,10 @@ import GpgpSection from "../components/project/GpgpSection";
 import ProjectHero from "../components/project/ProjectHero";
 import JoinUs from "../components/project/JoinUs";
 import { useSinglePrismicDocument } from "@prismicio/react";
+import prismicDocumentTypes from "../utility/prismicDocumentTypes";
 
 const Project = () => {
-  const [document] = useSinglePrismicDocument("project");
+  const [document] = useSinglePrismicDocument(prismicDocumentTypes.project);
   return (
     <>
       <Container>

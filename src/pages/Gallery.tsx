@@ -4,9 +4,10 @@ import GalleryHero from "../components/gallery/GalleryHero";
 import Slides from "../components/gallery/Slides";
 import Contribution from "../components/Contribution";
 import { useSinglePrismicDocument } from "@prismicio/react";
+import prismicDocumentTypes from "../utility/prismicDocumentTypes";
 
 const Gallery = () => {
-  const [document] = useSinglePrismicDocument("gallery");
+  const [document] = useSinglePrismicDocument(prismicDocumentTypes.gallery);
   console.log("Gallery Document:", document?.data["body"][2]);
 
   return (
