@@ -1,9 +1,9 @@
 import { useSinglePrismicDocument } from "@prismicio/react";
-import GalleryHeader from "../components/gallery/GalleryHeader";
-import GalleryView from "../components/gallery/GalleryView";
+import prismicDocumentTypes from "../utility/prismicDocumentTypes";
 
 const Gallery = () => {
-  const [document] = useSinglePrismicDocument("gallery");
+  const [document] = useSinglePrismicDocument(prismicDocumentTypes.gallery);
+  console.log("Gallery Document:", document?.data["body"][2]);
 
   return (
     <>

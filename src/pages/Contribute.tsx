@@ -1,8 +1,13 @@
+import { useSinglePrismicDocument } from "@prismicio/react";
 import ContributeCarousel from "../components/contribute/ContributeCarousel";
 import ContributeHero from "../components/contribute/ContributeHero";
 import NewContributeHero from "../components/contribute/NewContributeHero";
+import prismicDocumentTypes from "../utility/prismicDocumentTypes";
 
 export default function Contribute() {
+
+  const [document] = useSinglePrismicDocument(prismicDocumentTypes.contribute);
+  console.log(document);
   const HeroContent = {
     heading: "Contribute",
     HeroLegend: [
@@ -29,7 +34,7 @@ export default function Contribute() {
           paragraph: "w-[148%] leading-[1rem] sm:leading-6 xxl:text-[1.5rem] xxl:leading-[2rem]",
         }}
       /> */}
-      <NewContributeHero HeroContent={HeroContent} classes={{
+      <NewContributeHero contents={document?.data["body"][0].primary} HeroContent={HeroContent} classes={{
         container: undefined,
         image: undefined,
         heading: undefined,
