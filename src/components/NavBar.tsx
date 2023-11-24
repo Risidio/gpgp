@@ -5,23 +5,15 @@ import Logo from "./Logo";
 import { HiChevronDown } from "react-icons/hi";
 import MobileLogo from "./MobileLogo";
 
- 
-
 // All the links as static data
 const links = [
   {
     name: "Project",
     href: "/project",
-    submenu: [
-      {
-        name: "Overview",
-        href: "/project",
-      },
-      {
-        name: "Gallery",
-        href: "/gallery",
-      },
-    ],
+  },
+  {
+    name: "Gallery",
+    href: "/gallery",
   },
   {
     name: "Challenge",
@@ -96,7 +88,7 @@ const NavBar = () => {
         </Link>
         {isOpenMenu && (
           <div
-            className={`bg-white h-screen sm:hidden z-10 text-black mt-16 fixed w-full left-0 top-0 transition-all ease-in duration-500 flex flex-col items-center ${
+            className={`bg-white h-screen sm:hidden z-10 text-black mt-[100px] fixed w-full left-0 top-0 transition-all ease-in duration-500 flex flex-col items-center ${
               isOpenMenu ? styles.menuContainer : ""
             } ${isOpenMenu && styles.slideDown} ${
               isAnimating && styles.slideUp
@@ -205,7 +197,6 @@ const NavBar = () => {
             )
           )}
         </div>
-       
 
         {/* hamburger menu */}
         <div className="inline-block sm:hidden text-white py-1 px-3 h-auto">

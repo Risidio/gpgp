@@ -5,7 +5,7 @@ const ProjectHero = ({ contents }: IProjectHeroProps) => {
     <>
       <div className="py-[30px]">
         <div className="flex flex-col gap-y-[20px] md:gap-y-[10px]">
-          <div className="text-center flex flex-col">
+          <div className="text-center flex flex-col px-[20px] md:px-[0px]">
             <h1 className="uppercase font-[be-vietnam-xbold] font-bold text-[20px] leading-[29.5px] md:text-[36px] md:leading-[53.1px]">
               {contents?.project_title[0].text}
             </h1>

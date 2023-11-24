@@ -4,6 +4,7 @@ import gpgpMapImage from "../assets/images/new_gpgp_hero.jpg";
 const Hero = () => {
   return (
     <>
+      {/* Desktop Version */}
       <div className="hidden lg:block px-[80px] py-[60px]">
         <div className="grid grid-cols-2">
           <div className="flex flex-col justify-between">
@@ -30,18 +31,18 @@ const Hero = () => {
               </MyLink> */}
              <MyLink
                 to="/gallery"
-                className="uppercase mb-[48.62px] md:mb-[0px] bg-gpgp-blue px-[10px] py-[11px] md:bg-white text-white md:text-gpgp-blue md:w-60 tracking-[3.3px] md:h-16 md:tracking-[.35em] text-base mx-auto md:mx-0"
+                className="uppercase bg-gpgp-blue px-[30px] py-[8px] md:bg-white text-white md:text-gpgp-blue tracking-[3.3px] md:tracking-[.35em]"
               >
-                <p className="font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
+                <p className="text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
                  Gallery
                 </p>
               </MyLink>
               <MyLink
                 to="/contribute"
-                className="uppercase mb-[48.62px] md:mb-[0px] bg-gpgp-blue px-[10px] py-[11px] text-white md:w-60 tracking-[3.3px] md:h-16 md:tracking-[.35em] text-base mx-auto md:mx-0"
+                className="uppercase bg-gpgp-blue px-[30px] py-[8px] text-white tracking-[3.3px] md:tracking-[.35em]"
               >
                 <p className="font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
-                  Join
+                  Join Us
                 </p>
               </MyLink>
             </div>
@@ -54,6 +55,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      {/* Mobile Version */}
       <div className="lg:hidden flex flex-col justify-center items-center px-10">
         <h1 className="text-center text-[1rem] font-[be-vietnam-xbold] pt-10 uppercase">
           The great pacific <br/>garbage patch art project

@@ -48,7 +48,7 @@ export const getFooterDetail = (routeToFind: string) => {
 };
 
 export const renderFooterColour = (routeToFind: string) => {
-  const paths = ["/project", "/challenge"];
+  const paths = ["/project", "/challenge","/gallery"];
 
   for (const path of paths) {
     if (routeToFind === path) return "text-white";
