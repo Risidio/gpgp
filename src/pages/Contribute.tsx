@@ -1,5 +1,6 @@
 import ContributeCarousel from "../components/contribute/ContributeCarousel";
 import ContributeHero from "../components/contribute/ContributeHero";
+import NewContributeHero from "../components/contribute/NewContributeHero";
 
 export default function Contribute() {
   const HeroContent = {
@@ -19,7 +20,7 @@ export default function Contribute() {
 
   return (
     <div>
-      <ContributeHero
+      {/* <ContributeHero
         HeroContent={HeroContent}
         classes={{
           container: "mb-[-70px] xsm:mb-[-150px]",
@@ -27,9 +28,17 @@ export default function Contribute() {
           heading: " sm:text-[2.2rem] lg:text-[2.4rem] xxl:text-[3rem] mb-9 sm:mb-16 ",
           paragraph: "w-[148%] leading-[1rem] sm:leading-6 xxl:text-[1.5rem] xxl:leading-[2rem]",
         }}
+      /> */}
+      <NewContributeHero HeroContent={HeroContent} classes={{
+        container: undefined,
+        image: undefined,
+        heading: undefined,
+        subheading: undefined,
+        paragraph: undefined
+      }}        
       />
 
-      <div className="relative mt-14 xsm:mt-[-150px] lg:min-h-[750px] sm:min-h-[700px] ">
+      <div className="relative mt-14 xsm:mt-[150px] lg:min-h-[750px] sm:min-h-[700px] ">
         <ContributeCarousel />
       </div>
     </div>
