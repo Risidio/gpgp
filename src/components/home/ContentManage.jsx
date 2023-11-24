@@ -3,7 +3,7 @@ import MyLink from "../base/MyLink";
 // This component handles and renders the content passed as props
 const ContentManage = ({ contents }) => {
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col mb-[70px]">
       {contents.map((content) => (
         <div key={content.id}>
           {/* Desktop-view */}

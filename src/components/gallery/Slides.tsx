@@ -20,7 +20,7 @@ const Slides = ({ contents }: IGalleryArtworksProps) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [artworks, setArtworks] = useState<IGalleryArtWorkImageData[]>([]);
   const totalItems = contents?.length;
-  const itemsPerPage = 10;
+  const itemsPerPage = 20;
 
   useEffect(function () {
     handleArtWorksDisplay();
