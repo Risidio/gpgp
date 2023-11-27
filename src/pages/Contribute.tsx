@@ -5,23 +5,14 @@ import NewContributeHero from "../components/contribute/NewContributeHero";
 import prismicDocumentTypes from "../utility/prismicDocumentTypes";
 
 export default function Contribute() {
-
   const [document] = useSinglePrismicDocument(prismicDocumentTypes.contribute);
   console.log(document);
-  const HeroContent = {
-    heading: "Contribute",
-    HeroLegend: [
-      ` The Great Pacific Garbage Patch Art Project is an exciting
-      initiative that welcomes both artists and investors to join us in
-      making a profound impact on the environment.`,
-      ` Together, we can create a harmonious blend of creativity and capital
-      to tackle one of the planet's most pressing environmental
-      challenges.`,
-      `Join us on this remarkable journey to combat the Great Pacific
-      Garbage Patch through the transformative power of art and
-      investment.`,
-    ],
-  };
+
+  const artist = document?.data["body"][1]?.primary;
+  const sponosr = document?.data["body"][2]?.primary;
+
+  // Create an object with both properties
+  const combinedProps = { artist,sponosr};
 
   return (
     <div>
@@ -34,17 +25,19 @@ export default function Contribute() {
           paragraph: "w-[148%] leading-[1rem] sm:leading-6 xxl:text-[1.5rem] xxl:leading-[2rem]",
         }}
       /> */}
-      <NewContributeHero contents={document?.data["body"][0].primary} HeroContent={HeroContent} classes={{
-        container: undefined,
-        image: undefined,
-        heading: undefined,
-        subheading: undefined,
-        paragraph: undefined
-      }}        
+      <NewContributeHero
+        contents={document?.data["body"][0].primary}
+        classes={{
+          container: undefined,
+          image: undefined,
+          heading: undefined,
+          subheading: undefined,
+          paragraph: undefined,
+        }}
       />
 
       <div className="relative mt-14 xsm:mt-[150px] lg:min-h-[750px] sm:min-h-[700px] ">
-        <ContributeCarousel />
+        <ContributeCarousel contents1={artist} contents2={sponosr} />
       </div>
     </div>
   );
