@@ -44,7 +44,7 @@ const GalleryView = ({ contents }: IGalleryArtworksProps) => {
         <div className="flex flex-col gap-y-[30px] lg:gap-y-[80px]">
           {/* Pagination */}
           <NewPagination
-            classes="flex justify-center lg:justify-end"
+            classes="flex justify-end mr-[9px]"
             totalItems={totalItems}
             itemsPerPage={itemsPerPage}
             currentPage={currentPage}
@@ -74,7 +74,7 @@ const GalleryView = ({ contents }: IGalleryArtworksProps) => {
 
           {/* Pagination */}
           <NewPagination
-            classes="flex justify-center lg:justify-end"
+            classes="flex justify-end mr-[9px]"
             totalItems={totalItems}
             itemsPerPage={itemsPerPage}
             currentPage={currentPage}

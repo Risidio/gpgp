@@ -49,7 +49,7 @@ const Exhibition = ({ contents }: IExhibitionSectionProps) => {
           {/* Image */}
           <div className="flex flex-col justify-center items-center order-1 h-[196px] md:h-[438px] xxl:h-[100%] md:px-[0px] md:w-[100%] md:h-[100%] xxl:order-2 mb-[30px] md:mb-0 xxxl:items-end">
             <img
-              className="hidden rounded-[20px] w-[585px] md:block xxxxl:w-[882px] xxxxl:h-[530px]"
+              className="hidden w-[585px] md:block xxxxl:w-[882px] xxxxl:h-[530px]"
               src={GalleryImageWeb}
               alt={"The Challenge Web"}
             />

@@ -1,4 +1,4 @@
-import JD from "../../assets/images/john-dahlsen.png";
+import JD from "../../assets/images/JD.png";
 import Artist from "../home/Artist";
 
 const ArtistSection = () => {
@@ -39,7 +39,7 @@ const ArtistSection = () => {
           <div className="flex flex-col justify-center items-center order-1 h-[196px] md:h-[438px] xxl:h-[100%] md:px-[0px] md:w-[100%] md:h-[100%] xxl:order-1 mb-[30px] md:mb-0 xl:items-start">
             <div className="">
               <img
-                className="rounded-[20px] w-[585px] md:block xxxxl:w-[882px] xxxxl:h-[530px]"
+                className="w-[585px] md:block xxxxl:w-[882px] xxxxl:h-[530px]"
                 src={JD}
                 alt={"JD"}
               />

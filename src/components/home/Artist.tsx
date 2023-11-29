@@ -6,7 +6,7 @@ const Artist = ({ ...props }) => {
       <div className="bg-artist-back bg-no-repeat w-[300px] h-[300px] bg-[length:300px_300px] rounded-full p-12">
         <div className="bg-white rounded-full w-full flex flex-col pt-4 pb-[20px]">
           <img
-            src={require("../../assets/images/john-dahlsen.png")}
+            src={require("../../assets/images/JD-mobile.png")}
             alt="Dr John Dahlsen"
             className="w-[200px] h-[150px] mt-[10px] rounded-[50%]"
           />

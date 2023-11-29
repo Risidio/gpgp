@@ -27,7 +27,7 @@ const ContentManage = ({ contents }) => {
               <img
                 src={content.Img}
                 alt={content.name}
-                className="object-cover shadow-sm shadow-black w-[650px] h-[650px]"
+                className="object-cover shadow-sm shadow-black"
               />
             </div>
 
