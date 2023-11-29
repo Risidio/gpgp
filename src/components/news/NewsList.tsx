@@ -3,6 +3,8 @@ import Tabs from "../shared/Tabs";
 import LatestNews from "./LatestNews";
 import NewsCategory from "./NewsCategory";
 import { useState } from "react";
+import { useSinglePrismicDocument } from "@prismicio/react";
+import prismicDocumentTypes from "../../utility/prismicDocumentTypes";
 
 const categories = [
   {
@@ -31,6 +33,9 @@ const NewsList = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [currentCategory, setCurrentCategory] = useState("All");
 
+  const [document] = useSinglePrismicDocument(prismicDocumentTypes.news);
+  console.log(document);
+
   const itemsPerPage = 1;
   let items = categories ?? [];
 
@@ -56,7 +61,7 @@ const NewsList = () => {
   const handlePageChange = (pageNumber: number) => setCurrentPage(pageNumber);
   return (
     <div className="min-h-screen w-full">
-      <LatestNews />
+      <LatestNews contents={document?.data["body"][0].primary} />
       <Tabs
         items={[...tabCategories]}
         currentCategory={currentCategory}
