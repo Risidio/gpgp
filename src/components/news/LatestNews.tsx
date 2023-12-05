@@ -1,8 +1,6 @@
 import { INewsHeroProps } from "../../types/news";
 
-const LatestNews = ({
-  contents,
-}: INewsHeroProps) => {
+const LatestNews = ({ contents }: INewsHeroProps) => {
   return (
     <div className="w-full flex flex-col sm:p-9 p-5">
       <div className="flex justify-between items-center pb-5">
@@ -33,18 +31,7 @@ const LatestNews = ({
                 className="w-full h-56 object-cover rounded-[20px] cursor-pointer shadow-md"
               />
               <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2 z-50">
-              {contents?.newscaption2[0].text}
-              </span>
-            </div>
-
-            <div className="group relative">
-              <img
-                src={contents?.newsimage3.url}
-                alt=""
-                className="w-full h-56 object-cover rounded-[20px] cursor-pointer shadow-md"
-              />
-              <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2 z-50">
-              {contents?.newscaption3[0].text}
+                {contents?.newscaption2[0].text}
               </span>
             </div>
 
@@ -55,18 +42,29 @@ const LatestNews = ({
                 className="w-full h-56 object-cover rounded-[20px] cursor-pointer shadow-md"
               />
               <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2 z-50">
-              {contents?.newscaption4[0].text}
+                {contents?.newscaption4[0].text}
               </span>
             </div>
 
             <div className="group relative">
               <img
-               src={contents?.newsimage5.url}
+                src={contents?.newsimage3.url}
                 alt=""
                 className="w-full h-56 object-cover rounded-[20px] cursor-pointer shadow-md"
               />
               <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2 z-50">
-              {contents?.newscaption5[0].text}
+                {contents?.newscaption3[0].text}
+              </span>
+            </div>
+
+            <div className="group relative">
+              <img
+                src={contents?.newsimage5.url}
+                alt=""
+                className="w-full h-56 object-cover rounded-[20px] cursor-pointer shadow-md"
+              />
+              <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2 z-50">
+                {contents?.newscaption5[0].text}
               </span>
             </div>
           </div>
@@ -78,62 +76,57 @@ const LatestNews = ({
           <div className="col-span-2 gap-4 space-y-8">
             <div className="group relative">
               <img
-                src={require("../../assets/images/news/news2.png")}
+                src={contents?.newsimage1.url}
                 alt=""
                 className="w-full h-60 object-cover rounded-[20px]  shadow-md"
               />
-              <span className="absolute bottom-1 text-sm drop-shadow-sm font-semibold text-white p-3 z-50">
-                The Tide of Plastic: A Growing Threat The Tide of Plastic: A
-                Growing Threat
+              <span className="absolute bottom-1 text-sm drop-shadow-sm font-semibold text-white p-1 md:p-3 z-50">
+                {contents?.newscaption1[0].text}
               </span>
             </div>
 
             <div className="group relative">
               <img
-                src={require("../../assets/images/news/news1.jpg")}
+                src={contents?.newsimage2.url}
                 alt=""
                 className="w-full h-60 object-cover rounded-[20px]  shadow-md"
               />
-              <span className="absolute bottom-1 text-sm drop-shadow-sm font-semibold text-white p-3 z-50">
-                The Tide of Plastic: A Growing Threat The Tide of Plastic: A
-                Growing Threat
+              <span className="absolute bottom-1 text-sm drop-shadow-sm font-semibold text-white p-1 md:p-3 z-50">
+                {contents?.newscaption2[0].text}
               </span>
             </div>
           </div>
           <div className="col-span-1 grid grid-cols-1 gap-4">
             <div className="group relative">
               <img
-                src={require("../../assets/images/news/news3.jpg")}
+                src={contents?.newsimage3.url}
                 alt=""
                 className="w-full h-40 object-cover rounded-[20px]  shadow-md"
               />
-              <span className="absolute bottom-0 text-sm drop-shadow-sm font-semibold text-white p-3 z-50">
-                The Tide of Plastic: A Growing Threat The Tide of Plastic: A
-                Growing Threat
+              <span className="absolute bottom-0 text-sm drop-shadow-sm font-semibold text-white p-1 md:p-3 z-50">
+                {contents?.newscaption3[0].text}
               </span>
             </div>
 
             <div className="group relative">
               <img
-                src={require("../../assets/images/news/news4.jpg")}
+                src={contents?.newsimage4.url}
                 alt=""
                 className="w-full h-40 object-cover rounded-[20px]  shadow-md"
               />
-              <span className="absolute bottom-0 text-sm drop-shadow-sm font-semibold text-white p-3 z-50">
-                The Tide of Plastic: A Growing Threat The Tide of Plastic: A
-                Growing Threat
+              <span className="absolute bottom-0 text-sm drop-shadow-sm font-semibold text-white p-1 md:p-3 z-50">
+                {contents?.newscaption4[0].text}
               </span>
             </div>
 
             <div className="group relative">
               <img
-                src={require("../../assets/images/news/news5.jpg")}
+                src={contents?.newsimage5.url}
                 alt=""
                 className="w-full h-40 object-cover rounded-[20px]  shadow-md"
               />
-              <span className="absolute bottom-0 text-sm drop-shadow-sm font-semibold text-white p-3 z-50">
-                The Tide of Plastic: A Growing Threat The Tide of Plastic: A
-                Growing Threat
+              <span className="absolute bottom-0 text-sm drop-shadow-sm font-semibold text-white p-1 md:p-3 z-50">
+                {contents?.newscaption5[0].text}
               </span>
             </div>
           </div>

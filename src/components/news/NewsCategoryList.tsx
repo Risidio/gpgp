@@ -2,8 +2,8 @@ import { useParams } from "react-router-dom";
 import Tabs from "../shared/Tabs";
 import { useState } from "react"
 import Pagination from "../shared/Pagination";
-import { NewsCard } from "./NewsCard";
 import NewsBoard from "./NewsBoard";
+import { NewsCards } from "./NewsCards";
 
 const categories = [
    {
@@ -64,7 +64,7 @@ const NewsCategoryList = () => {
          <NewsBoard/>
          <div className="grid grid-cols-3 gap-5">
              {fakeData.map((item, index) => (
-                 <NewsCard
+                 <NewsCards
                      key={index}
                      title="The Tide of Plastic: A Growing Threat"
                      href={`/news/${params.categoryId}`}

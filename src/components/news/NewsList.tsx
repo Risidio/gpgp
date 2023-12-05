@@ -6,35 +6,46 @@ import { useState } from "react";
 import { useSinglePrismicDocument } from "@prismicio/react";
 import prismicDocumentTypes from "../../utility/prismicDocumentTypes";
 
-const categories = [
-  {
-    title: "GPGP news",
-    description: "The Tide of Plastic A Growing Threat",
-  },
-  {
-    title: "Plastic pollution",
-    description: "The Tide of Plastic A Growing Threat",
-  },
-  {
-    title: "ENVIRonmental art",
-    description: "The Tide of Plastic A Growing Threat",
-  },
-  {
-    title: "Events",
-    description: "The Tide of Plastic A Growing Threat",
-  },
-  {
-    title: "Test",
-    description: "The Tide of Plastic A Growing Threat",
-  },
-];
-
 const NewsList = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [currentCategory, setCurrentCategory] = useState("All");
 
   const [document] = useSinglePrismicDocument(prismicDocumentTypes.news);
-  console.log(document);
+  // console.log(document);
+
+  const categories = [
+    {
+      title: "GPGP news",
+      description: "The Tide of Plastic A Growing Threat",
+      primary :document?.data["body"][1].primary,
+      prismicItems : document?.data["body"][1].items,
+    },
+    {
+      title: "Plastic pollution",
+      description: "The Tide of Plastic A Growing Threat",
+      primary :document?.data["body"][2].primary,
+      prismicItems : document?.data["body"][2].items,
+    },
+    {
+      title: "ENVIRonmental art",
+      description: "The Tide of Plastic A Growing Threat",
+      primary :document?.data["body"][3].primary,
+      prismicItems : document?.data["body"][3].items,
+    },
+    {
+      title: "Events",
+      description: "The Tide of Plastic A Growing Threat",
+      primary :document?.data["body"][4].primary,
+      prismicItems : document?.data["body"][4].items,
+    },
+    {
+      title: "Test",
+      description: "The Tide of Plastic A Growing Threat",
+      primary :document?.data["body"][5].primary,
+      prismicItems : document?.data["body"][5].items,
+    },
+  ];
+
 
   const itemsPerPage = 1;
   let items = categories ?? [];
@@ -48,17 +59,10 @@ const NewsList = () => {
     setCurrentPage(1);
   };
 
-  // Filter the data
-  items =
-    currentCategory !== "All"
-      ? items.filter(
-          (item) => item.title.toLowerCase() === currentCategory.toLowerCase()
-        )
-      : items;
-
   // Pagination
   const totalItems = items.length;
   const handlePageChange = (pageNumber: number) => setCurrentPage(pageNumber);
+
   return (
     <div className="min-h-screen w-full">
       <LatestNews contents={document?.data["body"][0].primary} />
@@ -68,7 +72,12 @@ const NewsList = () => {
         onCategoryChange={handleCategoryChange}
       />
       {items.map((category, index) => (
-        <NewsCategory key={index} category={category} />
+        <NewsCategory
+          key={index}
+          category={category}
+          primary={categories[index].primary}
+          prismicItems={categories[index].prismicItems}
+        />
       ))}
 
       {totalItems > itemsPerPage && (
@@ -84,4 +93,5 @@ const NewsList = () => {
     </div>
   );
 };
+
 export default NewsList;
