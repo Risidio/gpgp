@@ -1,19 +1,20 @@
 import ContentManage from './ContentManage'
 import ProjectImg from "../../assets/images/project.png"
 import ChallengeImg from "../../assets/images/challenge.png"
-import InvitationImg from "../../assets/images/invitation.png"
+import InvitationImg from "../../assets/images/gpgp-tile.png"
 
 const contents = [
     {
         name: "The Project",
-        description: "The Great Pacific Garbage Patch (GPGP) environmental art \n project is a collaboration between environmental artist, \n John Dahlsen, and InfinArt. The complete artwork \n comprises 2450 tiles, representing a recent satellite image \n of the Great Pacific Garbage Patch and draws attention to  \n the issue of plastic litter in the oceans, particularly the \n major garbage patches.",
+        description: "The GPGP project is an immersive and transformative exhibition that aims to raise awareness, inspire action, and drive positive change regarding plastic pollution, with a specific focus on the Great Pacific Garbage Patch.",
         Btn: {
             name: "EXPLORE",
             link: "/project"
         },
         Img: ProjectImg,
         ImgPos : "left",
-        id: 1
+        id: 1,
+        rounded:false
     },
     {
         name: "The Challenge",
@@ -24,7 +25,8 @@ const contents = [
         },
         Img: ChallengeImg,
         ImgPos : "right",
-        id: 2
+        id: 2,
+        rounded:false
     },
     {
         name: "The Invitation",
@@ -35,7 +37,8 @@ const contents = [
         },
         Img: InvitationImg,
         ImgPos : "left",
-        id: 3
+        id: 3,
+        rounded:true
     },
 ]
 const HomeContent = () => {

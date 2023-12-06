@@ -13,13 +13,13 @@ const Project = () => {
   return (
     <>
       <div className="xxxxl:max-w-[2560px] xxxxl:mx-auto">
-        <Container>
+        {/* <Container>
           <ProjectHero contents={document?.data["body"][0].primary} />
-        </Container>
+        </Container> */}
 
-        <section>
+        {/* <section>
           <About contents={document?.data["body"][1].primary} />
-        </section>
+        </section> */}
 
         <section>
           <GpgpSection contents={document?.data["body"][2].primary} />

@@ -11,17 +11,11 @@ const Home = () => {
   return (
     <>
       <div className="xxxxl:max-w-[2560px] xxxxl:mx-auto">
-        <section className="my-5 xxxl:mx-3">
-          <Hero />
-        </section>
+        <Hero />
 
-        <section>
-          <Exhibition />
-        </section>
-
-        <div>
-          <HomeExhibition />
-        </div>
+        <Exhibition />
+        
+        <HomeExhibition />
 
         <section>
           <HomeContent />

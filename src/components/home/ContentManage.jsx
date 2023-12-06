@@ -22,12 +22,17 @@ const ContentManage = ({ contents }) => {
                                              ? "sm:justify-start"
                                              : "sm:justify-end"
                                          }
+                                         ${
+                                          content.rounded 
+                                            ? "items-center"
+                                            : null
+                                        }
                                        `}
             >
               <img
                 src={content.Img}
                 alt={content.name}
-                className="object-cover shadow-sm shadow-black"
+                className={`object-cover shadow-sm shadow-black ${content.rounded ? 'w-[583px] h-[335px]' : null}`}
               />
             </div>
 
@@ -60,14 +65,14 @@ const ContentManage = ({ contents }) => {
           >
             <h1 className="text-xl font-semibold uppercase">{content.name}</h1>
 
-            <div className="px-[50px]">
+            <div className="">
               <img
                 src={content.Img}
                 alt={`img${content.id}`}
-                className="object-cover shadow-sm shadow-black w-[100%] h-[250px]"
+                className={`object-cover shadow-sm shadow-black w-[293px] h-[169px] ${content.rounded ? 'rounded-[25px]' : null}`}
               />
             </div>
-            <p className="text-center leading-[34px] tracking-[0.2px] text-[14px] md:text-[20px] px-[30px]">
+            <p className="text-center w-[288px] md:w-[400px] mx-auto leading-[34px] tracking-[0.2px] text-[15px] md:text-[20px]">
               {content.description}
             </p>
 
@@ -84,7 +89,7 @@ const ContentManage = ({ contents }) => {
                 {content.Btn.name}
               </MyLink> */}
 
-              <MyLink
+              {/* <MyLink
                 className={`"uppercase py-[11px] w-36 mx-auto ml-0 text-base
                                        ${
                                          content.ImgPos === "left" &&
@@ -93,6 +98,11 @@ const ContentManage = ({ contents }) => {
                 to={content.Btn.link}
               >
                 {content.Btn.name}
+              </MyLink> */}
+              <MyLink to={content.Btn.link} className="w-[187px] bg-gpgp-blue">
+                <p className="px-[10px] py-[9px] font-[be-vietnam-bold] leading-[22.13px] tracking-[4.125px] uppercase text-white text-[15px]">
+                  {content.Btn.name}
+                </p>
               </MyLink>
             </div>
           </div>

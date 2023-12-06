@@ -14,11 +14,6 @@ const HomeExhibition = ({ classes="" }: HomeExhibitionProps) => {
                 alt="guyAtExhibtion"
                 className=""
               />
-              <div className="md:hidden bg-gpgp-blue py-[30px] flex flex-col justify-center items-center">
-                  <MyLink to="/gallery">
-                    <p className="p-[9px] tracking-[4.125px] font-[be-vietnam-bold] leading-[147.51%]">GALLERY</p>
-                  </MyLink>
-              </div>
       </section>
    </>
  )
