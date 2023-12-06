@@ -18,7 +18,7 @@ const LatestNews = ({ contents }: INewsHeroProps) => {
                 alt=""
                 className="w-full h-[470px] shadow-md opacity-95 object-cover cursor-pointer hover:opacity-90 transition rounded-[30px] duration-300 ease-in-out"
               />
-              <span className="absolute bottom-1 text-[1.1rem] drop-shadow-sm font-semibold text-white p-5 z-50">
+              <span className="absolute bottom-1 text-[1.1rem] drop-shadow-sm font-semibold text-white p-5 ">
                 {contents?.newscaption1[0].text}
               </span>
             </div>
@@ -30,7 +30,7 @@ const LatestNews = ({ contents }: INewsHeroProps) => {
                 alt=""
                 className="w-full h-56 object-cover rounded-[20px] cursor-pointer shadow-md"
               />
-              <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2 z-50">
+              <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2 z-10">
                 {contents?.newscaption2[0].text}
               </span>
             </div>
@@ -41,7 +41,7 @@ const LatestNews = ({ contents }: INewsHeroProps) => {
                 alt=""
                 className="w-full h-56 object-cover rounded-[20px] cursor-pointer shadow-md"
               />
-              <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2 z-50">
+              <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2 z-10">
                 {contents?.newscaption4[0].text}
               </span>
             </div>
@@ -52,7 +52,7 @@ const LatestNews = ({ contents }: INewsHeroProps) => {
                 alt=""
                 className="w-full h-56 object-cover rounded-[20px] cursor-pointer shadow-md"
               />
-              <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2 z-50">
+              <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2 z-10">
                 {contents?.newscaption3[0].text}
               </span>
             </div>
@@ -63,7 +63,7 @@ const LatestNews = ({ contents }: INewsHeroProps) => {
                 alt=""
                 className="w-full h-56 object-cover rounded-[20px] cursor-pointer shadow-md"
               />
-              <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2 z-50">
+              <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2 z-10">
                 {contents?.newscaption5[0].text}
               </span>
             </div>
