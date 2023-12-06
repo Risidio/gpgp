@@ -4,7 +4,7 @@ import MyLink from "../base/MyLink";
 const Exhibition = () => {
   return (
     <>
-      <div className="w-full bg-h-[100%] bg-w-[100%] bg-project-page-wave bg-no-repeat bg-cover md:pb-[50px] xl:pb-[80px] xxxl:pb-[80px]">
+      {/* <div className="w-full bg-h-[100%] bg-w-[100%] bg-project-page-wave bg-no-repeat bg-cover md:pb-[50px] xl:pb-[80px] xxxl:pb-[80px]">
         <div className="xxsm:pb-[30px]">
           <div className="flex flex-col text-white pt-[120px] sm:pt-[150px] md:pt-[200px] lg:pt-[250px] xl:pt-[400px] xxl:pt-[400px] xxxl:pt-[380px] xxxxl:pt-[700px]">
             <h1 className="uppercase md:normal-case text-center sm:mt-[30px] md:mt-[40px] lg:mt-[30px] xl:mt-[30px] xxl:mt-[120px] xxxl:mt-[93.38px] text-[16px] md:text-[18px] lg:text-[25px] xl:text-[30px] xxl:text-[35px] xxxl:text-[64px] font-[600] leading-[23.38px] md:leading-[48px]">
@@ -37,7 +37,41 @@ const Exhibition = () => {
             </MyLink>
           </div>
         </div>
-      </div>
+      </div> */}
+
+      <section className="w-full bg-h-[100%] bg-w-[100%] bg-project-page-wave bg-no-repeat bg-cover">
+        <div className="pt-[120px] md:pt-[220px] xl:pt-[386px] pb-[62px] xl:pb-[130px]">
+          {/* Exhibition Context */}
+          <div className="flex flex-col gap-y-[13px] xl:gap-y-[60px]">
+            <h1 className="font-[be-vietnam-bold] leading-[48px] tracking-[-0.32px] uppercase text-center text-[16px] text-white xl:text-[40px] xl:capitalize">
+              The Exhibition
+            </h1>
+            <p className="w-[293px] text-center mx-auto font-[be-vietnam] text-white leading-[30px] text-[15px] xl:text-[16px] xl:w-[532px]">
+              The Great Pacific Garbage Patch (GPGP) environmental art project
+              comprises 2450 tiles, representing a recent satellite image of the
+              Great Pacific Garbage Patch and draws attention to the issue of
+              plastic litter in the oceans, particularly the major garbage
+              patches.
+            </p>
+          </div>
+
+          <div className="hidden sm:block sm:py-[20px] md:py-[40px] lg:py-[60px] xl:py-[80px]">
+            <NftCarousel />
+          </div>
+
+          {/* Exhibition Button */}
+          <div className="flex flex-col justify-center items-center mt-[39px] xl:mt-0">
+            <MyLink to="" className="w-[187px]">
+              <p className="md:hidden px-[30px] py-[9px] font-[be-vietnam-bold] leading-[22.13px] tracking-[4.13px] uppercase text-gpgp-blue text-[15px] xl:text-[16px]">
+                Gallery
+              </p>
+              <p className="hidden md:block px-[30px] py-[19px] font-[be-vietnam-bold] leading-[22.13px] tracking-[4.13px] uppercase text-gpgp-blue text-[15px] xl:text-[16px]">
+                See all
+              </p>
+            </MyLink>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

@@ -7,17 +7,19 @@ import Section4 from "../components/challenge/Section4";
 import Section5 from "../components/challenge/Section5";
 
 const Challenge = () => {
-    return ( 
-        <>
-            <Header/>
-            <Hero/>
-            <Section1/>
-            <Section2/>
-            <Section3/>
-            <Section4/>
-            <Section5/>
-        </> 
-     );
-}
- 
+  return (
+    <>
+      <div className="xxxxl:max-w-[2560px] xxxxl:mx-auto">
+        <Header />
+        <Hero />
+        <Section1 />
+        <Section2 />
+        <Section3 />
+        <Section4 />
+        <Section5 />
+      </div>
+    </>
+  );
+};
+
 export default Challenge;

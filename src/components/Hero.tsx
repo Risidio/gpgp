@@ -1,89 +1,61 @@
 import MyLink from "./base/MyLink";
-import gpgpMapImage from "../assets/images/new_gpgp_hero.jpg";
+import gpgpMapImage from "../assets/images/gpgp-map-mobile.png";
 
 const Hero = () => {
   return (
     <>
-      {/* Desktop Version */}
-      <div className="hidden lg:block px-[80px] py-[60px]">
-        <div className="grid grid-cols-2">
-          <div className="flex flex-col justify-between">
-            <div className="flex flex-col gap-y-[7px]">
-              <h3 className="text-[16px] uppercase font-[be-vietnam-xbold] leading-24 tracking-normal text-left">
-                The Great Pacific Garbage Patch
-              </h3>
-              <h1 className="uppercase text-[36px] font-[be-vietnam-xbold] leading-53 tracking-normal text-left">
-                Art Project by Environmental
-                <br /> artist john Dahlsen & InfinArt{" "}
+      <section>
+        <div className="flex flex-col pb-[35px] pt-[48px] xl:pt-[80px] xl:flex-row xl:gap-x-[49px] xl:pl-[68px]">
+          {/* Image */}
+          <div className="flex flex-col gap-y-[14px] pb-[31.33px]">
+            <h3 className="xl:hidden text-center uppercase font-[be-vietnam-semibold] text-[15px] leading-[147.51%] tracking-[1.65px]">
+              GPGP
+              <br />
+              The Great Pacific Garbage Patch
+            </h3>
+            <div className="bg-gpgp-blue flex justify-center items-center mx-[19px] py-[31.7px] px-[37px] rounded-[15px] md:w-[387px] md:h-[260px] md:mx-auto xl:w-[700px] xl:h-[480px]">
+              <img
+                src={gpgpMapImage}
+                alt={gpgpMapImage}
+                className="w-[313px] h-[185px] xl:w-[575px] xl:h-[342px]"
+              />
+            </div>
+          </div>
+
+          {/* Content */}
+          <div>
+            {/* About John */}
+            <div className="flex flex-col gap-y-[25px] xl:gap-y-[0px]">
+              <h3 className="hidden xl:block text-[20px] leading-[29.50px] tracking-[3px] font-[be-vietnam-bold]">GPGP <br/>The Great Pacific Garbage Patch</h3>
+              <h1 className="w-[371px] mx-auto text-center text-gpgp-blue uppercase leading-[28.8px] tracking-[1.2px] font-[be-vietnam-bold] text-[24px] xl:text-[48px] xl:leading-[57.6px] xl:w-[442px] xl:text-left xl:mt-[10px] xl:tracking-[3px]">
+                Art Project by Environmental artist <br/>john Dahlsen & InfinArt{" "}
               </h1>
-              <p className="font-[be-vietnam] text-[16px] font-normal leading-24 tracking-normal text-left">
-                The Art Inspiring Global Action
+              <p className="font-[be-vietnam-semibold] text-center capitalize leading-[19.2px] tracking-[0.8px] text-[16px] xl:text-left xl:text-[20px] xl:leading-[29.50px] xl:mt-[17px]">
+                The art inspiring global action
               </p>
             </div>
-            <div className="flex flex-row gap-x-[19px] py-[16px]">
-              {/* <MyLink
-                to="/gallery"
-                className="px-[50px] py-[15px] border border-[1px] border-gpgp-blue"
-              >
-                <p className="uppercase text-[16px] font-[be-vietnam-bold] leading-[23.6px] tracking-[3px]">
-                  Gallery
-                </p>
-              </MyLink> */}
-             <MyLink
-                to="/gallery"
-                className="uppercase bg-gpgp-blue px-[30px] py-[8px] md:bg-white text-white md:text-gpgp-blue tracking-[3.3px] md:tracking-[.35em]"
-              >
-                <p className="text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
-                 Gallery
-                </p>
-              </MyLink>
-              <MyLink
-                to="/contribute"
-                className="uppercase bg-gpgp-blue px-[30px] py-[8px] text-white tracking-[3.3px] md:tracking-[.35em]"
-              >
-                <p className="font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
-                  Join Us
-                </p>
-              </MyLink>
-            </div>
-          </div>
 
-          <div className="">
-            <div className="flex justify-center">
-              <img src={gpgpMapImage} alt="GPGP" />
+            {/* Button */}
+            <div className="mt-[30px] mx-[19px] xl:mx-0 xl:mt-[35px]">
+              <div className="flex justify-center items-center xl:justify-start xl:items-end gap-x-[12px]">
+                {/* Explore */}
+                <MyLink to="" className="w-[187px] xl:hidden">
+                  <p className="px-[10px] py-[9px] font-[be-vietnam-bold] leading-[22.13px] tracking-[4.13px] uppercase text-gpgp-blue text-[15px]">
+                    Explore
+                  </p>
+                </MyLink>
+
+                {/* Join Us */}
+                <MyLink to="" className="w-[187px] bg-gpgp-blue">
+                  <p className="px-[10px] py-[9px] font-[be-vietnam-bold] leading-[22.13px] tracking-[4.13px] uppercase text-white text-[15px] xl:text-[16px]">
+                    Join Us
+                  </p>
+                </MyLink>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Mobile Version */}
-      <div className="lg:hidden flex flex-col justify-center items-center px-10">
-        <h1 className="text-center text-[1rem] font-[be-vietnam-xbold] pt-10 uppercase">
-          The great pacific <br/>garbage patch art project
-        </h1>
-        <h2 className="text-[1rem] py-1 text-center font-[be-vietnam-semibold]">
-          By John Dahlsen & InfinArt
-        </h2>
-        <img
-          src={require("../assets/images/gpgp-map-mobile.png")}
-          alt="gpgp map"
-          className="object-center py-3 my-5 w-[282px] h-[175px]"
-        />
-        <h4 className="text-[1rem] font-[be-vietnam] text-center mt-[20px]">
-          The Art Inspiring Global Action
-        </h4>
-        <div className="w-full flex justify-center gap-x-2 mt-[30px]">
-          <MyLink to="/gallery" className="uppercase py-2 w-48">
-            explore
-          </MyLink>
-          <MyLink
-            to="/contribute"
-            className="uppercase py-2 bg-gpgp-blue text-white hover:bg-white hover:text-gpgp-blue w-48"
-          >
-            join us
-          </MyLink>
-        </div>
-      </div>
+      </section>
     </>
   );
 };
