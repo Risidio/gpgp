@@ -1,5 +1,4 @@
 import guyAtExhibition from "../../assets/images/gallery_image.jpg"
-import MyLink from "../base/MyLink";
 
 interface HomeExhibitionProps {
    classes?: string;
