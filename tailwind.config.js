@@ -42,6 +42,8 @@ module.exports = {
         "project-artist-web-back": "url('./assets/images/JD2.jpg')",
         "challenge-web-wave-header":
           "url('./assets/svg/challengewebwaveheader.svg')",
+        "challenge-mobile-bg-wave":
+          "url('./assets/svg/challengemobilesvg.svg')",
         "blue-plastic-bag": "url('./assets/images/BluePlasticBag.jpg')",
         "flat-lay-assortment":
           "url('./assets/images/flat-lay-assortment-different-colored-plastic-bags.jpg')",
@@ -63,6 +65,12 @@ module.exports = {
         "trashed-plastics-mobile":
           "url('./assets/images/trashedPlasticObjectsMobile.jpg')",
         "news-background-wave": "url('./assets/svg/newswave.svg')",
+      },
+      fontFamily: {
+        'BeVietnam': ['"Be Vietnam"', 'sans-serif'],
+      },
+      fontWeight: {
+        '700': 700,
       },
     },
   },

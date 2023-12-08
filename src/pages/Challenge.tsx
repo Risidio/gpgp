@@ -1,4 +1,3 @@
-import Header from "../components/challenge/Header";
 import Hero from "../components/challenge/Hero";
 import Section1 from "../components/challenge/Section1";
 import Section2 from "../components/challenge/Section2";
@@ -10,7 +9,7 @@ const Challenge = () => {
   return (
     <>
       <div className="xxxxl:max-w-[2560px] xxxxl:mx-auto">
-        <Header />
+        {/* <Header /> */}
         <Hero />
         <Section1 />
         <Section2 />
