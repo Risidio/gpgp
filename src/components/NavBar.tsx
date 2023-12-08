@@ -52,6 +52,9 @@ const links = [
   },
 ];
 
+
+
+// 
 const NavBar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
