@@ -1,45 +1,54 @@
 import { useState } from "react";
 import styles from "../assets/styles/animations.module.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "./Logo";
 import { HiChevronDown } from "react-icons/hi";
 import MobileLogo from "./MobileLogo";
 
+import MobileHomeLogo from "../assets/images/MobileHomeLogo.png";
+import MobileProjectLogo from "../assets/images/MobileProjectLogo.png";
+import MobileGalleryLogo from "../assets/images/MobileGalleryLogo.png";
+import MobileChallengeLogo from "../assets/images/MobileChallengeLogo.png";
+import MobileContributeLogo from "../assets/images/MobileContributeLogo.png";
+import MobileNewsLogo from "../assets/images/MobileNewsLogo.png";
+import MobileContactLogo from "../assets/images/MobileContactLogo.png";
+
 // All the links as static data
 const links = [
   {
+    name: "Home",
+    href: "/",
+    Logo: MobileHomeLogo,
+  },
+  {
     name: "Project",
     href: "/project",
+    Logo: MobileProjectLogo,
   },
   {
     name: "Gallery",
     href: "/gallery",
+    Logo: MobileGalleryLogo,
   },
   {
     name: "Challenge",
     href: "/challenge",
+    Logo: MobileChallengeLogo,
   },
   {
     name: "Contribute",
     href: "/contribute",
-    submenu: [
-      {
-        name: "Sponsor",
-        href: "/contribute/inviteSponsor",
-      },
-      {
-        name: "Artist",
-        href: "/contribute/inviteArtist",
-      },
-    ],
+    Logo: MobileContributeLogo,
   },
   {
     name: "News",
     href: "/news",
+    Logo: MobileNewsLogo,
   },
   {
     name: "Contacts",
     href: "/contact",
+    Logo: MobileContactLogo,
   },
 ];
 
@@ -47,6 +56,8 @@ const NavBar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
   const [isOpen, setIsOpen] = useState("");
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState<number | null>(null);
 
   const handleSelectItem = (item: string) => {
     if (isAnimating) return;
@@ -70,6 +81,41 @@ const NavBar = () => {
     }
   };
 
+  const resetActiveLink = () => {
+    if (activeLink !== null) {
+      let activeNavLink = document.getElementById(`Nav-link${activeLink}`);
+      if (activeNavLink) {
+        activeNavLink.style.color = "black";
+      }
+      setActiveLink(null);
+    }
+  };
+
+  const handleWebNavClick = (index: number) => {
+    // Reset the color of the previously active link
+    resetActiveLink();
+
+    let dot = document.getElementById(`WebNav-dot${index}`);
+    let navLink = document.getElementById(`Nav-link${index}`);
+    if (dot && navLink) {
+      dot.style.display = "block";
+      navLink.style.color = "#0A2471";
+      setActiveLink(index);
+    }
+
+    links.forEach((link, i) => {
+      if (i !== index) {
+        let otherDot = document.getElementById(`WebNav-dot${i}`);
+        let otherNavLink = document.getElementById(`Nav-link${i}`);
+        if (otherDot && otherNavLink) {
+          otherDot.style.display = "none";
+          otherNavLink.style.color = "black";
+        }
+      }
+    });
+  };
+  const currentRoute = location.pathname;
+
   const handleMobileDropDownShow = (menu: string) => {
     isOpen === menu ? setIsOpen("") : setIsOpen(menu);
   };
@@ -78,126 +124,102 @@ const NavBar = () => {
   return (
     <div className="px-2 lg:px-4 sm:px-12 py-2 flex justify-between  items-center bg-gpgp-blue sm:bg-white xxxxl:max-w-[2560px] xxxxl:mx-auto">
       <nav className="flex w-full md:flex px-0 py-0 md:px-4 md:py-3 items-center justify-between">
-        {/* phone Navbar */}
+        {/* phone Navbar */}{" "}
         <Link
           to="/"
-          className="flex items-center pl-4 sm:hidden"
+          className={`flex items-center pl-4 sm:hidden transition-all ease-in-out
+          ${isOpenMenu ? "opacity-0" : ""}
+          `}
           onClick={() => resetSelectItem()}
         >
           <MobileLogo className="w-max" />
         </Link>
         {isOpenMenu && (
           <div
-            className={`bg-white h-screen sm:hidden z-10 text-black mt-[100px] fixed w-full left-0 top-0 transition-all ease-in duration-500 flex flex-col items-center ${
+            className={`bg-gpgp-blue h-screen sm:hidden z-50 text-white mt-[60px] fixed w-full left-0 top-0 transition-all ease-in duration-500 flex flex-col px-7 ${
               isOpenMenu ? styles.menuContainer : ""
             } ${isOpenMenu && styles.slideDown} ${
               isAnimating && styles.slideUp
             }`}
           >
             <div
-              className={`flex flex-col items-center mt-10 uppercase ${styles.menuItem}`}
+              className={`flex flex-col items-center mt-10 uppercase z-50 ${styles.menuItem}`}
             >
-              {links.map((link, index) =>
-                link.submenu ? (
-                  <>
-                    <div
-                      key={index}
-                      className="text-black mx-4 my-6 text-2xl font-[200] hover:text-gpgp-blue flex items-center"
-                    >
-                      {link.name}
-                      <HiChevronDown
-                        onClick={() => handleMobileDropDownShow(link.name)}
-                        className="hover:cursor-pointer ease-in duration-1000 transition"
-                      />
-                    </div>
-                    <div>
-                      {link.name === isOpen && (
-                        <div className="flex flex-col">
-                          {link.submenu.map((menu) => (
-                            <div
-                              key={menu.name}
-                              className="text-base pt-3 text-black hover:text-gpgp-blue hover:cursor-pointer"
-                            >
-                              <Link
-                                to={menu.href}
-                                onClick={() => handleSelectItem(menu.name)}
-                              >
-                                {menu.name}
-                              </Link>
-                            </div>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  </>
-                ) : (
-                  <div
-                    key={index}
-                    className="text-black mx-4 my-6 text-2xl font-[200] hover:text-gpgp-blue flex items-center"
+              {links.map((link, index) => (
+                <div
+                  key={index}
+                  className="text-white w-[100%] mx-4 my-3 text-2xl font-[200] hover:font-semibold flex items-center"
+                >
+                  <Link
+                    to={link.href}
+                    onClick={() => handleSelectItem(link.name)}
+                    className="flex justify-start items-center"
                   >
-                    <Link
-                      to={link.href}
-                      onClick={() => handleSelectItem(link.name)}
-                    >
-                      {link.name}
-                    </Link>
-                  </div>
-                )
-              )}
-            </div>
-          </div>
-        )}
-
-        {/* Web Navbar */}
-
-        <Link
-          to="/"
-          className="hidden sm:flex items-center sm:pl-0 xxxxl:w-[320px] md:pl-4"
-          onClick={() => resetSelectItem()}
-        >
-          <Logo className="w-max" />
-        </Link>
-
-        <div className="hidden sm:flex text-xl font-[be-vietnam-semibold">
-          {links.map((link, index) =>
-            link.submenu ? (
-              <div
-                key={index}
-                className="group relative text-black my-0 hover:shadow-sm hover:text-white hover:cursor-pointer hover:bg-gpgp-blue rounded-md uppercase"
-              >
-                <div className="flex items-center text-sm lg:text-[1rem] xxl:text-[1.2rem] xxxxl:text-[1.3rem] gap-1 px-3 py-2 w-full">
-                  <Link to={link.href} onClick={() => resetSelectItem()}>
+                    <img src={link.Logo} alt="" className="w-[50px] mr-5" />
                     {link.name}
                   </Link>
                 </div>
-
+              ))}
+            </div>
+          </div>
+        )}
+        {/* Web Navbar */}
+        <Link
+          to="/"
+          className="hidden sm:flex items-center sm:pl-0 xxxxl:w-[320px] md:pl-4"
+          onClick={() => {
+            resetSelectItem();
+            // Hide all dots
+            links.forEach((link, i) => {
+              let dot = document.getElementById(`WebNav-dot${i}`);
+              if (dot) {
+                dot.style.display = "none";
+              }
+            });
+          }}
+        >
+          <Logo className="w-max" logo={"NewNavLogo2.png"} />
+        </Link>
+        <div className="hidden sm:flex text-xl font-semibold">
+          {links.map((link, index) => {
+            if (link.name !== "Home") {
+              return (
                 <div
-                  className="absolute top-6 pt-1 right-0 z-10 text-center mt-1 w-full rounded-md 
-                                   opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300
-                                  bg-gpgp-blue text-white min-w-max px-1"
+                  key={index}
+                  className="group relative  my-0 hover:cursor-pointer  hover:text-gpgp-blue uppercase"
                 >
-                  {link.submenu.map((menu) => (
-                    <div key={menu.name} className="text-[0.9rem] pt-3">
-                      <Link to={menu.href} onClick={() => resetSelectItem()}>
-                        {menu.name}
-                      </Link>
+                  <div
+                    className="flex flex-col items-center text-sm lg:text-[1rem] xxl:text-[1.2rem] xxxxl:text-[1.3rem] gap-1 px-3 py-2 w-full"
+                    onClick={() => {
+                      handleWebNavClick(index);
+                      resetSelectItem();
+                    }}
+                  >
+                    <Link
+                      to={link.href}
+                      className="text-black"
+                      id={`Nav-link${index}`}
+                    >
+                      {link.name}
+                    </Link>
+                    <div className="text-center">
+                      <p
+                        id={`WebNav-dot${index}`}
+                        className={`bg-gpgp-blue rounded-full h-[6px] w-[7px] ${
+                          currentRoute === "/"
+                            ? "hidden"
+                            : currentRoute === link.href
+                            ? "block"
+                            : "hidden"
+                        }`}
+                      ></p>
                     </div>
-                  ))}
+                  </div>
                 </div>
-              </div>
-            ) : (
-              <div
-                key={index}
-                className="group relative text-black my-0 hover:cursor-pointer hover:text-gpgp-blue uppercase"
-              >
-                <div className="flex items-center text-sm lg:text-[1rem] xxl:text-[1.2rem] xxxxl:text-[1.3rem] gap-1 px-3 py-2 w-full">
-                  <Link to={link.href}>{link.name}</Link>
-                </div>
-              </div>
-            )
-          )}
+              );
+            }
+          })}
         </div>
-
         {/* hamburger menu */}
         <div className="inline-block sm:hidden text-white py-1 px-3 h-auto">
           <button

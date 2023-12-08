@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function MobileLogo({className, logo="NavLogo.png"}) {
+export default function MobileLogo({className, logo="NewNavLogo.png"}) {
     return (
         <div className={className}>
             <img

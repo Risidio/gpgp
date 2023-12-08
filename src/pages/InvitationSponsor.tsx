@@ -1,5 +1,8 @@
 import ContributeHero from "../components/contribute/ContributeHero";
 import InvitationForm from "../components/contribute/Invitation/InvitationForm";
+import InviteHero from "../components/contribute/Invitation/InviteHero";
+import NewInvitationForm from "../components/contribute/Invitation/NewInvitationForm";
+import ContributionSection from "../components/gallery/Contribution";
 
 export default function InvitationSponsor() {
   const HeroContent = {
@@ -52,30 +55,29 @@ export default function InvitationSponsor() {
     contact: "infinart@risidio.com",
   };
 
-  const WavePattern = "Sponsor";
+  const heading = "Sponsor";
   return (
     <div>
-      <ContributeHero
-        HeroContent={HeroContent}
+      
+    <InviteHero heading={heading} />
+
+    <NewInvitationForm
+      formField={formFields}
+      heading={heading}
+      Classes={{
+        FormBtn: "",
+      }}
+    />
+
+    <section className="">
+      <ContributionSection
         classes={{
-          container: "mb-[2.7rem] sm:-mb-8",
-          image: "opacity-50 z-[-14px] hidden",
-          heading:
-            "sm:text-[2.2rem] lg:text-[2.4rem] xxl:text-[3rem] mb-7 sm:mb-10",
-          subheading:
-            "font-be-vietnam text-[1.2rem] md:text-[1.7rem] xxxl:text-[2rem] ",
-          paragraph:
-            "w-[148%] leading-[1rem] sm:leading-6 xxl:text-[1.5rem] xxl:leading-[2rem]",
+          container: " mt-4 md:mt-0 pb-[20px] md:pb-[2px] md:pt-[15px]",
+          heading: "",
+          subheading: "",
         }}
       />
-      <InvitationForm
-        formField={formFields}
-        WavePattern={WavePattern}
-        SponsorFormLegend={SponsorFormLegend}
-        Classes={{
-          FormBtn:"bg-white text-[#0A2471]"
-        }}
-      />
-    </div>
+    </section>
+  </div>
   );
 }

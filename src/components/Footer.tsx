@@ -37,7 +37,7 @@ const Footer = ({ classes = "bg-gpgp-blue xxxxl:max-w-[2560px] xxxxl:mx-auto" }:
         {/* Desktop-view */}
         <div className="w-full sm:flex sm:flex-col pt-16 hidden">
           <div className="w-full grid grid-cols-3 justify-between p-5">
-            <Logo className="flex justify-start items-start w-20 h-20" />
+            <Logo className="flex justify-start items-start w-20 h-20" logo={"NewNavLogo.png"}/>
             <SocialMedia color={`${fontColor ? fontColor : "bg-gpgp-blue"}`} />
             <ContactInfo classes={fontColor} />
           </div>
