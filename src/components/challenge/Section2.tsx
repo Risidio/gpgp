@@ -3,31 +3,39 @@ import TrashedPlasticObjects from "../../assets/images/trashedPlasticObjects.png
 const Section2 = () => {
   return (
     <>
-      <div className="pb-[40px] md:pb-none">
-        <div className="grid xxl:grid-cols-2">
-          <div className="w-full h-[200px] md:w-[630px] md:h-[630px] order-1 md:mx-auto xxl:mx-0 xxl:flex xxl:justify-center xxl:items-center bg-trashed-plastics-mobile md:bg-none">
-            <img
-              src={TrashedPlasticObjects}
-              className="hidden md:block w-[100%] h-[100%]"
-              alt="Trashed Plastic Objects"
-            />
-            <div className="md:hidden w-full h-full inset-0 bg-black bg-opacity-30">
+      <div className="pb-[0px] md:pb-none">
+        <div className="grid md:grid-cols-2">
+          {/* <div className="w-full h-[200px] md:w-[630px] md:h-[630px] order-1 md:mx-auto xxl:mx-0 xxl:flex xxl:justify-center xxl:items-center bg-trashed-plastics-mobile md:bg-none"> */}
+          <div className="w-full order-1 md:mx-auto xxl:mx-0 xxl:flex xxl:justify-center xxl:items-center  bg-none">
+            {/* <div className="md:hidden w-full h-full"> */}
+            <div className="md:hidden w-full mt-[100px] mb-[30px]">
               <div className="xxl:hidden w-full h-full flex flex-col justify-center items-center">
-                <h1 className="text-center text-white text-[32px] uppercase font-bold leading-[32px]">
-                  Who is facing <br />
-                  the consequences of plastics?
+                <h1 className="text-center text-black text-[16px] uppercase font-bold leading-[32px]">
+                  Who is facing{" "}
+                  <h1>
+                    {" "}
+                    the consequences
+                  </h1>
+                  <h1>
+                    of plastics?
+                  </h1>
                 </h1>
               </div>
             </div>
+            <img
+              src={TrashedPlasticObjects}
+              className="block w-[100%] h-[196px] md:h-[100%]"
+              alt="Trashed Plastic Objects"
+            />
           </div>
-          <div className="order-2 flex flex-col md:w-[540px] xxl:w-full md:mx-auto xxl:mx-0">
-            <div className="hidden xxl:block xxl:ml-[50px] md:mt-[50px]">
+          <div className="order-2 flex flex-col xxl:w-full md:mx-auto xxl:mx-0 md:pl-[10px] lg:pl-[35px] md:pr-[10px] lg:pr-[50px]">
+            <div className="hidden xxl:block xxl:ml-[20px] md:mt-[50px]">
               <h1 className="text-[#050B1D] font-[be-vietnam-bold] md:text-4xl text-center xxl:text-left font-bold leading-[147.51%]">
                 Who is facing the consequences of plastics?
               </h1>
             </div>
             <div className="flex flex-col justify-center items-center gap-y-[20px] mt-[30px] mx-[23px]">
-              <p className="text-center xxl:text-left text-[#050B1D] font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
+              <p className="text-center md:text-left text-[#050B1D] font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
                 The problem of plastic ending up in oceans affects countries and
                 regions around the world. It is a global issue that impacts
                 marine life, ecosystems, and human populations. Countries with
