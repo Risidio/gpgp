@@ -1,17 +1,9 @@
-import ContributeHero from "../components/contribute/ContributeHero";
-import InvitationForm from "../components/contribute/Invitation/InvitationForm";
 import InviteHero from "../components/contribute/Invitation/InviteHero";
 import NewInvitationForm from "../components/contribute/Invitation/NewInvitationForm";
 import ContributionSection from "../components/gallery/Contribution";
 
 const InvitationArtist = () => {
-  const HeroContent = {
-    heading: "Invitation for artists",
-    subheading: "Calling All Artists Submit Your Work",
-    HeroLegend: [
-      `Are you an artist passionate about environmental conservation and sustainable living? We invite you to submit your artwork, whether it's paintings, sculptures, photographs, or any other medium, to be featured in our awareness campaigns and fundraising initiatives. Your creativity can help us inspire change and bring attention to this critical cause.`,
-    ],
-  };
+ 
   const formFields = [
     {
       label: "Full Name",

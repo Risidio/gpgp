@@ -1,6 +1,5 @@
 import { useSinglePrismicDocument } from "@prismicio/react";
 import ContributeCarousel from "../components/contribute/ContributeCarousel";
-import ContributeHero from "../components/contribute/ContributeHero";
 import NewContributeHero from "../components/contribute/NewContributeHero";
 import prismicDocumentTypes from "../utility/prismicDocumentTypes";
 
@@ -11,8 +10,6 @@ export default function Contribute() {
   const artist = document?.data["body"][1]?.primary;
   const sponosr = document?.data["body"][2]?.primary;
 
-  // Create an object with both properties
-  const combinedProps = { artist,sponosr};
 
   return (
     <div>

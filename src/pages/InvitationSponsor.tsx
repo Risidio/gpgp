@@ -1,18 +1,9 @@
-import ContributeHero from "../components/contribute/ContributeHero";
-import InvitationForm from "../components/contribute/Invitation/InvitationForm";
 import InviteHero from "../components/contribute/Invitation/InviteHero";
 import NewInvitationForm from "../components/contribute/Invitation/NewInvitationForm";
 import ContributionSection from "../components/gallery/Contribution";
 
 export default function InvitationSponsor() {
-  const HeroContent = {
-    heading: "Invitation for sponsors",
-    subheading:
-      "Do you believe in the power of art and innovation to drive environmental change? ",
-    HeroLegend: [
-      `If you're an investor who wants to support a project with a significant ecological and social impact, we encourage you to apply to become a vital partner in the GPGP Art Project. Your investment will help us clean up and prevent further pollution in the Great Pacific Garbage Patch. Join us in fostering a cleaner, healthier ocean ecosystem and a more sustainable future.`,
-    ],
-  };
+ 
 
   const formFields = [
     {
@@ -50,10 +41,6 @@ export default function InvitationSponsor() {
     },
   ];
 
-  const SponsorFormLegend = {
-    heading: "Get in touch with us",
-    contact: "infinart@risidio.com",
-  };
 
   const heading = "Sponsor";
   return (

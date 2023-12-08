@@ -1,7 +1,4 @@
-import ArtistFormBg from "./ArtistFormBg";
-import SponsorFormBg from "./SponsorFormBg";
 import CustomFileInput from "./CustomFileInput";
-import ContactWave from "../../contact/ContactWave";
 import { useEffect, useState } from "react";
 
 interface FormField {

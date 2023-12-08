@@ -2,7 +2,6 @@ import { useState } from "react";
 import styles from "../assets/styles/animations.module.css";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "./Logo";
-import { HiChevronDown } from "react-icons/hi";
 import MobileLogo from "./MobileLogo";
 
 import MobileHomeLogo from "../assets/images/MobileHomeLogo.png";
@@ -58,7 +57,7 @@ const links = [
 const NavBar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
-  const [isOpen, setIsOpen] = useState("");
+  const [, setIsOpen] = useState("");
   const location = useLocation();
   const [activeLink, setActiveLink] = useState<number | null>(null);
 
@@ -119,9 +118,6 @@ const NavBar = () => {
   };
   const currentRoute = location.pathname;
 
-  const handleMobileDropDownShow = (menu: string) => {
-    isOpen === menu ? setIsOpen("") : setIsOpen(menu);
-  };
 
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-white transition ease transform duration-300`;
   return (
@@ -220,6 +216,9 @@ const NavBar = () => {
                   </div>
                 </div>
               );
+            }
+            else{
+              return null
             }
           })}
         </div>
