@@ -15,7 +15,7 @@ const Hero = () => {
               right in the heart of the Pacific Ocean – the Great Pacific Garbage
               Patch Challenge is not just an environmental mission, but{" "}
               <span className="text-[#0A2471]">a call to action</span> to
-              reclaim and restore our planet's most precious resource.
+              reclaim and restore our planet's most precious resource..
             </p>
           </div>
         </div>
