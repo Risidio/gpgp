@@ -1,4 +1,5 @@
 import FlatLayComposition from "../../assets/images/flat-lay-composition-different-colored-plastic-bags.png";
+import FlatLayCompositionMobile from "../../assets/images/flat-lay-composition-different-colored-plastic-bags-mobile1.png";
 
 const Section3 = () => {
   return (
@@ -39,7 +40,12 @@ const Section3 = () => {
 
             <img
               src={FlatLayComposition}
-              className="md:block w-full h-[196px] md:h-[100%] md:w-[740px] lg:w-full"
+              className="hidden md:block w-full h-[196px] md:h-[100%] md:w-[740px] lg:w-full"
+              alt="Flat Lay Composition Different Colored"
+            />
+            <img
+              src={ FlatLayCompositionMobile}
+              className="md:hidden w-[293px] h-[200px] mx-auto md:h-[100%] md:w-[740px] lg:w-full"
               alt="Flat Lay Composition Different Colored"
             />
             
