@@ -9,7 +9,7 @@ const Section4 = () => {
             The project GPGP contributes to ongoing research of plastic in
             marine environments.
           </p>
-          <div className="hidden md:block w-[698px] h-[10px] flex-shrink-0 rounded-[40px] bg-gpgp-blue"></div>
+          <div className="md:block w-[100%] md:w-[698px] h-[4px] md:h-[10px] flex-shrink-0 rounded-[40px] bg-gpgp-blue"></div>
 
           <p className="text-center text-[#050B1D] font-[be-vietnam] text-[15px] md:text-4xl lg:text-[22px] xl:text-[24px] xxl:text-[25px] xxxxl:text-[35px] md:font-bold leading-[200%] tracking-[-0.9px]">
             This knowledge guides cleanup strategies and informs policies,
@@ -18,7 +18,7 @@ const Section4 = () => {
 
           <MyLink
             to=""
-            className="mx-auto uppercase mb-[20px] md:mb-[48.62px] md:mb-[0px] px-[17px] py-[11px] bg-gpgp-blue text-white hover:text-white text-[12px] md:text-[16px] w-[120px] md:w-56 tracking-[3.3px] h-[38px] md:h-16 md:text-base leading-[147.51%]"
+            className="mx-auto uppercase mb-[20px] md:mb-[48.62px] md:mb-[0px] px-[17px] py-[11px] bg-gpgp-blue text-white hover:text-white text-[12px] md:text-[16px] w-[187px] md:w-56 tracking-[3.3px] h-[39px] md:h-16 md:text-base leading-[147.51%]"
           >
             Join Us
           </MyLink>

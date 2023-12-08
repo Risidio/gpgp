@@ -63,6 +63,12 @@ module.exports = {
           "url('./assets/images/trashedPlasticObjectsMobile.jpg')",
         "news-background-wave": "url('./assets/svg/newswave.svg')",
       },
+      fontFamily: {
+        'BeVietnam': ['"Be Vietnam"', 'sans-serif'],
+      },
+      fontWeight: {
+        '700': 700,
+      },
     },
   },
   plugins: [],
