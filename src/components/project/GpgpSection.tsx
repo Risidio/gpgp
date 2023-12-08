@@ -19,7 +19,8 @@ const GpgpSection = ({ contents }: IGpgpSectionProps) => {
                 {contents?.title[0].text}
               </h1>
             </div>
-            <div className="flex flex-col w-[100%] gap-y-[30px] md:py-[50px] md:w-[585px] xxl:w-full md:mx-auto xxl:mx-0">
+            {/* Content */}
+            <div className="flex flex-col w-[100%] gap-y-[30px] md:py-[50px] md:w-[585px] xxl:pt-[67px] xxl:pb-[74px] xxl:w-full md:mx-auto xxl:mx-0">
               <p
                 dangerouslySetInnerHTML={{
                   __html: contents?.firstparagraph[0].text,
@@ -33,17 +34,17 @@ const GpgpSection = ({ contents }: IGpgpSectionProps) => {
                 }}
                 className="font-[be-vietnam] text-justified hidden md:block text-center text-[16px] xl:text-[20px] xxl:text-left xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]"
               ></p>
-
-              <div className="">
-                <MyLink
-                  to=""
-                  className="uppercase w-56 xxl:w-[300px] bg-gpgp-blue px-[10px] py-[10px] hover:text-white md:hover:text-gpgp-blue md:bg-white text-white md:text-gpgp-blue tracking-[3.3px] md:tracking-[.35em] text-base mx-auto xxl:mx-0"
-                >
-                  <p className="font-[be-vietnam-bold] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
-                    {contents?.button}
-                  </p>
-                </MyLink>
-              </div>
+            </div>
+            {/* Button */}
+            <div className="">
+              <MyLink
+                to=""
+                className="uppercase w-56 xxl:w-[300px] bg-gpgp-blue px-[10px] py-[10px] hover:text-white md:hover:text-gpgp-blue md:bg-white text-white md:text-gpgp-blue tracking-[3.3px] md:tracking-[.35em] text-base mx-auto xxl:mx-0"
+              >
+                <p className="font-[be-vietnam-bold] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
+                  {contents?.button}
+                </p>
+              </MyLink>
             </div>
           </div>
           {/* Image */}

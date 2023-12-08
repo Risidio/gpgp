@@ -6,7 +6,7 @@ import { IJoinSectionProps } from "../../types/project";
 const JoinUs = ({ contents }: IJoinSectionProps) => {
   return (
     <>
-      <div className="w-[100%] h-[100%] pt-[20px] md:pt-[80px] xxl:pt-0">
+      <div className="w-[100%] h-[100%] pt-[20px] md:pt-[80px] xxl:mt-[50px]">
         <h1 className="xxl:hidden text-center leading-[48px] text-[16px] uppercase font-[be-vietnam-xbold] font-[600] md:font-[600] md:text-[40px]">
           {contents?.title[0].text}
         </h1>
@@ -19,7 +19,8 @@ const JoinUs = ({ contents }: IJoinSectionProps) => {
                 {contents?.title[0].text}
               </h1>
             </div>
-            <div className="flex flex-col w-[100%] gap-y-[30px] md:py-[50px] md:w-[585px] xxl:w-full md:mx-auto xxl:mx-0">
+            {/* Content */}
+            <div className="flex flex-col w-[100%] gap-y-[30px] md:py-[50px] md:w-[585px] xxl:pt-[67px] xxl:pb-[74px] xxl:w-full md:mx-auto xxl:mx-0">
               <p
                 dangerouslySetInnerHTML={{
                   __html: contents?.firstparagraph[0].text,
@@ -40,30 +41,19 @@ const JoinUs = ({ contents }: IJoinSectionProps) => {
                 }}
                 className="block md:hidden font-[be-vietnam] text-justified text-center text-[16px] xl:text-[20px] xxl:text-left xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]"
               ></p>
-              <div className="flex mx-auto xxl:mx-[0px] gap-x-[30px]">
-                <MyLink
-                  to=""
-                  className="uppercase mb-[48.62px] md:mb-[0px] px-[10px] py-[11px] bg-white text-gpgp-blue tracking-[3.3px] md:h-16 md:tracking-[.35em] text-base mx-auto md:mx-0"
-                >
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: contents?.firstbutton,
-                    }}
-                    className="font-[be-vietnam-bold] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]"
-                  ></p>
-                </MyLink>
-                <MyLink
-                  to=""
-                  className="uppercase mb-[48.62px] md:mb-[0px] bg-gpgp-blue px-[17px] py-[11px] text-white tracking-[3.3px] md:h-16 md:tracking-[.35em] text-base md:mx-0"
-                >
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: contents?.secondbutton,
-                    }}
-                    className="font-[be-vietnam-bold] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]"
-                  ></p>
-                </MyLink>
-              </div>
+            </div>
+            {/* Button */}
+            <div className="flex flex-row justify-center xxl:justify-start gap-x-[16px] mt-[33px]">
+              <MyLink to="" className="xxl:w-[300px]">
+                <p className="px-[17px] py-[11px] font-[be-vietnam-bold] uppercase text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400] leading-[22.126px] tracking-[4.125px]">
+                  Submit <span className="hidden md:inline">work</span>
+                </p>
+              </MyLink>
+              <MyLink to="" className="bg-gpgp-blue text-white xxl:w-[300px]">
+                <p className="px-[17px] py-[11px] font-[be-vietnam-bold] uppercase text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400] leading-[22.126px] tracking-[4.125px]">
+                  Invest
+                </p>
+              </MyLink>
             </div>
           </div>
           {/* Image */}
