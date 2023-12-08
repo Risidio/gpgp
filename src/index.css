@@ -60,6 +60,19 @@
     format("truetype");
 }
 
+@font-face {
+  font-family: be-vietnam-800;
+  font-weight: 800;
+  src: url(../public/fonts/be-vietnam/BeVietnam-ExtraBold.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: be-vietnam-700;
+  font-weight: 700;
+  src: url(../public/fonts/be-vietnam/BeVietnam-ExtraBold.ttf)
+    format("truetype");
+}
+
 /* Light */
 @font-face {
   font-family: be-vietnam-light;
@@ -68,6 +81,11 @@
 
 p {
   font-family: "be-vietnam";
+}
+
+.challenge-hero {
+  -webkit-text-stroke: 1px #0a2471;
+  color: transparent;
 }
 
 
