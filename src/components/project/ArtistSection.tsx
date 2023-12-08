@@ -1,12 +1,12 @@
-import JD from "../../assets/images/john-dahlsen.png";
+import JD from "../../assets/images/JD.png";
 import Artist from "../home/Artist";
 
 const ArtistSection = () => {
   return (
     <>
-      <div className="hidden xxl:block w-[100%] h-[100%] pt-[20px] md:pt-[70px] xxl:pt-0">
+      <div className="hidden xxl:block w-[100%] h-[100%] pt-[20px] md:pt-[70px] xxl:mt-[50px]">
         {/* Contents */}
-        <div className="w-[100%] grid xxl:grid-cols-2 px-[40px] sm:px-[65px] py-[30px] xxxxl:py-[50px] md:pt-[55px] xxxl:px-[300px]">
+        <div className="w-[100%] grid xxl:grid-cols-2 px-[40px] sm:px-[65px] py-[30px] md:pt-[55px] xxxl:px-[300px]">
           {/* Text */}
           <div className="order-2 xxl:order-2 xxxxl:flex xxxxl:flex-col xxxxl:justify-center">
             <div className="hidden xxl:block">
@@ -39,7 +39,7 @@ const ArtistSection = () => {
           <div className="flex flex-col justify-center items-center order-1 h-[196px] md:h-[438px] xxl:h-[100%] md:px-[0px] md:w-[100%] md:h-[100%] xxl:order-1 mb-[30px] md:mb-0 xl:items-start">
             <div className="">
               <img
-                className="rounded-[20px] w-[585px] md:block xxxxl:w-[882px] xxxxl:h-[530px]"
+                className="w-[585px] md:block xxxxl:w-[882px] xxxxl:h-[530px]"
                 src={JD}
                 alt={"JD"}
               />

@@ -10,7 +10,7 @@ interface FooterProps {
   classes?: string;
 }
 
-const Footer = ({ classes = "bg-gpgp-blue" }: FooterProps) => {
+const Footer = ({ classes = "bg-gpgp-blue xxxxl:max-w-[2560px] xxxxl:mx-auto" }: FooterProps) => {
   const currentPath = useLocation().pathname;
 
   const footerStyles = getFooterDetail(currentPath) || null;
@@ -23,7 +23,7 @@ const Footer = ({ classes = "bg-gpgp-blue" }: FooterProps) => {
 
   return (
     <footer
-      className={`${
+      className={`xxxl:max-w-[1440px] mx-auto ${
         footerStyles ? footerStyles!.style : classes
       } border-t border-[white]`}
     >

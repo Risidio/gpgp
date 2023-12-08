@@ -8,36 +8,29 @@ import ContactUs from "../components/ContactUs";
 import Contribution from "../components/Contribution";
 
 const Home = () => {
- 
   return (
     <>
-      <section className="my-5 xxxl:mx-3">
+      <div className="xxxl:max-w-[1440px] mx-auto">
         <Hero />
-      </section>
 
-      <section>
         <Exhibition />
-      </section>
 
-      <div>
         <HomeExhibition />
-      </div>
 
-      <section>
         <HomeContent />
-      </section>
 
-      <Container>
-        <Artist />
-      </Container>
+        <Container>
+          <Artist />
+        </Container>
 
-      <section>
-        <Contribution/>
-      </section>
+        <section>
+          <Contribution />
+        </section>
 
-      <section>
-        <ContactUs />
-      </section>
+        <section>
+          <ContactUs />
+        </section>
+      </div>
     </>
   );
 };

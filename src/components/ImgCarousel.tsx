@@ -22,6 +22,7 @@ const ImgCarousel = ({items}: ImgCarouselProps) => {
                     key={index}
                     className="product-image hover:shadow-black shadow-[2px_3px_5px_rgba(0,0,0,0.3)]"
                 >
+                    
                   <img 
                       src={item.imageSrc}
                       alt={`Product ${index + 1}`}

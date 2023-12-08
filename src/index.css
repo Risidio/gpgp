@@ -2,62 +2,93 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom styles for home page hero image */
+/* In your CSS or stylesheets */
+.hero-shadow{
+  box-shadow: 0px 0px 26.7px 0px rgba(0, 0, 0, 0.16) inset;
+}
+
+.gpgp-home-map-fallback{
+  background: url('./assets/images/gpgp-map-mobile.png'), lightgray 50% / cover no-repeat;
+}
+
+.header-text-stroke{
+  -webkit-text-stroke: 1px #0A2471;
+}
+
 /* Custom styles for lightgallery */
 .custom-wrapper-gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
 .custom-wrapper-gallery a {
-    padding: 10px;
+  padding: 10px;
 }
 
 @media screen and (max-width: 600px) {
-    .custom-wrapper-gallery {
-        grid-template-columns: repeat(2, 1fr); /* double column for smaller screens */
-    }
-
-    .custom-wrapper-gallery a {
-        padding: 5px;
-        margin-bottom: 10px;
-    }
+  .custom-wrapper-gallery {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* double column for smaller screens */
   }
+
+  .custom-wrapper-gallery a {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+}
 
 /* Regular */
 @font-face {
-    font-family: be-vietnam;
-    src: url(../public/fonts/be-vietnam/BeVietnam-Regular.ttf) format('truetype');
+  font-family: be-vietnam;
+  src: url(../public/fonts/be-vietnam/BeVietnam-Regular.ttf) format("truetype");
 }
 
 /* Bold */
 @font-face {
-    font-family: be-vietnam-bold;
-    src: url(../public/fonts/be-vietnam/BeVietnam-Bold.ttf) format('truetype');
-    
+  font-family: be-vietnam-bold;
+  src: url(../public/fonts/be-vietnam/BeVietnam-Bold.ttf) format("truetype");
 }
 
 /* Semi-Bold */
 @font-face {
-    font-family: be-vietnam-semibold;
-    font-weight: 400;
-    src: url(../public/fonts/be-vietnam/BeVietnam-SemiBold.ttf) format('truetype');
+  font-family: be-vietnam-semibold;
+  font-weight: 400;
+  src: url(../public/fonts/be-vietnam/BeVietnam-SemiBold.ttf) format("truetype");
 }
 
 /* Extra-Bold */
 @font-face {
-    font-family: be-vietnam-xbold;
-    font-weight: 700;   
-    src: url(../public/fonts/be-vietnam/BeVietnam-ExtraBold.ttf) format('truetype');
+  font-family: be-vietnam-xbold;
+  font-weight: 700;
+  src: url(../public/fonts/be-vietnam/BeVietnam-ExtraBold.ttf)
+    format("truetype");
 }
 
 /* Light */
 @font-face {
-    font-family: be-vietnam-light;
-    src: url(../public/fonts/be-vietnam/BeVietnam-Light.ttf) format('truetype');
+  font-family: be-vietnam-light;
+  src: url(../public/fonts/be-vietnam/BeVietnam-Light.ttf) format("truetype");
 }
 
-p{
-    font-family: "be-vietnam";
+p {
+  font-family: "be-vietnam";
 }
 
+/* Extra-Bold */
+@font-face {
+  font-family: be-vietnam-600;
+  font-weight: 900;
+  src: url(../public/fonts/be-vietnam/BeVietnam-ExtraBold.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: be-vietnam-400;
+  font-weight: 400;
+  src: url(../public/fonts/be-vietnam/BeVietnam-ExtraBold.ttf)
+    format("truetype");
+}
