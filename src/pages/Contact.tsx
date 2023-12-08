@@ -7,18 +7,11 @@ export default function Contact() {
 
   const formFields = [ 
     {
-      label: "Full Name",
+      label: "Name",
       type: "text",
       width: "half",
       id: "full-name",
     },
-    {
-      label: "Title",
-      type: "text",
-      width: "half",
-      id: "title",
-    },
-
     {
       label: "Email",
       type: "email",
@@ -27,14 +20,14 @@ export default function Contact() {
     },
 
     {
-      label: "Phone Number",
-      type: "tel",
-      width: "half",
+      label: "Subject",
+      type: "type",
+      width: "full",
       id: "phone-number",
     },
 
     {
-      label: "Message",
+      label: "Purpose",
       type: "textarea",
       width: "full",
       id: "message",
@@ -44,7 +37,7 @@ export default function Contact() {
   const WavePattern = "Contact";
 
   const SponsorFormLegend = {
-    heading: `Get in touch with us`,
+    heading: `We’d love to hear from you`,
     contact: `infinart@risidio.com`,
   };
 

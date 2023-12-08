@@ -16,15 +16,7 @@ export default function Contribute() {
 
   return (
     <div>
-      {/* <ContributeHero
-        HeroContent={HeroContent}
-        classes={{
-          container: "mb-[-70px] xsm:mb-[-150px]",
-          image: "opacity-40 md:z-[-2px] z-[-4px] hidden",
-          heading: " sm:text-[2.2rem] lg:text-[2.4rem] xxl:text-[3rem] mb-9 sm:mb-16 ",
-          paragraph: "w-[148%] leading-[1rem] sm:leading-6 xxl:text-[1.5rem] xxl:leading-[2rem]",
-        }}
-      /> */}
+      
       <NewContributeHero
         contents={document?.data["body"][0].primary}
         classes={{

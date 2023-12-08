@@ -24,7 +24,7 @@ export default function NewContributeHero({
       <div className="flex flex-col items-center md:flex-row gap-x-[-60px] w-[100%] mt-16">
         <div className="w-[50%] md:pl-[80px] lg:pl-[150px] xlg:mr-[-45px]   flex text-center md:text-right flex-col justify-center items-center uppercase">
           <div className=" w-[100%] xlg:w-[80%] ">
-            <h2 className="text-[1.5rem] xsm:text-[2rem] md:text-[3rem] xl:text-[3.4rem] xxl:text-[4rem] xxxl:text-[4.5rem] md:mb-[-20px] text-gpgp-blue font-extrabold">
+            <h2 className=" text-[1.5rem] xsm:text-[2rem] md:text-[3rem] xl:text-[3.4rem] xxl:text-[4rem] xxxl:text-[4.5rem] md:mb-[-20px] text-gpgp-blue font-extrabold">
               {contents?.heading1[0].text}
             </h2>
             <span
@@ -52,7 +52,7 @@ export default function NewContributeHero({
           {HeroContent &&
             HeroContent?.map((item, index) => (
               <p
-                className={` text-[1rem]  w-[140%] sm:text-[1.2rem] lg:text-[1.5rem]  xxxl:text-[2rem] xsm:w-[120%] sm:w-[130%] md:w-[90%] font-be-vietnam mb-5 tracking-normal sm:tracking-wide  z-8 md:z-10 opacity-100 xsm:leading-8  md:leading-7  xl:leading-8 xxxl:leading-[3rem] ${paragraph}`}
+                className={` text-[1rem]  w-[140%] sm:text-[1.2rem] lg:text-[1.5rem]  xxxl:text-[2rem] xsm:w-[120%] sm:w-[130%] md:w-[90%] font-be-vietnam mb-6 tracking-normal sm:tracking-[1px]  z-8 md:z-10 opacity-100 xsm:leading-6  md:leading-7  xl:leading-8 xxxl:leading-[3rem] ${paragraph}`}
                 key={index}
               >
                 {item}

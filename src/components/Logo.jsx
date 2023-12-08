@@ -1,6 +1,7 @@
 import React from 'react'
 
-export default function Logo({className, logo="NewNavLogo2.png"}) {
+
+export default function Logo({className, logo}) {
     return (
         <div className={className}>
             <img

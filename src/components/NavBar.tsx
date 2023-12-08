@@ -127,7 +127,7 @@ const NavBar = () => {
         {/* phone Navbar */}{" "}
         <Link
           to="/"
-          className={`flex items-center pl-4 sm:hidden
+          className={`flex items-center pl-4 sm:hidden transition-all ease-in-out
           ${isOpenMenu ? "opacity-0" : ""}
           `}
           onClick={() => resetSelectItem()}
@@ -178,7 +178,7 @@ const NavBar = () => {
             });
           }}
         >
-          <Logo className="w-max" />
+          <Logo className="w-max" logo={"NewNavLogo2.png"} />
         </Link>
         <div className="hidden sm:flex text-xl font-semibold">
           {links.map((link, index) => {
