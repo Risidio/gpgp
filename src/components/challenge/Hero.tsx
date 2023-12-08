@@ -9,7 +9,7 @@ const Hero = () => {
           </h1>
         </div> */}
         <div className="flex flex-col md:flex-row w-full gap-0 md:gap-[60px] lg:gap-[100px] px-[20px] lg:px-[251px] mt-[60px] lg:mt[0px]">
-          <div className="w-full md:w-1/2 px-[4px] order-first md:order-last">
+          <div className="w-full md:w-auto px-[4px] order-first md:order-last">
             <div className="w-full flex flex-col uppercase font-[be-vietnam-700] md:font-[be-vietnam-800] leading-[40px] md:leading-[70px] lg:leading-[100px]">
               <div className="text-[32px] md:text-[50px] lg:text-[80px] text-center md:text-left lg:pl-[80px] text-[#0A2471] ">
                 The art <span className="challenge-hero">inspiring</span>{" "}
