@@ -10,16 +10,14 @@ import Contribution from "../components/Contribution";
 const Home = () => {
   return (
     <>
-      <div className="xxxxl:max-w-[2560px] xxxxl:mx-auto">
+      <div className="xxxl:max-w-[1440px] mx-auto">
         <Hero />
 
         <Exhibition />
-        
+
         <HomeExhibition />
 
-        <section>
-          <HomeContent />
-        </section>
+        <HomeContent />
 
         <Container>
           <Artist />
