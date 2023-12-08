@@ -1,5 +1,7 @@
 import ProjectImg from "../../assets/images/project.png";
+import ProjectWebImg from "../../assets/images/project-web.png";
 import ChallengeImg from "../../assets/images/challenge.png";
+import ChallengeWebImg from "../../assets/images/challenge-web.jpg";
 import InvitationImg from "../../assets/images/gpgp-tile.png";
 import MyLink from "../base/MyLink";
 
@@ -63,7 +65,12 @@ const HomeContent = () => {
               <img
                 src={ProjectImg}
                 alt="GPGP Blue"
-                className="w-[190px] h-[190px] lg:w-[582px] lg:h-[582px] lg:rounded-[20px]"
+                className="lg:hidden w-[190px] h-[190px] lg:w-[582px] lg:h-[582px] lg:rounded-[20px]"
+              />
+              <img
+                src={ProjectWebImg}
+                alt="GPGP Blue"
+                className="lg:block w-[190px] h-[190px] lg:w-[582px] lg:h-[582px] lg:rounded-[20px]"
               />
             </div>
           </div>
@@ -112,7 +119,12 @@ const HomeContent = () => {
               <img
                 src={ChallengeImg}
                 alt="GPGP Blue"
-                className="w-[190px] h-[190px] lg:w-[585px] lg:h-[582px] lg:rounded-[20px]"
+                className="lg:hidden w-[190px] h-[190px] lg:w-[585px] lg:h-[582px] lg:rounded-[20px]"
+              />
+              <img
+                src={ChallengeWebImg}
+                alt="GPGP Blue"
+                className="hidden lg:block w-[190px] h-[190px] lg:w-[585px] lg:h-[582px] lg:rounded-[20px]"
               />
             </div>
           </div>

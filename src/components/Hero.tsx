@@ -34,7 +34,7 @@ const Hero = () => {
               <h3 className="hidden xl:block font-[be-vietnam-600] text-[20px] leading-[29.502px] tracking-[3px] uppercase">The Great Pacific Garbage Patch | GPGP</h3>
               <div className="m-0 p-0 w-[371px] xl:w-[441.693px] mx-auto xl:mx-0 leading-[28.8px] xl:leading-[57.6px] tracking-[1.2px]">
                 <h3 className="text-[24px] xl:text-[48px] uppercase font-[be-vietnam-600] text-gpgp-blue">
-                  Art Project by <span className="text-white header-text-stroke ">Environmental artist</span> <br/>john Dahlsen <span className="text-white header-text-stroke">&</span> InfinArt
+                  Art Project by <span className="text-white header-text-stroke">Environmental artist</span> <br/>john Dahlsen <span className="text-white header-text-stroke">&</span> InfinArt
                 </h3>
                 {/* <h3 className="uppercase font-[be-vietnam-600] text-gpgp-blue">
                   Art Project by Environmental artist john Dahlsen & InfinArt
