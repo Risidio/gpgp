@@ -1,4 +1,5 @@
 import TrashedPlasticObjects from "../../assets/images/trashedPlasticObjects.png";
+import TrashedPlasticsObjectMobile from "../../assets/images/trashed-plastic-objects-mobile.png"
 
 const Section2 = () => {
   return (
@@ -24,7 +25,12 @@ const Section2 = () => {
             </div>
             <img
               src={TrashedPlasticObjects}
-              className="block w-[100%] h-[196px] md:h-[100%]"
+              className="hidden md:block w-[100%] h-[196px] md:h-[100%]"
+              alt="Trashed Plastic Objects"
+            />
+            <img
+              src={TrashedPlasticsObjectMobile}
+              className="md:hidden w-[293px] h-[199px] mx-auto"
               alt="Trashed Plastic Objects"
             />
           </div>
