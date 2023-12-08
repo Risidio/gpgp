@@ -7,11 +7,11 @@ interface HomeExhibitionProps {
 const HomeExhibition = ({ classes="" }: HomeExhibitionProps) => {
   return (
     <>
-      <section className={`bg-gpgp-blue ${classes}`}>
+      <section className={`bg-lightgray w-full ${classes}`}>
              <img
                 src={guyAtExhibition}
                 alt="guyAtExhibtion"
-                className=""
+                className="h-[252px] md:h-[600px] w-full xl:h-[817px]"
               />
       </section>
    </>

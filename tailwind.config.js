@@ -31,6 +31,7 @@ module.exports = {
       },
       colors: {
         "gpgp-blue": "#0A2471",
+        "gpgp-black":"#050B1D"
       },
       backgroundImage: {
         "hero-back": "url('./assets/images/gpgp-map.png')",
@@ -73,5 +74,16 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function({addUtilities}){
+      
+      const boxShadows = {
+        '.gpgp-home-map-shadow':{
+          'box-shadow':'0px 0px 26.7px 0px rgba(0, 0, 0, 0.16) inset'
+        }
+      };
+
+      addUtilities(boxShadows,['responsive', 'hover']);
+    }
+  ],
 };

@@ -23,7 +23,7 @@ const Footer = ({ classes = "bg-gpgp-blue xxxxl:max-w-[2560px] xxxxl:mx-auto" }:
 
   return (
     <footer
-      className={`${
+      className={`xxxl:max-w-[1440px] mx-auto ${
         footerStyles ? footerStyles!.style : classes
       } border-t border-[white]`}
     >

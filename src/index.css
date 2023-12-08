@@ -8,6 +8,14 @@
   box-shadow: 0px 0px 26.7px 0px rgba(0, 0, 0, 0.16) inset;
 }
 
+.gpgp-home-map-fallback{
+  background: url('./assets/images/gpgp-map-mobile.png'), lightgray 50% / cover no-repeat;
+}
+
+.header-text-stroke{
+  -webkit-text-stroke: 1px #0A2471;
+}
+
 /* Custom styles for lightgallery */
 .custom-wrapper-gallery {
   display: grid;
@@ -89,3 +97,18 @@ p {
 }
 
 
+
+/* Extra-Bold */
+@font-face {
+  font-family: be-vietnam-600;
+  font-weight: 900;
+  src: url(../public/fonts/be-vietnam/BeVietnam-ExtraBold.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: be-vietnam-400;
+  font-weight: 400;
+  src: url(../public/fonts/be-vietnam/BeVietnam-ExtraBold.ttf)
+    format("truetype");
+}

@@ -4,52 +4,52 @@ import gpgpMapImage from "../assets/images/gpgp-map-mobile.png";
 const Hero = () => {
   return (
     <>
-      <section>
-        <div className="flex flex-col pb-[35px] pt-[48px] xl:pt-[80px] xl:flex-row xl:gap-x-[49px] xl:pl-[68px]">
-          {/* Image */}
-          <div className="flex flex-col gap-y-[14px] pb-[31.33px]">
-            <h3 className="xl:hidden text-center uppercase font-[be-vietnam-semibold] text-[15px] leading-[147.51%] tracking-[1.65px]">
-              GPGP
-              <br />
-              The Great Pacific Garbage Patch
-            </h3>
-            <div className="bg-gpgp-blue flex justify-center items-center mx-[19px] py-[31.7px] px-[37px] rounded-[15px] md:w-[387px] md:h-[260px] md:mx-auto xl:w-[700px] xl:h-[480px]">
+      <section className="pt-[48px] pb-[35px]">
+        {/* Container */}
+        <div className="flex flex-col xl:flex-row">
+          {/* First Column */}
+          <div className="px-[20px] xl:px-0 xl:pl-[68px] xl:w-full">
+            {/* Mobile Header */}
+            <div className="xl:hidden">
+              <h3 className="text-center text-[#050B1D] font-[be-vietnam-600] font-[600] uppercase text-[15px] leading-[22.126px] tracking-[1.65px]">
+                GPGP <br /> The Great Pacific Garbage Patch
+              </h3>
+            </div>
+
+            {/* Image */}
+            <div className="mt-[14px] w-[340px] md:w-[350] xl:w-full mx-auto xl:mx-0 xl:mt-0 h-[260.669px] xl:h-[479.531px] bg-gpgp-blue rounded-[15px] gpgp-home-map-shadow px-[37px] xl:px-[69px] py-[40px] xl:py-[69px]">
               <img
                 src={gpgpMapImage}
-                alt={gpgpMapImage}
-                className="w-[313px] h-[185px] xl:w-[575px] xl:h-[342px]"
+                alt="GPGP Map"
+                className="w-[312.584px] xl:w-[575.035px] xl:h-[341.804px] h-[185.802px] flex-shrink-0"
               />
             </div>
           </div>
 
-          {/* Content */}
-          <div>
-            {/* About John */}
-            <div className="flex flex-col gap-y-[25px] xl:gap-y-[0px]">
-              <h3 className="hidden xl:block text-[20px] leading-[29.50px] tracking-[3px] font-[be-vietnam-bold]">GPGP <br/>The Great Pacific Garbage Patch</h3>
-              <h1 className="w-[371px] mx-auto text-center text-gpgp-blue uppercase leading-[28.8px] tracking-[1.2px] font-[be-vietnam-bold] text-[24px] xl:text-[48px] xl:leading-[57.6px] xl:w-[442px] xl:text-left xl:mt-[10px] xl:tracking-[3px]">
-                Art Project by Environmental artist <br/>john Dahlsen & InfinArt{" "}
-              </h1>
-              <p className="font-[be-vietnam-semibold] text-center capitalize leading-[19.2px] tracking-[0.8px] text-[16px] xl:text-left xl:text-[20px] xl:leading-[29.50px] xl:mt-[17px]">
-                The art inspiring global action
-              </p>
-            </div>
+          {/* Second Column */}
 
-            {/* Button */}
-            <div className="mt-[30px] mx-[19px] xl:mx-0 xl:mt-[35px]">
-              <div className="flex justify-center items-center xl:justify-start xl:items-end gap-x-[12px]">
-                {/* Explore */}
-                <MyLink to="" className="w-[187px] xl:hidden">
-                  <p className="px-[10px] py-[9px] font-[be-vietnam-bold] leading-[22.13px] tracking-[4.13px] uppercase text-gpgp-blue text-[15px]">
-                    Explore
-                  </p>
+          <div className="pt-[31.33px] xl:pt-0 xl:w-full xl:pl-[49.23px]">
+            {/* Container */}
+            <div className="flex flex-col text-center xl:text-left gap-y-[25px]">
+              <h3 className="hidden xl:block font-[be-vietnam-600] text-[20px] leading-[29.502px] tracking-[3px] uppercase">The Great Pacific Garbage Patch | GPGP</h3>
+              <div className="m-0 p-0 w-[371px] xl:w-[441.693px] mx-auto xl:mx-0 leading-[28.8px] xl:leading-[57.6px] tracking-[1.2px]">
+                <h3 className="text-[24px] xl:text-[48px] uppercase font-[be-vietnam-600] text-gpgp-blue">
+                  Art Project by <span className="text-white header-text-stroke ">Environmental artist</span> <br/>john Dahlsen <span className="text-white header-text-stroke">&</span> InfinArt
+                </h3>
+                {/* <h3 className="uppercase font-[be-vietnam-600] text-gpgp-blue">
+                  Art Project by Environmental artist john Dahlsen & InfinArt
+                </h3> */}
+              </div>
+              <h3 className="capitalize text-[#050B1D] text-[16px] xl:text-[20px] font-[be-vietnam-600] leading-[19.2px] xl:leading-[29.502px] tracking-[0.8px]">The art inspiring global action</h3>
+              {/* Button Container */}
+              <div className="flex flex-row justify-center xl:justify-start gap-x-[12px] px-[19px] xl:px-0 mt-[5px] xl:mt-[13px]">
+                {/* Explore Btn */}
+                <MyLink to="" className="bg-white w-[187px] xl:hidden">
+                  <p className="text-gpgp-blue uppercase leading-[22.126px] font-[be-vietnam-600] tracking-[4.125px] py-[9px]">Explore</p>
                 </MyLink>
-
-                {/* Join Us */}
-                <MyLink to="" className="w-[187px] bg-gpgp-blue">
-                  <p className="px-[10px] py-[9px] font-[be-vietnam-bold] leading-[22.13px] tracking-[4.13px] uppercase text-white text-[15px] xl:text-[16px]">
-                    Join Us
-                  </p>
+                {/* Join Us Btn */}
+                <MyLink to="" className="bg-gpgp-blue w-[187px] xl:w-[245.63px]">
+                  <p className="text-white uppercase leading-[22.126px] xl:leading-[23.602px] font-[be-vietnam-600] tracking-[4.125px] xl:tracking-[4.4px] py-[9px]">Join Us</p>
                 </MyLink>
               </div>
             </div>
