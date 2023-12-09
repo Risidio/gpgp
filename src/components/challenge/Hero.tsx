@@ -73,7 +73,7 @@ const Hero = () => {
               Almost all single-use plastics are made from fossil fuels. So, the
               carbon footprint of the plastics is vast, by one estimate,
               emissions from producing and incinerating plastics could amount to
-             <span className="font-[be-vietnam-700]"> 56 gigatons of carbon</span> — almost 50 <span className="font-[be-vietnam-700]"> times the annual emissions</span> of
+             <span className="font-[be-vietnam-700]"> 56 gigatons of carbon</span> — almost <span className="font-[be-vietnam-700]"> 50 times the annual emissions</span> of
               all of the coal power plants.
             </p>
             <p className="text-center text-white font-be-vietnam tracking-[-0.3px] md:tracking-[-0.32px] font-normal text-[15px] md:text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[140%] md:leading-[170%] lg:leading-[200%] xl:leading-[220%] sm:leading-[30px]">
