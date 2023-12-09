@@ -1,6 +1,6 @@
 import BackgroundWave from "../BackgroundWave";
 import Container from "../Container";
-import { NewsCard } from "./NewsCard";
+import { NewsCards } from "./NewsCards";
 const fakeData = new Array(3).fill(1);
 
 const BottomLatestNews = () => {
@@ -17,7 +17,7 @@ const BottomLatestNews = () => {
                   </h2>
                   <div className="grid grid-cols-3 gap-10">
                      {fakeData.map((item, index) => (
-                        <NewsCard
+                        <NewsCards
                               key={index}
                               title="The Tide of Plastic: A Growing Threat"
                               href={`/news/${item.id}`}

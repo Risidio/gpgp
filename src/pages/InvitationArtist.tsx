@@ -1,14 +1,9 @@
-import ContributeHero from "../components/contribute/ContributeHero";
-import InvitationForm from "../components/contribute/Invitation/InvitationForm";
+import InviteHero from "../components/contribute/Invitation/InviteHero";
+import NewInvitationForm from "../components/contribute/Invitation/NewInvitationForm";
+import ContributionSection from "../components/gallery/Contribution";
 
 const InvitationArtist = () => {
-  const HeroContent = {
-    heading: "Invitation for artists",
-    subheading: "Calling All Artists Submit Your Work",
-    HeroLegend: [
-      `Are you an artist passionate about environmental conservation and sustainable living? We invite you to submit your artwork, whether it's paintings, sculptures, photographs, or any other medium, to be featured in our awareness campaigns and fundraising initiatives. Your creativity can help us inspire change and bring attention to this critical cause.`,
-    ],
-  };
+ 
   const formFields = [
     {
       label: "Full Name",
@@ -57,30 +52,29 @@ const InvitationArtist = () => {
     },
   ];
 
-  const WavePattern = "Artist";
+  const heading = "Artist";
   return (
     <div>
-      <ContributeHero
-        HeroContent={HeroContent}
-        classes={{
-          container: "mb-[2.7rem] sm:-mb-8",
-          image: "opacity-50 z-[-14px] hidden",
-          heading:
-            "sm:text-[2.2rem] lg:text-[2.4rem] xxl:text-[3rem] mb-7 sm:mb-10",
-          subheading:
-            "font-be-vietnam text-[1.2rem] md:text-[1.7rem] mb-[1rem] xxxl:text-[2rem]",
-          paragraph:
-            "w-[148%]  leading-[1.2rem] sm:leading-7 xxl:text-[1.5rem] xxl:leading-[2rem] xxxl:text-[1.7rem] xxxl:leading-[2.2rem]",
+      
+      <InviteHero heading={heading} />
+
+      <NewInvitationForm
+        formField={formFields}
+        heading={heading}
+        Classes={{
+          FormBtn: "",
         }}
       />
 
-      <InvitationForm
-        formField={formFields}
-        WavePattern={WavePattern}
-        Classes={{
-          FormBtn: "bg-white text-[#0A2471]",
-        }}
-      />
+      <section className="">
+        <ContributionSection
+          classes={{
+            container: " mt-4 pb-[20px] md:pb-[2px] md:pt-[15px]",
+            heading: "",
+            subheading: "",
+          }}
+        />
+      </section>
     </div>
   );
 };

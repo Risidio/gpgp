@@ -1,7 +1,8 @@
-import NewsList from '../components/news/NewsList'
+import NewsList from "../components/news/NewsList";
+
 
 export const News = () => {
-  return (
-          <NewsList/>
-      )
-}
+ 
+
+  return <NewsList />;
+};

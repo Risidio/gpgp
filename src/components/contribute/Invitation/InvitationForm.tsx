@@ -42,8 +42,9 @@ export default function InvitationForm({
 
   useEffect(() => {
     const updateRows = () => {
-      WavePattern === "Contact" ? setRows(window.innerWidth >= 640 ? 6 : 1) : 
-      setRows(window.innerWidth >= 640 ? 10 : 1)
+      WavePattern === "Contact"
+        ? setRows(window.innerWidth >= 640 ? 6 : 1)
+        : setRows(window.innerWidth >= 640 ? 10 : 1);
     };
 
     updateRows();
@@ -69,47 +70,18 @@ export default function InvitationForm({
           }  `}
         >
           <div className={`px-16 xl:pr-28 flex flex-col items-center   -mb-10`}>
-            {SponsorFormLegend && (
-              <div
-                className={`flex flex-col ${
-                  WavePattern === "Contact" ? "text-black" : "text-white"
-                }  items-center text-center `}
-              >
-                <h3 className="text-[1.2rem] md:text-[1.6rem] xxl:text-[2rem] xxxl:text-[2.3rem] font-semibold mb-4">
-                  {SponsorFormLegend.heading}
-                </h3>
-                <h4
-                  className={`text-[0.9rem] ${
-                    WavePattern === "Contact" && "text-gpgp-blue"
-                  } md:text-[1rem] xl:text-[1.5rem]`}
-                >
-                  {SponsorFormLegend.contact}
-                </h4>
-                <h2 className="text-[1rem] md:text-[1.2rem] xl:text-[1.9rem] m-10">
-                  OR
-                </h2>
-                <h4
-                  className={`text-[0.9rem] md:text-[1.1rem] xl:text-[1.3rem] ${
-                    WavePattern === "Contact"
-                      ? "text-black bg-white"
-                      : " text-white bg-gpgp-blue"
-                  }  z-50 px-4 xxl:text-[1.7rem] font-semibold mb-4`}
-                >
-                  Leave your details and we’ll contact you
-                </h4>
-              </div>
-            )}
-            {WavePattern === "Artist" && (
-              <h4
-                className={`text-[0.9rem] md:text-[1.1rem] text-center xl:text-[1.3rem]  text-white bg-gpgp-blue  z-50 px-4 xxl:text-[1.7rem] font-semibold mb-4`}
-              >
-                Leave your details and we’ll contact you
-              </h4>
-            )}
+            <h3 className="uppercase text-[1.2rem] lg:text-[1.4rem] text-center xxxl:text-[1.6rem] mb-4 font-bold tracking-[3px]">
+              COntact Us
+            </h3>
+
+            <h2 className="text-[1.5rem] sm:text-[2rem] text-center  md:[2.5rem] lg:text-[3rem] xxl:text-[3.5rem] font-semibold mb-3">
+              We’d love to hear from <span className="underline text-[#D9BF4F]"> you</span>
+            </h2>
+
+            <p className="mb-[2rem] font-semibold text-center tracking-[2px] xxxl:text-[1.5rem]">Reach out to us for further discussions about sponsorship and partnership opportunities</p>
+
             <form
-              className={`flex flex-wrap sm:border md:border-[3px] ${
-                WavePattern === "Contact" ? "border-[#0A2471]" : "border-white"
-              } rounded-[33px] sm:px-5 sm:mt-[-32px] pt-10 xl:px-7 pb-4 -mx-2`}
+              className={`flex flex-wrap  rounded-[33px] sm:px-5 sm:mt-[-32px] pt-10 xl:px-7 pb-4 -mx-2`}
             >
               {formField.map((field) =>
                 field.width === "half" ? (
@@ -119,11 +91,7 @@ export default function InvitationForm({
                   >
                     <label
                       htmlFor={field.id}
-                      className={`block font-semibold ${
-                        WavePattern === "Contact"
-                          ? "text-gpgp-blue"
-                          : "text-white"
-                      }`}
+                      className={`block font-semibold xxxl:text-[1.5rem] text-black`}
                     >
                       {field.label}
                     </label>
@@ -142,11 +110,7 @@ export default function InvitationForm({
                   <div key={field.id} className="w-full p-2">
                     <label
                       htmlFor={field.id}
-                      className={`block font-semibold ${
-                        WavePattern === "Contact"
-                          ? "text-gpgp-blue rounded-[7px]"
-                          : "text-white"
-                      }`}
+                      className={`block font-semibold xxxl:text-[1.5rem] text-black`}
                     >
                       {field.label}
                     </label>
@@ -180,9 +144,7 @@ export default function InvitationForm({
               )}
             </form>
             <button
-              className={`m-10 border w-[150px] h-[50px] rounded-lg bg-gpgp-blue text-white font-bold text-[1.3rem] tracking-[3px] ${
-                Classes?.FormBtn 
-              }`}
+              className={`m-10 border w-[150px]  xxxl:w-[210px] h-[50px] xxxl:h-[65px]  bg-gpgp-blue text-white font-semibold text-[1.3rem] xxxl:text-[2rem] tracking-[3px] ${Classes?.FormBtn}`}
             >
               Send
             </button>
