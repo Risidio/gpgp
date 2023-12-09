@@ -76,15 +76,15 @@ const NavBar = () => {
 
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-white transition ease transform duration-300`;
   return (
-    <div className="px-2 lg:px-4 sm:px-12 py-2 flex justify-between  items-center bg-gpgp-blue sm:bg-white xxxxl:max-w-[2560px] xxxxl:mx-auto">
+    <div className="pl-[23px] pr-[17px] lg:px-4 sm:px-12 py-2 flex justify-between  items-center bg-gpgp-blue h-[67px] md:h-[unset] sm:bg-white xxxxl:max-w-[2560px] xxxxl:mx-auto">
       <nav className="flex w-full md:flex px-0 py-0 md:px-4 md:py-3 items-center justify-between">
         {/* phone Navbar */}
         <Link
           to="/"
-          className="flex items-center pl-4 sm:hidden"
+          className="flex items-center sm:hidden bg-red-500 w-[63px] h-[63px] mt-[10px]"
           onClick={() => resetSelectItem()}
         >
-          <MobileLogo className="w-max" />
+          <MobileLogo className="" />
         </Link>
         {isOpenMenu && (
           <div
@@ -199,7 +199,7 @@ const NavBar = () => {
         </div>
 
         {/* hamburger menu */}
-        <div className="inline-block sm:hidden text-white py-1 px-3 h-auto">
+        <div className="inline-block sm:hidden text-white py-1  h-auto">
           <button
             className="flex flex-col h-auto w-12 rounded justify-center items-center group"
             onClick={() => setIsOpenMenu(!isOpenMenu)}

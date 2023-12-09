@@ -4,7 +4,7 @@ const Section1 = () => {
   return (
     <>
       <div className="flex flex-col items-center md:pb-[100px] ">
-        <div className="mt-[60px] px-[17px] md:mt-[150px] flex flex-col md:items-center gap-y-[20px] md:gap-y-[65px]">
+        <div className="mt-[81px] px-[17px] md:mt-[150px] flex flex-col md:items-center gap-y-[20px] md:gap-y-[65px]">
           <p className="hidden md:block text-[#050B1D] text-center font-[be-vietnam] md:text-[32px] md:leading-[200%] md:tracking-[-0.64px]">
             Due to their small size, microplastics are nearly <br />
             <b>impossible to monitor, track, or remove.</b>
