@@ -23,12 +23,12 @@ export default function NewContributeHero({
     <div className=" flex flex-col justify-center items-center sm:mb-[-150px] z-60 ">
       <div className="flex flex-col items-center md:flex-row gap-x-[-60px] w-[100%] mt-16">
         <div className="w-[50%] md:pl-[80px] lg:pl-[150px] xlg:mr-[-45px]   flex text-center md:text-right flex-col justify-center items-center uppercase">
-          <div className=" w-[100%] xlg:w-[80%] ">
-            <h2 className=" text-[1.5rem] xsm:text-[2rem] md:text-[3rem] xl:text-[3.4rem] xxl:text-[4rem] xxxl:text-[4.5rem] md:mb-[-20px] text-gpgp-blue font-extrabold">
+          <div className=" w-[110%]  sm:w-[100%] xlg:w-[80%] ">
+            <h2 className=" text-[1.3rem] xsm:text-[1.6rem] md:text-[3rem] xl:text-[3.4rem] xxl:text-[4rem] xxxl:text-[4.5rem] md:mb-[-20px] text-gpgp-blue font-extrabold">
               {contents?.heading1[0].text}
             </h2>
             <span
-              className="md:pl-[4px] text-[1.5rem] xsm:text-[2.5rem] md:text-[3.5rem] xl:text-[3.4rem] xxl:text-[3.5rem]  xxxxl:text-[4.5rem] w-max text-white font-bold"
+              className="md:pl-[4px] text-[1.2rem] xsm:text-[1.2rem] md:text-[3.5rem] xl:text-[3.4rem] xxl:text-[3.5rem]  xxxxl:text-[4.5rem] w-max text-white font-bold"
               style={{ WebkitTextStroke: "1px #0A2471" }}
             >
               {contents?.heading2[0].text}
@@ -40,7 +40,7 @@ export default function NewContributeHero({
             {contents?.heading3[0].text}
             </h2>
             <span
-              className="md:pl-[4px] text-[1.5rem] xsm:text-[2.5rem] md:text-[3.5rem] xl:text-[3.4rem] xxl:text-[4rem] xxxl:text-[4.5rem] text-white font-bold "
+              className="md:pl-[4px] text-[1.5rem] xsm:text-[1.2rem] md:text-[3.5rem] xl:text-[3.4rem] xxl:text-[4rem] xxxl:text-[4.5rem] text-white font-bold "
               style={{ WebkitTextStroke: "1px #0A2471" }}
             >
               {contents?.heading4[0].text}
@@ -64,13 +64,13 @@ export default function NewContributeHero({
         <div className="flex  w-[100%] flex-col justify-end items-center md:items-end lg:pl-[124px] md:pr-[240px] ">
           <Link
             to={"/contribute/inviteSponsor"}
-            className="border rounded-[7px] border-gpgp-blue text-gpgp-blue font-semibold w-[75%] sm:w-[60%] lg:w-[50%] text-center h-[55px] flex justify-center items-center mt-3 mb-5 uppercase sm:tracking-[0.1rem] lg:tracking-[0.3rem] sm:text-[1.2rem] lg:text-[1.2rem]  xxl:text-[1.7rem] xxxxl:text-[2rem] hover:shadow-lg "
+            className="border rounded-[6px] border-gpgp-blue text-gpgp-blue font-semibold w-[75%] sm:w-[60%] lg:w-[50%] text-center h-[55px] flex justify-center items-center mt-3 mb-5 uppercase sm:tracking-[0.1rem] lg:tracking-[0.3rem] sm:text-[1.2rem] lg:text-[1.2rem]  xxl:text-[1.7rem] xxxxl:text-[2rem] hover:shadow-lg "
           >
             COntribute as an investor
           </Link>
           <Link
             to={"/contribute/inviteArtist"}
-            className="rounded-[7px] bg-gpgp-blue text-white font-semibold w-[75%] sm:w-[60%] lg:w-[50%] text-center h-[55px] flex justify-center items-center mt-3 mb-5 uppercase sm:tracking-[0.1rem] lg:tracking-[0.3rem] sm:text-[1.2rem] lg:text-[1.2rem] xxl:text-[1.7rem] xxxxl:text-[2rem] hover:shadow-lg"
+            className="rounded-[6px] bg-gpgp-blue text-white font-semibold w-[75%] sm:w-[60%] lg:w-[50%] text-center h-[55px] flex justify-center items-center mt-3 mb-5 uppercase sm:tracking-[0.1rem] lg:tracking-[0.3rem] sm:text-[1.2rem] lg:text-[1.2rem] xxl:text-[1.7rem] xxxxl:text-[2rem] hover:shadow-lg"
           >
             COntribute as an artist
           </Link>

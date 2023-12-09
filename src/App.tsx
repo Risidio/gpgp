@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
 import { News } from "./pages/News";
 import NewsDetail from "./components/news/NewsDetail";
-import NewsCategoryList from "./components/news/NewsCategoryList";
+// import NewsCategoryList from "./components/news/NewsCategoryList";
 import { NewsLayout } from "./components/news/NewsLayout";
 import Contribute from "./pages/Contribute";
 import InvitationArtist from "./pages/InvitationArtist";
@@ -24,7 +24,7 @@ const App= () => {
         <Route path="/news" element={<NewsLayout />}>
            <Route index element={<News />} />
            <Route path=":id" element={<NewsDetail />} />
-           <Route path="category/:categoryId" element={<NewsCategoryList />} />
+           {/* <Route path="category/:categoryId" element={<NewsCategoryList />} /> */}
         </Route>
         <Route path="/contribute" element={<Contribute />} />
         <Route path="/contribute/inviteArtist" element={<InvitationArtist />} />
