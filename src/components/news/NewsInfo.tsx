@@ -3,16 +3,12 @@ import { HiOutlineClock, HiOutlineShare } from "react-icons/hi";
 import { IArticleDataProps } from "../../types/singleArticle";
 import MyLink from "../base/MyLink";
 
-// interface NewsItem {
-//   morenewsimage: string;
-//   morenewscontent: { text: string }[];
-// }
 
 const NewsInfo: React.FC<IArticleDataProps> = ({ contents, items }) => {
   return (
-    <div className="w-full flex justify-center sm:p-9 md:p-10 p-5">
-      <div className="grid sm:grid-cols-4 grid-cols-1 gap-x-5">
-        <div className="col-span-3">
+    <div className="w-full flex justify-center sm:p-6 md:p-8 md:px-0 p-5">
+      <div className="grid sm:grid-cols-4 grid-cols-1 gap-x-6 sm:gap-x-20">
+        <div className="col-span-3 sm:mr-4">
           <h1 className="sm:text-[1.6rem] xxxl:text-[2rem] xxxl:leading-[37px] text-lg font-bold tracking-[2px]">
             {contents?.articletitle?.[0]?.text}
           </h1>
@@ -53,9 +49,9 @@ const NewsInfo: React.FC<IArticleDataProps> = ({ contents, items }) => {
             More News
           </h2>
 
-          <div className="sm:space-y-5 grid sm:grid-cols-1 grid-cols-2 gap-5">
+          <div className="sm:space-y-5 grid sm:grid-cols-1 grid-cols-2  gap-10 sm:gap-5">
             {items?.map((item, index: number) => (
-              <div key={index} className="group relative">
+              <div key={index} className="group relative w-[120%] sm:w-full">
                 <img
                   src={item.morenewsimage.url}
                   alt=""

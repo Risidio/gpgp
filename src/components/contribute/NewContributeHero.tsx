@@ -48,11 +48,11 @@ export default function NewContributeHero({
           </div>
         </div>
 
-        <div className=" w-[60%] flex justify-center text-center md:text-left  items-center flex-col md:pl-[1rem] md:pr-[6rem] lg:pl-0 lg:pr-[13rem]">
+        <div className=" w-[65%] flex justify-center text-center md:text-left  items-center flex-col md:pl-[1rem] md:pr-[6rem] lg:pl-0 lg:pr-[7rem]">
           {HeroContent &&
             HeroContent?.map((item, index) => (
               <p
-                className={` text-[1rem]  w-[140%] sm:text-[1.2rem] lg:text-[1.5rem]  xxxl:text-[2rem] xsm:w-[120%] sm:w-[130%] md:w-[90%] font-be-vietnam mb-6 tracking-normal sm:tracking-[1px]  z-8 md:z-10 opacity-100 xsm:leading-6  md:leading-7  xl:leading-8 xxxl:leading-[3rem] ${paragraph}`}
+                className={` text-[1rem]  w-[140%] sm:text-[1rem] lg:text-[1.3rem]  xxxl:text-[1.6rem] xsm:w-[120%] sm:w-[130%] md:w-[90%] font-be-vietnam mb-[29px] tracking-normal sm:tracking-[1px]  z-8 md:z-10 opacity-100 xsm:leading-6  md:leading-[27px]  xl:leading-7 xxxl:leading-[3rem] ${paragraph}`}
                 key={index}
               >
                 {item}
@@ -64,13 +64,13 @@ export default function NewContributeHero({
         <div className="flex  w-[100%] flex-col justify-end items-center md:items-end lg:pl-[124px] md:pr-[240px] ">
           <Link
             to={"/contribute/inviteSponsor"}
-            className="border rounded-[6px] border-gpgp-blue text-gpgp-blue font-semibold w-[75%] sm:w-[60%] lg:w-[50%] text-center h-[55px] flex justify-center items-center mt-3 mb-5 uppercase sm:tracking-[0.1rem] lg:tracking-[0.3rem] sm:text-[1.2rem] lg:text-[1.2rem]  xxl:text-[1.7rem] xxxxl:text-[2rem] hover:shadow-lg "
+            className="border rounded-[6px] border-gpgp-blue text-gpgp-blue font-semibold w-[75%] sm:w-[60%] lg:w-[50%] text-center h-[60px] flex justify-center items-center mt-3 mb-5 uppercase sm:tracking-[0.1rem] lg:tracking-[0.3rem] sm:text-[0.8rem] lg:text-[1rem]  xxl:text-[1.3rem] xxxxl:text-[1.7rem] hover:shadow-lg "
           >
             COntribute as an investor
           </Link>
           <Link
             to={"/contribute/inviteArtist"}
-            className="rounded-[6px] bg-gpgp-blue text-white font-semibold w-[75%] sm:w-[60%] lg:w-[50%] text-center h-[55px] flex justify-center items-center mt-3 mb-5 uppercase sm:tracking-[0.1rem] lg:tracking-[0.3rem] sm:text-[1.2rem] lg:text-[1.2rem] xxl:text-[1.7rem] xxxxl:text-[2rem] hover:shadow-lg"
+            className="rounded-[6px] bg-gpgp-blue text-white font-semibold w-[75%] sm:w-[60%] lg:w-[50%] text-center h-[60px] flex justify-center items-center mt-3 mb-5 uppercase sm:tracking-[0.1rem] lg:tracking-[0.3rem] sm:text-[0.8rem] lg:text-[1rem] xxl:text-[1.3rem] xxxxl:text-[1.7rem] hover:shadow-lg"
           >
             COntribute as an artist
           </Link>

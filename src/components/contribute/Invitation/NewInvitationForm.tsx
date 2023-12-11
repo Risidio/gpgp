@@ -120,7 +120,7 @@ export default function NewInvitationForm({
           </form>
           <button
             className={`m-10 border w-[150px] md:w-[200px] md:h-[55px] h-[50px] xxl:w-[250px] xxl:h-[65px] bg-gpgp-blue text-white font-bold 
-            text-[1.3rem] lg:text-[1.5rem] tracking-[3px] ${Classes?.FormBtn}`}
+            text-[1.3rem] lg:text-[1.5rem] tracking-[3px] rounded-[3px] ${Classes?.FormBtn}`}
           >
             Send
           </button>
