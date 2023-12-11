@@ -1,7 +1,4 @@
-import { IArtist } from "../../types";
 import MyLink from "../base/MyLink";
-
-
 
 const Artist = ({...props}) => {
   return (
