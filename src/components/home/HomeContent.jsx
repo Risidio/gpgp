@@ -1,5 +1,7 @@
 import ProjectImg from "../../assets/images/project.png";
+import ProjectWebImg from "../../assets/images/projectweb.jpg";
 import ChallengeImg from "../../assets/images/challenge.png";
+import ChallengeWebImg from "../../assets/images/challenge.jpg";
 import InvitationImg from "../../assets/images/gpgp-tile.png";
 import MyLink from "../base/MyLink";
 
@@ -48,9 +50,9 @@ const HomeContent = () => {
   return (
     <>
       {/* <ContentManage contents={contents} /> */}
-      <section>
+      <section className="">
         {/* First Content Container */}
-        <div className="flex flex-col lg:flex-row pt-[50px] xl:pt-[150px]">
+        <div className="flex flex-col lg:flex-row pt-[50px] xl:pt-0 xl:mt-[293px]">
           {/* First Column */}
           <div className="flex flex-col gap-y-[32px] lg:w-full">
             {/* Header */}
@@ -63,7 +65,12 @@ const HomeContent = () => {
               <img
                 src={ProjectImg}
                 alt="GPGP Blue"
-                className="w-[190px] h-[190px] lg:w-[582px] lg:h-[582px] lg:rounded-[20px]"
+                className="xl:hidden w-[190px] h-[190px] lg:w-[582px] lg:h-[582px] lg:rounded-[20px]"
+              />
+              <img
+                src={ProjectWebImg}
+                alt="GPGP Blue"
+                className="hidden xl:block w-[190px] h-[190px] lg:w-[582px] lg:h-[582px] lg:rounded-[20px]"
               />
             </div>
           </div>
@@ -87,9 +94,9 @@ const HomeContent = () => {
             <div className="flex flex-row gap-x-[12px] px-[19px] xl:px-0 mt-[35px] xl:mt-[59px]">
               <MyLink
                 to=""
-                className="bg-gpgp-blue xl:bg-white w-[187px] xl:w-[223px]"
+                className="bg-gpgp-blue xl:bg-white w-[187px] h-[40px] xl:w-[223px] xl:h-[63px]"
               >
-                <p className="text-white xl:text-gpgp-blue uppercase leading-[22.126px] xl:leading-[23.602px] font-[be-vietnam-600] tracking-[4.125px] xl:tracking-[4.4px] py-[9px]">
+                <p className="text-white text-[15px] xl:text-[16px] xl:text-gpgp-blue uppercase leading-[22.126px] xl:leading-[23.602px] font-[be-vietnam-600] tracking-[4.125px] xl:tracking-[4.4px]">
                   <span className="hidden xl:inline">Explore</span>
                   <span className="lg:hidden">Learn More</span>
                 </p>
@@ -99,7 +106,7 @@ const HomeContent = () => {
         </div>
 
         {/* Second Content Container */}
-        <div className="flex flex-col lg:flex-row-reverse pt-[50px] xl:pt-[150px]">
+        <div className="flex flex-col lg:flex-row-reverse pt-[50px] xl:pt-0 xl:mt-[293px]">
           {/* First Column */}
           <div className="flex flex-col gap-y-[32px] lg:w-full">
             {/* Header */}
@@ -111,8 +118,13 @@ const HomeContent = () => {
             <div className="mx-auto lg:pr-[150px]">
               <img
                 src={ChallengeImg}
-                alt="GPGP Blue"
-                className="w-[190px] h-[190px] lg:w-[585px] lg:h-[582px] lg:rounded-[20px]"
+                alt="Challenge"
+                className="xl:hidden w-[190px] h-[190px] lg:w-[585px] lg:h-[439px] lg:rounded-[20px]"
+              />
+              <img
+                src={ChallengeWebImg}
+                alt="Challenge"
+                className="border-[3px] border-solid border-gpgp-blue hidden xl:block w-[190px] h-[190px] lg:w-[585px] lg:h-[439px] lg:rounded-[20px]"
               />
             </div>
           </div>
@@ -135,9 +147,9 @@ const HomeContent = () => {
             <div className="flex flex-row gap-x-[12px] px-[19px] xl:px-0 mt-[35px] xl:mt-[59px]">
               <MyLink
                 to=""
-                className="bg-gpgp-blue xl:bg-white w-[187px] xl:w-[223px]"
+                className="bg-gpgp-blue xl:bg-white w-[187px] h-[40px] xl:w-[223px] xl:h-[63px]"
               >
-                <p className="text-white xl:text-gpgp-blue uppercase leading-[22.126px] xl:leading-[23.602px] font-[be-vietnam-600] tracking-[4.125px] xl:tracking-[4.4px] py-[9px]">
+                <p className="text-white xl:text-gpgp-blue text-[15px] xl:text-[16px] uppercase leading-[22.126px] xl:leading-[23.602px] font-[be-vietnam-600] tracking-[4.125px] xl:tracking-[4.4px]">
                   <span className="">Support</span>
                 </p>
               </MyLink>
@@ -146,7 +158,7 @@ const HomeContent = () => {
         </div>
 
         {/* Third Content Container */}
-        <div className="flex flex-col lg:flex-row mb-[50px] pt-[50px] xl:pt-[150px]">
+        <div className="flex flex-col lg:flex-row mb-[50px] xl:mb-0 pt-[50px] xl:pt-0 xl:mt-[293px]">
           {/* First Column */}
           <div className="flex flex-col gap-y-[32px] lg:w-full">
             {/* Header */}
@@ -183,9 +195,9 @@ const HomeContent = () => {
             <div className="flex flex-row gap-x-[12px] px-[19px] xl:px-0 mt-[35px] xl:mt-[59px]">
               <MyLink
                 to=""
-                className="bg-gpgp-blue xl:bg-white w-[187px] xl:w-[223px]"
+                className="bg-gpgp-blue xl:bg-white w-[187px] h-[40px] xl:w-[223px] xl:h-[63px]"
               >
-                <p className="text-white xl:text-gpgp-blue uppercase leading-[22.126px] xl:leading-[23.602px] font-[be-vietnam-600] tracking-[4.125px] xl:tracking-[4.4px] py-[9px]">
+                <p className="text-white xl:text-gpgp-blue text-[15px] xl:text-[16px] uppercase leading-[22.126px] xl:leading-[23.602px] font-[be-vietnam-600] tracking-[4.125px] xl:tracking-[4.4px]">
                   <span className="">Take Part</span>
                 </p>
               </MyLink>

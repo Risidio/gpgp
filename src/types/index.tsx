@@ -10,3 +10,7 @@ export interface IContents {
   title: { text: string }[];
   image: IImage;
 }
+
+export interface IArtist{
+  classStyles:string;
+}

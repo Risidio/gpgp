@@ -26,14 +26,16 @@ const Exhibition = () => {
 
           {/* Exhibition Button */}
           <div className="flex flex-col justify-center items-center mt-[39px] xl:mt-0">
-            <MyLink to="" className="w-[187px]">
-              <p className="md:hidden px-[30px] py-[9px] font-[be-vietnam-bold] leading-[22.13px] tracking-[4.13px] uppercase text-gpgp-blue text-[15px] xl:text-[16px]">
-                Gallery
-              </p>
-              <p className="hidden md:block px-[30px] py-[9px] font-[be-vietnam-600] leading-[22.13px] tracking-[4.13px] uppercase text-gpgp-blue text-[15px] xl:text-[16px]">
-                See all
-              </p>
-            </MyLink>
+            
+            <MyLink
+                  to=""
+                  className="w-[189px] h-[40px] xl:w-[223px] xl:h-[63px] bg-white rounded-[2px] shrink-0"
+                >
+                  <p className="text-gpgp-blue text-center text-[15px] xl:text-[16px] uppercase font-[be-vietnam-700] leading-[22.126px] xl:leading-[23.602px] tracking-[4.125px] xl:tracking-[4.4px]">
+                    <span className="hidden xl:inline">See all</span>
+                    <span className="xl:hidden">Gallery</span>
+                  </p>
+                </MyLink>
           </div>
         </div>
       </section>
