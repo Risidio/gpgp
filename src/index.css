@@ -109,6 +109,6 @@ p {
 @font-face {
   font-family: be-vietnam-400;
   font-weight: 400;
-  src: url(../public/fonts/be-vietnam/BeVietnam-ExtraBold.ttf)
+  src: url(../public/fonts/be-vietnam/BeVietnam-Bold.ttf)
     format("truetype");
 }
