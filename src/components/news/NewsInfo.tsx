@@ -6,7 +6,7 @@ import MyLink from "../base/MyLink";
 
 const NewsInfo: React.FC<IArticleDataProps> = ({ contents, items }) => {
   return (
-    <div className="w-full flex justify-center sm:p-6 md:p-8 md:px-0 p-5">
+    <div className="w-full flex justify-center sm:p-6 md:p-8  p-5">
       <div className="grid sm:grid-cols-4 grid-cols-1 gap-x-6 sm:gap-x-20">
         <div className="col-span-3 sm:mr-4">
           <h1 className="sm:text-[1.6rem] xxxl:text-[2rem] xxxl:leading-[37px] text-lg font-bold tracking-[2px]">

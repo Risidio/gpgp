@@ -4,54 +4,51 @@ import Logo from "./Logo";
 import ContactInfo from "./footer/ContactInfo";
 import SocialMedia from "./footer/SocialMedia";
 import { twMerge } from "tailwind-merge";
-import { getFooterDetail, renderFooterColour } from "../libs/getFooterDetail";
+import { getFooterDetail } from "../libs/getFooterDetail";
 
 interface FooterProps {
   classes?: string;
 }
 
-const Footer = ({ classes = "bg-gpgp-blue xxxxl:max-w-[2560px] xxxxl:mx-auto" }: FooterProps) => {
+const Footer = ({
+  classes = "bg-gpgp-blue xxxxl:max-w-[2560px] xxxxl:mx-auto",
+}: FooterProps) => {
   const currentPath = useLocation().pathname;
 
   const footerStyles = getFooterDetail(currentPath) || null;
   const fontColor =
     footerStyles && footerStyles.fontColor ? footerStyles.fontColor : "white";
-  const fontColorMobile =
-    footerStyles && footerStyles.fontColorMobile
-      ? footerStyles.fontColorMobile
-      : "white";
 
+  // ${
+  //   footerStyles ? footerStyles!.style : classes
+  // }
   return (
     <footer
-      className={`xxxl:max-w-[1440px] mx-auto ${
-        footerStyles ? footerStyles!.style : classes
-      } border-t border-[white]`}
+      className={`xxxl:max-w-[1440px] mx-auto
+       border-t border-[white]`}
     >
-      <Container
-        hasSection={false}
-        classes={twMerge(
-          "bg-gpgp-blue flex flex-col",
-          `${footerStyles ? footerStyles!.style : ""}`
-        )}
-      >
+      <Container hasSection={false} classes={"bg-gpgp-blue text-white"}>
         {/* Desktop-view */}
         <div className="w-full sm:flex sm:flex-col pt-16 hidden">
           <div className="w-full grid grid-cols-3 justify-between p-5">
-            <Logo className="flex justify-start items-start w-20 h-20" logo={"NewNavLogo.png"}/>
-            <SocialMedia color={`${fontColor ? fontColor : "bg-gpgp-blue"}`} />
-            <ContactInfo classes={fontColor} />
+            <Logo
+              className="flex justify-start items-start w-20 h-20"
+              logo={"NewNavLogo.png"}
+            />
+            <SocialMedia color={`white`} />
+            <ContactInfo classes={"text-white"} />
           </div>
 
           <div
             className={`w-full grid grid-cols-3 justify-between text-${fontColor} pt-10 pb-3`}
           >
-            <div className="text-right font-thin col-span-2 px-5 text-[0.9rem]">
+            <div className="text-right text-white font-thin col-span-2 px-5 text-[0.9rem]">
               2023 JohnDahlsen & Infinart All Rights Reserved - Designed by
               Risidio
             </div>
 
             <div
-              className={`grid grid-cols-2 gap-x-2 text-${fontColor} font-thin text-[0.9rem]`}
+              className={`grid grid-cols-2 gap-x-2 text-white font-thin text-[0.9rem]`}
             >
               <p>Privacy Policy</p>
               <p>Terms of Service</p>
@@ -64,10 +61,10 @@ const Footer = ({ classes = "bg-gpgp-blue xxxxl:max-w-[2560px] xxxxl:mx-auto" }:
           <div
             className={twMerge(
               "w-full grid grid-cols-2 justify-between items-start text-white",
-              fontColorMobile
+              "white"
             )}
           >
-            <SocialMedia color={fontColorMobile} />
+            <SocialMedia color={"white"} />
             <div className="flex flex-col items-end">
               <ul className="text-sm space-y-4 text-right">
                 <li>Sitemap</li>
@@ -84,7 +81,7 @@ const Footer = ({ classes = "bg-gpgp-blue xxxxl:max-w-[2560px] xxxxl:mx-auto" }:
             </div>
           </div>
           <div className="w-full text-center font-thin py-5 text-[0.9rem]">
-            <p className={`${renderFooterColour(currentPath)}`}>
+            <p className={`text-white`}>
               2023 John Dahlsen & Infinart All Rights Reserved Designed by
               Risidio
             </p>

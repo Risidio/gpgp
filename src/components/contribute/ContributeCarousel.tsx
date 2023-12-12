@@ -89,7 +89,7 @@ const ContributeCarousel = ({
                 className="p-9 md:p-7  object-contain"
               />
 
-              <div className="flex mt-3 flex-row">
+              <div className="flex mt-3 xsm:mb-2  flex-row">
                 <button
                   onClick={() => {
                     handleWaveChange();
@@ -98,7 +98,7 @@ const ContributeCarousel = ({
                     handleButtonClick1();
                   }}
                   disabled={button1Disabled}
-                  className="mr-2 mt-1 z-30"
+                  className="mr-2 mt-1  z-30"
                 >
                   <img src={DotTracker1} alt="0" />
                 </button>
@@ -111,7 +111,7 @@ const ContributeCarousel = ({
                     handleButtonClick2();
                   }}
                   disabled={button2Disabled}
-                  className="mt-1 z-30"
+                  className="mt-1  p-1 z-30"
                 >
                   <img src={DotTracker2} alt="0" />
                 </button>
@@ -122,7 +122,7 @@ const ContributeCarousel = ({
                   {Invitation[0].description?.head}
                 </h3>
 
-                <p className="font-[be-vietnam] text-center text-[16px] xl:text-[20px] xxxl:text-[25px] md:mb-4 leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] xsm:leading-[28px]  w-[105%] xl:w-[70%] lg:w-[75%] md:w-[82%] sm:w-[86%] xxsm:w-[108%]  mt-5 md:mt-12">
+                <p className="font-[be-vietnam] text-center text-[16px] xl:text-[18px] xxxl:text-[25px] md:mb-4 leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[34px] sm:leading-[30px] xsm:leading-[28px]  w-[105%] xl:w-[95%] lg:w-[75%] md:w-[82%] sm:w-[86%] xxsm:w-[108%]  mt-5 md:mt-12">
                   {Invitation[0].description?.body}
                 </p>
 
@@ -182,18 +182,18 @@ const ContributeCarousel = ({
                     handleButtonClick2();
                   }}
                   disabled={button2Disabled}
-                  className=" z-30"
+                  className="p-1 z-30"
                 >
                   <img src={DotTracker2} alt="0" />
                 </button>
               </div>
 
               <div className="text-center flex flex-col items-center mt-4 xl:mt-12 lg:mt-10 md:mt-8 sm:mt-6 text-white w-[95%] xl:w-[50%] lg:w-[69%] md:w-[75%]">
-                <h3 className="text-[1.1rem] sm:text-[1.3rem] lg:text-[1.5rem] xl:text-[2rem] font-semibold mb-2">
+                <h3 className="text-[1.1rem] sm:text-[1.3rem] lg:text-[1.5rem] xl:text-[1.6rem] font-semibold mb-2">
                   {Invitation[1].description?.head}
                 </h3>
 
-                <p className="text-center  text-[0.8rem] md:text-[1rem] md:mb-4  leading-[30px]  md:leading-[35px]  w-[90%] xl:w-[70%] xl:leading-7 xxl:leading-[1.85rem] xxl:text-[1.3rem]  lg:w-[75%] md:w-[82%] sm:w-[86%] mt-5 md:mt-12">
+                <p className="text-center  text-[0.8rem] md:text-[1rem] md:mb-4  leading-[30px]  md:leading-[35px]  w-[90%] xl:w-[95%] xl:leading-7 xxl:leading-[1.85rem] xxl:text-[1.3rem]  lg:w-[75%] md:w-[82%] sm:w-[86%] mt-5 md:mt-12">
                   {Invitation[1].description?.body}
                 </p>
 

@@ -135,7 +135,7 @@ const NavBar = () => {
         </Link>
         {isOpenMenu && (
           <div
-            className={`bg-gpgp-blue h-screen sm:hidden z-50 text-white mt-[60px] fixed w-full left-0 top-0 transition-all ease-in duration-500 flex flex-col px-7 ${
+            className={`bg-gpgp-blue h-screen sm:hidden !z-[172] text-white mt-[60px] fixed w-full left-0 top-0 transition-all ease-in duration-500 flex flex-col px-7 ${
               isOpenMenu ? styles.menuContainer : ""
             } ${isOpenMenu && styles.slideDown} ${
               isAnimating && styles.slideUp

@@ -69,16 +69,22 @@ export default function InvitationForm({
             WavePattern === "Contact" ? "pt-2" : "pt-[250px] xl:pt[650px]"
           }  `}
         >
-          <div className={`px-16 xl:pr-28 flex flex-col items-center   -mb-10`}>
+          <div
+            className={`px-10 sm:px-16 xl:pr-28 flex flex-col items-center   -mb-10`}
+          >
             <h3 className="uppercase text-[1.2rem] lg:text-[1.4rem] text-center xxxl:text-[1.6rem] mb-4 font-bold tracking-[3px]">
               COntact Us
             </h3>
 
             <h2 className="text-[1.5rem] sm:text-[2rem] text-center  md:[2.5rem] lg:text-[3rem] xxl:text-[3.5rem] font-semibold mb-3">
-              We’d love to hear from <span className="underline text-[#D9BF4F]"> you</span>
+              We’d love to hear from{" "}
+              <span className="underline text-[#D9BF4F]"> you</span>
             </h2>
 
-            <p className="mb-[2rem] font-semibold text-center tracking-[2px] xxxl:text-[1.5rem]">Reach out to us for further discussions about sponsorship and partnership opportunities</p>
+            <p className=" sm:mb-[2rem] mb-2 mt-2 font-semibold text-center tracking-[1px] sm:tracking-[2px] w-[120%] sm:w-full text-[0.8rem] sm:text-[1rem] xxxl:text-[1.5rem]">
+              Reach out to us for further discussions about sponsorship and
+              partnership opportunities
+            </p>
 
             <form
               className={`flex flex-wrap  rounded-[33px] sm:px-5 sm:mt-[-32px] pt-10 xl:px-7 pb-4 -mx-2`}
@@ -91,7 +97,7 @@ export default function InvitationForm({
                   >
                     <label
                       htmlFor={field.id}
-                      className={`block font-semibold xxxl:text-[1.5rem] text-black`}
+                      className={`block font-semibold xxxl:text-[1.5rem] text-gpgp-blue`}
                     >
                       {field.label}
                     </label>
@@ -110,7 +116,7 @@ export default function InvitationForm({
                   <div key={field.id} className="w-full p-2">
                     <label
                       htmlFor={field.id}
-                      className={`block font-semibold xxxl:text-[1.5rem] text-black`}
+                      className={`block font-semibold xxxl:text-[1.5rem] text-gpgp-blue`}
                     >
                       {field.label}
                     </label>
@@ -144,7 +150,7 @@ export default function InvitationForm({
               )}
             </form>
             <button
-              className={`m-10 border w-[150px]  xxxl:w-[210px] h-[50px] xxxl:h-[65px]  bg-gpgp-blue text-white font-semibold text-[1.3rem] xxxl:text-[2rem] tracking-[3px] ${Classes?.FormBtn}`}
+              className={`m-10 border w-[200px] sm:w-[150px]  xxxl:w-[210px] h-[45px] sm:h-[50px] xxxl:h-[65px]  bg-gpgp-blue text-white font-semibold text-[1.3rem] xxxl:text-[2rem] tracking-[3px] rounded-[3px] ${Classes?.FormBtn}`}
             >
               Send
             </button>
