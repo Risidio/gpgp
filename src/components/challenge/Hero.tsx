@@ -8,13 +8,14 @@ const Hero = () => {
             Plastic revolutions
           </h1>
         </div> */}
-        <div className="flex flex-col md:flex-row w-full gap-0 md:gap-[60px] lg:gap-[100px] px-[20px] lg:px-[251px] mt-[60.7px] lg:mt[0px]">
-          <div className="w-full md:w-auto px-[4px] order-first md:order-last">
+        <div className="flex flex-col md:flex-row md:w-[1440px] gap-0 md:gap-[60px] lg:gap-[100px] mx-auto justify-center  mt-[60.7px] lg:mt[0px]">
+          <div className="w-full md:w-[398px] lg:w-[398px] order-first md:order-last mt-[25px]">
             <div className="w-full flex flex-col h-[90px] md:h-[unset] uppercase font-[be-vietnam-700] md:font-[be-vietnam-800]  md:leading-[70px] lg:leading-[100px]">
-              <div className="text-[32px] md:text-[50px] lg:text-[80px] text-center md:text-left lg:pl-[80px] text-[#0A2471] leading-[140%] ">
+              {/* <div className="text-[32px] md:text-[50px] lg:text-[80px] text-center md:text-left lg:pl-[80px] text-[#0A2471] leading-[140%] "> */}
+              <div className="text-[32px] md:text-[50px] lg:text-[80px] text-center md:text-left text-[#0A2471] leading-[140%] md:mt-[30px]">
                 The art <span className="challenge-hero">inspiring</span>{" "}
               </div>
-              <div className="text-[32px] md:text-[50px] lg:text-[80px] text-center md:text-left lg:pl-[80px] text-[#0A2471]">
+              <div className="text-[32px] md:text-[50px] lg:text-[80px] text-center md:text-left text-[#0A2471]">
                 <span className="hidden md:block">global</span>{" "}
                 <span className="md:hidden challenge-hero">global</span>{" "}
                 <span className="hidden md:block challenge-hero">action</span>
@@ -23,7 +24,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="w-full md:w-1/2 md:block flex flex-col justify-center items-center order-last md:order-first mt-[17px]">
+          <div className="w-[293px] md:w-[413px]  md:block mx-auto md:mx-[unset] flex flex-col justify-center items-center order-last md:order-first mt-[17px] ">
             {/* <div className="px-[68px] md:px-[200px] lg:px-[250px] xl:px-[400px] xxxl:px-[600px] xxxxl:px-[700px] pt-[17px]"> */}
             <div className="py-[17px]">
               <p className="font-[be-vietnam-semibold] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400] text-center md:text-left">
@@ -56,8 +57,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="w-[100%] mt-[29px] bg-h-[100%] bg-w-[100%] bg-challenge-mobile-bg-wave md:bg-project-page-wave bg-no-repeat bg-no-repeat bg-cover pt-[132px] md:pt-[381px]">
-          <div className="w-full flex flex-col items-center px-[23px] md:px-[150px] xxxl:px-[350px] xxxxl:px-[600px] pt-[35px] md:pt-[21px] xxl:pt-[100px] xxxl:pt-[250px] xxxxl:pt-[350px] pb-[66px] md:pb-[196px]">
+        <div className="w-[100%] mt-[29px] bg-h-[100%] bg-w-[100%] bg-challenge-mobile-bg-wave  bg-no-repeat bg-no-repeat bg-cover pt-[132px] md:pt-[381px]">
+          <div className="w-[293px] md:w-[542px] flex flex-col items-center mx-[auto] pt-[35px] md:pt-[21px] xxl:pt-[100px] xxxl:pt-[250px] xxxxl:pt-[350px] pb-[66px] md:pb-[196px]">
             <h1 className="md:block uppercase text-[white] md:mt-[100px] text-center font-[be-vietnam-700] text-[20px] md:text-[36px] font-bold leading-[35.40px] md:leading-[147.51%] md:normal-case">
               Plastic revolution
             </h1>
@@ -93,3 +94,7 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
+
+
