@@ -18,7 +18,7 @@ const Container = ({
     <>
     {hasSection
         ? (
-           <section className={twMerge("bg-white", sectionClass)}>
+           <section className={"bg-gpgp-blue"}>
                 <div className={`max-w-7xl flex justify-center mx-auto ${classes}`}>
                     {children}
                  </div>

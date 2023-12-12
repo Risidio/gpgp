@@ -25,7 +25,7 @@ const Footer = ({
   return (
     <footer
       className={`xxxl:max-w-[1440px] mx-auto
-       border-t border-[white]`}
+       border-t bg-gpgp-blue`}
     >
       <Container hasSection={false} classes={"bg-gpgp-blue text-white"}>
         {/* Desktop-view */}
@@ -55,6 +55,15 @@ const Footer = ({
             </div>
           </div>
         </div>
+
+
+
+
+
+
+
+
+
 
         {/* Mobile-view */}
         <div className="w-full sm:hidden flex flex-col items-center pt-16 px-5">
