@@ -21,7 +21,7 @@ const Hero = () => {
               <img
                 src={gpgpMapImage}
                 alt="GPGP Map"
-                className="w-[312.584px] xl:w-[575.035px] xl:h-[341.804px] h-[185.802px] flex-shrink-0"
+                className="w-[312.584px] xl:w-[575.035px] xl:h-auto h-auto flex-shrink-0"
               />
             </div>
           </div>
@@ -31,7 +31,7 @@ const Hero = () => {
           <div className="pt-[31.33px] xl:pt-0 xl:w-auto xl:ml-[49.23px]">
             {/* Container */}
             <div className="flex flex-col text-center xl:text-left xl:w-[584px]">
-              <h3 className="hidden xl:block font-[be-vietnam-600] text-[20px] leading-[29.502px] tracking-[3px] uppercase">
+              <h3 className="hidden xl:block font-[be-vietnam-normal-600] text-[20px] leading-[29.502px] tracking-[3px] uppercase">
                 The Great Pacific Garbage Patch | GPGP
               </h3>
               <div className="m-0 p-0 w-[371px] xl:mt-[10px] xl:w-[441.693px] mx-auto xl:mx-0 leading-[28.8px] xl:leading-[57.6px] tracking-[1.2px]">
@@ -47,7 +47,7 @@ const Hero = () => {
                 </h3>
                 
               </div>
-              <h3 className="capitalize mt-[25px] xl:mt-[17px] text-[#050B1D] text-[16px] xl:text-[20px] font-[be-vietnam-600] leading-[19.2px] xl:leading-[29.502px] tracking-[0.8px]">
+              <h3 className="capitalize mt-[25px] xl:mt-[17px] text-[#050B1D] text-[16px] xl:text-[20px] font-[be-vietnam-normal-400] leading-[19.2px] xl:leading-[29.502px] tracking-[0.8px]">
                 The art inspiring global action
               </h3>
               {/* Button Container */}

@@ -28,7 +28,7 @@ const Exhibition = () => {
           <div className="flex flex-col justify-center items-center mt-[39px] xl:mt-0">
             
             <MyLink
-                  to=""
+                  to="/gallery"
                   className="w-[189px] h-[40px] xl:w-[223px] xl:h-[63px] bg-white rounded-[2px] shrink-0"
                 >
                   <p className="text-gpgp-blue text-center text-[15px] xl:text-[16px] uppercase font-[be-vietnam-700] leading-[22.126px] xl:leading-[23.602px] tracking-[4.125px] xl:tracking-[4.4px]">

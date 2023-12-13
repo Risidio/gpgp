@@ -8,7 +8,7 @@ import ContactUs from "../components/ContactUs";
 const Home = () => {
   return (
     <>
-      <div className="xxxl:max-w-[1440px] mx-auto">
+      <div className="">
         <Hero />
 
         <Exhibition />
@@ -17,7 +17,7 @@ const Home = () => {
 
         <HomeContent />
 
-        <section className="xl:mt-[250px]">
+        <section className="mt-0 xl:mt-[250px]">
           <Artist />
         </section>
 

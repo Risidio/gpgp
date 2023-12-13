@@ -70,7 +70,7 @@ const HomeContent = () => {
               <img
                 src={ProjectWebImg}
                 alt="GPGP Blue"
-                className="hidden xl:block w-[190px] h-[190px] lg:w-[582px] lg:h-[582px] lg:rounded-[20px]"
+                className="hidden xl:block w-[190px] h-[190px] lg:w-[582px] lg:h-auto lg:rounded-[20px]"
               />
             </div>
           </div>
@@ -124,7 +124,7 @@ const HomeContent = () => {
               <img
                 src={ChallengeWebImg}
                 alt="Challenge"
-                className="border-[3px] border-solid border-gpgp-blue hidden xl:block w-[190px] h-[190px] lg:w-[585px] lg:h-[439px] lg:rounded-[20px]"
+                className="border-[3px] border-solid border-gpgp-blue hidden xl:block w-[190px] h-auto lg:w-[585px] lg:h-auto lg:rounded-[20px]"
               />
             </div>
           </div>
@@ -171,7 +171,7 @@ const HomeContent = () => {
               <img
                 src={InvitationImg}
                 alt="GPGP Map"
-                className="w-[293px] h-[169px] lg:w-[583.489px] lg:h-[335.281px]"
+                className="w-[293px] h-[169px] lg:w-[583.489px] lg:h-auto"
               />
             </div>
           </div>

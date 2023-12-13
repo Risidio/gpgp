@@ -41,6 +41,18 @@
   }
 }
 
+.bold-400{
+  font-weight: 400;
+}
+
+.bold-600{
+  font-weight: 600;
+}
+
+.bold-700{
+  font-weight: 700;
+}
+
 /* Regular */
 @font-face {
   font-family: be-vietnam;
@@ -96,19 +108,30 @@ p {
   color: transparent;
 }
 
-
-
 /* Extra-Bold */
 @font-face {
   font-family: be-vietnam-600;
-  font-weight: 900;
+  font-weight: 600;
   src: url(../public/fonts/be-vietnam/BeVietnam-ExtraBold.ttf)
     format("truetype");
 }
+
 
 @font-face {
   font-family: be-vietnam-400;
   font-weight: 400;
   src: url(../public/fonts/be-vietnam/BeVietnam-Bold.ttf)
     format("truetype");
+}
+
+@font-face {
+  font-family: be-vietnam-normal-600;
+  src: url(../public/fonts/be-vietnam/BeVietnam-Regular.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: be-vietnam-normal-400;
+  src: url(../public/fonts/be-vietnam/BeVietnam-Regular.ttf) format("truetype");
+  font-weight: 400;
 }
