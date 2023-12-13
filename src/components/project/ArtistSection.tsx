@@ -4,51 +4,51 @@ import Artist from "../home/Artist";
 const ArtistSection = () => {
   return (
     <>
-      <div className="hidden xxl:block w-[100%] h-[100%] pt-[20px] md:pt-[70px] xxl:mt-[50px]">
-        {/* Contents */}
-        <div className="w-[100%] grid xxl:grid-cols-2 px-[40px] sm:px-[65px] py-[30px] md:pt-[55px] xxxl:px-[300px]">
-          {/* Text */}
-          <div className="order-2 xxl:order-2 xxxxl:flex xxxxl:flex-col xxxxl:justify-center">
-            <div className="hidden xxl:block">
-              <h1 className="text-[16px] md:mt-[64px] leading-[48px] text-xl font-[be-vietnam-semibold] md:text-[40px] md:leading-[48px]">
-                The Artist
-              </h1>
-            </div>
-            <div className="flex flex-col w-[100%] gap-y-[30px] md:py-[50px] md:w-[585px] xxl:w-full md:mx-auto xxl:mx-0">
-              <p className="font-[be-vietnam] text-center text-[16px] xl:text-[20px] xxl:text-left xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
-                <b>Dr. John Dahlsen</b> stands as a globally recognised figure
-                in the realm of environmental artistry and scholarly authorship.
-              </p>
-
-              <p className="font-[be-vietnam] text-justified hidden md:block text-center text-[16px] xl:text-[20px] xxl:text-left xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
-                His accolades encompass prestigious distinctions such as the
-                2000 Wynne Prize. His artistic oeuvre prominently revolves
-                around the thematic resonance of oceanic detritus, particularly
-                plastic waste.
-              </p>
-
-              <p className="font-[be-vietnam] text-justified hidden md:block text-center text-[16px] xl:text-[20px] xxl:text-left xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
-                Through adroitly controlling discarded marine materials, John
-                Dahlsen crafts visually captivating compositions imbued with
-                profound commentary on the pervasive concern of plastic
-                pollution, invoking notions of equilibrium and harmony.
-              </p>
-            </div>
+      <section className="hidden xl:block xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] xl:mt-[258px]">
+        {/* Image Column */}
+        <div className="xl:order-1 flex flex-col xl:justify-center">
+          {/* Home header Title */}
+          <div className="xl:hidden xl:w-0 xl:h-0 text-[#050B1D] uppercase text-[16px] font-[be-vietnam-600] leading-[48px] tracking-[0.32px] text-center">
+            <h1>The Artist</h1>
           </div>
+
           {/* Image */}
-          <div className="flex flex-col justify-center items-center order-1 h-[196px] md:h-[438px] xxl:h-[100%] md:px-[0px] md:w-[100%] md:h-[100%] xxl:order-1 mb-[30px] md:mb-0 xl:items-start">
-            <div className="">
-              <img
-                className="w-[585px] md:block xxxxl:w-[882px] xxxxl:h-[530px]"
-                src={JD}
-                alt={"JD"}
-              />
-            </div>
+          <div className="">
+            <img
+              src={JD}
+              alt="John Dahlsen"
+              className="w-[293px] xl:ml-[-35px] xl:w-[579px] h-auto xl:rounded-[20px] mt-[36px] xl:mt-0"
+            />
           </div>
         </div>
-      </div>
 
-      <div className="block xxl:hidden">
+        {/* Content Column */}
+        <div className="mx-auto xl:mx-0 xl:ml-[50px] xxl:ml-[30px] text-center xl:text-left xl:flex xl:flex-col w-[293px] xl:w-full xl:order-2">
+          <h1 className="hidden xl:block font-[be-vietnam-600] text-[#050B1D] text-[40px] leading-[48px] tracking-[0.8px]">
+            The Artist
+          </h1>
+          <div className="xl:w-[500px] xxl:w-[560px]">
+            <p className="text-[15px] xl:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[30px] tracking-[1px] mt-[33px] xl:mt-[67px]">
+              <b>Dr. John Dahlsen</b> stands as a globally recognised figure in
+              the realm of environmental artistry and scholarly authorship.
+            </p>
+            <p className="hidden xl:block mt-[50px] text-[15px] xl:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[30px] font-[be-vietnam] bold">
+              His accolades encompass prestigious distinctions such as the 2000
+              Wynne Prize. His artistic oeuvre prominently revolves around the
+              thematic resonance of oceanic detritus, particularly plastic
+              waste.
+            </p>
+            <p className="hidden xl:block mt-[50px] text-[15px] xl:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[30px] font-[be-vietnam] bold">
+              Through adroitly controlling discarded marine materials, John
+              Dahlsen crafts visually captivating compositions imbued with
+              profound commentary on the pervasive concern of plastic pollution,
+              invoking notions of equilibrium and harmony.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className="block xl:hidden mt-[118px]">
         <Artist />
       </div>
     </>

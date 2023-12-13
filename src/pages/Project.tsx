@@ -5,39 +5,24 @@ import GpgpSection from "../components/project/GpgpSection";
 import JoinUs from "../components/project/JoinUs";
 import { useSinglePrismicDocument } from "@prismicio/react";
 import prismicDocumentTypes from "../utility/prismicDocumentTypes";
+import Exhibition from "../components/project/Exhibition";
 
 const Project = () => {
   const [document] = useSinglePrismicDocument(prismicDocumentTypes.project);
   return (
     <>
-      <div className="xxxxl:max-w-[2560px] xxxxl:mx-auto">
-        {/* <Container>
-          <ProjectHero contents={document?.data["body"][0].primary} />
-        </Container> */}
+      <div className="">
+        <GpgpSection contents={document?.data["body"][2].primary} />
 
-       
+        <Attention contents={document?.data["body"][3].primary} />
 
-        <section>
-          <GpgpSection contents={document?.data["body"][2].primary} />
-        </section>
+        <Exhibition contents={document?.data["body"][4].primary} />
 
-        <section>
-          <Attention contents={document?.data["body"][3].primary} />
-        </section>
+        <ArtistSection />
 
-        <section>
-          <ArtistSection />
-        </section>
+        <JoinUs contents={document?.data["body"][6].primary} />
 
-        <section>
-          <JoinUs contents={document?.data["body"][6].primary} />
-        </section>
-
-         <section>
-          <About contents={document?.data["body"][1].primary} />
-        </section>
-
-        
+        <About contents={document?.data["body"][1].primary} />
       </div>
     </>
   );
