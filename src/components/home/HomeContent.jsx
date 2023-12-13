@@ -52,7 +52,7 @@ const HomeContent = () => {
       {/* <ContentManage contents={contents} /> */}
       <section className="">
         {/* First Content Container */}
-        <div className="flex flex-col lg:flex-row pt-[50px] xl:pt-0 xl:mt-[293px]">
+        <div className="flex flex-col lg:flex-row mt-[127px] xl:mt-[293px]">
           {/* First Column */}
           <div className="flex flex-col gap-y-[32px] lg:w-full">
             {/* Header */}
@@ -106,7 +106,7 @@ const HomeContent = () => {
         </div>
 
         {/* Second Content Container */}
-        <div className="flex flex-col lg:flex-row-reverse pt-[50px] xl:pt-0 xl:mt-[293px]">
+        <div className="flex flex-col lg:flex-row-reverse mt-[127px] xl:mt-[293px]">
           {/* First Column */}
           <div className="flex flex-col gap-y-[32px] lg:w-full">
             {/* Header */}
@@ -158,7 +158,7 @@ const HomeContent = () => {
         </div>
 
         {/* Third Content Container */}
-        <div className="flex flex-col lg:flex-row mb-[50px] xl:mb-0 pt-[50px] xl:pt-0 xl:mt-[293px]">
+        <div className="flex flex-col lg:flex-row mb-[50px] xl:mb-0 mt-[127px] xl:mt-[293px]">
           {/* First Column */}
           <div className="flex flex-col gap-y-[32px] lg:w-full">
             {/* Header */}

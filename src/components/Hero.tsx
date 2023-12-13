@@ -4,7 +4,7 @@ import gpgpMapImage from "../assets/images/gpgp-map-mobile.png";
 const Hero = () => {
   return (
     <>
-      <section className="pt-[48px] pb-[35px]">
+      <section className="pt-[48px]">
         {/* Container */}
         <div className="flex flex-col xl:flex-row xl:pl-[68px] ">
           {/* First Column */}
