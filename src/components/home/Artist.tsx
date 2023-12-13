@@ -6,7 +6,7 @@ const Artist = ({ ...props }) => {
     <div
       className={`flex flex-col justify-center items-center w-[289px] xl:w-[522px] mx-auto`}
     >
-      <div className="p-0 m-0 bg-[yellow]">
+      <div className="p-0 m-0">
         <img
           src={JDFrame}
           alt="John Dahlsen"
