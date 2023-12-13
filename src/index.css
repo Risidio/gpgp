@@ -12,6 +12,10 @@
   background: url('./assets/images/gpgp-map-mobile.png'), lightgray 50% / cover no-repeat;
 }
 
+.action-header::before{
+  content: "\a";
+}
+
 .header-text-stroke{
   -webkit-text-stroke: 1px #0A2471;
 }

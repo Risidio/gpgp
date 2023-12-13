@@ -179,7 +179,7 @@ const HomeContent = () => {
           {/* Second Column */}
           <div className="mt-[29px] lg:mt-0 lg:w-full flex flex-col justify-center items-center xl:items-start xl:pl-[121px]">
             <div className=" flex flex-col gap-y-[59px]">
-              <h3 className="hidden xl:block text-gpgp-black font-[be-vietnam-600] text-[40px] leading-[48px] tracking-[-0.8px]">
+              <h3 className="hidden xl:block text-gpgp-black font-[be-vietnam-600] text-[40px] leading-[48px] tracking-[-0.8px] uppercase">
                 The Invitation
               </h3>
 

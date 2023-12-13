@@ -31,7 +31,7 @@ module.exports = {
       },
       colors: {
         "gpgp-blue": "#0A2471",
-        "gpgp-black":"#050B1D"
+        "gpgp-black": "#050B1D",
       },
       backgroundImage: {
         "hero-back": "url('./assets/images/gpgp-map.png')",
@@ -44,6 +44,10 @@ module.exports = {
           "url('./assets/svg/challengewebwaveheader.svg')",
         "challenge-mobile-bg-wave":
           "url('./assets/svg/challengemobilesvg.svg')",
+          "challenge-plastic-rev-wave":
+          "url('./assets/svg/plasticrevolution.svg')",
+          "challenge-plastic-rev-mobile-wave":
+          "url('./assets/svg/plasticrevolutionmobile.svg')",
         "blue-plastic-bag": "url('./assets/images/BluePlasticBag.jpg')",
         "flat-lay-assortment":
           "url('./assets/images/flat-lay-assortment-different-colored-plastic-bags.jpg')",
@@ -67,23 +71,22 @@ module.exports = {
         "news-background-wave": "url('./assets/svg/newswave.svg')",
       },
       fontFamily: {
-        'BeVietnam': ['"Be Vietnam"', 'sans-serif'],
+        BeVietnam: ['"Be Vietnam"', "sans-serif"],
       },
       fontWeight: {
-        '700': 700,
+        700: 700,
       },
     },
   },
   plugins: [
-    function({addUtilities}){
-      
+    function ({ addUtilities }) {
       const boxShadows = {
-        '.gpgp-home-map-shadow':{
-          'box-shadow':'0px 0px 26.7px 0px rgba(0, 0, 0, 0.16) inset'
-        }
+        ".gpgp-home-map-shadow": {
+          "box-shadow": "0px 0px 26.7px 0px rgba(0, 0, 0, 0.16) inset",
+        },
       };
 
-      addUtilities(boxShadows,['responsive', 'hover']);
+      addUtilities(boxShadows, ["responsive", "hover"]);
     }
   ],
 };

@@ -1,7 +1,5 @@
 import GalleryImage from "../../assets/images/gallery_image.jpg";
-import GalleryImageWeb from "../../assets/images/gallery_image_web.jpg";
 import { IExhibitionSectionProps } from "../../types/project";
-import NftCarousel from "../NftCarousel";
 import MyLink from "../base/MyLink";
 
 const Exhibition = ({ contents }: IExhibitionSectionProps) => {
