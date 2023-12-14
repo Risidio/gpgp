@@ -42,11 +42,14 @@ module.exports = {
         "project-artist-web-back": "url('./assets/images/JD2.jpg')",
         "challenge-web-wave-header":
           "url('./assets/svg/challengewebwaveheader.svg')",
+        "contribute-web-wave": "url('./assets/svg/contributewebwave.svg')",
+        "contribute-mobile-wave": "url('./assets/svg/contributemobilewave.svg')",
+        "contribute-sponsor-mobile-wave": "url('./assets/svg/contributesponsormobilewave.svg')",
         "challenge-mobile-bg-wave":
           "url('./assets/svg/challengemobilesvg.svg')",
-          "challenge-plastic-rev-wave":
+        "challenge-plastic-rev-wave":
           "url('./assets/svg/plasticrevolution.svg')",
-          "challenge-plastic-rev-mobile-wave":
+        "challenge-plastic-rev-mobile-wave":
           "url('./assets/svg/plasticrevolutionmobile.svg')",
         "blue-plastic-bag": "url('./assets/images/BluePlasticBag.jpg')",
         "flat-lay-assortment":
@@ -87,6 +90,6 @@ module.exports = {
       };
 
       addUtilities(boxShadows, ["responsive", "hover"]);
-    }
+    },
   ],
 };
