@@ -61,7 +61,7 @@ const HomeContent = () => {
             </h3>
 
             {/* Image */}
-            <div className="mx-auto xl:pl-[128px] bg-[yellow]">
+            <div className="mx-auto xl:pl-[128px]">
               <img
                 src={ProjectImg}
                 alt="GPGP Blue"

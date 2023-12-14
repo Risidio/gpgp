@@ -1,4 +1,4 @@
-import GalleryImage from "../../assets/images/gallery_image.jpg";
+import GalleryImage from "../../assets/images/gpgp_gallery_art.jpg";
 import { IExhibitionSectionProps } from "../../types/project";
 import MyLink from "../base/MyLink";
 
@@ -18,7 +18,7 @@ const Exhibition = ({ contents }: IExhibitionSectionProps) => {
             <img
               src={GalleryImage}
               alt="The Challenge"
-              className="w-[293px] xl:w-[585px] h-auto xl:rounded-[20px] mt-[36px] xl:mt-0"
+              className="w-[293px] xl:w-[585.281px] xl:h-[434px] h-auto xl:rounded-[20px] mt-[36px] xl:mt-0"
             />
           </div>
         </div>
