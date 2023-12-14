@@ -53,7 +53,7 @@ const JoinUs = ({ contents }: IJoinSectionProps) => {
               className="w-[104px] xl:w-[223px] h-[38px] xl:h-[63px] bg-white rounded-[2px] shrink-0"
             >
               <p className="text-gpgp-blue text-center text-[15px] xl:text-[16px] uppercase font-[be-vietnam-700] leading-[normal] xl:leading-[23.602px] xl:tracking-[4.4px] tracking-[4.125px]">
-                Submit <span className="hidden md:inline">work</span>
+                Submit <span className="hidden xl:inline">work</span>
               </p>
             </MyLink>
             <MyLink
