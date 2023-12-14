@@ -24,7 +24,7 @@ export default function ContributeHero({
   },
 }: ContributeHeroProps) {
   return (
-    <div className={`w-[100%] flex justify-center items-center px-8 sm:p-16 relative mb-[-150px] ${container}`}>
+    <div className={`w-[100%] flex justify-center items-center px-8 sm:p-16 relative ${container}`}>
       <div className={`flex flex-col justify-center items-center text-center w-[80%] text-black min-h-[500px]`}>
         <img
           src={require("../../assets/images/contributeHero.png")}
