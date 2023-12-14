@@ -6,71 +6,67 @@ import { IJoinSectionProps } from "../../types/project";
 const JoinUs = ({ contents }: IJoinSectionProps) => {
   return (
     <>
-      <div className="w-[100%] h-[100%] pt-[20px] md:pt-[80px] xxl:mt-[50px]">
-        <h1 className="xxl:hidden text-center leading-[48px] text-[16px] uppercase font-[be-vietnam-xbold] font-[600] md:font-[600] md:text-[40px]">
-          {contents?.title[0].text}
-        </h1>
-        {/* Contents */}
-        <div className="w-[100%] grid xxl:grid-cols-2 px-[40px] sm:px-[65px] py-[30px] xxxxl:py-[50px] md:pt-[55px] xxxl:px-[300px]">
-          {/* Text */}
-          <div className="order-2 xxl:order-1 xxxxl:flex xxxxl:flex-col xxxxl:justify-center">
-            <div className="hidden xxl:block">
-              <h1 className="text-[16px] md:mt-[64px] leading-[48px] text-xl font-[be-vietnam-semibold] md:text-[40px] md:leading-[48px]">
-                {contents?.title[0].text}
-              </h1>
-            </div>
-            {/* Content */}
-            <div className="flex flex-col w-[100%] gap-y-[30px] md:py-[50px] md:w-[585px] xxl:pt-[67px] xxl:pb-[74px] xxl:w-full md:mx-auto xxl:mx-0">
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: contents?.firstparagraph[0].text,
-                }}
-                className="font-[be-vietnam] text-center text-[16px] xl:text-[20px] xxl:text-left xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]"
-              ></p>
-
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: contents?.secondparagraph[0].text,
-                }}
-                className="font-[be-vietnam] text-justified hidden md:block text-center text-[16px] xl:text-[20px] xxl:text-left xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]"
-              ></p>
-
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: contents?.thirdparagraph[0].text,
-                }}
-                className="block md:hidden font-[be-vietnam] text-justified text-center text-[16px] xl:text-[20px] xxl:text-left xxxl:text-[25px] leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]"
-              ></p>
-            </div>
-            {/* Button */}
-            <div className="flex flex-row justify-center xxl:justify-start gap-x-[16px] mt-[33px]">
-              <MyLink to="" className="xxl:w-[300px]">
-                <p className="px-[17px] py-[11px] font-[be-vietnam-bold] uppercase text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400] leading-[22.126px] tracking-[4.125px]">
-                  Submit <span className="hidden md:inline">work</span>
-                </p>
-              </MyLink>
-              <MyLink to="" className="bg-gpgp-blue text-white xxl:w-[300px]">
-                <p className="px-[17px] py-[11px] font-[be-vietnam-bold] uppercase text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400] leading-[22.126px] tracking-[4.125px]">
-                  Invest
-                </p>
-              </MyLink>
-            </div>
+      <section className="xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] mt-[118px] xl:mt-[258px]">
+        {/* Image Column */}
+        <div className="xl:order-2 flex flex-col items-center xl:justify-center">
+          {/* Home header Title */}
+          <div className="xl:hidden xl:w-0 xl:h-0 text-[#050B1D] uppercase text-[16px] font-[be-vietnam-600] leading-[48px] tracking-[0.32px] text-center">
+            <h1>{contents?.title[0].text}</h1>
           </div>
+
           {/* Image */}
-          <div className="flex flex-col justify-center items-center order-1 h-[196px] md:h-[438px] xxl:h-[100%] md:px-[0px] md:w-[100%] md:h-[100%] xxl:order-2 mb-[30px] md:mb-0 xxxl:items-end">
+          <div className="">
             <img
-              className="hidden rounded-[20px] w-[585px] md:block xxxxl:w-[882px] xxxxl:h-[530px]"
               src={contents?.image.url}
               alt={contents?.image.alt}
-            />
-            <img
-              className="w-[293px] h-[100%] md:hidden"
-              src={contents?.image.url}
-              alt={contents?.image.alt}
+              className="w-[293px] xl:w-[585px] h-auto xl:rounded-[20px] mt-[36px] xl:mt-0"
             />
           </div>
         </div>
-      </div>
+
+        {/* Content Column */}
+        <div className="mx-auto xl:mx-0 text-center xl:text-left w-[293px] xl:w-[522px]">
+          <h1 className="hidden xl:block font-[be-vietnam-600] text-[#050B1D] text-[40px] leading-[48px] tracking-[0.8px]">
+            {contents?.title[0].text}
+          </h1>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: contents?.firstparagraph[0].text,
+            }}
+            className="text-[15px] xl:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[30px] tracking-[1px] mt-[33px] xl:mt-[67px]"
+          ></p>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: contents?.secondparagraph[0].text,
+            }}
+            className="hidden xl:block mt-[50px] text-[15px] xl:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[30px] font-[be-vietnam] bold"
+          ></p>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: contents?.thirdparagraph[0].text,
+            }}
+            className="hidden xl:block mt-[50px] text-[15px] xl:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[30px] font-[be-vietnam] bold"
+          ></p>
+          <div className="flex flex-row justify-center xl:justify-start gap-x-[16px] xl:gap-x-[18.1px] mt-[33px] xl:mt-[65px]">
+            <MyLink
+              to=""
+              className="w-[104px] xl:w-[223px] h-[38px] xl:h-[63px] bg-white rounded-[2px] shrink-0"
+            >
+              <p className="text-gpgp-blue text-center text-[15px] xl:text-[16px] uppercase font-[be-vietnam-700] leading-[normal] xl:leading-[23.602px] xl:tracking-[4.4px] tracking-[4.125px]">
+                Submit <span className="hidden md:inline">work</span>
+              </p>
+            </MyLink>
+            <MyLink
+              to=""
+              className="w-[104px] xl:w-[223px] h-[38px] xl:h-[63px] bg-gpgp-blue rounded-[2px] shrink-0"
+            >
+              <p className="text-white text-center text-[15px] xl:text-[16px] uppercase font-[be-vietnam-700] leading-[normal] xl:leading-[23.602px] xl:tracking-[4.4px] tracking-[4.125px]">
+                Invest
+              </p>
+            </MyLink>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

@@ -52,7 +52,7 @@ const HomeContent = () => {
       {/* <ContentManage contents={contents} /> */}
       <section className="">
         {/* First Content Container */}
-        <div className="flex flex-col lg:flex-row pt-[50px] xl:pt-0 xl:mt-[293px]">
+        <div className="flex flex-col lg:flex-row mt-[127px] xl:mt-[293px]">
           {/* First Column */}
           <div className="flex flex-col gap-y-[32px] lg:w-full">
             {/* Header */}
@@ -70,7 +70,7 @@ const HomeContent = () => {
               <img
                 src={ProjectWebImg}
                 alt="GPGP Blue"
-                className="hidden xl:block w-[190px] h-[190px] lg:w-[582px] lg:h-[582px] lg:rounded-[20px]"
+                className="hidden xl:block w-[190px] h-[190px] lg:w-[582px] lg:h-auto lg:rounded-[20px]"
               />
             </div>
           </div>
@@ -106,7 +106,7 @@ const HomeContent = () => {
         </div>
 
         {/* Second Content Container */}
-        <div className="flex flex-col lg:flex-row-reverse pt-[50px] xl:pt-0 xl:mt-[293px]">
+        <div className="flex flex-col lg:flex-row-reverse mt-[127px] xl:mt-[293px]">
           {/* First Column */}
           <div className="flex flex-col gap-y-[32px] lg:w-full">
             {/* Header */}
@@ -124,7 +124,7 @@ const HomeContent = () => {
               <img
                 src={ChallengeWebImg}
                 alt="Challenge"
-                className="border-[3px] border-solid border-gpgp-blue hidden xl:block w-[190px] h-[190px] lg:w-[585px] lg:h-[439px] lg:rounded-[20px]"
+                className="border-[3px] border-solid border-gpgp-blue hidden xl:block w-[190px] h-auto lg:w-[585px] lg:h-auto lg:rounded-[20px]"
               />
             </div>
           </div>
@@ -158,7 +158,7 @@ const HomeContent = () => {
         </div>
 
         {/* Third Content Container */}
-        <div className="flex flex-col lg:flex-row mb-[50px] xl:mb-0 pt-[50px] xl:pt-0 xl:mt-[293px]">
+        <div className="flex flex-col lg:flex-row mb-[50px] xl:mb-0 mt-[127px] xl:mt-[293px]">
           {/* First Column */}
           <div className="flex flex-col gap-y-[32px] lg:w-full">
             {/* Header */}
@@ -171,7 +171,7 @@ const HomeContent = () => {
               <img
                 src={InvitationImg}
                 alt="GPGP Map"
-                className="w-[293px] h-[169px] lg:w-[583.489px] lg:h-[335.281px]"
+                className="w-[293px] h-[169px] lg:w-[583.489px] lg:h-auto"
               />
             </div>
           </div>
@@ -179,7 +179,7 @@ const HomeContent = () => {
           {/* Second Column */}
           <div className="mt-[29px] lg:mt-0 lg:w-full flex flex-col justify-center items-center xl:items-start xl:pl-[121px]">
             <div className=" flex flex-col gap-y-[59px]">
-              <h3 className="hidden xl:block text-gpgp-black font-[be-vietnam-600] text-[40px] leading-[48px] tracking-[-0.8px]">
+              <h3 className="hidden xl:block text-gpgp-black font-[be-vietnam-600] text-[40px] leading-[48px] tracking-[-0.8px] uppercase">
                 The Invitation
               </h3>
 

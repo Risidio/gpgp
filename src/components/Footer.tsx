@@ -24,8 +24,10 @@ const Footer = ({
   // }
   return (
     <footer
+
       className={`xxxl:max-w-[1440px] mx-auto
        border-t bg-gpgp-blue`}
+
     >
       <Container hasSection={false} classes={"bg-gpgp-blue text-white"}>
         {/* Desktop-view */}
