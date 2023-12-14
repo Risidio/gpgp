@@ -64,8 +64,8 @@ const ContributeCarousel = ({
 
   return (
     <div
-      className="relative  min-h-[906px]  xxsm:min-h-[850px]  xsm:min-h-[940px] sm:min-h-[1192px] md:min-h-[1360px] lg:min-h-[1652px] xl:min-h-[1780px]
-    xxl:min-h-[1890px] xxxl:min-h-[2000px] overflow-hidden"
+      className="relative  min-h-[906px]  xxsm:min-h-[850px]  xsm:min-h-[940px] sm:min-h-[1192px] md:min-h-[1300px] lg:min-h-[1552px] xl:min-h-[1675px]
+    xxl:min-h-[1845px] xxxl:min-h-[2000px] overflow-hidden"
     >
       <div className="w-full h-full relative">
         {/* Aritist Section */}
@@ -77,7 +77,7 @@ const ContributeCarousel = ({
         >
           <ContributeWave />
 
-          <div className="absolute top-[90px]  xxsm:top-[110px] xsm:top-[190px] sm:top-[300px] md:top-[370px] lg:top-[480px]  xl:top-[450px] xxl:top-[570px] xxxl:top-[700px] xxxxl:top-[820px] left-0  text-white min-h-150px  xl:p-[65px] w-full p-5 ">
+          <div className="absolute top-[90px]  xxsm:top-[110px] xsm:top-[190px] sm:top-[300px] md:top-[370px] lg:top-[480px]  xl:top-[450px] xxl:top-[500px] xxxl:top-[700px] xxxxl:top-[790px] left-0  text-white min-h-150px  xl:p-[65px] w-full p-5 ">
             <div className="flex flex-col items-center">
               <h1 className="font-[be-vietnam] text-[1.5rem] mb-0 xl:text-[2.3rem] xl:mb-9 lg:text-[2rem] lg:mb-8  md:text-[1.7rem] xxl:text-[3rem] uppercase text-white font-be-vietnam text-center tracking-wide">
                 {Invitation[0]?.heading}
@@ -149,7 +149,7 @@ const ContributeCarousel = ({
         >
           <SponsorWave />
 
-          <div className="absolute top-[120px]  xxsm:top-[150px] xsm:top-[170px] sm:top-[370px] md:top-[380px] lg:top-[500px]  xl:top-[610px] xxl:top-[570px] xxxl:top-[770px] xxxxl:top-[800px] left-0  text-white min-h-150px w-full p-5 ">
+          <div className="absolute top-[120px]  xxsm:top-[85px] xsm:top-[120px] sm:top-[370px] md:top-[270px] lg:top-[430px]  xl:top-[610px] xxl:top-[570px] xxxl:top-[770px] xxxxl:top-[800px] left-0  text-white min-h-150px w-full p-5 ">
             <div className="flex flex-col items-center">
               <h1 className="text-[1.5rem] mb-0 xl:text-[2.3rem] xl:mb-9 lg:text-[2rem] xxl:text-[3rem]  lg:mb-8 md:text-[1.7rem] text-white font-be-vietnam text-center tracking-wide">
                 {Invitation[1]?.heading}
