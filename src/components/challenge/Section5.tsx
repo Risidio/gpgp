@@ -1,16 +1,14 @@
 const Section5 = () => {
-    return ( 
-        <>
-            {/* <div className="w-[100%] md:h-[500px] flex flex-col items-center bg-blue-plastic-bag bg-cover bg-no-repeat md:bg-[length:100%_790px] backdrop-blur-md"> */}
-            <div className="w-[100%] h-[250px] md:h-[700px] flex flex-col items-center bg-project-page-wave bg-cover bg-no-repeat backdrop-blur-md">
-                {/* <div className="mt-[40px] md:mt-[52px] mb-[50px] text-center"> */}
-                <div className="my-auto  text-center">
-                    <h1 className="text-[#050B1D] text-center font-be-vietnam text-[15px] md:text-4xl font-bold leading-[147.51%] uppercase text-white lg:mt-[160px]">contribute to the global effort</h1>
-                    <h1 className="text-[#050B1D] text-center font-be-vietnam text-[15px] md:text-4xl font-bold leading-[147.51%] uppercase text-white lg:mt-4">Create a better world</h1>
-                </div>
-            </div>
-        </>
-     );
-}
- 
+  return (
+    <>
+      <div className="w-[100%] xxl:w-[100%] xxxxl:w-[100%] h-[100%] bg-project-page-wave bg-no-repeat bg-cover flex flex-col justify-center items-center pt-[100px] sm:pt-[190px] md:pt-[200px] md:pb-[100px] md:mt-[70px] xl:pt-[240px] xxl:pt-[300px] xxxl:pt-[440px] xxxxl:pt-[560px] pb-[30px] xxxl:pb-[200px] xxxxl:pb-[200px] font-[be-vietnam-bold]">
+        <h1 className="font-[be-vietnam] text-[16px] xxl:text-[36px] md:font-[700] uppercase text-white text-center">
+          contribute to the global effort <br />
+          Create a better world
+        </h1>
+      </div>
+    </>
+  );
+};
+
 export default Section5;

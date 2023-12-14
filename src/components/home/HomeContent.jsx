@@ -2,7 +2,7 @@ import ProjectImg from "../../assets/images/project.png";
 import ProjectWebImg from "../../assets/images/projectweb.jpg";
 import ChallengeImg from "../../assets/images/challenge.png";
 import ChallengeWebImg from "../../assets/images/challenge.jpg";
-import InvitationImg from "../../assets/images/gpgp-tile.png";
+import InvitationImg from "../../assets/images/gpgp-tile-home.png";
 import MyLink from "../base/MyLink";
 
 // const contents = [
@@ -61,7 +61,7 @@ const HomeContent = () => {
             </h3>
 
             {/* Image */}
-            <div className="mx-auto xl:pl-[128px]">
+            <div className="mx-auto xl:pl-[128px] bg-[yellow]">
               <img
                 src={ProjectImg}
                 alt="GPGP Blue"
@@ -167,11 +167,11 @@ const HomeContent = () => {
             </h3>
 
             {/* Image */}
-            <div className="mx-auto xl:mx-0 xl:pl-[128px]">
+            <div className="mx-auto xl:mx-0 xl:pl-[128px] xl:my-auto">
               <img
                 src={InvitationImg}
                 alt="GPGP Map"
-                className="w-[293px] h-[169px] lg:w-[583.489px] lg:h-auto"
+                className="w-[293px] h-[169px] lg:w-[583.489px] lg:h-auto rounded-[20px]"
               />
             </div>
           </div>

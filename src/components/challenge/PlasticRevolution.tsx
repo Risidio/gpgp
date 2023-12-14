@@ -1,7 +1,7 @@
 const PlasticRevolution = () => {
   return (
     <>
-      <section className="w-full bg-challenge-plastic-rev-wave bg-challenge-plastic-rev-mobile-wave md:bg-cover bg-no-repeat pt-[132px] xl:pt-[381px] pb-[66.5px] xl:pb-[194px] mt-[29px] xl:mt-[38px]">
+      <section className="w-full bg-challenge-plastic-rev-mobile-wave md:bg-challenge-plastic-rev-wave bg-cover bg-no-repeat pt-[132px] md:pt-[200px] xl:pt-[381px] pb-[66.5px] xl:pb-[194px] mt-[29px] xl:mt-[38px]">
         <h1 className="text-[20px] leading-[29.502px] uppercase font-[be-vietnam-700] text-center text-white">Plastic Revolution</h1>
         <div className="mt-[31px] xl:mt-[70px] w-[293px] xl:w-[542px] mx-auto flex flex-col gap-y-[18px] xl:gap-y-[35px] text-[15px] leading-[21px] tracking-[0.3px] flex-shrink-0 font-[be-vietnam] bold-400 text-white text-center">
           <p>

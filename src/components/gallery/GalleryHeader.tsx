@@ -1,24 +1,24 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 const GalleryHeader = () => {
-  const [activeTab,setActiveTab] = useState("All");
+  // const [activeTab,setActiveTab] = useState("All");
 
-  const handleSetActiveTab = (tab:string) => setActiveTab(tab);
+  // const handleSetActiveTab = (tab:string) => setActiveTab(tab);
 
-  const tabs = [
-    {
-      title: "All",
-    },
-    {
-      title: "Early Work",
-    },
-    {
-      title: "Environmental Work",
-    },
-    {
-      title: "Invited Artist Work",
-    },
-  ];
+  // const tabs = [
+  //   {
+  //     title: "All",
+  //   },
+  //   {
+  //     title: "Early Work",
+  //   },
+  //   {
+  //     title: "Environmental Work",
+  //   },
+  //   {
+  //     title: "Invited Artist Work",
+  //   },
+  // ];
 
   return (
     <>
@@ -35,7 +35,7 @@ const GalleryHeader = () => {
               </h3>
             </div>
 
-            <div>
+            {/* <div>
               <div className="flex gap-x-[5px] lg:gap-x-[20px]">
                 {tabs.map((tab) => (
                   <span
@@ -47,7 +47,7 @@ const GalleryHeader = () => {
                   </span>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
