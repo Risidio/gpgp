@@ -1,9 +1,9 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 const GalleryHeader = () => {
-  const [activeTab,setActiveTab] = useState("All");
+  // const [activeTab,setActiveTab] = useState("All");
 
-  const handleSetActiveTab = (tab:string) => setActiveTab(tab);
+  // const handleSetActiveTab = (tab:string) => setActiveTab(tab);
 
   // const tabs = [
   //   {
