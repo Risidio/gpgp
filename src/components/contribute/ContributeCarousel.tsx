@@ -8,9 +8,9 @@ import InvitationCarouselDot from "../../assets/images/InvitationCarouselDot.png
 import { IinvitaitonSectionProps } from "../../types/contribute";
 
 const ContributeCarousel = ({
-  contents1 , contents2
-}:  IinvitaitonSectionProps) => {
-
+  contents1,
+  contents2,
+}: IinvitaitonSectionProps) => {
   const Invitation = [
     {
       heading: contents1?.artistheading[0].text,
@@ -62,12 +62,10 @@ const ContributeCarousel = ({
     setButton2Disabled(true); // Disable the second button
   };
 
-
- 
   return (
     <div
-      className="relative  min-h-[906px]  xxsm:min-h-[850px]  xsm:min-h-[940px] sm:min-h-[1192px] md:min-h-[1360px] lg:min-h-[1652px] xl:min-h-[1780px]
-    xxl:min-h-[1890px] xxxl:min-h-[2000px] overflow-hidden"
+      className="relative  min-h-[906px]  xxsm:min-h-[850px]  xsm:min-h-[940px] sm:min-h-[1192px] md:min-h-[1300px] lg:min-h-[1552px] xl:min-h-[1675px]
+    xxl:min-h-[1845px] xxxl:min-h-[2000px] overflow-hidden"
     >
       <div className="w-full h-full relative">
         {/* Aritist Section */}
@@ -79,7 +77,7 @@ const ContributeCarousel = ({
         >
           <ContributeWave />
 
-          <div className="absolute top-[90px]  xxsm:top-[110px] xsm:top-[190px] sm:top-[300px] md:top-[370px] lg:top-[480px]  xl:top-[450px] xxl:top-[570px] xxxl:top-[700px] xxxxl:top-[820px] left-0  text-white min-h-150px  xl:p-[65px] w-full p-5 ">
+          <div className="absolute top-[90px]  xxsm:top-[110px] xsm:top-[190px] sm:top-[300px] md:top-[370px] lg:top-[480px]  xl:top-[450px] xxl:top-[500px] xxxl:top-[700px] xxxxl:top-[790px] left-0  text-white min-h-150px  xl:p-[65px] w-full p-5 ">
             <div className="flex flex-col items-center">
               <h1 className="font-[be-vietnam] text-[1.5rem] mb-0 xl:text-[2.3rem] xl:mb-9 lg:text-[2rem] lg:mb-8  md:text-[1.7rem] xxl:text-[3rem] uppercase text-white font-be-vietnam text-center tracking-wide">
                 {Invitation[0]?.heading}
@@ -88,10 +86,10 @@ const ContributeCarousel = ({
               <img
                 src={Invitation[0]?.Img}
                 alt="gpgpTile"
-                className="p-9 md:p-7 object-contain"
+                className="p-9 md:p-7  object-contain"
               />
 
-              <div className="flex mt-3 flex-row">
+              <div className="flex mt-3 xsm:mb-2  flex-row">
                 <button
                   onClick={() => {
                     handleWaveChange();
@@ -100,7 +98,7 @@ const ContributeCarousel = ({
                     handleButtonClick1();
                   }}
                   disabled={button1Disabled}
-                  className="mr-2"
+                  className="mr-2 mt-1  z-30"
                 >
                   <img src={DotTracker1} alt="0" />
                 </button>
@@ -113,17 +111,18 @@ const ContributeCarousel = ({
                     handleButtonClick2();
                   }}
                   disabled={button2Disabled}
+                  className="mt-1  p-1 z-30"
                 >
                   <img src={DotTracker2} alt="0" />
                 </button>
               </div>
 
-              <div className="text-center flex flex-col items-center mt-4 xl:mt-12 lg:mt-10 md:mt-8 sm:mt-6 text-white w-[100%] xl:w-[50%] lg:w-[69%] md:w-[75%]">
+              <div className="text-center  flex flex-col items-center mt-4 xl:mt-12 lg:mt-10 md:mt-8 sm:mt-6 text-white w-[100%] xl:w-[50%] lg:w-[69%] md:w-[75%]">
                 <h3 className="font-[be-vietnam] text-[1rem] xxsm:text-[1.1rem] sm:text-[1.3rem] lg:text-[1.5rem] xl:text-[2rem] font-semibold mb-2">
                   {Invitation[0].description?.head}
                 </h3>
 
-                <p className="font-[be-vietnam] text-center text-[16px] xl:text-[20px] xxxl:text-[25px] md:mb-4 leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] xsm:leading-[20px] xxsm:leading-[19px]  w-[120%] xl:w-[70%] lg:w-[75%] md:w-[82%] sm:w-[86%] xxsm:w-[120%]  mt-5 md:mt-12">
+                <p className="font-[be-vietnam] text-center text-[16px] xl:text-[18px] xxxl:text-[25px] md:mb-4 leading-[200%] md:leading-[22px] lg:leading-[35px] xl:leading-[34px] sm:leading-[30px] xsm:leading-[28px]  w-[105%] xl:w-[95%] lg:w-[75%] md:w-[82%] sm:w-[86%] xxsm:w-[108%]  mt-5 md:mt-12">
                   {Invitation[0].description?.body}
                 </p>
 
@@ -150,7 +149,7 @@ const ContributeCarousel = ({
         >
           <SponsorWave />
 
-          <div className="absolute top-[120px]  xxsm:top-[150px] xsm:top-[170px] sm:top-[370px] md:top-[380px] lg:top-[500px]  xl:top-[610px] xxl:top-[570px] xxxl:top-[770px] xxxxl:top-[800px] left-0  text-white min-h-150px w-full p-5 ">
+          <div className="absolute top-[120px]  xxsm:top-[85px] xsm:top-[120px] sm:top-[370px] md:top-[270px] lg:top-[430px]  xl:top-[610px] xxl:top-[570px] xxxl:top-[770px] xxxxl:top-[800px] left-0  text-white min-h-150px w-full p-5 ">
             <div className="flex flex-col items-center">
               <h1 className="text-[1.5rem] mb-0 xl:text-[2.3rem] xl:mb-9 lg:text-[2rem] xxl:text-[3rem]  lg:mb-8 md:text-[1.7rem] text-white font-be-vietnam text-center tracking-wide">
                 {Invitation[1]?.heading}
@@ -171,7 +170,7 @@ const ContributeCarousel = ({
                     handleButtonClick1();
                   }}
                   disabled={button1Disabled}
-                  className="mr-2"
+                  className="mr-2 z-30"
                 >
                   <img src={DotTracker1} alt="0" />
                 </button>
@@ -183,17 +182,18 @@ const ContributeCarousel = ({
                     handleButtonClick2();
                   }}
                   disabled={button2Disabled}
+                  className="p-1 z-30"
                 >
                   <img src={DotTracker2} alt="0" />
                 </button>
               </div>
 
               <div className="text-center flex flex-col items-center mt-4 xl:mt-12 lg:mt-10 md:mt-8 sm:mt-6 text-white w-[95%] xl:w-[50%] lg:w-[69%] md:w-[75%]">
-                <h3 className="text-[1.1rem] sm:text-[1.3rem] lg:text-[1.5rem] xl:text-[2rem] font-semibold mb-2">
+                <h3 className="text-[1.1rem] sm:text-[1.3rem] lg:text-[1.5rem] xl:text-[1.6rem] font-semibold mb-2">
                   {Invitation[1].description?.head}
                 </h3>
 
-                <p className="text-center  text-[0.8rem] md:text-[1rem] md:mb-4  md:leading-6  w-[90%] xl:w-[70%] xl:leading-7 xxl:leading-[1.85rem] xxl:text-[1.3rem]  lg:w-[75%] md:w-[82%] sm:w-[86%] mt-5 md:mt-12">
+                <p className="text-center  text-[0.8rem] md:text-[1rem] md:mb-4  leading-[30px]  md:leading-[35px]  w-[90%] xl:w-[95%] xl:leading-7 xxl:leading-[1.85rem] xxl:text-[1.3rem]  lg:w-[75%] md:w-[82%] sm:w-[86%] mt-5 md:mt-12">
                   {Invitation[1].description?.body}
                 </p>
 

@@ -1,11 +1,11 @@
-import { Outlet, useParams } from "react-router-dom";
+import { Outlet} from "react-router-dom";
 import Container from "../Container";
 import NewsFooter from "./NewsFooter";
-import BottomLatestNews from "./BottomLatestNews";
-import Contribution from "../Contribution";
+
+import NewsBottomWave from "./NewsBottomWave";
 
 export const NewsLayout = () => {
-  const params = useParams();
+
   // const classes = "sm:bg-gpgp-blue sm:text-white bg-white text-black";
   return (
     <>
@@ -22,7 +22,7 @@ export const NewsLayout = () => {
       </Container>
 
       <NewsFooter>
-        {!params.categoryId ? <Contribution/> : <BottomLatestNews />}
+        <NewsBottomWave />
       </NewsFooter>
     </>
   );

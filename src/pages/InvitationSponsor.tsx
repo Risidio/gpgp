@@ -1,10 +1,8 @@
 import InviteHero from "../components/contribute/Invitation/InviteHero";
 import NewInvitationForm from "../components/contribute/Invitation/NewInvitationForm";
-import ContributionSection from "../components/gallery/Contribution";
+import NewsBottomWave from "../components/news/NewsBottomWave";
 
 export default function InvitationSponsor() {
- 
-
   const formFields = [
     {
       label: "Full Name",
@@ -41,30 +39,22 @@ export default function InvitationSponsor() {
     },
   ];
 
-
   const heading = "Sponsor";
   return (
     <div>
-      
-    <InviteHero heading={heading} />
+      <InviteHero heading={heading} />
 
-    <NewInvitationForm
-      formField={formFields}
-      heading={heading}
-      Classes={{
-        FormBtn: "",
-      }}
-    />
-
-    <section className="">
-      <ContributionSection
-        classes={{
-          container: " mt-4 md:mt-0 pb-[20px] md:pb-[2px] md:pt-[15px]",
-          heading: "",
-          subheading: "",
+      <NewInvitationForm
+        formField={formFields}
+        heading={heading}
+        Classes={{
+          FormBtn: "",
         }}
       />
-    </section>
-  </div>
+
+      <section className="mt-9">
+        <NewsBottomWave />
+      </section>
+    </div>
   );
 }

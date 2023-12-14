@@ -52,10 +52,10 @@ export default function Contact() {
       />
 
 
-      <section className="hidden  md:block">
+      <section className="mt-20 sm:mt-10">
         <ContributionSection
           classes={{
-            container: "  !mt-[-184px] md:z-40 md:relative xxxxl:pt-[400px]",
+            container: " ",
             heading: "",
             subheading: "",
           }}
