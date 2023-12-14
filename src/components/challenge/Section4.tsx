@@ -3,8 +3,8 @@ import MyLink from "../base/MyLink";
 const Section4 = () => {
   return (
     <>
-      <div className="flex flex-col items-center md:pb-[200px]">
-        <div className="w-[293px] md:w-[1440px]  md:px-none py-[35px] md:py-none md:mt-[150px] flex flex-col items-center gap-y-[20px] md:gap-y-[65px]">
+      <div className="flex flex-col items-center mb-[138px] md:mb-[unset] md:pb-[200px]">
+        <div className="w-[293px] md:w-[1440px]  md:px-none  md:py-none md:mt-[150px] flex flex-col items-center gap-y-[20px] md:gap-y-[65px]">
           <p className="md:w-[886px] text-center text-[#050B1D] font-[be-vietnam] text-[15px] md:text-4xl lg:text-[22px] xl:text-[24px] xxl:text-[25px] xxxxl:text-[35px] font-bold leading-[200%] tracking-[-0.64px]">
             The project GPGP contributes to ongoing research of plastic in
             marine environments.
@@ -18,9 +18,9 @@ const Section4 = () => {
 
           <MyLink
             to=""
-            className="mx-auto uppercase mb-[20px] md:mb-[48.62px] md:mb-[0px] px-[17px] py-[11px] bg-gpgp-blue text-white hover:text-white text-[12px] md:text-[16px] w-[187px] md:w-56 tracking-[3.3px] h-[39px] md:h-16 md:text-base leading-[147.51%]"
+            className="flex mx-auto w-[187px] md:w-[223px] h-[39px] md:h-[63px] uppercase bg-gpgp-blue text-white hover:text-white text-[15px] md:text-[16px] rounded-[2px] font-[inter] font-normal py-[11px] md:py-[unset] px-[17px] md:px-[unset]"
           >
-            Join Us
+            <span className="tracking-[3.3px] md:tracking-[4.125px] md:text-base leading-[147.51%]">Join Us</span>
           </MyLink>
         </div>
       </div>

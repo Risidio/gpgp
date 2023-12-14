@@ -1,21 +1,14 @@
 const Hero = () => {
   return (
     <>
-      {/* <div className="w-[100%] border-y-[4px] bg-[length:100%_100%] bg-flat-lay-assortment md:bg-none md:border-y-[0px] border-gpgp-blue"> */}
       <div className="w-[100%] border-y-[4px] bg-[length:100%_100%] md:bg-none md:border-y-[0px] border-gpgp-blue lg:mt-[34px]">
-        {/* <div className="md:hidden w-[100%] md:bg-[white] py-[0px] md:py-none px-[40px] md:px-none md:p-none text-center">
-          <h1 className="uppercase text-[white] md:mt-[100px] md:mb-[30px] text-center font-be-vietnam text-[20px] md:text-4xl font-bold leading-[35.40px] md:leading-[147.51%] md:normal-case">
-            Plastic revolutions
-          </h1>
-        </div> */}
-        <div className="flex flex-col md:flex-row md:w-[1440px] gap-0 md:gap-[60px] lg:gap-[100px] mx-auto justify-center  mt-[60.7px] lg:mt[0px]">
-          <div className="w-full md:w-[398px] lg:w-[398px] order-first md:order-last mt-[25px]">
-            <div className="w-full flex flex-col h-[90px] md:h-[unset] uppercase font-[be-vietnam-700] md:font-[be-vietnam-800]  md:leading-[70px] lg:leading-[100px]">
-              {/* <div className="text-[32px] md:text-[50px] lg:text-[80px] text-center md:text-left lg:pl-[80px] text-[#0A2471] leading-[140%] "> */}
-              <div className="text-[32px] md:text-[50px] lg:text-[80px] text-center md:text-left text-[#0A2471] leading-[140%] md:mt-[30px]">
+        <div className="flex flex-col md:flex-row md:max-w-[1400px] gap-0 md:gap-[81px] mx-auto justify-center  mt-[60.7px] lg:mt[0px]">
+          <div className="w-full md:w-[398px] lg:w-[398px] order-first md:order-last md:mt-[40px]">
+            <div className="w-full flex flex-col h-[90px] md:h-[unset] uppercase font-[be-vietnam-700] md:font-[be-vietnam-800]">
+              <div className="text-[32px] md:text-[80px] text-center md:text-left text-[#0A2471] leading-[140%] md:leading-[90px]">
                 The art <span className="challenge-hero">inspiring</span>{" "}
               </div>
-              <div className="text-[32px] md:text-[50px] lg:text-[80px] text-center md:text-left text-[#0A2471]">
+              <div className="text-[32px] md:text-[80px] text-center md:text-left text-[#0A2471] leading-[140%] md:leading-[90px]">
                 <span className="hidden md:block">global</span>{" "}
                 <span className="md:hidden challenge-hero">global</span>{" "}
                 <span className="hidden md:block challenge-hero">action</span>
@@ -24,10 +17,9 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="w-[293px] md:w-[413px]  md:block mx-auto md:mx-[unset] flex flex-col justify-center items-center order-last md:order-first mt-[17px] ">
-            {/* <div className="px-[68px] md:px-[200px] lg:px-[250px] xl:px-[400px] xxxl:px-[600px] xxxxl:px-[700px] pt-[17px]"> */}
+          <div className="w-[293px] md:w-[413px]  md:block mx-auto md:mx-[unset] flex flex-col justify-center items-center order-last md:order-first mt-[17px]">
             <div className="py-[17px]">
-              <p className="font-[be-vietnam-semibold] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400] text-center md:text-left">
+              <p className="font-[be-vietnam-semibold] text-[16px] leading-[200%] font-[400] md:font-[600] text-center md:text-left">
                 Imagine a vast floating island of discarded plastic waste{" "}
                 <span className="text-[#0A2471]">twice the size of Texas</span>,
                 right in the heart of the Pacific Ocean – the Great Pacific
@@ -57,27 +49,28 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="w-[100%] mt-[29px] bg-h-[100%] bg-w-[100%] bg-challenge-mobile-bg-wave  bg-no-repeat bg-no-repeat bg-cover pt-[132px] md:pt-[381px]">
-          <div className="w-[293px] md:w-[542px] flex flex-col items-center mx-[auto] pt-[35px] md:pt-[21px] xxl:pt-[100px] xxxl:pt-[250px] xxxxl:pt-[350px] pb-[66px] md:pb-[196px]">
-            <h1 className="md:block uppercase text-[white] md:mt-[100px] text-center font-[be-vietnam-700] text-[20px] md:text-[36px] font-bold leading-[35.40px] md:leading-[147.51%] md:normal-case">
+        <div className="w-[100%] mt-[29px] bg-h-[100%] bg-w-[100%] bg-challenge-mobile-bg-wave  bg-no-repeat bg-no-repeat bg-cover pt-[132px] md:pt-[271px]">
+          <div className="w-[293px] md:w-[542px] flex flex-col items-center mx-[auto] pt-[35px] md:pt-[21px]  pb-[66px] md:pb-[196px]">
+            <h1 className="md:block uppercase md:normal-case text-[white] md:mt-[100px] text-center font-[be-vietnam] text-[20px] md:text-[36px] leading-[35.40px] md:leading-[147.51%]">
               Plastic revolution
             </h1>
             <div className="flex flex-col mt-[31px] md:mt-[68px] gap-[20px] md:gap-[68px]">
-            <p className="text-center text-white font-be-vietnam tracking-[-0.3px] md:tracking-[-0.32px] font-normal md:text-base text-[15px] md:text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[140%] md:leading-[170%] lg:leading-[200%] xl:leading-[220%] sm:leading-[30px]">
+            {/* <p className="text-center text-white font-be-vietnam tracking-[-0.3px] md:tracking-[-0.32px] font-normal md:text-base text-[15px] md:text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[140%] md:leading-[170%] lg:leading-[200%] xl:leading-[220%] sm:leading-[30px]"> */}
+            <p className="text-center text-white font-be-vietnam font-normal md:font-medium tracking-[-0.3px] md:tracking-[-0.32px] text-[15px] md:text-[16px] leading-[140%] md:leading-[200%]">
               When first invented, plastic was seen as revolutionary because it
               offered a cheap, durable, hygienic product that could be used for
               a variety of purposes. However, the ever-increasing production
               would cause unforeseen consequences. Especially concerning is what
               plastics are made from.
             </p>
-            <p className="text-center text-white font-be-vietnam tracking-[-0.3px] md:tracking-[-0.32px] font-normal text-[15px] md:text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[140%] md:leading-[170%] lg:leading-[200%] xl:leading-[220%] sm:leading-[30px]">
+            <p className="text-center text-white font-be-vietnam font-normal md:font-medium tracking-[-0.3px] md:tracking-[-0.32px]  text-[15px] md:text-[16px] leading-[140%] md:leading-[200%]">
               Almost all single-use plastics are made from fossil fuels. So, the
               carbon footprint of the plastics is vast, by one estimate,
               emissions from producing and incinerating plastics could amount to
              <span className="font-[be-vietnam-700]"> 56 gigatons of carbon</span> — almost <span className="font-[be-vietnam-700]"> 50 times the annual emissions</span> of
               all of the coal power plants.
             </p>
-            <p className="text-center text-white font-be-vietnam tracking-[-0.3px] md:tracking-[-0.32px] font-normal text-[15px] md:text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[140%] md:leading-[170%] lg:leading-[200%] xl:leading-[220%] sm:leading-[30px]">
+            <p className="text-center text-white font-be-vietnam font-normal md:font-medium tracking-[-0.3px] md:tracking-[-0.32px]  text-[15px] md:text-[16px] leading-[140%] md:leading-[200%]">
               Plastic is a complex material which is durable and can be broken
               down easily in order to decompose. But can <span className="font-[be-vietnam-700]">never completely break
               down</span>, in fact, every <span className="font-[be-vietnam-700]">piece ever made still exists today</span> in the
@@ -94,7 +87,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-
-
-

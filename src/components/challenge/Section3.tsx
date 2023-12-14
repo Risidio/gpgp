@@ -6,7 +6,7 @@ const Section3 = () => {
     <>
       <div className="">
         {/* <div className="flex flex-col items-center justify-center"></div> */}
-        <div className="flex flex-col md:flex-row mt-[unset] md:mt-[360px] md:w-[1440px] md:mx-auto md:item md:gap-[125.25px] justify-center">
+        <div className="flex flex-col md:flex-row mt-[unset] md:mt-[360px] md:max-w-[1400px] md:mx-auto md:item md:gap-[125.25px] justify-center">
           <div className="order-2 md:order-1 flex flex-col justify-center">
             <div className="hidden md:block  md:mt-[80px]">
               <h1 className="text-[#050B1D] font-[be-vietnam-bold] md:text-4xl font-bold leading-[147.51%]">
@@ -14,12 +14,12 @@ const Section3 = () => {
               </h1>
             </div>
             <div className="flex flex-col items-center w-[293px] md:w-[522px]  mx-auto md:mx-[unset] gap-y-[20px] mt-[30px] md:mt-[80px]  justify-center md:pb-[40px]">
-              <p className="text-center md:text-left text-[#050B1D] font-[be-vietnam] text-[15px] md:text-[16px] lg:text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[200%] lg:leading-[200%] xl:leading-[40px] sm:leading-[30px] font-[500]">
+              <p className="text-center md:text-left text-[#050B1D] font-[be-vietnam] text-[15px] md:text-[16px] leading-[200%] md:leading-[200%] lg:leading-[200%] font-[500]">
                 The progress achieved in addressing the issue of plastic
                 pollution demonstrates a positive trajectory toward
                 environmental sustainability and conservation efforts.
               </p>
-              <p className="text-center md:text-left text-[#050B1D] font-[be-vietnam] text-[15px] md:text-[16px] lg:text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[200%] md:leading-[200%] lg:leading-[200%] xl:leading-[40px] sm:leading-[30px] font-[500]">
+              <p className="text-center md:text-left text-[#050B1D] font-[be-vietnam] text-[15px] md:text-[16px] leading-[200%] md:leading-[200%] lg:leading-[200%] font-[500]">
                 <b>The Project GPGP will inspire researchers and engineers to
                 develop innovative solutions</b> to efficiently remove plastic from
                 oceans, implementing policies to reduce plastic usage which

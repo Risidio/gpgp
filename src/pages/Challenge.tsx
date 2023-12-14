@@ -8,7 +8,9 @@ import Section5 from "../components/challenge/Section5";
 const Challenge = () => {
   return (
     <>
-      <div className="xxxxl:max-w-[2560px] xxxxl:mx-auto">
+      {/* <div className="xxxxl:max-w-[2560px] xxxxl:mx-auto"> */}
+      <div className="">
+
         {/* <Header /> */}
         <Hero />
         <Section1 />
