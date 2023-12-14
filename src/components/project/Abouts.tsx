@@ -8,7 +8,7 @@ const About = ({ contents }: IAboutProps) => {
       <div className="w-full bg-h-[100%] bg-w-[100%] bg-project-page-wave bg-no-repeat bg-cover mt-[88px] xl:mt-[219px]">
         <div className="pt-[120px] md:pt-[220px] xl:pt-[386px] pb-[62px] xl:pb-[130px]">
           {/* Exhibition Context */}
-          <div className="flex flex-col mx-auto gap-y-[13px] xl:gap-y-[60px] w-[298px] xl:w-[538px]">
+          <div className="flex flex-col mx-auto gap-y-[13px] xl:gap-y-[60px] w-[298px] md:w-[520px] xl:w-[538px]">
             <h1 className="font-[be-vietnam-600] leading-[48px] tracking-[-0.32px] uppercase text-center text-[16px] text-white xl:text-[40px] xl:capitalize">
               {contents?.title[0].text}
             </h1>
