@@ -5,16 +5,19 @@ const Hero = () => {
     <>
       {/* <section className="xl:grid xl:grid-cols-2"> */}
       <section className="flex">
-      <div className="xl:flex xl:flex-row mx-auto">
+      <div className="xl:flex xl:flex-row mx-auto xl:gap-[81px]">
         {/* Call to Action Column */}
-        <div className="xl:order-2 xl:w-[398px]  mt-[60.73px] xl:mt-[6px] xl:ml-[81px]">
+        <div className="xl:order-2 xl:w-[398px]  mt-[60.73px] xl:mt-[6px]">
           <h1 className="text-gpgp-blue text-[32px] xl:text-[80px] font-[be-vietnam-700] uppercase text-center xl:text-left leading-[140%] xl:leading-[90px]">
             The art{" "}
             <span className="text-white header-text-stroke">
               inspiring &nbsp;
             </span>
-            <span className="text-white xl:text-gpgp-blue  header-text-stroke  xl:header-text-no-stroke ml-[-18px]">
+            <span className="hidden xl:inline-flex text-white xl:text-gpgp-blue  header-text-stroke  xl:header-text-no-stroke xl:ml-[-18px]">
               global
+            </span>
+            <span className="xl:hidden text-white xl:text-gpgp-blue  header-text-stroke  xl:header-text-no-stroke xl:ml-[-18px]">
+              <br />global
             </span>
             <span className="action-header xl:text-white header-text-stroke">action</span>
           </h1>
