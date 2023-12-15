@@ -30,7 +30,7 @@ const Footer = ({
           <div className="w-full grid grid-cols-3 justify-between p-5">
             <Logo
               className="flex justify-start items-start w-20 h-20"
-              logo={"NewNavLogo.png"}
+              logo={"image.png"}
             />
             <SocialMedia color={`white`} />
             <ContactInfo classes={"text-white"} />
@@ -73,7 +73,7 @@ const Footer = ({
               </ul>
               <Logo
                 className="flex items-start w-16 h-16"
-                logo={fontColor ? "logo-blue.png" : "logo-white.png"}
+                logo={fontColor ? "image.png" : "logo-white.png"}
               />
             </div>
           </div>

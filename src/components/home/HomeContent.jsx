@@ -93,7 +93,7 @@ const HomeContent = () => {
             {/* Join Us Btn */}
             <div className="flex flex-row gap-x-[12px] px-[19px] xl:px-0 mt-[35px] xl:mt-[59px]">
               <MyLink
-                to=""
+                to="/project"
                 className="bg-gpgp-blue xl:bg-white w-[187px] h-[40px] xl:w-[223px] xl:h-[63px]"
               >
                 <p className="text-white text-[15px] xl:text-[16px] xl:text-gpgp-blue uppercase leading-[22.126px] xl:leading-[23.602px] font-[be-vietnam-600] tracking-[4.125px] xl:tracking-[4.4px]">
@@ -146,7 +146,7 @@ const HomeContent = () => {
             {/* Join Us Btn */}
             <div className="flex flex-row gap-x-[12px] px-[19px] xl:px-0 mt-[35px] xl:mt-[59px]">
               <MyLink
-                to=""
+                to="/challenge"
                 className="bg-gpgp-blue xl:bg-white w-[187px] h-[40px] xl:w-[223px] xl:h-[63px]"
               >
                 <p className="text-white xl:text-gpgp-blue text-[15px] xl:text-[16px] uppercase leading-[22.126px] xl:leading-[23.602px] font-[be-vietnam-600] tracking-[4.125px] xl:tracking-[4.4px]">
@@ -194,7 +194,7 @@ const HomeContent = () => {
             {/* Join Us Btn */}
             <div className="flex flex-row gap-x-[12px] px-[19px] xl:px-0 mt-[35px] xl:mt-[59px]">
               <MyLink
-                to=""
+                to="/contribute"
                 className="bg-gpgp-blue xl:bg-white w-[187px] h-[40px] xl:w-[223px] xl:h-[63px]"
               >
                 <p className="text-white xl:text-gpgp-blue text-[15px] xl:text-[16px] uppercase leading-[22.126px] xl:leading-[23.602px] font-[be-vietnam-600] tracking-[4.125px] xl:tracking-[4.4px]">
