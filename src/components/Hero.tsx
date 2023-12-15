@@ -63,7 +63,7 @@ const Hero = () => {
                 </MyLink>
 
                 <MyLink
-                  to=""
+                  to="/contribute"
                   className="w-[187px] h-[40px] xl:w-[245.63px] xl:h-[63px] bg-gpgp-blue rounded-[2px] xl:rounded-[5px] shrink-0"
                 >
                   <p className="text-white xl:w-[92.526px] text-center text-[15px] xl:text-[16px] uppercase font-[be-vietnam-700] leading-[22.126px] xl:leading-[23.602px] tracking-[4.125px] xl:tracking-[4.4px]">

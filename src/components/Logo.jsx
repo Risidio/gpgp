@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-export default function Logo({className, logo}) {
+export default function Logo({className, logo="image.jpg"}) {
     return (
         <div className={className}>
             <img

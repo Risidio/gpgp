@@ -33,7 +33,7 @@ const Artist = ({ ...props }) => {
 
       <div className="">
         <MyLink
-          to=""
+          to="/project"
           className="w-[234px] xl:w-[332px] h-[40px] xl:h-[63px] bg-gpgp-blue rounded-[2px] shrink-0 mt-[36px] xl:mt-[70px]"
         >
           <p className="text-white text-center text-[15px] text-[16px] uppercase font-[be-vietnam] bold-700 leading-[22.126px] xl:leading-[23.602px] tracking-[4.125px] xl:tracking-[4.4px]">
