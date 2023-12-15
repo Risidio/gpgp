@@ -20,6 +20,10 @@
   -webkit-text-stroke: 1px #0A2471;
 }
 
+.header-text-no-stroke {
+  -webkit-text-stroke: unset
+}
+
 /* Custom styles for lightgallery */
 .custom-wrapper-gallery {
   display: grid;

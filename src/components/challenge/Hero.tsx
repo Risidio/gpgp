@@ -3,28 +3,37 @@ import MyLink from "../base/MyLink";
 const Hero = () => {
   return (
     <>
-      <section className="xl:grid xl:grid-cols-2">
+      {/* <section className="xl:grid xl:grid-cols-2"> */}
+      <section className="flex">
+      <div className="xl:flex xl:flex-row mx-auto xl:gap-[81px]">
         {/* Call to Action Column */}
-        <div className="xl:order-2 md:w-[398px] md:mx-auto mt-[60.73px] xl:mt-0 xl:ml-[81px]">
-          <h1 className="text-gpgp-blue text-[32px] xl:text-[80px] font-[be-vietnam-700] uppercase text-center xl:text-left leading-[44.8px] xl:leading-[90px]">
+        <div className="xl:order-2 xl:w-[398px]  mt-[60.73px] xl:mt-[6px]">
+          <h1 className="text-gpgp-blue text-[32px] xl:text-[80px] font-[be-vietnam-700] uppercase text-center xl:text-left leading-[140%] xl:leading-[90px]">
             The art{" "}
             <span className="text-white header-text-stroke">
-              inspiring global&nbsp;
+              inspiring &nbsp;
             </span>
-            <span className="action-header">action</span>
+            <span className="hidden xl:inline-flex text-white xl:text-gpgp-blue  header-text-stroke  xl:header-text-no-stroke xl:ml-[-18px]">
+              global
+            </span>
+            <span className="xl:hidden text-white xl:text-gpgp-blue  header-text-stroke  xl:header-text-no-stroke xl:ml-[-18px]">
+              <br />global
+            </span>
+            <span className="action-header xl:text-white header-text-stroke">action</span>
           </h1>
         </div>
 
         {/* Content Column */}
-        <div className="xl:order-1 mt-[17px] xl:mt-0 w-[293px] xl:w-[413px] mx-auto xl:mx-0 xl:ml-[160px]">
-          <p className="text-[#050B1D] text-[16px] font-[be-vietnam] bold-400 text-center leading-[32px] tracking-[-0.32px]">
-            Imagine a vast floating island of discarded plastic waste twice the
-            size of Texas, right in the heart ofthe Pacific Ocean - the Great
+        {/* <div className="xl:order-1 mt-[17px] xl:mt-0 w-[293px] xl:w-[413px] mx-auto xl:mx-0 xl:ml-[160px] border border-1"> */}
+        <div className="xl:order-1 mt-[17px] xl:mt-0 w-[293px] xl:w-[413px] mx-auto xl:mx-0">
+          <p className="text-[#050B1D] text-[16px] font-[be-vietnam] bold-400 text-center leading-[200%] tracking-[-0.32px] py-[10px]">
+            Imagine a vast floating island of discarded plastic waste <span className="text-[#0A2471] bold-600"> twice the
+            size of Texas</span>, right in the heart of the Pacific Ocean - the Great
             Pacific Garbage Patch Challenge is not just an environmental
-            mission,but a call to action to reclaim and restore our planet's
+            mission,but <span className="text-[#0A2471] bold-600">a call to action</span> to reclaim and restore our planet's
             most precious resource.
           </p>
-          <div className="mt-[29px] xl:mt-[18px] flex flex-col gap-y-[16px] xl:gap-y-[14px]">
+          <div className="mt-[29px] xl:mt-[14px] flex flex-col gap-y-[16px] xl:gap-y-[14px]">
             <MyLink
               to=""
               className="w-[216px] xl:w-full h-[49px] xl:h-[63px] bg-white rounded-[2px]  shrink-0 mx-auto xl:mx-0"
@@ -59,7 +68,9 @@ const Hero = () => {
             </MyLink>
           </div>
         </div>
+      </div>
       </section>
+      
     </>
   );
 };
