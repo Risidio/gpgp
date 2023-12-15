@@ -42,16 +42,14 @@ interface IinvitaitonArtistData {
   artistimage: IImage;
   contentsubheading1: { text: string }[];
   artistcontent: { text: string }[];
-
-
-
+  artistsecondcontent: { text: string }[];
 }
-interface IinvitaitonSponsorData {
 
+
+interface IinvitaitonSponsorData {
   // sponsor
   sponsorheading: { text: string }[];
   sponsorimage: IImage;
   contentsubheading2: { text: string }[];
   sponsorcontent: { text: string }[];
-
 }

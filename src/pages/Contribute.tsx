@@ -12,7 +12,7 @@ export default function Contribute() {
 
 
   return (
-    <div>
+    <div className="mb-[-10px]">
       
       <NewContributeHero
         contents={document?.data["body"][0].primary}

@@ -33,11 +33,11 @@ const NewsCategory = ({
   return (
     <div className="w-full flex flex-col sm:p-9 md:p-10 p-5">
       <div className="flex justify-between items-center pb-5">
-        <h2 className="text-[1rem] md:text-[2rem] tracking-[3px] font-semibold uppercase">
+        <h2 className="text-[1rem] md:text-[2rem] tracking-[2px] font-semibold uppercase">
           {primaryHeading}
         </h2>
         <div className="group flex justify-between items-center uppercase hover:text-black/60 hover:cursor-pointer">
-          <Link to={`/news/category/${category.title}`}>
+          <Link to={`/news/${category.description}`}>
             <span className="text-[1rem] font-semibold uppercase">
               See more
             </span>

@@ -56,9 +56,9 @@ export default function NewInvitationForm({
       <div
         className={`w-full   "pt-2" `}
       >
-        <div className={`px-16 xl:pr-28 flex flex-col items-center   -mb-10`}>
+        <div className={` px-7 sm:px-16 xl:pr-28 flex flex-col items-center   -mb-10`}>
           <h4
-            className={`font-semibold text-[0.9rem] md:text-[1.1rem] text-center xl:text-[1.3rem] text-gpgp-blue md:text-black bg-white  z-50 px-4 xxl:text-[1.7rem]  mb-4`}
+            className={`font-semibold text-[0.9rem] md:text-[1.1rem] text-center xl:text-[1.3rem] text-gpgp-blue md:text-black bg-white  z-50 px-4 xxl:text-[1.7rem]   mb-[2px] sm:mb-4`}
           >
             Leave your details and we’ll contact you
           </h4>
@@ -119,8 +119,8 @@ export default function NewInvitationForm({
             )}
           </form>
           <button
-            className={`m-10 border w-[150px] md:w-[200px] md:h-[55px] h-[50px] xxl:w-[250px] xxl:h-[65px] bg-gpgp-blue text-white font-bold 
-            text-[1.3rem] lg:text-[1.5rem] tracking-[3px] ${Classes?.FormBtn}`}
+            className={`m-10 border w-[200px] md:w-[200px] md:h-[55px] h-[45px] xxl:w-[250px] xxl:h-[65px] bg-gpgp-blue text-white font-bold 
+            text-[1.2rem] lg:text-[1.5rem] tracking-[4px] sm:tracking-[3px] rounded-[3px] ${Classes?.FormBtn}`}
           >
             Send
           </button>
