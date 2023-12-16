@@ -1,5 +1,5 @@
 import ProjectImg from "../../assets/images/project.png";
-import ProjectWebImg from "../../assets/images/projectweb.jpg";
+// import ProjectWebImg from "../../assets/images/projectweb.jpg";
 import ChallengeImg from "../../assets/images/challenge.png";
 import ChallengeWebImg from "../../assets/images/challenge.jpg";
 import InvitationImg from "../../assets/images/gpgp-tile-home.png";
