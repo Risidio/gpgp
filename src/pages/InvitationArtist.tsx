@@ -54,7 +54,7 @@ const InvitationArtist = () => {
 
   const heading = "Artist";
   return (
-    <div>
+    <div className="xxl:w-[1440px] xxl:mx-auto">
       
       <InviteHero heading={heading} />
 
