@@ -11,7 +11,7 @@ interface FooterProps {
 }
 
 const Footer = ({
-  classes = "bg-gpgp-blue xxxxl:max-w-[2560px] xxxxl:mx-auto",
+  classes = "bg-gpgp-blue",
 }: FooterProps) => {
   const currentPath = useLocation().pathname;
 
@@ -21,7 +21,7 @@ const Footer = ({
 
   return (
     <footer
-      className={` mx-auto
+      className={`xxl:w-[1440px] xxl:mx-auto mx-auto
        border-t bg-gpgp-blue`}
     >
       <Container hasSection={false} classes={"bg-gpgp-blue text-white"}>

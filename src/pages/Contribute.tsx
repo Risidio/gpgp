@@ -12,7 +12,7 @@ export default function Contribute() {
 
 
   return (
-    <div className="mb-[-10px]">
+    <div className="mb-[-10px] xxl:w-[1440px] xxl:mx-auto">
       
       <NewContributeHero
         contents={document?.data["body"][0].primary}
@@ -25,7 +25,7 @@ export default function Contribute() {
         }}
       />
 
-      <div className="relative mt-14 xsm:mt-[150px] lg:min-h-[750px] sm:min-h-[700px] ">
+      <div className="">
         <ContributeCarousel contents1={artist} contents2={sponosr} />
       </div>
     </div>

@@ -42,7 +42,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col xxl:w-[1440px] xxl:mx-auto">
 
       <InvitationForm
         formField={formFields}

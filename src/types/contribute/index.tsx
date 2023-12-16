@@ -36,7 +36,17 @@ export interface IinvitaitonSectionProps {
 
 }
 
-interface IinvitaitonArtistData {
+export interface IArtistInvitationProp{
+  content:IinvitaitonArtistData;
+  onDragStart:any;
+}
+
+export interface ISponsorInvitationProp{
+  content:IinvitaitonSponsorData;
+  onDragStart:any;
+}
+
+export interface IinvitaitonArtistData {
   // Artist
   artistheading: { text: string }[];
   artistimage: IImage;
