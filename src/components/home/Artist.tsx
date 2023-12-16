@@ -10,7 +10,7 @@ const Artist = ({ ...props }) => {
         <img
           src={JDFrame}
           alt="John Dahlsen"
-          className="w-[163.64px] md:w-[233px] h-auto"
+          className="w-[163.64px] md:w-[299px] h-auto"
         />
       </div>
 
