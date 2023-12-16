@@ -68,7 +68,7 @@ const HomeContent = () => {
                 className="xl:hidden w-[190px] h-[190px] lg:w-[582px] lg:h-[582px] lg:rounded-[20px]"
               />
               <img
-                src={ProjectWebImg}
+                src={ProjectImg}
                 alt="GPGP Blue"
                 className="hidden xl:block w-[190px] h-[190px] lg:w-[582px] lg:h-auto lg:rounded-[20px]"
               />
