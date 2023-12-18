@@ -1,11 +1,8 @@
-
 import InvitationForm from "../components/contribute/Invitation/InvitationForm";
 import ContributionSection from "../components/gallery/Contribution";
 
 export default function Contact() {
-
-
-  const formFields = [ 
+  const formFields = [
     {
       label: "Name",
       type: "text",
@@ -42,15 +39,12 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex flex-col xxl:w-[1440px] xxl:mx-auto">
-
+    <div className="flex flex-col ">
       <InvitationForm
         formField={formFields}
         WavePattern={WavePattern}
         SponsorFormLegend={SponsorFormLegend}
-        
       />
-
 
       <section className="mt-20 sm:mt-10">
         <ContributionSection
@@ -61,12 +55,6 @@ export default function Contact() {
           }}
         />
       </section>
-
-   
-
-
-  
-
     </div>
   );
 }
