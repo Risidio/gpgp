@@ -10,18 +10,16 @@ interface FooterProps {
   classes?: string;
 }
 
-const Footer = ({
-  classes = "bg-gpgp-blue",
-}: FooterProps) => {
+const Footer = ({ classes = "bg-gpgp-blue" }: FooterProps) => {
   const currentPath = useLocation().pathname;
 
   const footerStyles = getFooterDetail(currentPath) || null;
   const fontColor =
     footerStyles && footerStyles.fontColor ? footerStyles.fontColor : "white";
 
-    const scrollTop = () => {
-      window.scrollTo(0, 0);
-    }
+  const scrollTop = () => {
+    window.scrollTo(0, 0);
+  };
 
   return (
     <footer
@@ -70,19 +68,30 @@ const Footer = ({
               <ul className="text-sm space-y-4 text-right">
                 <li>Sitemap</li>
                 <li>
-                  <Link to="/project" onClick={scrollTop}>Project</Link>
+                  <Link to="/project" onClick={scrollTop}>
+                    Project
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/challenge" onClick={scrollTop}> Challenge</Link>
+                  <Link to="/challenge" onClick={scrollTop}>
+                    {" "}
+                    Challenge
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/contribute" onClick={scrollTop}>Contribute</Link>
+                  <Link to="/contribute" onClick={scrollTop}>
+                    Contribute
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/news" onClick={scrollTop}>News</Link>
+                  <Link to="/news" onClick={scrollTop}>
+                    News
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/contact" onClick={scrollTop}>Contacts</Link>
+                  <Link to="/contact" onClick={scrollTop}>
+                    Contacts
+                  </Link>
                 </li>
               </ul>
               <Logo
