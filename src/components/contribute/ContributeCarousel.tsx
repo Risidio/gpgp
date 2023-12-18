@@ -27,7 +27,6 @@ const ContributeCarousel = ({
           autoPlayInterval={1000}
           animationDuration={100}
           animationType="fadeout"
-          infinite
           controlsStrategy="alternate"
         />
       </div>

@@ -11,10 +11,10 @@ export const GalleryItem: React.FC<GalleryItemProps> = ({
     imageUrl
 }) => {
   return (
-          <Link to={imageUrl}>
+          <Link to={imageUrl} className=''>
             <img
                   src={imageUrl}
-                  className="w-full rounded-md shadow-sm"
+                  className="bg-[#f1f1f1] w-full rounded-md shadow-sm"
                   alt={title}
               />
               <div className="flex flex-col py-[10px]">
