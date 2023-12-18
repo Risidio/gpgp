@@ -9,7 +9,7 @@ import Section5 from "../components/challenge/Section5";
 const Challenge = () => {
   return (
     <>
-      <div className="xxxxl:max-w-[2560px] xxxxl:mx-auto">
+      <div className="xxl:w-[1440px] xxl:mx-auto">
         {/* <Header /> */}
         <Hero />
         <PlasticRevolution/>

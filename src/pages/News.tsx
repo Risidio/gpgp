@@ -1,8 +1,11 @@
 import NewsList from "../components/news/NewsList";
 
-
 export const News = () => {
- 
-
-  return <NewsList />;
+  return (
+    <>
+      <div className="">
+        <NewsList />;
+      </div>
+    </>
+  );
 };
