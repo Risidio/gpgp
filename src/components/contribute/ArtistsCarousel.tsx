@@ -4,11 +4,11 @@ import MyLink from "../base/MyLink";
 const ArtistCarousel = ({ content }: IArtistInvitationProp) => {
   const Invitation = [
     {
-      heading: content?.artistheading[0].text,
+      heading: content?.artistheading[0]?.text,
       description: {
-        head: content?.contentsubheading1[0].text,
-        body: content?.artistcontent[0].text,
-        secondParagraph: content?.artistsecondcontent[0].text,
+        head: content?.contentsubheading1[0]?.text,
+        body: content?.artistcontent[0]?.text,
+        secondParagraph: content?.artistsecondcontent[0]?.text,
       },
       Img: content?.artistimage.url,
       Btn: {
