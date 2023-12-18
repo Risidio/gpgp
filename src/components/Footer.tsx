@@ -21,7 +21,7 @@ const Footer = ({
 
   return (
     <footer
-      className={`xxl:w-[1440px] xxl:mx-auto mx-auto
+      className={`
        border-t bg-gpgp-blue`}
     >
       <Container hasSection={false} classes={"bg-gpgp-blue text-white"}>

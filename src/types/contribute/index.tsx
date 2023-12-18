@@ -38,7 +38,6 @@ export interface IinvitaitonSectionProps {
 
 export interface IArtistInvitationProp{
   content:IinvitaitonArtistData;
-  onDragStart:any;
 }
 
 export interface ISponsorInvitationProp{
