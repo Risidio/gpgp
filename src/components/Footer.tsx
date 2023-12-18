@@ -37,7 +37,7 @@ const Footer = ({
               logo={"image.png"}
             />
             <SocialMedia color={`white`} />
-            <ContactInfo classes={"text-white"} />
+            <ContactInfo classes={"text-white"} scrollTop={scrollTop} />
           </div>
 
           <div
@@ -70,7 +70,7 @@ const Footer = ({
               <ul className="text-sm space-y-4 text-right">
                 <li>Sitemap</li>
                 <li>
-                  <Link to="/project">Project</Link>
+                  <Link to="/project" onClick={scrollTop}>Project</Link>
                 </li>
                 <li>
                   <Link to="/challenge" onClick={scrollTop}> Challenge</Link>
@@ -79,7 +79,7 @@ const Footer = ({
                   <Link to="/contribute" onClick={scrollTop}>Contribute</Link>
                 </li>
                 <li>
-                  <Link to="/news">News</Link>
+                  <Link to="/news" onClick={scrollTop}>News</Link>
                 </li>
                 <li>
                   <Link to="/contact" onClick={scrollTop}>Contacts</Link>
