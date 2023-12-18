@@ -21,6 +21,11 @@ const ContactInfo = ({ classes = "white", scrollTop }: ContactInfoProps) => {
               Challenge
             </Link>
           </li>
+          <li>
+            <Link to={"/news"} onClick={scrollTop}>
+              News
+            </Link>
+          </li>
         </ul>
       </div>
 
