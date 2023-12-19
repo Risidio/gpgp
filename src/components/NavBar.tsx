@@ -121,8 +121,10 @@ const NavBar = () => {
 
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-white transition ease transform duration-300`;
   return (
-    <div className="xxl:w-[1440px] xxl:mx-auto px-2 lg:px-4 sm:px-12 py-1 flex justify-between  items-center bg-gpgp-blue sm:bg-white xxxxl:max-w-[2560px] xxxxl:mx-auto">
-      <nav className="flex w-full md:flex px-0 py-0 md:px-4 md:py-3 items-center justify-between">
+    // <div className="xxl:w-[1440px] xxl:mx-auto px-2 lg:px-4 sm:px-12 py-1 flex justify-between  items-center bg-gpgp-blue sm:bg-white xxxxl:max-w-[2560px] xxxxl:mx-auto">
+
+    <div className="xl:w-[1283px] xl:mx-auto  flex justify-between  items-center bg-gpgp-blue sm:bg-white xl:mt-[12px] xl:ml-[83px]">
+      <nav className="flex w-full  items-center justify-between">
         {/* phone Navbar */}{" "}
         <Link
           to="/"
@@ -165,7 +167,7 @@ const NavBar = () => {
         {/* Web Navbar */}
         <Link
           to="/"
-          className="hidden sm:flex items-center sm:pl-0 xxxxl:w-[320px] md:pl-4"
+          className="hidden sm:flex items-center"
           onClick={() => {
             resetSelectItem();
             // Hide all dots
@@ -177,18 +179,25 @@ const NavBar = () => {
             });
           }}
         >
-          <Logo className="w-max" logo={"NewNavLogo2.png"} />
+          <Logo className="" logo={"NewNavLogo2.png"} />
         </Link>
-        <div className="hidden sm:flex text-xl font-semibold">
+        <div className="hidden sm:flex w-[592px] ">
           {links.map((link, index) => {
             if (link.name !== "Home") {
               return (
                 <div
                   key={index}
-                  className="group relative  my-0 hover:cursor-pointer  hover:text-gpgp-blue uppercase"
+                  className="group relative hover:cursor-pointer  hover:text-gpgp-blue uppercase w-full"
                 >
+                  {/* <div
+                    className="flex flex-col items-center w-full"
+                    onClick={() => {
+                      handleWebNavClick(index);
+                      resetSelectItem();
+                    }}
+                  > */}
                   <div
-                    className="flex flex-col items-center text-sm lg:text-[1rem] xxl:text-[1.2rem] xxxxl:text-[1.3rem] gap-1 px-3 py-2 w-full"
+                    className="flex w-full gap-[25px] "
                     onClick={() => {
                       handleWebNavClick(index);
                       resetSelectItem();
@@ -196,7 +205,7 @@ const NavBar = () => {
                   >
                     <Link
                       to={link.href}
-                      className="text-black"
+                      className="text-black font-bevietnam text-[16px] font-[500] leading-[23.38px] tracking-[0.041em] text-center"
                       id={`Nav-link${index}`}
                     >
                       {link.name}
