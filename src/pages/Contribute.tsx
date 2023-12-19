@@ -12,7 +12,7 @@ export default function Contribute() {
 
 
   return (
-    <div className="mb-[-10px] xxl:w-[1440px] xxl:mx-auto">
+    <div className="mb-[-10px] xxxxl:w-[1440px] xxxxl:mx-auto">
       
       <NewContributeHero
         contents={document?.data["body"][0].primary}

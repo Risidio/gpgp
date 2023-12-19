@@ -23,7 +23,7 @@ const Footer = ({ classes = "bg-gpgp-blue" }: FooterProps) => {
 
   return (
     <footer
-      className={`xxl:w-[1440px] xxl:mx-auto mx-auto
+      className={`xxxxl:w-[1440px] xxxxl:mx-auto mx-auto
        border-t bg-gpgp-blue`}
     >
       <Container hasSection={false} classes={"bg-gpgp-blue text-white"}>
