@@ -4,7 +4,7 @@ import gpgpMapImage from "../assets/images/gpgp-map-mobile.png";
 const Hero = () => {
   return (
     <>
-      <section className="pt-[48px]">
+      <section className="pt-[48px] xl:pt-[unset]">
         {/* Container */}
         <div className="flex flex-col xl:flex-row xl:pl-[68px] ">
           {/* First Column */}
@@ -34,8 +34,8 @@ const Hero = () => {
               <h3 className="hidden xl:block font-[be-vietnam-normal-600] text-[20px] leading-[29.502px] tracking-[3px] uppercase">
                 The Great Pacific Garbage Patch | GPGP
               </h3>
-              <div className="m-0 p-0 w-[371px] xl:mt-[10px] xl:w-[441.693px] mx-auto xl:mx-0 leading-[28.8px] xl:leading-[57.6px] tracking-[1.2px]">
-                <h3 className="text-[24px] xl:text-[48px] uppercase font-[be-vietnam-600] text-gpgp-blue">
+              <div className="m-0 p-0 w-[371px] xl:mt-[10px] xl:w-[441.693px] mx-auto xl:mx-0 leading-[28.8px] xl:leading-[57.6px] tracking-[1.2px] xl:tracking-[unset]">
+                <h3 className="text-[24px] xl:text-[48px] uppercase font-[be-vietnam-700] text-gpgp-blue">
                   Art Project by{" "}
                   <span className="text-white header-text-stroke">
                     Environmental artist
@@ -47,7 +47,7 @@ const Hero = () => {
                 </h3>
                 
               </div>
-              <h3 className="capitalize mt-[25px] xl:mt-[17px] text-[#050B1D] text-[16px] xl:text-[20px] font-[be-vietnam-normal-400] leading-[19.2px] xl:leading-[29.502px] tracking-[0.8px]">
+              <h3 className="xl:w-[313px] capitalize mt-[25px] xl:mt-[17px] text-[#050B1D] text-[16px] xl:text-[20px] font-[be-vietnam-normal-400] leading-[19.2px] xl:leading-[29.502px] tracking-[0.8px] xl:tracking-[unset]">
                 The art inspiring global action
               </h3>
               {/* Button Container */}

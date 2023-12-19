@@ -8,7 +8,7 @@ import ContactUs from "../components/ContactUs";
 const Home = () => {
   return (
     <>
-      <div className="xxxxl:w-[1440px] xxxxl:mx-auto">
+      <div className="xl:w-[1440px] xl:mx-auto xl:mt-[157px]">
         <Hero />
 
         <Exhibition />
