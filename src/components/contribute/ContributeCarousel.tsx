@@ -24,8 +24,8 @@ const ContributeCarousel = ({
           items={items}
           disableDotsControls
           disableButtonsControls
-          autoPlayInterval={1000}
-          animationDuration={100}
+          autoPlayInterval={2000}
+          animationDuration={500}
           animationType="fadeout"
           controlsStrategy="alternate"
         />

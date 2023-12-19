@@ -5,8 +5,6 @@ import prismicDocumentTypes from "../utility/prismicDocumentTypes";
 
 const Gallery = () => {
   const [document] = useSinglePrismicDocument(prismicDocumentTypes.gallery);
-  console.log("Gallery Document:", document?.data["body"][2]);
-
   return (
     <>
       <div className="xxl:w-[1440px] xxl:mx-auto">
