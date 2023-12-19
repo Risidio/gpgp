@@ -40,7 +40,7 @@ const Section4 = () => {
         </div>
         <div className="flex flex-col items-center mt-[35px] xl:mt-[71px]">
           <MyLink
-            to=""
+            to="/contribute"
             className="w-[187px] xl:w-[223px] h-[40px] xl:h-[63px] bg-gpgp-blue rounded-[2px] shrink-0 mt-[35px] xl:mt-[74px] mx-auto xl:mx-0"
           >
             <p className="text-white text-center text-[15px] xl:text-[16px] uppercase font-[be-vietnam-700] leading-[normal] xl:leading-[23.602px] xl:tracking-[4.4px] tracking-[4.125px]">

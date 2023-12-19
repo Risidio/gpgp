@@ -35,7 +35,7 @@ const Hero = () => {
           </p>
           <div className="mt-[29px] xl:mt-[14px] flex flex-col gap-y-[16px] xl:gap-y-[14px]">
             <MyLink
-              to=""
+              to="/contribute"
               className="w-[216px] xl:w-full h-[49px] xl:h-[63px] bg-white rounded-[2px]  shrink-0 mx-auto xl:mx-0"
             >
               <p className="text-gpgp-blue text-center text-[11px] xl:text-[16px] uppercase font-[be-vietnam-700] leading-[16.226px] xl:leading-[23.602px] xl:tracking-[4.4px] tracking-[3.025px]">
@@ -56,7 +56,7 @@ const Hero = () => {
             </MyLink>
 
             <MyLink
-              to=""
+              to="/contact"
               className="hidden xl:block w-[216px] xl:w-full h-[49px] xl:h-[63px] bg-gpgp-blue rounded-[2px]  shrink-0 mx-auto xl:mx-0"
             >
               <p className="xl:mt-[20px] text-white text-center text-[11px] xl:text-[16px] uppercase font-[be-vietnam-700] leading-[16.226px] xl:leading-[23.602px] xl:tracking-[4.4px] tracking-[3.025px]">

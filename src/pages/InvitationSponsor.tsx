@@ -41,7 +41,7 @@ export default function InvitationSponsor() {
 
   const heading = "Sponsor";
   return (
-    <div className="xxl:w-[1440px] xxl:mx-auto">
+    <div className="xxxxl:w-[1440px] xxxxl:mx-auto">
       <InviteHero heading={heading} />
 
       <NewInvitationForm
