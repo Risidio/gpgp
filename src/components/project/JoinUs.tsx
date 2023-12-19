@@ -49,7 +49,7 @@ const JoinUs = ({ contents }: IJoinSectionProps) => {
           ></p>
           <div className="flex flex-row justify-center xl:justify-start gap-x-[16px] xl:gap-x-[18.1px] mt-[33px] xl:mt-[65px]">
             <MyLink
-              to=""
+              to="/contribute/inviteArtist"
               className="w-[104px] xl:w-[223px] h-[38px] xl:h-[63px] bg-white rounded-[2px] shrink-0"
             >
               <p className="text-gpgp-blue text-center text-[15px] xl:text-[16px] uppercase font-[be-vietnam-700] leading-[normal] xl:leading-[23.602px] xl:tracking-[4.4px] tracking-[4.125px]">
@@ -57,7 +57,7 @@ const JoinUs = ({ contents }: IJoinSectionProps) => {
               </p>
             </MyLink>
             <MyLink
-              to=""
+              to="/contribute/inviteSponsor"
               className="w-[104px] xl:w-[223px] h-[38px] xl:h-[63px] bg-gpgp-blue rounded-[2px] shrink-0"
             >
               <p className="text-white text-center text-[15px] xl:text-[16px] uppercase font-[be-vietnam-700] leading-[normal] xl:leading-[23.602px] xl:tracking-[4.4px] tracking-[4.125px]">
