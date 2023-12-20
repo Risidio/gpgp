@@ -120,7 +120,7 @@ const NavBar = () => {
   return (
     // <div className="xxl:w-[1440px] xxl:mx-auto px-2 lg:px-4 sm:px-12 py-1 flex justify-between  items-center bg-gpgp-blue sm:bg-white xxxxl:max-w-[2560px] xxxxl:mx-auto">
 
-    <div className="xl:w-[1283px] xl:mx-auto  flex justify-between  items-center bg-gpgp-blue sm:bg-white xl:mt-[12px] xl:ml-[83px]">
+    <div className="xl:w-[1283px] h-[67.273px] xl:h-[unset] xl:mx-auto  flex justify-between  items-center bg-gpgp-blue sm:bg-white xl:mt-[12px] xl:ml-[83px]">
       <nav className="flex w-full  items-center justify-between">
         {/* phone Navbar */}{" "}
         <Link
