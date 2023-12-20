@@ -24,19 +24,19 @@ const Section4 = () => {
           </MyLink>
         </div>
       </div> */}
-      <section className="mt-[82.5px] xl:mt-[417px] xl:mb-[295px]">
+      <section className="mt-[82.5px] xl:mt-[417px] mb-[130px] xl:mb-[295px]">
         <div className="flex flex-col text-center text-[16px] xl:text-[32px] leading-[32px] xl:leading-[200%] tracking-[-0.32px] xl:tracking-[-0.64px] font-[be-vietnam] bold-400">
           <h3 className="text-[#050B1D] w-[298px] xl:w-[886.048px] mx-auto font-[be-vietnam] font-[700] flex xl:flex-col justify-center xl:ml-[266.76px]">
-            <span>The project GPGP contributes to ongoing research</span> 
-            <span>of plastic in marine
-            environments.</span>
+            {/* <span> */}The project GPGP contributes to ongoing research{/* </span> */} 
+            {/* <span> */}of plastic in marine
+            environments.{/* </span> */}
           </h3>
 
           <div className="w-[297px] xl:w-[764.475px] mx-auto mt-[31px] xl:mt-[71px] h-[4px] xl:h-[10px] bg-gpgp-blue rounded-[40px] xl:ml-[327px]"></div>
 
           <h3 className="mt-[29px] xl:mt-[60px] w-[293px] xl:w-[1081px] xl:font-[be-vietnam-400] mx-auto flex xl:flex-col xl:ml-[166px]">
-            <span>This knowledge guides cleanup strategies and informs policies,</span>
-            <span>leading to more effective and targeted solutions.</span>
+            {/* <span> */}This knowledge guides cleanup strategies and informs policies, {/* </span> */}
+            {/* <span> */}leading to more effective and targeted solutions.{/* </span> */}
           </h3>
         </div>
         <div className="flex flex-col items-center mt-[35px] xl:mt-[60px] ">

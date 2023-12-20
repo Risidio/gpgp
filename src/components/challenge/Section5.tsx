@@ -1,11 +1,12 @@
 const Section5 = () => {
   return (
     <>
-      {/* <div className="w-[100%] xl:w-[100%] placeholder:h-[100%] bg-project-page-wave bg-no-repeat bg-cover flex flex-col justify-center items-center pt-[100px] sm:pt-[190px] md:pt-[200px] md:pb-[100px] md:mt-[70px] xl:pt-[240px] xxl:pt-[300px] xxxl:pt-[440px] xxxxl:pt-[560px] pb-[30px] xxxl:pb-[200px] xxxxl:pb-[200px] font-[be-vietnam-bold]"> */}
-      <div className="w-[100%] xl:w-[100%] xl:pt-[376px] xl:pb-[105px] placeholder:h-[100%] bg-project-page-wave bg-no-repeat bg-cover flex flex-col justify-center items-center pt-[100px] font-[be-vietnam-bold]">
-        <h1 className="font-[be-vietnam] text-[16px] xxl:text-[36px] md:font-[700] uppercase text-white text-center">
-          contribute to the global effort <br />
-          Create a better world
+      <div className="w-[100%] xl:w-[100%]  pt-[103px] pb-[61px] xl:pt-[376px] xl:pb-[105px] placeholder:h-[100%] bg-mobile-button-wave xl:bg-project-page-wave bg-no-repeat bg-cover flex flex-col justify-center items-center pt-[100px] font-[be-vietnam-bold]">
+        <h1 className="font-[be-vietnam] text-[16px] xl:text-[36px] md:font-[700] uppercase leading-[23.602px] xl:leading-[53.104px] text-white text-center flex flex-col">
+          <span className="order-2 xl:order-1">
+            contribute to the global effort
+          </span>
+          <span className="order-1 xl:order-2">Create a better world</span>
         </h1>
       </div>
     </>
