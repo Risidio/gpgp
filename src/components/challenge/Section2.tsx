@@ -8,7 +8,7 @@ const Section2 = () => {
         <div className="">
           <h3 className="xl:hidden w-[160px] text-[#050B1D] text-center font-[be-vietnam-700] uppercase mx-auto text-[16px]">Who is facing the consequences of plastics?</h3>
           {/* Image */}
-          <div className="mt-[39px]  flex  items-center xl:items-start xl:mt-[5px]">
+          <div className="mt-[39px] flex justify-center xl:items-start xl:mt-[5px]">
             <img 
             src={TrashedPlasticObjects} 
             alt="Trashed Plastic Objects"
