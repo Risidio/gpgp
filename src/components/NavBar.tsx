@@ -51,9 +51,7 @@ const links = [
   },
 ];
 
-
-
-// 
+//
 const NavBar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -117,7 +115,6 @@ const NavBar = () => {
     });
   };
   const currentRoute = location.pathname;
-
 
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-white transition ease transform duration-300`;
   return (
@@ -225,9 +222,8 @@ const NavBar = () => {
                   </div>
                 </div>
               );
-            }
-            else{
-              return null
+            } else {
+              return null;
             }
           })}
         </div>
