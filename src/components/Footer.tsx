@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Container from "./Container";
 import Logo from "./Logo";
 import ContactInfo from "./footer/ContactInfo";
@@ -10,14 +10,16 @@ interface FooterProps {
   classes?: string;
 }
 
-const Footer = ({
-  classes = "bg-gpgp-blue",
-}: FooterProps) => {
+const Footer = ({ classes = "bg-gpgp-blue" }: FooterProps) => {
   const currentPath = useLocation().pathname;
 
   const footerStyles = getFooterDetail(currentPath) || null;
   const fontColor =
     footerStyles && footerStyles.fontColor ? footerStyles.fontColor : "white";
+
+  const scrollTop = () => {
+    window.scrollTo(0, 0);
+  };
 
   return (
     <footer
@@ -33,7 +35,7 @@ const Footer = ({
               logo={"image.png"}
             />
             <SocialMedia color={`white`} />
-            <ContactInfo classes={"text-white"} />
+            <ContactInfo classes={"text-white"} scrollTop={scrollTop} />
           </div>
 
           <div
@@ -65,11 +67,32 @@ const Footer = ({
             <div className="flex flex-col items-end">
               <ul className="text-sm space-y-4 text-right">
                 <li>Sitemap</li>
-                <li>Project</li>
-                <li>Challenge</li>
-                <li>Contribute</li>
-                <li>News</li>
-                <li>Contacts</li>
+                <li>
+                  <Link to="/project" onClick={scrollTop}>
+                    Project
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/challenge" onClick={scrollTop}>
+                    {" "}
+                    Challenge
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contribute" onClick={scrollTop}>
+                    Contribute
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/news" onClick={scrollTop}>
+                    News
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" onClick={scrollTop}>
+                    Contacts
+                  </Link>
+                </li>
               </ul>
               <Logo
                 className="flex items-start w-16 h-16"
