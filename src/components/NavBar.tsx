@@ -165,7 +165,7 @@ const NavBar = () => {
         {/* Web Navbar */}
         <Link
           to="/"
-          className="hidden sm:flex items-center sm:pl-0 xxxxl:w-[320px] md:pl-4"
+          className="hidden sm:flex items-center"
           onClick={() => {
             resetSelectItem();
             // Hide all dots
@@ -177,18 +177,25 @@ const NavBar = () => {
             });
           }}
         >
-          <Logo className="w-max" logo={"NewNavLogo2.png"} />
+          <Logo className="" logo={"NewNavLogo2.png"} />
         </Link>
-        <div className="hidden sm:flex text-xl font-semibold">
+        <div className="hidden sm:flex w-[592px] ">
           {links.map((link, index) => {
             if (link.name !== "Home") {
               return (
                 <div
                   key={index}
-                  className="group relative  my-0 hover:cursor-pointer  hover:text-gpgp-blue uppercase"
+                  className="group relative hover:cursor-pointer  hover:text-gpgp-blue uppercase w-full"
                 >
+                  {/* <div
+                    className="flex flex-col items-center w-full"
+                    onClick={() => {
+                      handleWebNavClick(index);
+                      resetSelectItem();
+                    }}
+                  > */}
                   <div
-                    className="flex flex-col items-center text-sm lg:text-[1rem] xxl:text-[1.2rem] xxxxl:text-[1.3rem] gap-1 px-3 py-2 w-full"
+                    className="flex w-full gap-[25px] "
                     onClick={() => {
                       handleWebNavClick(index);
                       resetSelectItem();
@@ -196,7 +203,7 @@ const NavBar = () => {
                   >
                     <Link
                       to={link.href}
-                      className="text-black"
+                      className="text-black font-bevietnam text-[16px] font-[500] leading-[23.38px] tracking-[0.041em] text-center"
                       id={`Nav-link${index}`}
                     >
                       {link.name}

@@ -30,9 +30,9 @@ const Section1 = () => {
           </MyLink>
         </div>
       </div> */}
-      <section className="mt-[82.5px] xl:mt-[211px]">
-        <div className="grid text-center text-[16px] leading-[-0.32px] xl:leading-[200%] tracking-[-0.32px] xl:tracking-[-0.64px] font-[be-vietnam] bold-400 xl:text-[32px]">
-          <h3 className="text-[#050B1D] w-[298px] xl:w-[1215px] mx-auto xl:order-3 xl:mt-[55px] ">
+      <section className="mt-[82.5px] xl:mt-[190px]">
+        <div className="flex flex-col text-center text-[16px] leading-[-0.32px] xl:leading-[200%] tracking-[-0.32px] xl:tracking-[-0.64px] font-[be-vietnam] bold-[400] xl:text-[32px]">
+          <h3 className="text-[#050B1D] w-[298px] xl:w-[1215px] mx-auto xl:order-3 xl:mt-[55px] xl:ml-[113px]">
             92% of plastic pollution found on the ocean's surface is
             microplastic and <br />
             it is estimated there is about{" "}

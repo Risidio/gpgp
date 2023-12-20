@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import MyLink from "../base/MyLink";
 import ContributeWave from "./ContributeWave";
 import SponsorWave from "./SponsorWave";
-import CarouselImg from "../../assets/images/CarouselImg.png";
 import InvitationCarouselDotActive from "../../assets/images/InvitationCarouselDotActive.png";
 import InvitationCarouselDot from "../../assets/images/InvitationCarouselDot.png";
-
 import { IinvitaitonSectionProps } from "../../types/contribute";
-import ArtistCarousel from "./ArtistsCarousel";
+
 
 const ContributeCarousel = ({
   contents1,

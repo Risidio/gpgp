@@ -3,11 +3,12 @@ import TrashedPlasticObjects from "../../assets/images/trashedPlasticObjectsMobi
 const Section2 = () => {
   return (
     <>
-      <section className="mt-[100px] xl:mt-[368px] xl:grid xl:grid-cols-2 xl:gap-x-[100px] xxl:gap-x-[128px] xl:px-[50px] xxl:px-[80px]">
+      {/* <section className="mt-[100px] xl:mt-[368px] xl:grid xl:grid-cols-2 xl:gap-x-[100px] xxl:gap-x-[128px] xl:px-[50px] xxl:px-[80px]"> */}
+      <section className="mt-[100px] xl:mt-[368px] xl:flex xl:gap-x-[130px] xl:ml-[80px]">
         <div className="">
           <h3 className="xl:hidden w-[160px] text-[#050B1D] text-center font-[be-vietnam-700] uppercase mx-auto text-[16px]">Who is facing the consequences of plastics?</h3>
           {/* Image */}
-          <div className="mt-[39px] xl:mt-0 flex flex-col items-center xl:items-start xl:mt-[20px]">
+          <div className="mt-[39px]  flex  items-center xl:items-start xl:mt-[5px]">
             <img 
             src={TrashedPlasticObjects} 
             alt="Trashed Plastic Objects"
@@ -18,7 +19,7 @@ const Section2 = () => {
         {/* Contents */}
         <div className="mt-[36px] xl:mt-0 w-[293px] xl:w-[556px] text-center xl:text-left text-[#050B1D] mx-auto xxl:mx-0 font-[be-vietnam] bold-400">
           
-          <h3 className="hidden xl:block text-[36px] leading-[53.104px] text-[#050B1D] font-[be-vietnam-700]">
+          <h3 className="hidden xl:block text-[36px] leading-[53.104px] text-[#050B1D] font-[be-vietnam] font-[700] xl:mt-[-19.5px]">
             Who is facing the consequences of plastics?
             </h3>
           

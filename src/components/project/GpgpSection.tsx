@@ -39,7 +39,7 @@ const GpgpSection = ({ contents }: IGpgpSectionProps) => {
             className="hidden xl:block mt-[50px] text-[15px] xl:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[30px] font-[be-vietnam] bold"
           ></p>
           <MyLink
-            to=""
+            to="/news"
             className="w-[187px] xl:w-[223px] h-[40px] xl:h-[63px] bg-gpgp-blue xl:bg-white rounded-[2px] shrink-0 mt-[35px] xl:mt-[74px] mx-auto xl:mx-0"
           >
             <p className="text-white xl:text-gpgp-blue text-center text-[15px] xl:text-[16px] uppercase font-[be-vietnam-700] leading-[normal] xl:leading-[23.602px] xl:tracking-[4.4px] tracking-[4.125px]">

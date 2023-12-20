@@ -41,17 +41,17 @@ const Footer = ({ classes = "bg-gpgp-blue" }: FooterProps) => {
           <div
             className={`w-full grid grid-cols-3 justify-between text-${fontColor} pt-10 pb-3`}
           >
-            <div className="text-right text-white font-thin col-span-2 px-5 text-[0.9rem]">
-              2023 JohnDahlsen & Infinart All Rights Reserved - Designed by
+            <div className="text-right text-white font-thin col-span-2 px-5 text-[12px] font-[be-vietnam] bold-300">
+              2023 John Dahlsen & Infinart All Rights Reserved - Designed by
               Risidio
             </div>
 
-            <div
+            {/* <div
               className={`grid grid-cols-2 gap-x-2 text-white font-thin text-[0.9rem]`}
             >
               <p>Privacy Policy</p>
               <p>Terms of Service</p>
-            </div>
+            </div> */}
           </div>
         </div>
 
