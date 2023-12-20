@@ -23,7 +23,7 @@ export default function NewContributeHero({
   return (
     <>
       <div className=" flex flex-col justify-center items-center sm:mb-[-100px] z-60">
-        <div className="flex flex-col items-center md:flex-row gap-x-[-70px] w-[100%] mt-0">
+        <div className="flex flex-col items-center md:flex-row gap-x-[-70px] w-[100%] mt-0 pt-[90px]">
           
             <DeskstopContributeHero
               classes={{
@@ -50,8 +50,8 @@ export default function NewContributeHero({
             />
           
 
-          
-          <div className=" w-[65%] flex justify-center text-center md:text-left pt-4 items-center flex-col xsm:mb-3 sm:mb-0 md:pl-[1rem] md:pr-[1rem] lg:pl-0 lg:pr-[12px] xxl:pr-[6rem]">
+
+          <div className=" w-[65%] flex justify-center text-center md:text-left pt-4 items-center flex-col xsm:mb-3 sm:mb-0 md:pl-[1rem] md:pr-[1rem]  lg:pr-[12px] xxl:pr-[6rem]">
             {HeroContent &&
               HeroContent?.map((item, index) => (
                 <p
@@ -81,61 +81,7 @@ export default function NewContributeHero({
         </div>
       </div>
 
-      {/* <section className="bg-[pink] xl:grid xl:grid-cols-2">
-        Call to Action *
-        <div className="w-[411px] xl:w-[591px] mx-auto mt-[59.68px] xl:mt-0">
-          <h3 className="font-[be-vietnam-800] text-gpgp-blue leading-[35.402px] text-[24px] xl:text-[48px] text-center xl:text-right uppercase xl:mr-[62px]">
-            Contribute{" "}
-            <span className="header-text-stroke text-white">
-              <br className="xl:hidden"/>
-              <br className="hidden"/>to <br className="hidden xl:block"/>the global effort
-            </span>{" "}
-            <br className=""/><br className="hidden xl:block"/>
-            <span className="xl:text-[70px]">create</span><br className="hidden xl:block"/> <span className="xl:header-text-stroke xl:text-white xl:mt-[30px]">a better world</span>
-          </h3>
-        </div>
-
-         Content *
-        <div className="xl:w-[622px] xl:mr-[179px]">
-          <div className="bg-[yellow] hidden xl:block flex flex-col xl:gap-y-[30px]">
-            {HeroContent &&
-              HeroContent?.map((item, index) => (
-                <p
-                  className={`text-[1rem] text-[#050B1D] xl:text-[16px] font-[be-vietnam] bold-400 leading-[32px]`}
-                  key={index}
-                >
-                  {item}
-                </p>
-              ))}
-          </div>
-
-          * Mobile *
-          <div className="xl:hidden bg-[teal] flex flex-col text-center mt-[30px] gap-y-[10px] w-[293px] mx-auto">
-            <p className="text-[1rem] text-[#050B1D] font-[be-vietnam] bold-400 leading-[32px]">
-              The Great Pacific Garbage Patch Art Project is an exciting
-              initiative that welcomes both artists and investors to join us in
-              making a profound impact on the environment. Together, we can
-              create a harmonious blend of creativityand capital to tackle one
-              ofthe planet's most pressingenvironmental challenges.
-            </p>
-
-            <p className="text-[1rem] text-[#050B1D] font-[be-vietnam] bold-400 leading-[32px]">
-              Join us on this remarkable journey to combat the Great Pacific
-              Garbage Patch through the transformative power of art and
-              investment.
-            </p>
-          </div>
-
-          <div className="flex flex-col justify-center items-center mt-[42px] gap-y-[10px]">
-            <MyLink to={"/contribute/inviteSponsor"} className="w-[216px] xl:w-[622px] h-[49px] xl:h-[63px] flex flex-col justify-center items-center bg-white">
-              <p className="text-gpgp-blue font-[be-vietnam-700] text-[11px] xl:text-[16px] uppercase text-center w-[189px] xl:w-[543.134px] h-[35px] xl:h-0 leading-[16.226px ] tracking-[3.025px]">Contribute <br/>as an investor</p>
-            </MyLink>
-            <MyLink to={"/contribute/inviteSponsor"} className="w-[216px] xl:w-[622px] h-[49px] xl:h-[63px] flex flex-col justify-center items-center bg-gpgp-blue">
-              <p className="text-white font-[be-vietnam-700] text-[11px] xl:text-[16px] uppercase text-center w-[189px] xl:w-[543.134px] h-[35px] xl:h-0 leading-[16.226px ] tracking-[3.025px]">Contribute <br/>as an artist</p>
-            </MyLink>
-          </div>
-        </div>
-      </section> */}
+      
     </>
   );
 }

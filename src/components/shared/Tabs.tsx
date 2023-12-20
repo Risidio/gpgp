@@ -18,7 +18,7 @@ const Tabs = ({
   const generalStyle = "text-gpgp-blue block px-4 py-1 rounded-lg hover:bg-gray-100 hover:text-black m-[5px] sm:mr-[30px] border border-gpgp-blue sm:font-normal text-sm transition"
   const selectedStyle = twMerge(generalStyle, "font-bold bg-gpgp-blue text-white shadow-md");
   return (
-        <div className="w-full flex  flex-row flex-wrap  items-start  ml-[20px] md:ml-[35px] sm:mt-[100px] mb-[15px] ">
+        <div className="w-full flex  flex-row flex-wrap  items-start  ml-[20px] md:ml-[35px] xl:mt-[212px] mb-[15px] ">
          {showAllLabel && (
           <button
               key="all"

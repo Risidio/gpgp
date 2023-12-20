@@ -13,7 +13,7 @@ export default function MobileContributeHero({
 }: IContributeHeroProps) {
   return (
     <div className="  sm:hidden w-[100%] xsm:mb-2 sm:mb-0 pt-9 md:pl-[30px] lg:pl-[30px] xlg:mr-[-45px] flex text-center md:text-right flex-col justify-center items-center uppercase">
-      <div className="w-[110%] mb-0 sm:w-[100%] xlg:w-[80%] ">
+      <div className="w-[100%] mb-0 sm:w-[100%] xlg:w-[80%] ">
         <h2 className="text-[1.3rem] xsm:text-[1.7rem] sm:text-[1.8rem]  font-BeVietnam md:mb-[-10px] text-gpgp-blue font-bold">
           {contents?.mobileheading1[0].text}
         </h2>

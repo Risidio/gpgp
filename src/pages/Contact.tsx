@@ -46,7 +46,7 @@ export default function Contact() {
         SponsorFormLegend={SponsorFormLegend}
       />
 
-      <section className="mt-20 sm:mt-10">
+      <section className="mt-20 z-30 md:mt-[-70px]">
         <ContributionSection
           classes={{
             container: " ",

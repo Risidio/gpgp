@@ -100,7 +100,7 @@ export default function NewInvitationForm({
                     <textarea
                       name={field.label}
                       id={field.id}
-                      rows={field.label === "Message" ? rows : 8}
+                      rows={5}
                       className={`border border-[#0A2471] rounded-[7px] 
                       px-3 py-2 w-full text-black`}
                     />
