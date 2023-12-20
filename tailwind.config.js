@@ -72,6 +72,8 @@ module.exports = {
         "trashed-plastics-mobile":
           "url('./assets/images/trashedPlasticObjectsMobile.jpg')",
         "news-background-wave": "url('./assets/svg/newswave.svg')",
+        "mobile-button-wave":
+        "url('./assets/svg/mobilebuttonwave.svg')",
       },
       fontFamily: {
         BeVietnam: ['"Be Vietnam"', "sans-serif"],
