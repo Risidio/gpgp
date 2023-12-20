@@ -3,11 +3,10 @@ import MyLink from "../base/MyLink";
 const Hero = () => {
   return (
     <>
-      {/* <section className="xl:grid xl:grid-cols-2"> */}
       <section className="flex">
-      <div className="xl:flex xl:flex-row mx-auto xl:gap-[81px]">
+      <div className="xl:flex xl:flex-row mx-auto xl:gap-[81px] xl:ml-[297px]">
         {/* Call to Action Column */}
-        <div className="xl:order-2 xl:w-[398px]  mt-[60.73px] xl:mt-[6px]">
+        <div className="xl:order-2 xl:w-[398px]  mt-[60.73px] xl:mt-[18px]">
           <h1 className="text-gpgp-blue text-[32px] xl:text-[80px] font-[be-vietnam-700] uppercase text-center xl:text-left leading-[140%] xl:leading-[90px]">
             The art{" "}
             <span className="text-white header-text-stroke">
@@ -24,9 +23,8 @@ const Hero = () => {
         </div>
 
         {/* Content Column */}
-        {/* <div className="xl:order-1 mt-[17px] xl:mt-0 w-[293px] xl:w-[413px] mx-auto xl:mx-0 xl:ml-[160px] border border-1"> */}
         <div className="xl:order-1 mt-[17px] xl:mt-0 w-[293px] xl:w-[413px] mx-auto xl:mx-0">
-          <p className="text-[#050B1D] text-[16px] font-[be-vietnam] bold-400 text-center leading-[200%] tracking-[-0.32px] py-[10px]">
+          <p className="text-[#050B1D] text-[16px] font-[be-vietnam] bold-400 text-center xl:text-left leading-[200%] tracking-[-0.32px] py-[16px]">
             Imagine a vast floating island of discarded plastic waste <span className="text-[#0A2471] bold-600"> twice the
             size of Texas</span>, right in the heart of the Pacific Ocean - the Great
             Pacific Garbage Patch Challenge is not just an environmental
