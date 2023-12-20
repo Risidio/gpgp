@@ -4,7 +4,8 @@ const Section2 = () => {
   return (
     <>
       {/* <section className="mt-[100px] xl:mt-[368px] xl:grid xl:grid-cols-2 xl:gap-x-[100px] xxl:gap-x-[128px] xl:px-[50px] xxl:px-[80px]"> */}
-      <section className="mt-[100px] xl:mt-[368px] xl:flex xl:gap-x-[130px] xl:ml-[80px]">
+      {/* <section className="mt-[100px] xl:mt-[368px] xl:flex xl:gap-x-[130px] xl:ml-[80px]"> */}
+      <section className="mt-[100px] xl:mt-[368px] xl:flex xl:gap-x-[130px] xl:w-[1440px] xl:mx-[auto]">
         <div className="">
           <h3 className="xl:hidden w-[160px] text-[#050B1D] text-center font-[be-vietnam-700] uppercase mx-auto text-[16px]">Who is facing the consequences of plastics?</h3>
           {/* Image */}

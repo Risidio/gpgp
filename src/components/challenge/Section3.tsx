@@ -3,9 +3,9 @@ import FlatLayComposition from "../../assets/images/flat-lay-composition-differe
 const Section3 = () => {
   return (
     <>
-      {/* <section className="mt-[100px] xl:mt-[432px] xl:grid xl:grid-cols-2 xl:gap-x-[100px] xxl:gap-x-[125.25px] xl:px-[50px] xxl:px-[80px]"> */}
       {/* <section className="mt-[100px] xl:mt-[432px] xl:flex  xl:gap-x-[125.25px] xl:ml-[80px] bg-purple-500"> */}
-      <section className="mt-[100px] xl:mt-[432px] xl:flex  xl:gap-x-[90.25px] xl:ml-[80px]">
+      {/* <section className="mt-[100px] xl:mt-[432px] xl:flex  xl:gap-x-[90.25px] xl:ml-[80px]"> */}
+      <section className="mt-[100px] xl:mt-[432px] xl:flex  xl:gap-x-[90.25px] xl:w-[1440px] xl:mx-[auto]">
         <div className="xl:order-2">
           <h3 className="xl:hidden w-[257px] text-[#050B1D] text-center font-[be-vietnam-700] uppercase mx-auto text-[16px]">
             Heading in the right direction
