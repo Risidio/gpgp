@@ -52,7 +52,7 @@ const HomeContent = () => {
       {/* <ContentManage contents={contents} /> */}
       <section className="">
         {/* First Content Container */}
-        <div className="flex flex-col lg:flex-row mt-[127px] xl:mt-[293px]">
+        <div className="flex flex-col lg:flex-row mt-[127px] xl:mt-[298px]">
           {/* First Column */}
           <div className="flex flex-col gap-y-[32px] lg:w-full">
             {/* Header */}
@@ -61,7 +61,7 @@ const HomeContent = () => {
             </h3>
 
             {/* Image */}
-            <div className="mx-auto xl:pl-[128px]">
+            <div className="mx-auto xl:pl-[125px]">
               <img
                 src={ProjectImg}
                 alt="GPGP Blue"
