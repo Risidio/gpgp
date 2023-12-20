@@ -23,6 +23,9 @@ interface IContributeHeroData {
   heading2: { text: string }[];
   heading3: { text: string }[];
   heading4: { text: string }[];
+  mobileheading1: { text: string }[];
+  mobileheading2: { text: string }[];
+  mobileheading3: { text: string }[];
   "hero-content": { text: string }[];
   "hero-content2": { text: string }[];
   "hero-content3": { text: string }[];
@@ -33,16 +36,15 @@ interface IContributeHeroData {
 export interface IinvitaitonSectionProps {
   contents1: IinvitaitonArtistData;
   contents2: IinvitaitonSponsorData;
-
 }
 
-export interface IArtistInvitationProp{
-  content:IinvitaitonArtistData;
+export interface IArtistInvitationProp {
+  content: IinvitaitonArtistData;
 }
 
-export interface ISponsorInvitationProp{
-  content:IinvitaitonSponsorData;
-  onDragStart:any;
+export interface ISponsorInvitationProp {
+  content: IinvitaitonSponsorData;
+  onDragStart: any;
 }
 
 export interface IinvitaitonArtistData {
@@ -53,7 +55,6 @@ export interface IinvitaitonArtistData {
   artistcontent: { text: string }[];
   artistsecondcontent: { text: string }[];
 }
-
 
 interface IinvitaitonSponsorData {
   // sponsor
