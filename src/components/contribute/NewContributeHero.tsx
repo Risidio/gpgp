@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 import { IContributeHeroProps } from "../../types/contribute";
 import Wrapper from "../layout/Wrapper";
+import MyLink from "../base/MyLink";
 // import MyLink from "../base/MyLink";
 
 export default function NewContributeHero({
@@ -13,68 +13,134 @@ export default function NewContributeHero({
   },
   contents,
 }: IContributeHeroProps) {
-  const HeroContent = [
-    contents?.["hero-content"][0].text,
-    contents?.["hero-content2"][0].text,
-    contents?.["hero-content3"][0].text,
-  ];
+  // const HeroContent = [
+  //   contents?.["hero-content"][0].text,
+  //   contents?.["hero-content2"][0].text,
+  //   contents?.["hero-content3"][0].text,
+  // ];
 
   return (
     <Wrapper>
-      <div className=" flex flex-col justify-center items-center sm:mb-[-100px] z-60">
-        <div className="flex flex-col items-center md:flex-row gap-x-[-70px] w-[100%] mt-0">
-          <div className="w-[55%] xsm:mb-2 sm:mb-0 pt-3 md:pl-[30px] lg:pl-[30px] xlg:mr-[-45px] flex text-center md:text-right flex-col justify-center items-center uppercase">
-            <div className="w-[110%] mb-0 sm:w-[100%] xlg:w-[80%] ">
-              <h2 className="text-[1.3rem] xsm:text-[1.6rem] md:text-[2rem] lg:text-[2.5rem] font-BeVietnam xl:text-[3rem] xxl:text-[3.5rem] xxxl:text-[4rem] xxxxl:text-[4.3rem] md:mb-[-10px] text-gpgp-blue font-extrabold">
-                {contents?.heading1[0].text}
-              </h2>
-              <span
-                className="md:pl-[4px] text-[1.1rem] xsm:text-[1.2rem] font-BeVietnam md:text-[2rem] lg:text-[2.3rem] xl:text-[2.6rem] xxl:text-[3rem] xxxl:text-[3.5rem] xxxxl:text-[4rem] w-max text-white font-bold"
-                style={{ WebkitTextStroke: "1px #0A2471" }}
-              >
-                {contents?.heading2[0].text}
+      <div className="xl:grid xl:grid-cols-2 xl:mt-[124px]">
+        {/* First column */}
+        <div className="">
+          {/* Mobile */}
+          <div className="xl:hidden text-center mt-[59.68px]">
+            <h1 className="text-gpgp-blue text-[24px] xl:text-[80px] font-[be-vietnam-700] uppercase text-center xl:text-left leading-[35.402px] xl:leading-[90px]">
+              Contribute
+              <br />
+              <span className="text-white header-text-stroke">
+                to the global effort &nbsp;
               </span>
-            </div>
-
-            <div className=" w-[100%] mt-[-12px] xlg:w-[80%] mb-[10px]">
-              <h2 className="text-[2rem] xsm:text-[3rem] md:text-[4rem] font-BeVietnam sm:tracking-[5px] lg:text-[5rem] xl:text-[6.5rem] xxl:text-[6.5rem] xxxl:text-[7rem] md:mb-[-20px] text-gpgp-blue font-extrabold">
-                {contents?.heading3[0].text}
-              </h2>
-              <span
-                className=" md:pl-[4px] text-[1.5rem] xsm:text-[1.4rem] font-BeVietnam md:text-[2rem] lg:text-[2.5rem] xl:text-[3rem] xxl:text-[3.5rem] xxxl:text-[3.5rem] text-white font-bold "
-                style={{ WebkitTextStroke: "1px #0A2471" }}
-              >
-                {contents?.heading4[0].text}
+              <span className="hidden xl:inline-flex text-white xl:text-gpgp-blue  header-text-stroke  xl:header-text-no-stroke xl:ml-[-18px]">
+                global
               </span>
-            </div>
+              <span className="xl:hidden text-white xl:text-gpgp-blue  header-text-stroke  xl:header-text-no-stroke xl:ml-[-18px]">
+                <br />
+              </span>
+              <span className="action-header xl:text-white header-text-stroke">
+                create a better world
+              </span>
+            </h1>
           </div>
-
-          <div className=" w-[65%] flex justify-center text-center md:text-left pt-4 items-center flex-col xsm:mb-3 sm:mb-0 md:pl-[1rem] md:pr-[1rem] lg:pl-0 lg:pr-[12px] xxl:pr-[6rem]">
-            {HeroContent &&
-              HeroContent?.map((item, index) => (
-                <p
-                  className={` text-[1rem] font-BeVietnam w-[140%] sm:text-[1rem] lg:text-[1.3rem]  xxxl:text-[1.6rem] xsm:w-[120%] sm:w-[130%] md:w-[90%] font-be-vietnam mb-[30px]  md:mb-[20px] lg:mb-[29px] tracking-normal sm:tracking-[1px]  z-8 md:z-10 opacity-100 xsm:leading-6  md:leading-[26px]  xl:leading-[36px] xxxl:leading-[3rem] ${paragraph}`}
-                  key={index}
-                >
-                  {item}
-                </p>
-              ))}
+          {/* Web */}
+          <div className="hidden xl:block mr-[62px]">
+            <h1 className="h-[337px] text-gpgp-blue text-[48px] font-[be-vietnam-700] uppercase text-right leading-[57.6px] tracking-[2.4px]">
+              Contribute to
+              <br />
+              <span className="text-white header-text-stroke">
+                the global effort &nbsp;
+              </span>
+              <span className="hidden xl:inline-flex text-white xl:text-gpgp-blue  header-text-stroke xl:header-text-no-stroke text-[96px] mt-[20px]">
+                Create
+              </span>
+              <br />
+              <span className="xl:hidden text-white xl:text-gpgp-blue  header-text-stroke  xl:header-text-no-stroke xl:ml-[-18px]">
+                <br />
+              </span>
+              <span className="action-header xl:text-white header-text-stroke">
+                a better world
+              </span>
+            </h1>
           </div>
         </div>
-        <div className=" flex w-full ">
-          <div className="flex  w-[100%] flex-col justify-end items-center sm:items-end sm:pl-[0px] sm:pr-[120px] md:pl-[300px]  lg:pl-[86px] lg:pr-[120px] xl:pl-[75px] xl:pr-[124px] md:pr-[24px] ">
-            <Link
-              to={"/contribute/inviteSponsor"}
-              className="border rounded-[6px] border-gpgp-blue text-gpgp-blue font-semibold w-[75%] sm:w-[75%] lg:w-[50%] text-center h-[65px] xxxl:h-[75px] flex justify-center font-BeVietnam items-center mt-3 mb-5 uppercase sm:tracking-[0.1rem] lg:tracking-[0.3rem] sm:text-[0.8rem] lg:text-[1rem]  xxl:text-[1.3rem] xxxxl:text-[1.7rem] hover:shadow-lg "
-            >
-              COntribute as an investor
-            </Link>
-            <Link
-              to={"/contribute/inviteArtist"}
-              className="rounded-[6px] font-BeVietnam bg-gpgp-blue text-white font-semibold w-[75%] sm:w-[75%] lg:w-[50%] text-center h-[65px] xxxl:h-[75px] flex justify-center items-center mt-3 mb-5 uppercase sm:tracking-[0.1rem] lg:tracking-[0.3rem] sm:text-[0.8rem] lg:text-[1rem] xxl:text-[1.3rem] xxxxl:text-[1.7rem] hover:shadow-lg"
-            >
-              COntribute as an artist
-            </Link>
+
+        {/* Second column */}
+        <div className="">
+          {/* Mobile */}
+          <div className="xl:hidden">
+            <div className="text-center font-[be-vietnam] bold-400 text-[16px] leading-[32px] w-[293px] mx-auto mt-[40px]">
+              <p>
+                The Great Pacific Garbage Patch Art Project is an exciting
+                initiative that welcomes both artists and investors to join us
+                in making a profound impact on the environment. Together, we can
+                create a harmonious blend of creativityand capital to tackle one
+                ofthe planet's most pressingenvironmental challenges.
+              </p>
+              <p className="mt-[5px]">
+                Join us on this remarkable journey to combat the Great Pacific
+                Garbage Patch through the transformative power of art and
+                investment.
+              </p>
+            </div>
+            <div className="mt-[42px] flex flex-col gap-y-[16px] items-center">
+              <MyLink
+                to="/contribute/inviteSponsor"
+                className="w-[216px] h-[49px] bg-white text-gpgp-blue"
+              >
+                <p className="text-[11px] font-[be-vietnam] bold-700 leading-[16.226px] tracking-[3.025px] uppercase text-center">
+                  Contribute as an investor
+                </p>
+              </MyLink>
+              <MyLink
+                to="/contribute/inviteArtist"
+                className="w-[216px] h-[49px] bg-gpgp-blue text-white"
+              >
+                <p className="text-[11px] font-[be-vietnam] bold-700 leading-[16.226px] tracking-[4.025px] uppercase text-center">
+                  Contribute as an artist
+                </p>
+              </MyLink>
+            </div>
+          </div>
+          {/* Web */}
+          <div className="hidden xl:block">
+            <div className="w-[622px] font-[be-vietnam] bold-400 leading-[32px]">
+              <p className="tracking-[1px]">
+                The Great Pacific Garbage Patch Art Project isan exciting
+                initiative that welcomes both artists and investors to join us
+                in making a profound impact on the environment.
+              </p>
+              <p className="mt-[20px] tracking-[1px]">
+                Together, we can create a harmonious blend of creativityand
+                capital to tackle one of the planet's most pressing
+                environmental challenges.
+              </p>
+              <p className="mt-[20px] tracking-[1px]">
+                Join us on this remarkable journey to combat the Great Pacific
+                Garbage Patch through the transformativepower of art and
+                investment.
+              </p>
+            </div>
+            <div className="w-[622px]">
+              <div className="flex flex-col gap-y-[14px] mt-[30px]">
+                <MyLink
+                  to=""
+                  className="h-[63px] text-gpgp-blue bg-white rounded-[1px]"
+                >
+                  <p className="text-center font-[be-vietnam] bold-700 leading-[23.602px] uppercase tracking-[4.4px]">
+                    Contribute as an investor
+                  </p>
+                </MyLink>
+                <MyLink
+                  to=""
+                  className="h-[63px] text-white bg-gpgp-blue rounded-[1px]"
+                >
+                  <p className="text-center font-[be-vietnam] bold-700 leading-[23.602px] uppercase tracking-[4.4px] hover:text-white">
+                    Contribute as an artist
+                  </p>
+                </MyLink>
+              </div>
+            </div>
           </div>
         </div>
       </div>
