@@ -72,7 +72,7 @@ const HomeContent = () => {
                 <img
                   src={ProjectImg}
                   alt="GPGP Blue"
-                  className="hidden xl:block w-[190px] h-[190px] lg:w-[582px] lg:h-auto lg:rounded-[20px]"
+                  className="hidden xl:block w-[190px] h-[190px] lg:w-[582px] lg:h-[582px] lg:rounded-[20px]"
                 />
               </div>
             </div>
@@ -80,7 +80,7 @@ const HomeContent = () => {
             {/* Second Column */}
             <div className="mt-[29px] lg:mt-0 lg:w-full flex flex-col justify-center items-center xl:items-start xl:pl-[121px]">
               <div className=" flex flex-col gap-y-[59px]">
-                <h3 className="hidden xl:block text-gpgp-black font-[be-vietnam-600] text-[40px] leading-[48px] tracking-[-0.8px]">
+                <h3 className="hidden xl:block text-gpgp-black font-[be-vietnam] bold-600 text-[40px] leading-[48px] tracking-[-0.8px]">
                   The Project
                 </h3>
 
@@ -126,7 +126,7 @@ const HomeContent = () => {
                 <img
                   src={ChallengeWebImg}
                   alt="Challenge"
-                  className="border-[3px] border-solid border-gpgp-blue hidden xl:block w-[190px] h-auto lg:w-[585px] lg:h-auto lg:rounded-[20px]"
+                  className="border-[3px] border-solid border-gpgp-blue hidden xl:block w-[190px] h-[auto] lg:w-[585px] lg:h-[439px] lg:rounded-[20px]"
                 />
               </div>
             </div>
@@ -134,8 +134,8 @@ const HomeContent = () => {
             {/* Second Column */}
             <div className="mt-[29px] lg:mt-0 lg:w-full flex flex-col justify-center items-center xl:items-start xl:pl-[121px]">
               <div className=" flex flex-col gap-y-[59px]">
-                <h3 className="hidden xl:block text-gpgp-black font-[be-vietnam-600] text-[40px] leading-[48px] tracking-[-0.8px]">
-                  THE CHALLENGE
+                <h3 className="hidden xl:block text-gpgp-black font-[be-vietnam] bold-600 text-[40px] leading-[48px] tracking-[-0.8px]">
+                  The Challenge
                 </h3>
 
                 <p className="w-[288px] lg:w-[484px] text-center xl:text-left text-[15px] lg:text-[16px] leading-[30px] xl:leading-[32px] mx-auto xl:mx-0 text-[#050B1D] font-[be-vietnam]">
@@ -181,7 +181,7 @@ const HomeContent = () => {
             {/* Second Column */}
             <div className="mt-[29px] lg:mt-0 lg:w-full flex flex-col justify-center items-center xl:items-start xl:pl-[121px]">
               <div className=" flex flex-col gap-y-[59px]">
-                <h3 className="hidden xl:block text-gpgp-black font-[be-vietnam-600] text-[40px] leading-[48px] tracking-[-0.8px] uppercase">
+                <h3 className="hidden xl:block text-gpgp-black font-[be-vietnam] bold-600 text-[40px] leading-[48px] tracking-[-0.8px] uppercase xl:capitalize">
                   The Invitation
                 </h3>
 

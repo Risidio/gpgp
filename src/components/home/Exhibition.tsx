@@ -24,7 +24,7 @@ const Exhibition = () => {
             </p>
           </div>
 
-          <div className="sm:block sm:py-[20px] md:py-[40px] lg:py-[60px] xl:py-[80px]">
+          <div className="hidden lg:block lg:py-[60px] xl:py-[80px]">
             <NftCarousel />
           </div>
 

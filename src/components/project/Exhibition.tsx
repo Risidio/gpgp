@@ -25,7 +25,7 @@ const Exhibition = ({ contents }: IExhibitionSectionProps) => {
 
         {/* Content Column */}
         <div className="mx-auto xl:mx-0 text-center xl:text-left w-[293px] xl:w-[522px]">
-          <h1 className="hidden xl:block font-[be-vietnam-600] text-[#050B1D] text-[40px] leading-[48px] tracking-[0.8px]">
+          <h1 className="hidden xl:block font-[be-vietnam] bold-600 text-[#050B1D] text-[40px] leading-[48px] tracking-[0.8px]">
             {contents?.title[0].text}
           </h1>
           <p
