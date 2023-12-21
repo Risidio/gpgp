@@ -11,7 +11,7 @@ const Project = () => {
   const [document] = useSinglePrismicDocument(prismicDocumentTypes.project);
   return (
     <>
-      <div className="xxxxl:w-[1440px] xxxxl:mx-auto">
+      <div className="">
         <GpgpSection contents={document?.data["body"][2].primary} />
 
         <Attention contents={document?.data["body"][3].primary} />

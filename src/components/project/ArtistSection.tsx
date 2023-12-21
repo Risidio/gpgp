@@ -1,10 +1,12 @@
 import JD from "../../assets/images/JD.png";
 import Artist from "../home/Artist";
+import Wrapper from "../layout/Wrapper";
 
 const ArtistSection = () => {
   return (
     <>
-      <section className="hidden xl:block xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] xl:mt-[258px]">
+    <Wrapper>
+    <section className="hidden xl:block xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] xl:mt-[258px]">
         {/* Image Column */}
         <div className="xl:order-1 flex flex-col xl:justify-center">
           {/* Home header Title */}
@@ -51,6 +53,8 @@ const ArtistSection = () => {
       <div className="block xl:hidden mt-[118px]">
         <Artist />
       </div>
+    </Wrapper>
+     
     </>
   );
 };

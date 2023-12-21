@@ -1,11 +1,13 @@
 import { Input } from "./base/Input";
 import MyLink from "./base/MyLink";
 import { TextArea } from "./base/Textarea";
+import Wrapper from "./layout/Wrapper";
 
 const ContactUs = () => {
   return (
     <div className="hidden md:block w-full bg-h-[100%] bg-w-[100%] bg-project-page-mobile-wave lg:bg-project-page-wave bg-no-repeat bg-cover md:pb-[70px] xl:pb-[80px] xxxl:pb-[80px]">
-      <div className="flex flex-col items-center text-white pt-[260px] xxl:pt-[400px]">
+     <Wrapper>
+     <div className="flex flex-col items-center text-white pt-[260px] xxl:pt-[400px]">
         <h1 className="text-center text-[16px] uppercase md:text-[21px] xxxl:text-[40px] font-[600] leading-[23.38px] md:leading-[48px]">
           Contact us
         </h1>
@@ -50,7 +52,7 @@ const ContactUs = () => {
             <div className="text-white font-[be-vietnam] text-[16px] xl:text-[20px] xxxl:text-[25px] leading-[22px] lg:leading-[35px] xl:leading-[40px] sm:leading-[30px] md:leading-[32px] font-[400]">
               Purpose
             </div>
-            <TextArea />
+            <TextArea rows={10} />
 
             <div className="flex w-full py-5 justify-center">
               {/* <Button className="flex items-center text-gpgp-blue px-10 py-2 lg:w-[20%] lg:text-[1.4rem] bg-white uppercase">
@@ -69,6 +71,7 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
+     </Wrapper>
     </div>
   );
 };

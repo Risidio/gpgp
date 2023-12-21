@@ -1,11 +1,11 @@
 import FlatLayComposition from "../../assets/images/flat-lay-composition-different-colored-plastic-bags-mobile.jpg";
+import Wrapper from "../layout/Wrapper";
 
 const Section3 = () => {
   return (
     <>
-      {/* <section className="mt-[100px] xl:mt-[432px] xl:flex  xl:gap-x-[125.25px] xl:ml-[80px] bg-purple-500"> */}
-      {/* <section className="mt-[100px] xl:mt-[432px] xl:flex  xl:gap-x-[90.25px] xl:ml-[80px]"> */}
-      <section className="mt-[100px] xl:mt-[432px] xl:flex  xl:gap-x-[90.25px] xl:w-[1440px] xl:mx-[auto]">
+    <Wrapper>
+    <section className="mt-[100px] xl:mt-[432px] xl:flex  xl:gap-x-[90.25px] xl:w-[1440px] xl:mx-[auto] justify-center">
         <div className="xl:order-2">
           <h3 className="xl:hidden w-[257px] text-[#050B1D] text-center font-[be-vietnam-700] uppercase mx-auto text-[16px]">
             Heading in the right direction
@@ -45,6 +45,8 @@ const Section3 = () => {
           </div>
         </div>
       </section>
+    </Wrapper>
+     
     </>
   );
 };
