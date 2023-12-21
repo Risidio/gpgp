@@ -1,11 +1,13 @@
 import challengeImage from "../../assets/images/challenge.jpg";
 import MyLink from "../base/MyLink";
 import { IGpgpSectionProps } from "../../types/project";
+import Wrapper from "../layout/Wrapper";
 
 const GpgpSection = ({ contents }: IGpgpSectionProps) => {
   return (
     <>
-      <section className="xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] mt-[30px] xl:mt-[100px]">
+    <Wrapper>
+    <section className="xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] mt-[30px] xl:mt-[100px]">
         {/* Image Column */}
         <div className="xl:order-2 flex flex-col items-center xl:justify-center">
           {/* Home header Title */}
@@ -48,6 +50,8 @@ const GpgpSection = ({ contents }: IGpgpSectionProps) => {
           </MyLink>
         </div>
       </section>
+    </Wrapper>
+     
     </>
   );
 };

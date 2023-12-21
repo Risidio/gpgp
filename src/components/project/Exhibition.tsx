@@ -1,11 +1,13 @@
 import GalleryImage from "../../assets/images/gpgp_gallery_art.jpg";
 import { IExhibitionSectionProps } from "../../types/project";
 import MyLink from "../base/MyLink";
+import Wrapper from "../layout/Wrapper";
 
 const Exhibition = ({ contents }: IExhibitionSectionProps) => {
   return (
     <>
-      <section className="xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] mt-[118px] xl:mt-[258px]">
+    <Wrapper>
+    <section className="xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] mt-[118px] xl:mt-[258px]">
         {/* Image Column */}
         <div className="xl:order-2 flex flex-col items-center xl:justify-center">
           {/* Home header Title */}
@@ -50,6 +52,8 @@ const Exhibition = ({ contents }: IExhibitionSectionProps) => {
           </MyLink>
         </div>
       </section>
+    </Wrapper>
+      
     </>
   );
 };

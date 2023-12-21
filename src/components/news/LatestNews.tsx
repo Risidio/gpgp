@@ -1,8 +1,10 @@
 import { INewsHeroProps } from "../../types/news";
+import Wrapper from "../layout/Wrapper";
 
 const LatestNews = ({ contents }: INewsHeroProps) => {
   return (
-    <div className="w-full flex flex-col sm:p-9 p-5">
+    <Wrapper>
+      <div className="w-full flex flex-col sm:p-9 p-5">
       <div className="flex justify-between items-center pb-5">
         <h2 className="font-semibold text-[1.4rem] xxl:text-[2rem] uppercase">
           {contents?.newsheading[0].text}
@@ -133,6 +135,8 @@ const LatestNews = ({ contents }: INewsHeroProps) => {
         </div>
       </div>
     </div>
+    </Wrapper>
+    
   );
 };
 
