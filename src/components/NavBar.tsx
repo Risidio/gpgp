@@ -11,6 +11,7 @@ import MobileChallengeLogo from "../assets/images/MobileChallengeLogo.png";
 import MobileContributeLogo from "../assets/images/MobileContributeLogo.png";
 import MobileNewsLogo from "../assets/images/MobileNewsLogo.png";
 import MobileContactLogo from "../assets/images/MobileContactLogo.png";
+import Wrapper from "./layout/Wrapper";
 
 // All the links as static data
 const links = [
@@ -120,142 +121,146 @@ const NavBar = () => {
   return (
     // <div className="xxl:w-[1440px] xxl:mx-auto px-2 lg:px-4 sm:px-12 py-1 flex justify-between  items-center bg-gpgp-blue sm:bg-white xxxxl:max-w-[2560px] xxxxl:mx-auto">
 
-    <div className="xl:w-[1283px] h-[67.273px] xl:h-[unset] xl:mx-auto  flex justify-between  items-center bg-gpgp-blue sm:bg-white xl:mt-[12px] xl:ml-[83px]">
-      <nav className="flex w-full  items-center justify-between">
-        {/* phone Navbar */}{" "}
-        <Link
-          to="/"
-          className={`flex items-center pl-4 sm:hidden transition-all ease-in-out
+    <Wrapper>
+      <div className="xl:w-[1283px] h-[67.273px] xl:h-[unset] xl:mx-auto  flex justify-between  items-center bg-gpgp-blue sm:bg-white xl:mt-[12px] xl:ml-[83px]">
+        <nav className="flex w-full  items-center justify-between">
+          {/* phone Navbar */}{" "}
+          <Link
+            to="/"
+            className={`flex items-center pl-4 sm:hidden transition-all ease-in-out
           ${isOpenMenu ? "opacity-0" : ""}
           `}
-          onClick={() => resetSelectItem()}
-        >
-          <MobileLogo className="w-max" />
-        </Link>
-        {isOpenMenu && (
-          <div
-            className={`bg-gpgp-blue h-screen sm:hidden !z-[172] text-white mt-[60px] fixed w-full left-0 top-0 transition-all ease-in duration-500 flex flex-col px-7 ${
-              isOpenMenu ? styles.menuContainer : ""
-            } ${isOpenMenu && styles.slideDown} ${
-              isAnimating && styles.slideUp
-            }`}
+            onClick={() => resetSelectItem()}
           >
+            <MobileLogo className="w-max" />
+          </Link>
+          {isOpenMenu && (
             <div
-              className={`flex flex-col items-center mt-10 uppercase z-50 ${styles.menuItem}`}
+              className={`bg-gpgp-blue h-screen sm:hidden !z-[172] text-white mt-[60px] fixed w-full left-0 top-0 transition-all ease-in duration-500 flex flex-col px-7 ${
+                isOpenMenu ? styles.menuContainer : ""
+              } ${isOpenMenu && styles.slideDown} ${
+                isAnimating && styles.slideUp
+              }`}
             >
-              {links.map((link, index) => (
-                <div
-                  key={index}
-                  className="text-white w-[100%] mx-4 my-3 text-2xl font-[200] hover:font-semibold flex items-center"
-                >
-                  <Link
-                    to={link.href}
-                    onClick={() => handleSelectItem(link.name)}
-                    className="flex justify-start items-center"
+              <div
+                className={`flex flex-col items-center mt-10 uppercase z-50 ${styles.menuItem}`}
+              >
+                {links.map((link, index) => (
+                  <div
+                    key={index}
+                    className="text-white w-[100%] mx-4 my-3 text-2xl font-[200] hover:font-semibold flex items-center"
                   >
-                    <img src={link.Logo} alt="" className="w-[50px] mr-5" />
-                    {link.name}
-                  </Link>
-                </div>
-              ))}
+                    <Link
+                      to={link.href}
+                      onClick={() => handleSelectItem(link.name)}
+                      className="flex justify-start items-center"
+                    >
+                      <img src={link.Logo} alt="" className="w-[50px] mr-5" />
+                      {link.name}
+                    </Link>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        )}
-        {/* Web Navbar */}
-        <Link
-          to="/"
-          className="hidden sm:flex items-center"
-          onClick={() => {
-            resetSelectItem();
-            // Hide all dots
-            links.forEach((link, i) => {
-              let dot = document.getElementById(`WebNav-dot${i}`);
-              if (dot) {
-                dot.style.display = "none";
-              }
-            });
-          }}
-        >
-          <Logo className="" logo={"NewNavLogo2.png"} />
-        </Link>
-        <div className="hidden sm:flex w-[592px] ">
-          {links.map((link, index) => {
-            if (link.name !== "Home") {
-              return (
-                <div
-                  key={index}
-                  className="group relative hover:cursor-pointer  hover:text-gpgp-blue uppercase w-full"
-                >
-                  {/* <div
+          )}
+          {/* Web Navbar */}
+          <Link
+            to="/"
+            className="hidden sm:flex items-center"
+            onClick={() => {
+              resetSelectItem();
+              // Hide all dots
+              links.forEach((link, i) => {
+                let dot = document.getElementById(`WebNav-dot${i}`);
+                if (dot) {
+                  dot.style.display = "none";
+                }
+              });
+            }}
+          >
+            <Logo className="" logo={"NewNavLogo2.png"} />
+          </Link>
+          <div className="hidden sm:flex w-[592px] ">
+            {links.map((link, index) => {
+              if (link.name !== "Home") {
+                return (
+                  <div
+                    key={index}
+                    className="group relative hover:cursor-pointer  hover:text-gpgp-blue uppercase w-full"
+                  >
+                    {/* <div
                     className="flex flex-col items-center w-full"
                     onClick={() => {
                       handleWebNavClick(index);
                       resetSelectItem();
                     }}
                   > */}
-                  <div
-                    className="flex w-full gap-[25px] "
-                    onClick={() => {
-                      handleWebNavClick(index);
-                      resetSelectItem();
-                    }}
-                  >
-                    <Link
-                      to={link.href}
-                      className="text-black font-bevietnam text-[16px] font-[500] leading-[23.38px] tracking-[0.041em] text-center"
-                      id={`Nav-link${index}`}
+                    <div
+                      className="flex w-full gap-[25px] "
+                      onClick={() => {
+                        handleWebNavClick(index);
+                        resetSelectItem();
+                      }}
                     >
-                      {link.name}
-                    </Link>
-                    <div className="text-center">
-                      <p
-                        id={`WebNav-dot${index}`}
-                        className={`bg-gpgp-blue rounded-full absolute top-[32px] left-[30px] h-[6px] w-[7px] ${
-                          currentRoute === "/"
-                            ? "hidden"
-                            : currentRoute === link.href
-                            ? "block"
-                            : "hidden"
-                        }`}
-                      ></p>
+                      <Link
+                        to={link.href}
+                        className="text-black font-bevietnam text-[16px] font-[500] leading-[23.38px] tracking-[0.041em] text-center"
+                        id={`Nav-link${index}`}
+                      >
+                        {link.name}
+                      </Link>
+                      <div className="text-center">
+                        <p
+                          id={`WebNav-dot${index}`}
+                          className={`bg-gpgp-blue rounded-full absolute top-[32px] left-[30px] h-[6px] w-[7px] ${
+                            currentRoute === "/"
+                              ? "hidden"
+                              : currentRoute === link.href
+                              ? "block"
+                              : "hidden"
+                          }`}
+                        ></p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
-            } else {
-              return null;
-            }
-          })}
-        </div>
-        {/* hamburger menu */}
-        <div className="inline-block sm:hidden text-white py-1 px-3 h-auto">
-          <button
-            className="flex flex-col h-auto w-12 rounded justify-center items-center group"
-            onClick={() => setIsOpenMenu(!isOpenMenu)}
-          >
-            <div
-              className={`${genericHamburgerLine} ${
-                isOpenMenu
-                  ? "rotate-45 translate-y-3 opacity-100 group-hover:opacity-50"
-                  : "opacity-100 group-hover:opacity-50"
-              }`}
-            />
-            <div
-              className={`${genericHamburgerLine} ${
-                isOpenMenu ? "opacity-0" : "opacity-100 group-hover:opacity-50"
-              }`}
-            />
-            <div
-              className={`${genericHamburgerLine} ${
-                isOpenMenu
-                  ? "-rotate-45 -translate-y-3 opacity-100 group-hover:opacity-50"
-                  : "opacity-100 group-hover:opacity-50"
-              }`}
-            />
-          </button>
-        </div>
-      </nav>
-    </div>
+                );
+              } else {
+                return null;
+              }
+            })}
+          </div>
+          {/* hamburger menu */}
+          <div className="inline-block sm:hidden text-white py-1 px-3 h-auto">
+            <button
+              className="flex flex-col h-auto w-12 rounded justify-center items-center group"
+              onClick={() => setIsOpenMenu(!isOpenMenu)}
+            >
+              <div
+                className={`${genericHamburgerLine} ${
+                  isOpenMenu
+                    ? "rotate-45 translate-y-3 opacity-100 group-hover:opacity-50"
+                    : "opacity-100 group-hover:opacity-50"
+                }`}
+              />
+              <div
+                className={`${genericHamburgerLine} ${
+                  isOpenMenu
+                    ? "opacity-0"
+                    : "opacity-100 group-hover:opacity-50"
+                }`}
+              />
+              <div
+                className={`${genericHamburgerLine} ${
+                  isOpenMenu
+                    ? "-rotate-45 -translate-y-3 opacity-100 group-hover:opacity-50"
+                    : "opacity-100 group-hover:opacity-50"
+                }`}
+              />
+            </button>
+          </div>
+        </nav>
+      </div>
+    </Wrapper>
   );
 };
 
