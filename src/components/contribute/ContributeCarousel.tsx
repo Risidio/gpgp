@@ -3,7 +3,6 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import ArtistCarousel from "./ArtistsCarousel";
 import SponsorCarousel from "./SponsorCarousel";
-import Wrapper from "../layout/Wrapper";
 
 const handleDragStart = (e: any) => e.preventDefault();
 
