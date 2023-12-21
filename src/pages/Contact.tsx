@@ -1,6 +1,5 @@
 import BottomContributeWaveSection from "../components/base/BottomContributeWaveSection";
 import InvitationForm from "../components/contribute/Invitation/InvitationForm";
-import ContributionSection from "../components/gallery/Contribution";
 
 export default function Contact() {
   const formFields = [
