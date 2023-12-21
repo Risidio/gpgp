@@ -1,4 +1,3 @@
-import Wrapper from "../layout/Wrapper";
 
 const BottomContributeWaveSection = () => {
   return (
