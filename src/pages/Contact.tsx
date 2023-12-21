@@ -1,3 +1,4 @@
+import BottomContributeWaveSection from "../components/base/BottomContributeWaveSection";
 import InvitationForm from "../components/contribute/Invitation/InvitationForm";
 import ContributionSection from "../components/gallery/Contribution";
 
@@ -39,22 +40,13 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex flex-col ">
+    <div className="">
       <InvitationForm
         formField={formFields}
         WavePattern={WavePattern}
         SponsorFormLegend={SponsorFormLegend}
       />
-
-      <section className="mt-20 sm:mt-10">
-        <ContributionSection
-          classes={{
-            container: " ",
-            heading: "",
-            subheading: "",
-          }}
-        />
-      </section>
+      <BottomContributeWaveSection/>
     </div>
   );
 }

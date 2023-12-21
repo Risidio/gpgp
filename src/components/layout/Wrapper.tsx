@@ -5,7 +5,7 @@ type Props = {
 };
 
 const Wrapper: React.FC<Props> = ({ children }) => {
-  return <div className="max-w-[1440px] mx-auto">{children}</div>;
+  return <section className="max-w-[1440px] mx-auto">{children}</section>;
 };
 
 export default Wrapper;

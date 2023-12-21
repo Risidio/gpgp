@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { IContributeHeroProps } from "../../types/contribute";
+import Wrapper from "../layout/Wrapper";
 // import MyLink from "../base/MyLink";
 
 export default function NewContributeHero({
@@ -19,7 +20,7 @@ export default function NewContributeHero({
   ];
 
   return (
-    <>
+    <Wrapper>
       <div className=" flex flex-col justify-center items-center sm:mb-[-100px] z-60">
         <div className="flex flex-col items-center md:flex-row gap-x-[-70px] w-[100%] mt-0">
           <div className="w-[55%] xsm:mb-2 sm:mb-0 pt-3 md:pl-[30px] lg:pl-[30px] xlg:mr-[-45px] flex text-center md:text-right flex-col justify-center items-center uppercase">
@@ -133,6 +134,6 @@ export default function NewContributeHero({
           </div>
         </div>
       </section> */}
-    </>
+    </Wrapper>
   );
 }
