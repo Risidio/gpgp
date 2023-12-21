@@ -124,7 +124,7 @@ export default function NewContributeHero({
             <div className="w-[622px]">
               <div className="flex flex-col gap-y-[14px] mt-[30px]">
                 <MyLink
-                  to=""
+                  to="/contribute/inviteSponsor"
                   className="h-[63px] text-gpgp-blue bg-white rounded-[1px]"
                 >
                   <p className="text-center font-[be-vietnam] bold-700 leading-[23.602px] uppercase tracking-[4.4px]">
@@ -132,7 +132,7 @@ export default function NewContributeHero({
                   </p>
                 </MyLink>
                 <MyLink
-                  to=""
+                  to="/contribute/inviteArtist"
                   className="h-[63px] text-white bg-gpgp-blue rounded-[1px]"
                 >
                   <p className="text-center font-[be-vietnam] bold-700 leading-[23.602px] uppercase tracking-[4.4px] hover:text-white">
