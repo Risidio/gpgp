@@ -12,7 +12,7 @@ const Exhibition = () => {
           {/* <h1 className="font-[be-vietnam-bold] leading-[48px] tracking-[-0.32px] uppercase text-center text-[16px] text-white xl:text-[40px] xl:capitalize">
               The Exhibition
             </h1> */}
-            <h1 className="xl:w-[262px] xl:h-[48.036px] font-[be-vietnam] xl:font-[600] leading-[48px] tracking-[-0.32px] xl:tracking-[-0.8px] uppercase text-center text-[16px] text-white xl:text-[40px] xl:capitalize xl:mx-[auto]">
+            <h1 className="xl:w-[262px] xl:h-[48.036px] font-[be-vietnam] bold-600 leading-[48px] tracking-[-0.32px] xl:tracking-[-0.8px] uppercase text-center text-[16px] text-white xl:text-[40px] xl:capitalize xl:mx-[auto]">
               The Exhibition
             </h1>
             <p className="w-[293px] text-center mx-auto font-[be-vietnam] xl:font-[400] text-white leading-[30px] xl:leading-[32px] text-[15px] xl:text-[16px] xl:w-[532px] xl:h-[180.137px] xl:mx-auto">
@@ -24,7 +24,7 @@ const Exhibition = () => {
             </p>
           </div>
 
-          <div className="sm:block sm:py-[20px] md:py-[40px] lg:py-[60px] xl:py-[80px]">
+          <div className="hidden lg:block lg:py-[60px] xl:py-[80px]">
             <NftCarousel />
           </div>
 
