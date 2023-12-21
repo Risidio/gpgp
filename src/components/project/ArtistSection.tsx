@@ -5,14 +5,14 @@ import Wrapper from "../layout/Wrapper";
 const ArtistSection = () => {
   return (
     <>
-    <Wrapper>
-      <section className="hidden xl:block xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] xl:mt-[258px]">
-        {/* Image Column */}
-        <div className="xl:order-1 flex flex-col xl:justify-center">
-          {/* Home header Title */}
-          <div className="xl:hidden xl:w-0 xl:h-0 text-[#050B1D] uppercase text-[16px] font-[be-vietnam-600] leading-[48px] tracking-[0.32px] text-center">
-            <h1>The Artist</h1>
-          </div>
+      <Wrapper>
+        <section className="hidden xl:block xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] xl:mt-[258px]">
+          {/* Image Column */}
+          <div className="xl:order-1 flex flex-col xl:justify-center">
+            {/* Home header Title */}
+            <div className="xl:hidden xl:w-0 xl:h-0 text-[#050B1D] uppercase text-[16px] font-[be-vietnam-600] leading-[48px] tracking-[0.32px] text-center">
+              <h1>The Artist</h1>
+            </div>
 
             {/* Image */}
             <div className="">
@@ -53,7 +53,6 @@ const ArtistSection = () => {
       <div className="block xl:hidden mt-[118px]">
         <Artist />
       </div>
-     
     </>
   );
 };

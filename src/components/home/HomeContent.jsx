@@ -173,7 +173,7 @@ const HomeContent = () => {
                 <img
                   src={InvitationImg}
                   alt="GPGP Map"
-                  className="w-[293px] h-[169px] lg:w-[583.489px] lg:h-auto rounded-[20px]"
+                  className="w-[293px] h-[169px] lg:w-[583.489px] lg:h-[335.281px] rounded-[20px]"
                 />
               </div>
             </div>

@@ -20,7 +20,7 @@ const Attention = ({ contents }: IAttentionSectionProps) => {
             <img
               src={contents?.image.url}
               alt={contents?.image.alt}
-              className="w-[293px] xl:w-[579px] h-auto xl:rounded-[20px] mt-[36px] xl:mt-0"
+              className="w-[293px] xl:w-[579px] h-[498px] xl:rounded-[20px] mt-[36px] xl:mt-0"
             />
           </div>
         </div>
