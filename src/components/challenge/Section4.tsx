@@ -1,4 +1,5 @@
 import MyLink from "../base/MyLink";
+import Wrapper from "../layout/Wrapper";
 
 const Section4 = () => {
   return (
@@ -24,6 +25,7 @@ const Section4 = () => {
           </MyLink>
         </div>
       </div> */}
+      <Wrapper>
       <section className="mt-[82.5px] xl:mt-[417px] mb-[130px] xl:mb-[295px]">
         <div className="flex flex-col text-center text-[16px] xl:text-[32px] leading-[32px] xl:leading-[200%] tracking-[-0.32px] xl:tracking-[-0.64px] font-[be-vietnam] bold-400">
           {/* <h3 className="text-[#050B1D] w-[298px] xl:w-[886.048px] mx-auto font-[be-vietnam] font-[700] flex xl:flex-col justify-center xl:ml-[266.76px]"> */}
@@ -54,6 +56,8 @@ const Section4 = () => {
           </MyLink>
         </div>
       </section>
+      </Wrapper>
+      
     </>
   );
 };

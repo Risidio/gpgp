@@ -2,11 +2,13 @@
 // import SeaSealWeb from "../../assets/images/ai-generated-realistic-pictures-seals-web.jpg";
 import MyLink from "../base/MyLink";
 import { IJoinSectionProps } from "../../types/project";
+import Wrapper from "../layout/Wrapper";
 
 const JoinUs = ({ contents }: IJoinSectionProps) => {
   return (
     <>
-      <section className="xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] mt-[118px] xl:mt-[258px]">
+    <Wrapper>
+    <section className="xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] mt-[118px] xl:mt-[258px]">
         {/* Image Column */}
         <div className="xl:order-2 flex flex-col items-center xl:justify-center">
           {/* Home header Title */}
@@ -67,6 +69,8 @@ const JoinUs = ({ contents }: IJoinSectionProps) => {
           </div>
         </div>
       </section>
+    </Wrapper>
+      
     </>
   );
 };

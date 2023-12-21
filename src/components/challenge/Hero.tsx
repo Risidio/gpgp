@@ -1,9 +1,11 @@
 import MyLink from "../base/MyLink";
+import Wrapper from "../layout/Wrapper";
 
 const Hero = () => {
   return (
     <>
-      <section className="flex">
+    <Wrapper>
+    <section className="flex">
       {/* <div className="xl:flex xl:flex-row mx-auto xl:gap-[81px] xl:ml-[297px]"> */}
       <div className="xl:flex xl:flex-row mx-auto xl:gap-[81px]">
         {/* Call to Action Column */}
@@ -69,6 +71,8 @@ const Hero = () => {
         </div>
       </div>
       </section>
+    </Wrapper>
+     
       
     </>
   );

@@ -1,11 +1,13 @@
 // import SaveOceanCampaignImage from "../../assets/images/save-ocean-campaign-plastic-bag-sinking-ocean-remix-media 1.png";
 // import SaveOceanCampaignImageWeb from "../../assets/images/save-ocean-campaign-plastic-bag-sinking-ocean-remix-media-web.jpg";
 import { IAttentionSectionProps } from "../../types/project";
+import Wrapper from "../layout/Wrapper";
 
 const Attention = ({ contents }: IAttentionSectionProps) => {
   return (
     <>
-      <section className="xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] mt-[118px] xl:mt-[258px]">
+    <Wrapper>
+    <section className="xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] mt-[118px] xl:mt-[258px]">
         {/* Image Column */}
         <div className="xl:order-1 flex flex-col items-center xl:items-start xl:justify-center">
           {/* Home header Title */}
@@ -50,6 +52,8 @@ const Attention = ({ contents }: IAttentionSectionProps) => {
           </div>
         </div>
       </section>
+    </Wrapper>
+     
     </>
   );
 };
