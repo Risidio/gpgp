@@ -21,7 +21,7 @@ const JoinUs = ({ contents }: IJoinSectionProps) => {
             <img
               src={contents?.image.url}
               alt={contents?.image.alt}
-              className="w-[293px] xl:w-[585px] xl:h-[430px] h-auto xl:rounded-[20px] mt-[36px] xl:mt-0"
+              className="w-[293px] h-[194.403px] xl:w-[585px] xl:h-[430px] xl:rounded-[20px] mt-[36px] xl:mt-0"
             />
           </div>
         </div>
