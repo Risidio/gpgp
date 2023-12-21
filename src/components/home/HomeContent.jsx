@@ -189,7 +189,7 @@ const HomeContent = () => {
                 form - painters, sculptors, photographers are invited to submit
                 their works for consideration.
               </p>
-            </div>
+            </div> 
 
             {/* Join Us Btn */}
             <div className="flex flex-row gap-x-[12px] px-[19px] xl:px-0 mt-[35px] xl:mt-[59px]">
