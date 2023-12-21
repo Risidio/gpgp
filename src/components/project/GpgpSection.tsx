@@ -20,7 +20,7 @@ const GpgpSection = ({ contents }: IGpgpSectionProps) => {
             <img
               src={challengeImage}
               alt="The Challenge"
-              className="w-[293px] xl:w-[585px] xl:h-[438px] h-auto xl:rounded-[20px] mt-[36px] xl:mt-0"
+              className="w-[293px] xl:w-[585px] xl:h-[438px] h-[196px] xl:rounded-[20px] mt-[36px] xl:mt-0"
             />
           </div>
         </div>

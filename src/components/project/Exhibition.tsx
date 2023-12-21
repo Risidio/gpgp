@@ -20,7 +20,7 @@ const Exhibition = ({ contents }: IExhibitionSectionProps) => {
             <img
               src={GalleryImage}
               alt="The Challenge"
-              className="w-[293px] xl:w-[585.281px] xl:h-[434px] h-auto xl:rounded-[20px] mt-[36px] xl:mt-0"
+              className="w-[293px] h-[170.917px] xl:w-[585.281px] xl:h-[434px] xl:rounded-[20px] mt-[36px] xl:mt-0"
             />
           </div>
         </div>

@@ -7,7 +7,7 @@ const About = ({ contents }: IAboutProps) => {
   return (
     <>
       <Wrapper>
-        <div className="w-full bg-h-[100%] bg-w-[100%] bg-project-page-wave bg-no-repeat bg-cover mt-[88px] xl:mt-[219px]">
+        <div className="w-full bg-h-[100%] bg-w-[100%] bg-project-page-mobile-wave xl:bg-project-page-wave bg-no-repeat bg-cover mt-[88px] xl:mt-[219px]">
           <div className="pt-[120px] md:pt-[220px] xl:pt-[386px] pb-[62px] xl:pb-[130px]">
             {/* Exhibition Context */}
             <div className="flex flex-col mx-auto gap-y-[13px] xl:gap-y-[60px] w-[298px] md:w-[520px] xl:w-[538px]">
