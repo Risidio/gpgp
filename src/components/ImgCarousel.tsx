@@ -2,14 +2,13 @@
 import AliceCarousel from "react-alice-carousel";
 import { IGalleryArtworksProps } from "../types/gallery";
 
-
 const responsive = {
-  600: {
-    items: 2,
+  763: {
+    items: 3,
     itemsFit: "contain",
   },
-  700: {
-    items: 3,
+  1024: {
+    items: 4,
     itemsFit: "contain",
   },
   1440: {
