@@ -119,10 +119,8 @@ const NavBar = () => {
 
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-white transition ease transform duration-300`;
   return (
-    // <div className="xxl:w-[1440px] xxl:mx-auto px-2 lg:px-4 sm:px-12 py-1 flex justify-between  items-center bg-gpgp-blue sm:bg-white xxxxl:max-w-[2560px] xxxxl:mx-auto">
-
     <Wrapper>
-      <div className="xl:w-[1283px] h-[67.273px] xl:h-[unset] xl:mx-auto  flex justify-between items-center bg-gpgp-blue sm:bg-white xl:mt-[12px] xl:ml-[83px]">
+      <div className="h-[67.273px] xl:h-[unset] xl:mx-auto  flex justify-between items-center bg-gpgp-blue md:bg-white xl:mt-[12px] xl:ml-[83px]">
         <nav
           className={`flex w-full h-[67.273px] md:h-[unset] items-center justify-between bg-gpgp-blue md:bg-white ${
             isOpenMenu ? " fixed " : "fixed md:static"
@@ -185,7 +183,7 @@ const NavBar = () => {
           >
             <Logo className="" logo={"NewNavLogo2.png"} />
           </Link>
-          <div className="hidden sm:flex w-[592px] ">
+          <div className="hidden sm:flex  ">
             {links.map((link, index) => {
               if (link.name !== "Home") {
                 return (
