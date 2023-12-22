@@ -122,13 +122,18 @@ const NavBar = () => {
     // <div className="xxl:w-[1440px] xxl:mx-auto px-2 lg:px-4 sm:px-12 py-1 flex justify-between  items-center bg-gpgp-blue sm:bg-white xxxxl:max-w-[2560px] xxxxl:mx-auto">
 
     <Wrapper>
-      <div className="xl:w-[1283px] h-[67.273px] xl:h-[unset] xl:mx-auto  flex justify-between  items-center bg-gpgp-blue sm:bg-white xl:mt-[12px] xl:ml-[83px]">
-        <nav className="flex w-full  items-center justify-between">
+      <div className="xl:w-[1283px] h-[67.273px] xl:h-[unset] xl:mx-auto  flex justify-between items-center bg-gpgp-blue sm:bg-white xl:mt-[12px] xl:ml-[83px]">
+        <nav
+          className={`flex w-full h-[67.273px] md:h-[unset] items-center justify-between bg-gpgp-blue md:bg-white ${
+            isOpenMenu ? " fixed " : "fixed md:static"
+          }`}
+          style={{ zIndex: 999 }}
+        >
           {/* phone Navbar */}{" "}
           <Link
             to="/"
             className={`flex items-center pl-4 sm:hidden transition-all ease-in-out
-          ${isOpenMenu ? "opacity-0" : ""}
+          ${isOpenMenu ? "opacity-1" : ""}
           `}
             onClick={() => resetSelectItem()}
           >
@@ -136,7 +141,7 @@ const NavBar = () => {
           </Link>
           {isOpenMenu && (
             <div
-              className={`bg-gpgp-blue h-screen sm:hidden !z-[172] text-white mt-[60px] fixed w-full left-0 top-0 transition-all ease-in duration-500 flex flex-col px-7 ${
+              className={`bg-gpgp-blue h-screen sm:hidden !z-[172] text-white mt-[65px] fixed w-full left-0 top-0 transition-all ease-in duration-500 flex flex-col px-7 ${
                 isOpenMenu ? styles.menuContainer : ""
               } ${isOpenMenu && styles.slideDown} ${
                 isAnimating && styles.slideUp
