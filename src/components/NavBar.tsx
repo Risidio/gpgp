@@ -124,9 +124,10 @@ const NavBar = () => {
     <Wrapper>
       <div className="xl:w-[1283px] h-[67.273px] xl:h-[unset] xl:mx-auto  flex justify-between items-center bg-gpgp-blue sm:bg-white xl:mt-[12px] xl:ml-[83px]">
         <nav
-          className={`flex w-full h-[67.273px] md:h-[unset] items-center justify-between bg-gpgp-blue md:bg-white z-70 ${
+          className={`flex w-full h-[67.273px] md:h-[unset] items-center justify-between bg-gpgp-blue md:bg-white ${
             isOpenMenu ? " fixed " : "fixed md:static"
           }`}
+          style={{ zIndex: 999 }}
         >
           {/* phone Navbar */}{" "}
           <Link
