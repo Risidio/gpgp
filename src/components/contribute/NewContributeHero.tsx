@@ -49,7 +49,7 @@ export default function NewContributeHero({
               Contribute to
               <br />
               <span className="text-white header-text-stroke">
-                the global effort &nbsp;
+                the global effort
               </span>
               <span className="hidden xl:inline-flex text-white xl:text-gpgp-blue  header-text-stroke xl:header-text-no-stroke text-[96px] mt-[20px]">
                 Create
