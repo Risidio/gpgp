@@ -61,7 +61,7 @@ const ContactUs = () => {
 
               <MyLink
                 to=""
-                className="xl:w-[223px] xl:h-[63px] bg-white rounded-[2px] shrink-0"
+                className="md:w-[223px] md:h-[63px] bg-white rounded-[2px] shrink-0"
               >
                 <p className="text-gpgp-blue text-center text-[16px] uppercase font-[be-vietnam-700] leading-[23.602px] tracking-[4.4px]">
                   Send
