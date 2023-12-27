@@ -22,7 +22,7 @@ const HomeContentSection3 = ({ InvitationImg, MyLink }) => {
         </div>
 
         {/* Second Column */}
-        <div className="mt-[29px] lg:mt-[unset] w-[288px] lg:w-[484px]  flex flex-col justify-center items-center lg:items-start mx-auto">
+        <div className="mt-[29px] lg:mt-[unset] w-[288px] lg:w-[484px]  flex flex-col justify-center items-center lg:items-start mx-auto lg:mx-[unset]">
           <div className=" flex flex-col gap-y-[62px]">
             <h3 className="hidden lg:block text-gpgp-black font-[be-vietnam] bold-600 text-[40px] leading-[48px] tracking-[-0.8px] uppercase lg:capitalize">
               The Invitation
