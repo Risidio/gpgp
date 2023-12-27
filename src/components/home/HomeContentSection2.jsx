@@ -27,7 +27,7 @@ const HomeContentSection2 = ({ ChallengeImg, ChallengeWebImg, MyLink }) => {
         </div>
 
         {/* Second Column */}
-        <div className="mt-[29px] w-[288px] lg:w-[484px] lg:mt-0 flex flex-col justify-center items-center lg:items-start lg:pl-[0px] lg:order-1 mx-auto">
+        <div className="mt-[29px] w-[288px] lg:w-[484px] lg:mt-0 flex flex-col justify-center items-center lg:items-start lg:order-1 mx-auto lg:mx-[unset]">
           <div className=" flex flex-col gap-y-[59px]">
             <h3 className="hidden lg:block text-gpgp-black font-[be-vietnam] bold-600 text-[40px] leading-[48px] tracking-[-0.8px]">
               The Challenge

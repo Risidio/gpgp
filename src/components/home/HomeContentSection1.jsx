@@ -5,7 +5,7 @@ const HomeContentSection1 = ({ ProjectImg, MyLink }) => {
     <>
       <div className="flex flex-col lg:flex-row mt-[127px] lg:mt-[298px] justify-center gap-x-[121px]">
         {/* First Column */}
-        <div className="flex flex-col gap-y-[32px] lg:max-w-[582px] lg:h-[582px] ">
+        <div className="flex flex-col gap-y-[32px] lg:max-w-[582px] lg:h-[582px]">
           {/* Header */}
           <h3 className="text-center lg:hidden font-[be-vietnam-600] text-[16px] text-[#050B1D] leading-[48px] tracking-[-0.32px] uppercase">
             The Project
