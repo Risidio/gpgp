@@ -72,7 +72,7 @@ export default function InvitationForm({
             }  `}
           >
             <div
-              className={`px-10 sm:px-16 xl:pr-28 flex flex-col items-center   -mb-10`}
+              className={`px-10 sm:px-16 flex flex-col items-center mb-10`}
             >
               <h3 className="uppercase text-[1.2rem] lg:text-[1.4rem] text-center xxxl:text-[1.6rem] mb-4 font-bold tracking-[3px]">
                 COntact Us
