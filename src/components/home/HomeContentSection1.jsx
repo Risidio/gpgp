@@ -47,7 +47,7 @@ const HomeContentSection1 = ({ ProjectImg, MyLink }) => {
               to="/project"
               className="bg-gpgp-blue lg:bg-white w-[187px] h-[40px] lg:w-[223px] lg:h-[63px]"
             >
-              <p className="text-white text-[15px] lg:text-[16px] xl:text-gpgp-blue uppercase leading-[22.126px] xl:leading-[23.602px] font-[be-vietnam-600] tracking-[4.125px] xl:tracking-[4.4px]">
+              <p className="text-white text-[15px] lg:text-[16px] lg:text-gpgp-blue uppercase leading-[22.126px] lg:leading-[23.602px] font-[be-vietnam-600] tracking-[4.125px] xl:tracking-[4.4px]">
                 <span className="hidden lg:flex">Explore</span>
                 <span className="lg:hidden">Learn More</span>
               </p>
