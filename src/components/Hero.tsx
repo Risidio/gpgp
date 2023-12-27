@@ -50,11 +50,11 @@ const Hero = () => {
                     InfinArt
                   </h3>
                 </div>
-                <h3 className="lg:w-[313px] capitalize mt-[25px] lg:mt-[17px] text-[#050B1D] text-[16px] lg:text-[20px] font-[be-vietnam-normal-400] leading-[19.2px] lg:leading-[29.502px] tracking-[0.8px] lg:tracking-[unset]">
+                <h3 className="lg:w-[313px] capitalize mt-[25px] md:mt-[10px] xxl:mt-[17px] text-[#050B1D] text-[16px] lg:text-[20px] font-[be-vietnam-normal-400] leading-[19.2px] lg:leading-[29.502px] tracking-[0.8px] lg:tracking-[unset]">
                   The art inspiring global action
                 </h3>
                 {/* Button Container */}
-                <div className="flex flex-row justify-center lg:justify-start gap-x-[12px] px-[19px] lg:px-0 mt-[30px] lg:mt-[43px]">
+                <div className="flex flex-row justify-center lg:justify-start gap-x-[12px] px-[19px] lg:px-0 mt-[30px] md:mt-[20px] xxl:mt-[43px]">
                   {/* Explore Btn */}
                   <MyLink
                     to=""
