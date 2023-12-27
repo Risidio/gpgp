@@ -6,7 +6,7 @@ import Wrapper from "../layout/Wrapper";
 const About = ({ contents }: IAboutProps) => {
   return (
     <>
-      <Wrapper>
+      {/* <Wrapper> */}
         <div className="w-full bg-h-[100%] bg-w-[100%] bg-project-page-mobile-wave xl:bg-project-page-wave bg-no-repeat bg-cover mt-[88px] xl:mt-[219px]">
           <div className="pt-[120px] md:pt-[220px] xl:pt-[386px] pb-[62px] xl:pb-[130px]">
             {/* Exhibition Context */}
@@ -38,7 +38,7 @@ const About = ({ contents }: IAboutProps) => {
             </div>
           </div>
         </div>
-      </Wrapper>
+      {/* </Wrapper> */}
     </>
   );
 };
