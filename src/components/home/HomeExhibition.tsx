@@ -1,21 +1,21 @@
-import guyAtExhibition from "../../assets/images/gallery_image.jpg"
+import guyAtExhibition from "../../assets/images/gallery_image.jpg";
 
 interface HomeExhibitionProps {
-   classes?: string;
+  classes?: string;
 }
 
-const HomeExhibition = ({ classes="" }: HomeExhibitionProps) => {
+const HomeExhibition = ({ classes = "" }: HomeExhibitionProps) => {
   return (
     <>
       <section className={`bg-lightgray w-full ${classes}`}>
-             <img
-                src={guyAtExhibition}
-                alt="guyAtExhibtion"
-                className="h-[252px] md:h-[600px] w-full xl:h-[817px]"
-              />
+        <img
+          src={guyAtExhibition}
+          alt="guyAtExhibtion"
+          className="w-full "
+        />
       </section>
-   </>
- )
-}
+    </>
+  );
+};
 
-export default HomeExhibition
+export default HomeExhibition;
