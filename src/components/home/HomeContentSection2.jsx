@@ -3,37 +3,37 @@ import React from "react";
 const HomeContentSection2 = ({ ChallengeImg, ChallengeWebImg, MyLink }) => {
   return (
     <>
-      <div className="flex flex-col lg:flex-row-reverse mt-[127px] lg:mt-[293px]">
+      <div className="flex flex-col lg:flex-row mt-[127px] lg:mt-[293px] gap-x-[121px] justify-center">
         {/* First Column */}
-        <div className="flex flex-col gap-y-[32px] lg:w-full">
+        <div className="flex flex-col gap-y-[32px] lg:max-w-[582px] lg:h-[582px] lg:order-2">
           {/* Header */}
           <h3 className="text-center lg:hidden font-[be-vietnam-600] text-[16px] text-[#050B1D] leading-[48px] tracking-[-0.32px] uppercase">
             THE CHALLENGE
           </h3>
 
           {/* Image */}
-          <div className="mx-auto lg:pr-[150px]">
+          <div className="mx-auto lg:h-[100%] ">
             <img
               src={ChallengeImg}
               alt="Challenge"
-              className="lg:hidden w-[190px] h-[190px] lg:w-[585px] lg:h-[439px] lg:rounded-[20px]"
+              className="lg:hidden w-[190px] h-[190px] lg:w-[582px] lg:h-[582px] lg:rounded-[20px]"
             />
             <img
               src={ChallengeWebImg}
               alt="Challenge"
-              className="border-[3px] border-solid border-gpgp-blue hidden lg:block w-[190px] h-[auto] lg:w-[585px] lg:h-[439px] lg:rounded-[20px]"
+              className="hidden lg:block w-[190px] h-[190px] lg:w-[100%] lg:h-[100%]  lg:rounded-[20px] flex-shrink-0"
             />
           </div>
         </div>
 
         {/* Second Column */}
-        <div className="mt-[29px] lg:mt-0 lg:w-full flex flex-col justify-center items-center lg:items-start lg:pl-[121px]">
+        <div className="mt-[29px] w-[288px] lg:w-[484px] lg:mt-0 flex flex-col justify-center items-center lg:items-start lg:pl-[0px] lg:order-1 mx-auto">
           <div className=" flex flex-col gap-y-[59px]">
             <h3 className="hidden lg:block text-gpgp-black font-[be-vietnam] bold-600 text-[40px] leading-[48px] tracking-[-0.8px]">
               The Challenge
             </h3>
 
-            <p className="w-[288px] lg:w-[484px] text-center lg:text-left text-[15px] lg:text-[16px] leading-[30px] lg:leading-[32px] mx-auto lg:mx-0 text-[#050B1D] font-[be-vietnam]">
+            <p className="text-center lg:text-left text-[15px] lg:text-[16px] leading-[30px] lg:leading-[32px] mx-auto lg:mx-0 text-[#050B1D] font-[be-vietnam]">
               Plastics are a major contributor to marine debris. The Great
               Pacific Garbage Patch is a pressing environmental issue that
               requires immediate attention.
