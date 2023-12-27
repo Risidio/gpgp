@@ -120,7 +120,7 @@ const NavBar = () => {
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-white transition ease transform duration-300`;
   return (
     <Wrapper>
-      <div className="h-[67.273px] xl:h-[unset] xl:mx-auto  flex justify-between items-center bg-gpgp-blue md:bg-white xl:mt-[12px] xl:ml-[83px]">
+      <div className="h-[67.273px] lg:h-[unset] lg:mx-auto  flex justify-between items-center bg-gpgp-blue md:bg-white lg:bg-white lg:mt-[12px] lg:ml-[83px]">
         <nav
           className={`flex w-full h-[67.273px] md:h-[unset] items-center justify-between bg-gpgp-blue md:bg-white ${
             isOpenMenu ? " fixed " : "fixed md:static"
@@ -130,8 +130,8 @@ const NavBar = () => {
           {/* phone Navbar */}{" "}
           <Link
             to="/"
-            className={`flex items-center pl-4 sm:hidden transition-all ease-in-out
-          ${isOpenMenu ? "opacity-1" : ""}
+            className={`flex items-center pl-4 sm:block md:hidden transition-all ease-in-out
+          ${isOpenMenu ? "" : ""}
           `}
             onClick={() => resetSelectItem()}
           >
@@ -139,7 +139,7 @@ const NavBar = () => {
           </Link>
           {isOpenMenu && (
             <div
-              className={`bg-gpgp-blue h-screen sm:hidden !z-[172] text-white mt-[65px] fixed w-full left-0 top-0 transition-all ease-in duration-500 flex flex-col px-7 ${
+              className={`bg-gpgp-blue h-screen sm:block md:hidden !z-[172] text-white mt-[65px] fixed w-full left-0 top-0 transition-all ease-in duration-500 flex flex-col px-7 ${
                 isOpenMenu ? styles.menuContainer : ""
               } ${isOpenMenu && styles.slideDown} ${
                 isAnimating && styles.slideUp
@@ -169,7 +169,7 @@ const NavBar = () => {
           {/* Web Navbar */}
           <Link
             to="/"
-            className="hidden sm:flex items-center"
+            className="hidden md:flex items-center"
             onClick={() => {
               resetSelectItem();
               // Hide all dots
@@ -183,7 +183,7 @@ const NavBar = () => {
           >
             <Logo className="" logo={"NewNavLogo2.png"} />
           </Link>
-          <div className="hidden sm:flex  ">
+          <div className="hidden md:flex  ">
             {links.map((link, index) => {
               if (link.name !== "Home") {
                 return (
@@ -233,7 +233,7 @@ const NavBar = () => {
             })}
           </div>
           {/* hamburger menu */}
-          <div className="inline-block sm:hidden text-white py-1 px-3 h-auto">
+          <div className="inline-block sm:block md:hidden text-white py-1 px-3 h-auto">
             <button
               className="flex flex-col h-auto w-12 rounded justify-center items-center group"
               onClick={() => setIsOpenMenu(!isOpenMenu)}
