@@ -1,7 +1,6 @@
 import { IAboutProps } from "../../types/project";
 import NftCarousel from "../NftCarousel";
 import MyLink from "../base/MyLink";
-import Wrapper from "../layout/Wrapper";
 
 const About = ({ contents }: IAboutProps) => {
   return (
