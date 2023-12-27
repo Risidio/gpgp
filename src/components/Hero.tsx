@@ -58,7 +58,7 @@ const Hero = () => {
                   {/* Explore Btn */}
                   <MyLink
                     to=""
-                    className="lg:hidden w-[187px] h-[40px] lg:w-[245.63px] lg:h-[63px] bg-white rounded-[2px] lg:rounded-[5px] shrink-0"
+                    className="lg:hidden w-[187px] h-[40px] lg:w-[245.63px] lg:h-[63px] bg-white rounded-[2px] lg:rounded-[5px] shrink-0 bg-red-500"
                   >
                     <p className="text-gpgp-blue lg:w-[92.526px] text-center text-[15px] lg:text-[16px] uppercase font-[be-vietnam-700] leading-[22.126px] lg:leading-[23.602px] tracking-[4.125px] lg:tracking-[4.4px]">
                       Explore
