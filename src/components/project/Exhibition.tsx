@@ -1,11 +1,13 @@
 import GalleryImage from "../../assets/images/gpgp_gallery_art.jpg";
 import { IExhibitionSectionProps } from "../../types/project";
 import MyLink from "../base/MyLink";
+import Wrapper from "../layout/Wrapper";
 
 const Exhibition = ({ contents }: IExhibitionSectionProps) => {
   return (
     <>
-      <section className="xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] mt-[118px] xl:mt-[258px]">
+    <Wrapper>
+    <section className="xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] mt-[118px] xl:mt-[258px]">
         {/* Image Column */}
         <div className="xl:order-2 flex flex-col items-center xl:justify-center">
           {/* Home header Title */}
@@ -18,14 +20,14 @@ const Exhibition = ({ contents }: IExhibitionSectionProps) => {
             <img
               src={GalleryImage}
               alt="The Challenge"
-              className="w-[293px] xl:w-[585.281px] xl:h-[434px] h-auto xl:rounded-[20px] mt-[36px] xl:mt-0"
+              className="w-[293px] h-[170.917px] xl:w-[585.281px] xl:h-[434px] xl:rounded-[20px] mt-[36px] xl:mt-0"
             />
           </div>
         </div>
 
         {/* Content Column */}
         <div className="mx-auto xl:mx-0 text-center xl:text-left w-[293px] xl:w-[522px]">
-          <h1 className="hidden xl:block font-[be-vietnam-600] text-[#050B1D] text-[40px] leading-[48px] tracking-[0.8px]">
+          <h1 className="hidden xl:block font-[be-vietnam] bold-600 text-[#050B1D] text-[40px] leading-[48px] tracking-[0.8px]">
             {contents?.title[0].text}
           </h1>
           <p
@@ -50,6 +52,8 @@ const Exhibition = ({ contents }: IExhibitionSectionProps) => {
           </MyLink>
         </div>
       </section>
+    </Wrapper>
+      
     </>
   );
 };

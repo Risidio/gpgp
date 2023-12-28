@@ -1,11 +1,13 @@
 // import SaveOceanCampaignImage from "../../assets/images/save-ocean-campaign-plastic-bag-sinking-ocean-remix-media 1.png";
 // import SaveOceanCampaignImageWeb from "../../assets/images/save-ocean-campaign-plastic-bag-sinking-ocean-remix-media-web.jpg";
 import { IAttentionSectionProps } from "../../types/project";
+import Wrapper from "../layout/Wrapper";
 
 const Attention = ({ contents }: IAttentionSectionProps) => {
   return (
     <>
-      <section className="xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] mt-[118px] xl:mt-[258px]">
+    <Wrapper>
+    <section className="xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] mt-[118px] xl:mt-[258px]">
         {/* Image Column */}
         <div className="xl:order-1 flex flex-col items-center xl:items-start xl:justify-center">
           {/* Home header Title */}
@@ -18,14 +20,14 @@ const Attention = ({ contents }: IAttentionSectionProps) => {
             <img
               src={contents?.image.url}
               alt={contents?.image.alt}
-              className="w-[293px] xl:w-[579px] h-auto xl:rounded-[20px] mt-[36px] xl:mt-0"
+              className="w-[293px] h-[196px] xl:w-[579px] xl:h-[498px] xl:rounded-[20px] mt-[36px] xl:mt-0"
             />
           </div>
         </div>
 
         {/* Content Column */}
         <div className="mx-auto xl:mx-0 xl:ml-[50px] xxl:ml-[30px] text-center xl:text-left xl:flex xl:flex-col w-[293px] xl:w-full xl:order-2">
-          <h1 className="hidden xl:block font-[be-vietnam-600] text-[#050B1D] text-[40px] leading-[48px] tracking-[0.8px]">
+          <h1 className="hidden xl:block font-[be-vietnam] bold-600 text-[#050B1D] text-[40px] leading-[48px] tracking-[0.8px]">
             {contents?.title[0].text}
           </h1>
           <div className="xl:w-[500px] xxl:w-[560px]">
@@ -50,6 +52,8 @@ const Attention = ({ contents }: IAttentionSectionProps) => {
           </div>
         </div>
       </section>
+    </Wrapper>
+     
     </>
   );
 };

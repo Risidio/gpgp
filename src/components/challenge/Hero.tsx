@@ -1,12 +1,15 @@
 import MyLink from "../base/MyLink";
+import Wrapper from "../layout/Wrapper";
 
 const Hero = () => {
   return (
     <>
-      <section className="flex">
-      <div className="xl:flex xl:flex-row mx-auto xl:gap-[81px] xl:ml-[297px]">
+    <Wrapper>
+    <section className="flex">
+      {/* <div className="xl:flex xl:flex-row mx-auto xl:gap-[81px] xl:ml-[297px]"> */}
+      <div className="xl:flex xl:flex-row mx-auto xl:gap-[81px]">
         {/* Call to Action Column */}
-        <div className="xl:order-2 xl:w-[398px]  mt-[60.73px] xl:mt-[18px]">
+        <div className="xl:order-2 xl:w-[398px] xl:mt-[18px]">
           <h1 className="text-gpgp-blue text-[32px] xl:text-[80px] font-[be-vietnam-700] uppercase text-center xl:text-left leading-[140%] xl:leading-[90px]">
             The art{" "}
             <span className="text-white header-text-stroke">
@@ -68,6 +71,8 @@ const Hero = () => {
         </div>
       </div>
       </section>
+    </Wrapper>
+     
       
     </>
   );

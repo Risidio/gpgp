@@ -1,5 +1,7 @@
 // import { useState } from "react";
 
+import Wrapper from "../layout/Wrapper";
+
 const GalleryHeader = () => {
   // const [activeTab,setActiveTab] = useState("All");
 
@@ -22,7 +24,7 @@ const GalleryHeader = () => {
 
   return (
     <>
-      <div>
+      <Wrapper>
         <div className="">
           {/* First Column */}
           <div className="pt-[30px] pb-[70px] lg:pb-[113px] pl-[10px] lg:pl-[118px] flex flex-col gap-y-[51px] lg:gap-y-[84px]">
@@ -50,7 +52,7 @@ const GalleryHeader = () => {
             </div> */}
           </div>
         </div>
-      </div>
+      </Wrapper>
     </>
   );
 };

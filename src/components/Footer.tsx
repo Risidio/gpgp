@@ -23,7 +23,7 @@ const Footer = ({ classes = "bg-gpgp-blue" }: FooterProps) => {
 
   return (
     <footer
-      className={`
+      className={`mx-auto
        border-t bg-gpgp-blue`}
     >
       <Container hasSection={false} classes={"bg-gpgp-blue text-white"}>
@@ -95,7 +95,7 @@ const Footer = ({ classes = "bg-gpgp-blue" }: FooterProps) => {
                 </li>
               </ul>
               <Logo
-                className="flex items-start w-16 h-16"
+                className="flex items-start mt-[2.96px] xl:mt-[unset]"
                 logo={fontColor ? "image.png" : "logo-white.png"}
               />
             </div>

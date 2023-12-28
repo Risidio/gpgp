@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
 import { IContributeHeroProps } from "../../types/contribute";
+import MyLink from "../base/MyLink";
 import DeskstopContributeHero from "./DeskstopContributeHero";
 import MobileContributeHero from "./MobileContributeHero";
-// import MyLink from "../base/MyLink";
+
 
 export default function NewContributeHero({
   classes: {
@@ -63,20 +63,83 @@ export default function NewContributeHero({
               ))}
           </div>
         </div>
-        <div className=" flex w-full ">
-          <div className="flex  w-[100%] flex-col justify-end items-center sm:items-end sm:pl-[0px] sm:pr-[120px] md:pl-[300px]  lg:pl-[86px] lg:pr-[120px] xl:pl-[75px] xl:pr-[124px] md:pr-[24px] ">
-            <Link
-              to={"/contribute/inviteSponsor"}
-              className="border rounded-[6px] border-gpgp-blue text-gpgp-blue font-semibold w-[75%] sm:w-[75%] lg:w-[50%] text-center h-[65px] xxxl:h-[75px] flex justify-center font-BeVietnam items-center mt-3 mb-5 uppercase sm:tracking-[0.1rem] lg:tracking-[0.3rem] sm:text-[0.8rem] lg:text-[1rem]  xxl:text-[1.3rem] xxxxl:text-[1.7rem] hover:shadow-lg "
-            >
-              COntribute as an investor
-            </Link>
-            <Link
-              to={"/contribute/inviteArtist"}
-              className="rounded-[6px] font-BeVietnam bg-gpgp-blue text-white font-semibold w-[75%] sm:w-[75%] lg:w-[50%] text-center h-[65px] xxxl:h-[75px] flex justify-center items-center mt-3 mb-5 uppercase sm:tracking-[0.1rem] lg:tracking-[0.3rem] sm:text-[0.8rem] lg:text-[1rem] xxl:text-[1.3rem] xxxxl:text-[1.7rem] hover:shadow-lg"
-            >
-              COntribute as an artist
-            </Link>
+
+        {/* Second column */}
+        <div className="">
+          {/* Mobile */}
+          <div className="xl:hidden">
+            <div className="text-center font-[be-vietnam] bold-400 text-[16px] leading-[32px] w-[293px] mx-auto mt-[40px]">
+              <p>
+                The Great Pacific Garbage Patch Art Project is an exciting
+                initiative that welcomes both artists and investors to join us
+                in making a profound impact on the environment. Together, we can
+                create a harmonious blend of creativityand capital to tackle one
+                ofthe planet's most pressingenvironmental challenges.
+              </p>
+              <p className="mt-[5px]">
+                Join us on this remarkable journey to combat the Great Pacific
+                Garbage Patch through the transformative power of art and
+                investment.
+              </p>
+            </div>
+            <div className="mt-[42px] flex flex-col gap-y-[16px] items-center">
+              <MyLink
+                to="/contribute/inviteSponsor"
+                className="w-[216px] h-[49px] bg-white text-gpgp-blue"
+              >
+                <p className="text-[11px] font-[be-vietnam] bold-700 leading-[16.226px] tracking-[3.025px] uppercase text-center">
+                  Contribute as an investor
+                </p>
+              </MyLink>
+              <MyLink
+                to="/contribute/inviteArtist"
+                className="w-[216px] h-[49px] bg-gpgp-blue text-white"
+              >
+                <p className="text-[11px] font-[be-vietnam] bold-700 leading-[16.226px] tracking-[4.025px] uppercase text-center">
+                  Contribute as an artist
+                </p>
+              </MyLink>
+            </div>
+          </div>
+          {/* Web */}
+          <div className="hidden xl:block">
+            <div className="w-[622px] font-[be-vietnam] bold-400 leading-[32px]">
+              <p className="tracking-[1px]">
+                The Great Pacific Garbage Patch Art Project isan exciting
+                initiative that welcomes both artists and investors to join us
+                in making a profound impact on the environment.
+              </p>
+              <p className="mt-[20px] tracking-[1px]">
+                Together, we can create a harmonious blend of creativityand
+                capital to tackle one of the planet's most pressing
+                environmental challenges.
+              </p>
+              <p className="mt-[20px] tracking-[1px]">
+                Join us on this remarkable journey to combat the Great Pacific
+                Garbage Patch through the transformativepower of art and
+                investment.
+              </p>
+            </div>
+            <div className="w-[622px]">
+              <div className="flex flex-col gap-y-[14px] mt-[30px]">
+                <MyLink
+                  to="/contribute/inviteSponsor"
+                  className="h-[63px] text-gpgp-blue bg-white rounded-[1px]"
+                >
+                  <p className="text-center font-[be-vietnam] bold-700 leading-[23.602px] uppercase tracking-[4.4px]">
+                    Contribute as an investor
+                  </p>
+                </MyLink>
+                <MyLink
+                  to="/contribute/inviteArtist"
+                  className="h-[63px] text-white bg-gpgp-blue rounded-[1px]"
+                >
+                  <p className="text-center font-[be-vietnam] bold-700 leading-[23.602px] uppercase tracking-[4.4px] hover:text-white">
+                    Contribute as an artist
+                  </p>
+                </MyLink>
+              </div>
+            </div>
           </div>
         </div>
       </div>

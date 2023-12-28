@@ -7,11 +7,12 @@ module.exports = {
   theme: {
     fontFamily: {
       BeVietnam: ['"Be Vietnam"', "sans-serif"],
+      Inter: ['Inter', 'sans-serif'],
     },
     extend: {
       screens: {
         xxsm: "240px",
-        // => @media (min-width: 340px) { ... }
+        // => @media (min-width: 240px) { ... }
         xsm: "340px",
         // => @media (min-width: 340px) { ... }
         sm: "640px",
@@ -72,6 +73,8 @@ module.exports = {
         "trashed-plastics-mobile":
           "url('./assets/images/trashedPlasticObjectsMobile.jpg')",
         "news-background-wave": "url('./assets/svg/newswave.svg')",
+        "mobile-button-wave":
+        "url('./assets/svg/mobilebuttonwave.svg')",
       },
       fontFamily: {
         BeVietnam: ['"Be Vietnam"', "sans-serif"],

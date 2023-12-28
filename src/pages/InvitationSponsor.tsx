@@ -1,6 +1,7 @@
+import BottomContributeWaveSection from "../components/base/BottomContributeWaveSection";
 import InviteHero from "../components/contribute/Invitation/InviteHero";
 import NewInvitationForm from "../components/contribute/Invitation/NewInvitationForm";
-import NewsBottomWave from "../components/news/NewsBottomWave";
+// import NewsBottomWave from "../components/news/NewsBottomWave";
 
 export default function InvitationSponsor() {
   const formFields = [
@@ -53,7 +54,7 @@ export default function InvitationSponsor() {
       />
 
       <section className="mt-9">
-        <NewsBottomWave />
+        <BottomContributeWaveSection />
       </section>
     </div>
   );

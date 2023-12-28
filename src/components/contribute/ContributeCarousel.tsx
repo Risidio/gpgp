@@ -6,6 +6,7 @@ import InvitationCarouselDotActive from "../../assets/images/InvitationCarouselD
 import InvitationCarouselDot from "../../assets/images/InvitationCarouselDot.png";
 import { IinvitaitonSectionProps } from "../../types/contribute";
 
+const handleDragStart = (e: any) => e.preventDefault();
 
 const ContributeCarousel = ({
   contents1,

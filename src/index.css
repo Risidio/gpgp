@@ -61,6 +61,10 @@
   font-weight: 700;
 }
 
+.bold-800{
+  font-weight: 800;
+}
+
 /* Regular */
 @font-face {
   font-family: be-vietnam;

@@ -15,6 +15,7 @@ import {
 } from "../../types/gallery";
 import { GalleryItem } from "./GalleryItem";
 import NewPagination from "../shared/NewPagination";
+import Wrapper from "../layout/Wrapper";
 
 const GalleryView = ({ contents }: IGalleryArtworksProps) => {
   const [artworks, setArtworks] = useState<IGalleryArtWorkImageData[]>([]);
@@ -39,7 +40,7 @@ const GalleryView = ({ contents }: IGalleryArtworksProps) => {
   };
 
   return (
-    <>
+    <Wrapper>
       <div className="px-[20px] lg:px-[120px] pb-[30px]">
         <div className="flex flex-col gap-y-[30px] lg:gap-y-[80px]">
           {/* Pagination */}
@@ -82,7 +83,7 @@ const GalleryView = ({ contents }: IGalleryArtworksProps) => {
           />
         </div>
       </div>
-    </>
+    </Wrapper>
   );
 };
 

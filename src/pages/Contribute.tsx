@@ -10,10 +10,8 @@ export default function Contribute() {
   const artist = document?.data["body"][1]?.primary;
   const sponosr = document?.data["body"][2]?.primary;
 
-
   return (
-    <div className="">
-      
+    <>
       <NewContributeHero
         contents={document?.data["body"][0].primary}
         classes={{
@@ -28,6 +26,6 @@ export default function Contribute() {
       <div className="">
         <ContributeCarousel contents1={artist} contents2={sponosr} />
       </div>
-    </div>
+    </>
   );
 }

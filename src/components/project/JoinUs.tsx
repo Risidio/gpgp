@@ -2,15 +2,17 @@
 // import SeaSealWeb from "../../assets/images/ai-generated-realistic-pictures-seals-web.jpg";
 import MyLink from "../base/MyLink";
 import { IJoinSectionProps } from "../../types/project";
+import Wrapper from "../layout/Wrapper";
 
 const JoinUs = ({ contents }: IJoinSectionProps) => {
   return (
     <>
-      <section className="xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] mt-[118px] xl:mt-[258px]">
+    <Wrapper>
+    <section className="xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] mt-[118px] xl:mt-[258px]">
         {/* Image Column */}
         <div className="xl:order-2 flex flex-col items-center xl:justify-center">
           {/* Home header Title */}
-          <div className="xl:hidden xl:w-0 xl:h-0 text-[#050B1D] uppercase text-[16px] font-[be-vietnam-600] leading-[48px] tracking-[0.32px] text-center">
+          <div className="xl:hidden xl:w-0 xl:h-0 text-[#050B1D] uppercase text-[16px] font-[be-vietnam] bold-600 leading-[48px] tracking-[0.32px] text-center">
             <h1>{contents?.title[0].text}</h1>
           </div>
 
@@ -19,7 +21,7 @@ const JoinUs = ({ contents }: IJoinSectionProps) => {
             <img
               src={contents?.image.url}
               alt={contents?.image.alt}
-              className="w-[293px] xl:w-[585px] h-auto xl:rounded-[20px] mt-[36px] xl:mt-0"
+              className="w-[293px] h-[194.403px] xl:w-[585px] xl:h-[430px] xl:rounded-[20px] mt-[36px] xl:mt-0"
             />
           </div>
         </div>
@@ -67,6 +69,8 @@ const JoinUs = ({ contents }: IJoinSectionProps) => {
           </div>
         </div>
       </section>
+    </Wrapper>
+      
     </>
   );
 };

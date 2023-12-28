@@ -16,31 +16,31 @@ const ContactInfo = ({ classes = "white", scrollTop }: ContactInfoProps) => {
               Project
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to={"/gallery"} onClick={scrollTop}>
               Gallery
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to={"/challenge"} onClick={scrollTop}>
               Challenge
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to={"/contribute"} onClick={scrollTop}>
               Contribute
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to={"/news"} onClick={scrollTop}>
               News
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to={"/contact"} onClick={scrollTop}>
               Contact
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
 

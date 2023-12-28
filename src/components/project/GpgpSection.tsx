@@ -1,11 +1,13 @@
 import challengeImage from "../../assets/images/challenge.jpg";
 import MyLink from "../base/MyLink";
 import { IGpgpSectionProps } from "../../types/project";
+import Wrapper from "../layout/Wrapper";
 
 const GpgpSection = ({ contents }: IGpgpSectionProps) => {
   return (
     <>
-      <section className="xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] mt-[30px] xl:mt-[100px]">
+    <Wrapper>
+    <section className="xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] mt-[30px] xl:mt-[100px]">
         {/* Image Column */}
         <div className="xl:order-2 flex flex-col items-center xl:justify-center">
           {/* Home header Title */}
@@ -18,14 +20,14 @@ const GpgpSection = ({ contents }: IGpgpSectionProps) => {
             <img
               src={challengeImage}
               alt="The Challenge"
-              className="w-[293px] xl:w-[585px] h-auto xl:rounded-[20px] mt-[36px] xl:mt-0"
+              className="w-[293px] xl:w-[585px] xl:h-[438px] h-[196px] xl:rounded-[20px] mt-[36px] xl:mt-0"
             />
           </div>
         </div>
 
         {/* Content Column */}
         <div className="mx-auto xl:mx-0 text-center xl:text-left w-[293px] xl:w-[522px]">
-          <h1 className="hidden xl:block font-[be-vietnam-600] text-[#050B1D] text-[40px] leading-[48px] tracking-[0.8px]">{contents?.title[0].text}</h1>
+          <h1 className="hidden xl:block font-[be-vietnam] bold-600 text-[#050B1D] text-[40px] leading-[48px] tracking-[0.8px]">{contents?.title[0].text}</h1>
           <p
             dangerouslySetInnerHTML={{
               __html: contents?.firstparagraph[0].text,
@@ -48,6 +50,8 @@ const GpgpSection = ({ contents }: IGpgpSectionProps) => {
           </MyLink>
         </div>
       </section>
+    </Wrapper>
+     
     </>
   );
 };
