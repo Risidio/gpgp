@@ -68,10 +68,10 @@ export default function InvitationForm({
         <BackPattern>
           <div
             className={`w-full ${
-              WavePattern === "Contact" ? "pt-2" : "pt-[250px] xl:pt[650px]"
+              WavePattern === "Contact" ? "" : "pt-[250px] xl:pt[650px]"
             }  `}
           >
-            <div className={`px-10 sm:px-16 flex flex-col items-center mb-10`}>
+            <div className={`px-10 sm:px-16 flex flex-col items-center mb-[55px] lg:mb-[unset] `}>
               <h3 className="uppercase text-[16px] font-[be-vietnam] lg:font-Inter text-center  mb-[15px] lg:mb-[14px] font-[700] leading-[23.602px] tracking-[4.4px]">
                 COntact Us
               </h3>
