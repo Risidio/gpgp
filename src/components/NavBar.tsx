@@ -215,7 +215,7 @@ const NavBar = () => {
                       <div className="text-center">
                         <p
                           id={`WebNav-dot${index}`}
-                          className={`bg-gpgp-blue rounded-full absolute top-[32px] left-[30px] h-[6px] w-[7px] ${
+                          className={`bg-gpgp-blue rounded-full absolute  transform -translate-x-1/2 bottom-0 bottom-0 top-[32px] left-[40%] h-[6px] w-[7px] ${
                             currentRoute === "/"
                               ? "hidden"
                               : currentRoute === link.href
