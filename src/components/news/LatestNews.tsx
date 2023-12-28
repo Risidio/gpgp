@@ -32,7 +32,7 @@ const LatestNews = ({ contents }: INewsHeroProps) => {
                   src={contents?.newsimage2.url}
                   // src={newsImage2}
                   alt="newsImage2"
-                  className="w-full h-56 object-cover rounded-[20px] cursor-pointer shadow-md bg-black bg-opacity-40"
+                  className="w-full h-56 object-cover rounded-[20px] cursor-pointer shadow-md"
                 />
                 <span className="hidden absolute bottom-0 text-[0.9rem] font-semibold text-white p-2">
                   Beyond the Tides: Unveiling How Greenwashing Has Allowed
@@ -47,7 +47,7 @@ const LatestNews = ({ contents }: INewsHeroProps) => {
                 <img
                   src={contents?.newsimage4.url}
                   alt="newsImage4"
-                  className="w-full h-56 object-cover rounded-[20px] cursor-pointer shadow-md bg-black bg-opacity-40"
+                  className="w-full h-56 object-cover rounded-[20px] cursor-pointer shadow-md"
                 />
                 <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2">
                   {contents?.newscaption4[0].text}
