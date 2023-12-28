@@ -37,7 +37,9 @@ export default function Contact() {
   const SponsorFormLegend = {
     heading: `We’d love to hear from you`,
     contact: `infinart@risidio.com`,
-  };
+  };  
+
+  
 
   return (
     <div className="">
