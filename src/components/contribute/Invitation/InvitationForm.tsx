@@ -62,8 +62,8 @@ export default function InvitationForm({
     <Wrapper>
       <div
         className={`relative ${
-          WavePattern === "Contact" && "mt-[90px]"
-        } md:mt-16 h-auto`}
+          WavePattern === "Contact" && "mt-[81.73px] lg:mt-[151px]"
+        } `}
       >
         <BackPattern>
           <div
@@ -71,71 +71,36 @@ export default function InvitationForm({
               WavePattern === "Contact" ? "pt-2" : "pt-[250px] xl:pt[650px]"
             }  `}
           >
-            <div
-              className={`px-10 sm:px-16 flex flex-col items-center mb-10`}
-            >
-              <h3 className="uppercase text-[1.2rem] lg:text-[1.4rem] text-center xxxl:text-[1.6rem] mb-4 font-bold tracking-[3px]">
+            <div className={`px-10 sm:px-16 flex flex-col items-center mb-10`}>
+              <h3 className="uppercase text-[16px] font-[be-vietnam] lg:font-Inter text-center  mb-[15px] lg:mb-[14px] font-[700] leading-[23.602px] tracking-[4.4px]">
                 COntact Us
               </h3>
-
-              <h2 className="text-[1.5rem] sm:text-[2rem] text-center  md:[2.5rem] lg:text-[3rem] xxl:text-[3.5rem] font-semibold mb-3">
+              <h2 className="text-[16px] lg:text-[44px] font-[600] text-center leading-[48px] tracking-[-0.32px] lg:tracking-[-0.88px] font-[be-vietnam]">
                 We’d love to hear from{" "}
                 <span className="underline text-[#D9BF4F]"> you</span>
               </h2>
 
-              <p className=" sm:mb-[2rem] mb-2 mt-2 font-semibold text-center tracking-[1px] sm:tracking-[2px] w-[120%] sm:w-full text-[0.8rem] sm:text-[1rem] xxxl:text-[1.5rem]">
-                Reach out to us for further discussions about sponsorship and
-                partnership opportunities
-              </p>
+              <div className="mt-[17px] lg:mt-[32px]">
+                <p className="text-center font-[be-vietnam] lg:font-Inter leading-[24px] lg:leading-[unset]  font-[500] text-[16px]">
+                  Reach out to us for further discussions about sponsorship and
+                  partnership opportunities
+                </p>
 
-              <form
-                className={`flex flex-wrap  rounded-[33px] sm:px-5 sm:mt-[-32px] pt-10 xl:px-7 pb-4 -mx-2`}
-              >
-                {formField.map((field) =>
-                  field.width === "half" ? (
-                    <div
-                      key={field.id}
-                      className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 p-2"
-                    >
-                      <label
-                        htmlFor={field.id}
-                        className={`block font-semibold xxxl:text-[1.5rem] text-gpgp-blue`}
+                <form
+                  className={`flex flex-wrap rounded-[33px] mt-[49px] lg:mt-[44px]`}
+                >
+                  {formField.map((field) =>
+                    field.width === "half" ? (
+                      <div
+                        key={field.id}
+                        className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 px-2 mb-[34px] lg:mb-[44px]"
                       >
-                        {field.label}
-                      </label>
-                      <input
-                        type={field.type}
-                        id={field.id}
-                        name={field.id}
-                        className={`border ${
-                          WavePattern === "Contact"
-                            ? "border-[#0A2471] rounded-[7px]"
-                            : "border-white"
-                        } rounded px-3 py-2 w-full`}
-                      />
-                    </div>
-                  ) : (
-                    <div key={field.id} className="w-full p-2">
-                      <label
-                        htmlFor={field.id}
-                        className={`block font-semibold xxxl:text-[1.5rem] text-gpgp-blue`}
-                      >
-                        {field.label}
-                      </label>
-                      {field.type === "textarea" ? (
-                        <textarea
-                          name={field.label}
-                          id={field.id}
-                          rows={field.label === "Message" ? rows : 8}
-                          className={`border ${
-                            WavePattern === "Contact"
-                              ? "border-[#0A2471] rounded-[7px]"
-                              : "border-white"
-                          } rounded px-3 py-2 w-full text-black`}
-                        />
-                      ) : field.type === "file" ? (
-                        <CustomFileInput label={field.label} id={field.id} />
-                      ) : (
+                        <label
+                          htmlFor={field.id}
+                          className={`block text-[13px] lg:text-[16px] font-[500] text-gpgp-blue font-[be-vietnam] lg:font-Inter`}
+                        >
+                          {field.label}
+                        </label>
                         <input
                           type={field.type}
                           id={field.id}
@@ -146,13 +111,51 @@ export default function InvitationForm({
                               : "border-white"
                           } rounded px-3 py-2 w-full`}
                         />
-                      )}
-                    </div>
-                  )
-                )}
-              </form>
+                      </div>
+                    ) : (
+                      <div
+                        key={field.id}
+                        className="w-full px-2 mb-[34px] lg:mb-[44px]"
+                      >
+                        <label
+                          htmlFor={field.id}
+                          className={`block text-[13px] lg:text-[16px] font-[500] text-gpgp-blue font-[be-vietnam] lg:font-Inter`}
+                        >
+                          {field.label}
+                        </label>
+                        {field.type === "textarea" ? (
+                          <textarea
+                            name={field.label}
+                            id={field.id}
+                            rows={field.label === "Message" ? rows : 8}
+                            className={`border ${
+                              WavePattern === "Contact"
+                                ? "border-[#0A2471] rounded-[7px]"
+                                : "border-white"
+                            } rounded px-3 py-2 w-full text-black`}
+                          />
+                        ) : field.type === "file" ? (
+                          <CustomFileInput label={field.label} id={field.id} />
+                        ) : (
+                          <input
+                            type={field.type}
+                            id={field.id}
+                            name={field.id}
+                            className={`border ${
+                              WavePattern === "Contact"
+                                ? "border-[#0A2471] rounded-[7px]"
+                                : "border-white"
+                            } rounded px-3 py-2 w-full`}
+                          />
+                        )}
+                      </div>
+                    )
+                  )}
+                </form>
+              </div>
+
               <button
-                className={`m-10 border w-[200px] sm:w-[150px]  xxxl:w-[210px] h-[45px] sm:h-[50px] xxxl:h-[65px]  bg-gpgp-blue text-white font-semibold text-[1.3rem] xxxl:text-[2rem] tracking-[3px] rounded-[3px] ${Classes?.FormBtn}`}
+                className={`mt-[6px] lg:mt-[4px] uppercase font-Inter border border-1 border-[#0E0C71] w-[187px] lg:w-[223px] text-[13px] lg:text-[16px] py-[10px] lg:py-[18px] bg-gpgp-blue text-white rounded-[2px] font-[700] leading-[19.176px] lg:leading-[23.602px] tracking-[3.576px] lg:tracking-[4.4px] ${Classes?.FormBtn}`}
               >
                 Send
               </button>

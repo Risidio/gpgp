@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     fontFamily: {
       BeVietnam: ['"Be Vietnam"', "sans-serif"],
+      Inter: ['Inter', 'sans-serif'],
     },
     extend: {
       screens: {
