@@ -1,6 +1,6 @@
 import { INewsHeroProps } from "../../types/news";
 import Wrapper from "../layout/Wrapper";
-import newsImage2 from "../../assets/images/news/latest-news-image2.png";
+// import newsImage2 from "../../assets/images/news/latest-news-image2.png";
 
 const LatestNews = ({ contents }: INewsHeroProps) => {
   return (
