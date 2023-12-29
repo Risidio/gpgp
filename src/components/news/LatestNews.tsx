@@ -21,9 +21,11 @@ const LatestNews = ({ contents }: INewsHeroProps) => {
                   alt="newsImage1"
                   className="w-full h-[470px] shadow-md opacity-95 object-cover cursor-pointer hover:opacity-90 transition rounded-[30px] duration-300 ease-in-out"
                 />
-                <span className="absolute bottom-1 text-[1.1rem] drop-shadow-sm font-semibold text-white p-5 ">
-                  {contents?.newscaption1[0].text}
-                </span>
+                <div className="bg-[#00000054] z-40 w-[100%] h-[100%] rounded-[30px] absolute top-0 left-0">
+                  <span className="absolute bottom-1 text-[1.1rem] drop-shadow-sm font-semibold text-white p-5 ">
+                    {contents?.newscaption1[0].text}
+                  </span>
+                </div>
               </div>
             </div>
             <div className="col-span-2 grid grid-cols-2 gap-4">
@@ -34,13 +36,11 @@ const LatestNews = ({ contents }: INewsHeroProps) => {
                   alt="newsImage2"
                   className="w-full h-56 object-cover rounded-[20px] cursor-pointer shadow-md"
                 />
-                <span className="hidden absolute bottom-0 text-[0.9rem] font-semibold text-white p-2">
-                  Beyond the Tides: Unveiling How Greenwashing Has Allowed
-                  Plastic Pollution to Flourish
-                </span>
-                <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2">
-                  {contents?.newscaption2[0].text}
-                </span>
+                <div className="bg-[#00000054] z-40 w-[100%] h-[99%] rounded-[20px] absolute top-0 left-0">
+                  <span className="absolute bottom-0  text-[0.9rem] drop-shadow-sm font-semibold text-white p-2">
+                    {contents?.newscaption2[0].text}
+                  </span>
+                </div>
               </div>
 
               <div className="group relative">
@@ -49,9 +49,11 @@ const LatestNews = ({ contents }: INewsHeroProps) => {
                   alt="newsImage4"
                   className="w-full h-56 object-cover rounded-[20px] cursor-pointer shadow-md"
                 />
-                <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2">
-                  {contents?.newscaption4[0].text}
-                </span>
+                <div className="bg-[#00000054] z-40 w-[100%] h-[99%] rounded-[20px] absolute top-0 left-0">
+                  <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2">
+                    {contents?.newscaption4[0].text}
+                  </span>
+                </div>
               </div>
 
               <div className="group relative">
@@ -60,9 +62,11 @@ const LatestNews = ({ contents }: INewsHeroProps) => {
                   alt="newsImage3"
                   className="w-full h-56 object-cover rounded-[20px] cursor-pointer shadow-md"
                 />
-                <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2">
-                  {contents?.newscaption3[0].text}
-                </span>
+                <div className="bg-[#00000054] z-40 w-[100%] h-[99%] rounded-[20px] absolute top-0 left-0">
+                  <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2">
+                    {contents?.newscaption3[0].text}
+                  </span>
+                </div>
               </div>
 
               <div className="group relative">
@@ -71,9 +75,11 @@ const LatestNews = ({ contents }: INewsHeroProps) => {
                   alt="newsImage5"
                   className="w-full h-56 object-cover rounded-[20px] cursor-pointer shadow-md"
                 />
-                <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2">
-                  {contents?.newscaption5[0].text}
-                </span>
+                <div className="bg-[#00000054] z-40 w-[100%] h-[99%] rounded-[20px] absolute top-0 left-0">
+                  <span className="absolute bottom-0 text-[0.9rem] drop-shadow-sm font-semibold text-white p-2">
+                    {contents?.newscaption5[0].text}
+                  </span>
+                </div>
               </div>
             </div>
           </div>
