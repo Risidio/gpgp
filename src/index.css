@@ -65,6 +65,10 @@
   font-weight: 800;
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Regular */
 @font-face {
   font-family: be-vietnam;
