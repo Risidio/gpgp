@@ -5,6 +5,7 @@ import ContactInfo from "./footer/ContactInfo";
 import SocialMedia from "./footer/SocialMedia";
 import { twMerge } from "tailwind-merge";
 import { getFooterDetail } from "../libs/getFooterDetail";
+import line from "../assets/svg/footerline.svg";
 
 interface FooterProps {
   classes?: string;
@@ -23,10 +24,19 @@ const Footer = ({ classes = "bg-gpgp-blue" }: FooterProps) => {
 
   return (
     <footer
-      className={`mx-auto
-       border-t bg-gpgp-blue`}
+      className={`mx-auto relative
+       /* border-t border-t-gray-500 */ bg-gpgp-blue`}
     >
-      <Container hasSection={false} classes={"bg-gpgp-blue text-white"}>
+      <div className="hidden md:block bg-gpgp-blue w-full h-[2px] absolute top-[-2px] left-0">
+        {/* <div className="w-[63%] bg-red-500 h-full ms-[14%]"></div> */}
+      </div>
+      <Container
+        hasSection={false}
+        classes={"bg-gpgp-blue text-white flex flex-col"}
+      >
+        <div className="w-full pl-14">
+          <img src={line} alt="" className="flex-shrink-0" style={{backgroundColor: 'rgba(255, 255, 255, 0.20)'}}/>
+        </div>
         {/* Desktop-view */}
         <div className="w-full sm:flex sm:flex-col pt-16 hidden">
           <div className="w-full grid grid-cols-3 justify-between p-5">

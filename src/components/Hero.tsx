@@ -13,7 +13,7 @@ const Hero = () => {
             <div className="px-[20px] lg:px-0 lg:max-w-[713.767px]">
               {/* Mobile Header */}
               <div className="lg:hidden">
-                <h3 className="text-center text-[#050B1D] font-[be-vietnam-600] font-[600] uppercase text-[15px] leading-[22.126px] tracking-[1.65px]">
+                <h3 className="text-center text-[#050B1D] font-[be-vietnam] font-[600] uppercase text-[15px] leading-[22.126px] tracking-[1.65px]">
                   GPGP <br /> The Great Pacific Garbage Patch
                 </h3>
               </div>
@@ -33,11 +33,11 @@ const Hero = () => {
             <div className="pt-[31.33px] lg:pt-0 lg:w-auto lg:ml-[49.23px]">
               {/* Container */}
               <div className="flex flex-col text-center lg:text-left lg:max-w-[584px]">
-                <h3 className="hidden lg:block font-[be-vietnam-normal-600] text-[20px] leading-[29.502px] tracking-[3px] uppercase">
+                <h3 className="hidden lg:block text-[#050B1D] font-[be-vietnam] font-[600] text-[20px] leading-[29.502px] tracking-[3px] uppercase">
                   The Great Pacific Garbage Patch | GPGP
                 </h3>
-                <div className="m-0 p-0 w-[371px] lg:mt-[10px] lg:w-[441.693px] mx-auto lg:mx-0 leading-[28.8px] lg:leading-[57.6px] tracking-[1.2px] lg:tracking-[unset]">
-                  <h3 className="text-[24px] lg:text-[48px] uppercase font-[be-vietnam-700] text-gpgp-blue">
+                <div className="m-0 p-0 w-[340px] lg:mt-[10px] lg:w-[441.693px] mx-auto lg:mx-0 leading-[28.8px] lg:leading-[57.6px] tracking-[1.2px] lg:tracking-[unset]">
+                  <h3 className="text-[24px] lg:text-[48px] uppercase font-be-vietnam font-[700] text-gpgp-blue">
                     Art Project by{" "}
                     <span className="text-white header-text-stroke">
                       Environmental artist
