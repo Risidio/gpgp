@@ -29,7 +29,7 @@ const GalleryHeader = () => {
           {/* First Column */}
           <div className="pt-[30px] pb-[70px] lg:pb-[113px] pl-[10px] lg:pl-[118px] flex flex-col gap-y-[51px] lg:gap-y-[84px]">
             <div>
-              <h1 className="uppercase font-[be-vietnam-xbold] text-[24px] lg:text-[48px] heading-[57.6px] text-[#0A2471]">
+              <h1 className="uppercase font-be-vietnam font-[700] text-[24px] lg:text-[48px] heading-[57.6px] text-[#0A2471]">
                 The Gallery
               </h1>
               <h3 className="uppercase font-[be-vietnam] text-[16px] lg:text-[20px] heading-[29.5px] ">
