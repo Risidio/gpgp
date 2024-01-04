@@ -87,6 +87,7 @@ const NavBar = () => {
       let activeNavLink = document.getElementById(`Nav-link${activeLink}`);
       if (activeNavLink) {
         activeNavLink.style.color = "black";
+        activeNavLink.style.fontWeight = 'normal';
       }
       setActiveLink(null);
     }
@@ -181,6 +182,7 @@ const NavBar = () => {
                   dot.style.display = "none";
                 }
               });
+              resetActiveLink();
             }}
           >
             <Logo className="" logo={"NewNavLogo2.png"} />
