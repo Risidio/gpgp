@@ -8,7 +8,7 @@ interface SocialMediaProps {
 
 const SocialMedia = ({ color= "white" }: SocialMediaProps) => {
   return (
-    <div className="flex flex-col sm:flex-row sm:items-start gap-x-3 justify-center md:mt-[30px]">
+    <div className="flex flex-col sm:flex-row sm:items-start gap-x-3 justify-center">
       <div className="flex flex-row items-start sm:justify-center gap-x-3">
         <Box className="rounded-full p-3 border">
            <Instagram classes="h-5 w-5" color={color}/>
