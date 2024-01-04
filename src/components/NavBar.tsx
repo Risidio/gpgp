@@ -87,6 +87,7 @@ const NavBar = () => {
       let activeNavLink = document.getElementById(`Nav-link${activeLink}`);
       if (activeNavLink) {
         activeNavLink.style.color = "black";
+        activeNavLink.style.fontWeight = 'normal';
       }
       setActiveLink(null);
     }
@@ -101,6 +102,7 @@ const NavBar = () => {
     if (dot && navLink) {
       dot.style.display = "block";
       navLink.style.color = "#0A2471";
+      navLink.style.fontWeight = 'bold'; 
       setActiveLink(index);
     }
 
@@ -111,6 +113,7 @@ const NavBar = () => {
         if (otherDot && otherNavLink) {
           otherDot.style.display = "none";
           otherNavLink.style.color = "black";
+          otherNavLink.style.fontWeight = 'normal';
         }
       }
     });
@@ -179,6 +182,7 @@ const NavBar = () => {
                   dot.style.display = "none";
                 }
               });
+              resetActiveLink();
             }}
           >
             <Logo className="" logo={"NewNavLogo2.png"} />
