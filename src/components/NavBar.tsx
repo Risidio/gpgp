@@ -101,6 +101,7 @@ const NavBar = () => {
     if (dot && navLink) {
       dot.style.display = "block";
       navLink.style.color = "#0A2471";
+      navLink.style.fontWeight = 'bold'; 
       setActiveLink(index);
     }
 
@@ -111,6 +112,7 @@ const NavBar = () => {
         if (otherDot && otherNavLink) {
           otherDot.style.display = "none";
           otherNavLink.style.color = "black";
+          otherNavLink.style.fontWeight = 'normal';
         }
       }
     });
