@@ -80,7 +80,7 @@ const ContributeCarousel = ({
 
           <div className="absolute top-[85px]  xxsm:top-[90px] xsm:top-[185px] sm:top-[250px] md:top-[220px] lg:top-[280px]  xl:top-[300px] xxl:top-[400px] xxxl:top-[500px] xxxxl:top-[520px] left-0  text-white min-h-150px  xl:p-[65px] w-full p-5 ">
             <div className="flex flex-col items-center">
-              <h1 className="font-[be-vietnam] bold-600 text-[1rem] xsm:text-[1.5rem] mb-0 xl:text-[2.3rem] xl:mb-9 lg:text-[2rem] lg:mb-8  md:text-[1.7rem] xxl:text-[3rem] leading-normal xl:leading-[48px] xl:tracking-[-0.72px] tracking-[-0.4px] uppercase text-center">
+              <h1 className="font-[be-vietnam] font-semibold text-[1rem] xsm:text-[1.5rem] mb-0 xl:text-[2.3rem] xl:mb-9 lg:text-[2rem] lg:mb-8  md:text-[1.7rem] xxl:text-[3rem] leading-normal xl:leading-[48px] xl:tracking-[-0.72px] tracking-[-0.4px] uppercase text-center">
                 {Invitation[0]?.heading}
               </h1>
 
@@ -118,7 +118,7 @@ const ContributeCarousel = ({
               </div>
 
               <div className="mt-[57.43px] xl:mt-[113px] w-[120%] xsm:w-[100%]  sm:w-[70%] md:w-[50%]  text-center flex flex-col items-center leading-[200%]">
-                <h3 className="font-[be-vietnam-400] text-[1rem] xxsm:text-[1.1rem] sm:text-[1.3rem] lg:text-[1.5rem] xl:text-[2rem] xl:font-[be-vietnam-600]">
+                <h3 className="font-[be-vietnam-400] text-[1rem] xxsm:text-[1.1rem] sm:text-[1.3rem] lg:text-[1.5rem] xl:text-[2rem] xl:font-[be-vietnam-600] font-semibold ">
                   {Invitation[0].description?.head}
                 </h3>
 
@@ -155,7 +155,7 @@ const ContributeCarousel = ({
 
           <div className="absolute top-[85px]  xxsm:top-[90px] xsm:top-[185px] sm:top-[250px] md:top-[220px] lg:top-[280px]  xl:top-[300px] xxl:top-[400px] xxxl:top-[500px] xxxxl:top-[520px]  left-0  text-white min-h-150px w-full p-5 ">
             <div className="flex flex-col items-center">
-              <h1 className="font-[be-vietnam] bold-600 text-[1rem] xsm:text-[1.5rem] mb-0 xl:text-[2.3rem] xl:mb-9 lg:text-[2rem] lg:mb-8  md:text-[1.7rem] xxl:text-[3rem] leading-normal xl:leading-[48px] xl:tracking-[-0.72px] tracking-[-0.4px] uppercase text-center">
+              <h1 className="font-[be-vietnam] font-semibold text-[1rem] xsm:text-[1.5rem] mb-0 xl:text-[2.3rem] xl:mb-9 lg:text-[2rem] lg:mb-8  md:text-[1.7rem] xxl:text-[3rem] leading-normal xl:leading-[48px] xl:tracking-[-0.72px] tracking-[-0.4px] uppercase text-center">
                 {Invitation[1]?.heading}
               </h1>
 
@@ -193,7 +193,7 @@ const ContributeCarousel = ({
 
               <div className="text-center flex flex-col items-center mt-4 xl:mt-12 lg:mt-10 md:mt-8 sm:mt-6 text-white w-[115%] xsm:w-[95%] xl:w-[50%] lg:w-[69%] md:w-[75%]">
                 <h3 className="font-[be-vietnam-400]  text-[1rem] xxsm:text-[1.1rem] sm:text-[1.3rem] lg:text-[1.5rem] xl:text-[2rem]  xl:font-[be-vietnam-600]">
-                  {Invitation[1]?.description?.head}
+                  {/* {Invitation[1]?.description?.head} */} Adex
                 </h3>
 
                 <p className="font-[be-vietnam] text-center  text-[14px] xsm:text-[16px] xl:text-[20px] xxxl:text-[23px] xl:leading-[32px] tracking-[0.35px] xl:tracking-0 mt-[20px] xl:mt-[72px]"> 

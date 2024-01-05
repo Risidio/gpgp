@@ -109,6 +109,13 @@
     format("truetype");
 }
 
+@font-face {
+  font-family: be-vietnam-700-bold;
+  font-weight: 700;
+  src: url(../public/fonts/be-vietnam/BeVietnam-Bold.ttf)
+    format("truetype");
+}
+
 /* Light */
 @font-face {
   font-family: be-vietnam-light;

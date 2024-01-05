@@ -48,7 +48,7 @@ export default function NewContributeHero({
             <h1 className="h-[337px] text-gpgp-blue text-[48px] font-[be-vietnam-700] uppercase text-right leading-[57.6px] tracking-[2.4px]">
               Contribute to
               <br />
-              <span className="text-white header-text-stroke">
+              <span className="text-white header-text-stroke font-[be-vietnam-700-bold]">
                 the global effort
               </span>
               <span className="hidden xl:inline-flex text-white xl:text-gpgp-blue  header-text-stroke xl:header-text-no-stroke text-[96px] mt-[20px]">
@@ -58,7 +58,7 @@ export default function NewContributeHero({
               <span className="xl:hidden text-white xl:text-gpgp-blue  header-text-stroke  xl:header-text-no-stroke xl:ml-[-18px]">
                 <br />
               </span>
-              <span className="action-header xl:text-white header-text-stroke">
+              <span className="action-header xl:text-white header-text-stroke font-[be-vietnam-700-bold]">
                 a better world
               </span>
             </h1>

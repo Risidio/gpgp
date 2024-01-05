@@ -5,9 +5,9 @@ import Wrapper from "../layout/Wrapper";
 const LatestNews = ({ contents }: INewsHeroProps) => {
   return (
     <Wrapper>
-      <div className="w-full flex flex-col mt-[60px]">
+      <div className="w-full flex flex-col mt-[60px] uppercase">
         <div className="flex justify-between items-center pb-5">
-          <h2 className="font-semibold text-[1.4rem] xxl:text-[2rem] uppercase">
+          <h2 className="font-semibold text-[1.4rem] xxl:text-[2rem] text-[#050B1D]">
             {contents?.newsheading[0].text}
           </h2>
         </div>
