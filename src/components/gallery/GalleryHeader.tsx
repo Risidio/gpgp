@@ -1,26 +1,28 @@
 // import { useState } from "react";
 
+import { useState } from "react";
 import Wrapper from "../layout/Wrapper";
 
+
 const GalleryHeader = () => {
-  // const [activeTab,setActiveTab] = useState("All");
+  const [activeTab,setActiveTab] = useState("All");
 
-  // const handleSetActiveTab = (tab:string) => setActiveTab(tab);
+  const handleSetActiveTab = (tab:string) => setActiveTab(tab);
 
-  // const tabs = [
-  //   {
-  //     title: "All",
-  //   },
-  //   {
-  //     title: "Early Work",
-  //   },
-  //   {
-  //     title: "Environmental Work",
-  //   },
-  //   {
-  //     title: "Invited Artist Work",
-  //   },
-  // ];
+  const tabs = [
+    {
+      title: "All",
+    },
+    {
+      title: "Early Work",
+    },
+    {
+      title: "Environmental Work",
+    },
+    {
+      title: "Invited Artist Work",
+    },
+  ];
 
   return (
     <>
@@ -37,19 +39,19 @@ const GalleryHeader = () => {
               </h3>
             </div>
 
-            {/* <div>
+            <div>
               <div className="flex gap-x-[5px] lg:gap-x-[20px]">
                 {tabs.map((tab) => (
                   <span
                     onClick={() => handleSetActiveTab(tab.title)}
                     key={tab.title}
-                    className={`text-[12px] lg:text-[17px] hover:bg-gpgp-blue hover:text-white border-[1px] border-[#0A2471] text-[#0A2471] font-[be-vietnam] rounded-[10px] rounded-[10px] py-[5px] px-[5px] lg:py-[5px] lg:px-[20px] ${activeTab.toLocaleLowerCase() === tab.title.toLocaleLowerCase() ? 'bg-gpgp-blue text-white' : ''}`}
+                    className={`cursor-pointer text-[12px] lg:text-[17px] hover:bg-gpgp-blue hover:text-white border-[1px] border-[#0A2471] text-[#0A2471] font-[be-vietnam] rounded-[10px] rounded-[10px] py-[5px] px-[5px] lg:py-[5px] lg:px-[20px] ${activeTab.toLocaleLowerCase() === tab.title.toLocaleLowerCase() ? 'bg-gpgp-blue text-white' : ''}`}
                   >
                     {tab.title}
                   </span>
                 ))}
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </Wrapper>
