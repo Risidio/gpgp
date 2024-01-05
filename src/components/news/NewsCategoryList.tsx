@@ -58,7 +58,7 @@ const NewsCategoryList = () => {
              showAllLabel={false}
          /> 
       <div className="w-full flex flex-col p-5">
-         <h2 className="font-semibold text-center text-[1rem] md:text-[1.5rem]  xxxl:text-[2rem] xxxxl:text-[2.2rem] uppercase py-5">
+         <h2 className="font-semibold text-center text-[1rem] md:text-[1.5rem]  xxxl:text-[2rem] xxxxl:text-[2.2rem] uppercase py-5 tracking-tight">
              {params.categoryId}
          </h2>
          <NewsBoard/>
