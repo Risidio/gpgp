@@ -30,7 +30,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="xl:mt-[286px] ">
+        <section className="lg:mt-[286px]">
           <ContactUs />
         </section>
       </div>

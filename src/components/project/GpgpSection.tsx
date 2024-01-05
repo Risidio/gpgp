@@ -7,7 +7,7 @@ const GpgpSection = ({ contents }: IGpgpSectionProps) => {
   return (
     <>
     <Wrapper>
-    <section className="xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] mt-[30px] xl:mt-[100px]">
+    <section className="xl:grid xl:grid-cols-2 xl:px-[0px] xxl:px-[120px] mt-[65px] lg:mt-[222px]">
         {/* Image Column */}
         <div className="xl:order-2 flex flex-col items-center xl:justify-center">
           {/* Home header Title */}
