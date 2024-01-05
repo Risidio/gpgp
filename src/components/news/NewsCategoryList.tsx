@@ -7,7 +7,7 @@ import { NewsCards } from "./NewsCards";
 
 const categories = [
    {
-       title: "GPGP news",
+       title: "The GPGP news",
        description: "The Tide of Plastic A Growing Threat"
    },
    {
@@ -22,10 +22,10 @@ const categories = [
        title: "Events",
        description: "The Tide of Plastic A Growing Threat"
    },
-   {
-    title: "Test",
-    description: "The Tide of Plastic A Growing Threat"
-   },
+//    {
+//     title: "Test",
+//     description: "The Tide of Plastic A Growing Threat"
+//    },
 ];
 
 const NewsCategoryList = () => {
