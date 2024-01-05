@@ -7,7 +7,7 @@ const GpgpSection = ({ contents }: IGpgpSectionProps) => {
   return (
     <>
     <Wrapper>
-    <section className="xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] mt-[30px] xl:mt-[100px]">
+    <section className="xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] mt-[65px] lg:mt-[222px]">
         {/* Image Column */}
         <div className="xl:order-2 flex flex-col items-center xl:justify-center">
           {/* Home header Title */}
@@ -27,7 +27,7 @@ const GpgpSection = ({ contents }: IGpgpSectionProps) => {
 
         {/* Content Column */}
         <div className="mx-auto xl:mx-0 text-center xl:text-left w-[293px] xl:w-[522px]">
-          <h1 className="hidden xl:block font-[be-vietnam] bold-600 text-[#050B1D] text-[40px] leading-[48px] tracking-[0.8px]">{contents?.title[0].text}</h1>
+          <h1 className="hidden xl:block font-[be-vietnam] bold-600 text-[#050B1D] text-[40px] leading-[48px] tracking-[0.8px]">Adex</h1>
           <p
             dangerouslySetInnerHTML={{
               __html: contents?.firstparagraph[0].text,
