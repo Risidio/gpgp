@@ -11,7 +11,7 @@ const Attention = ({ contents }: IAttentionSectionProps) => {
         {/* Image Column */}
         <div className="xl:order-1 flex flex-col items-center xl:items-start xl:justify-center">
           {/* Home header Title */}
-          <div className="xl:hidden xl:w-0 xl:h-0 text-[#050B1D] uppercase text-[16px] font-[be-vietnam-600] leading-[48px] tracking-[0.32px] text-center">
+          <div className="xl:hidden xl:w-0 xl:h-0 text-[#050B1D] uppercase text-[16px] font-[be-vietnam-600] font-semibold leading-[48px] tracking-[0.32px] text-center">
             <h1>{contents?.title[0].text}</h1>
           </div>
 

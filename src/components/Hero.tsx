@@ -19,7 +19,7 @@ const Hero = () => {
               </div>
 
               {/* Image */}
-              <div className="mt-[14px] flex flex-col justify-center items-center mx-auto lg:mx-0 w-[340px] md:w-[387.998px] lg:w-full lg:mt-0 h-[260.669px] lg:h-[479.531px] bg-gpgp-blue rounded-[15px] gpgp-home-map-shadow lg:px-[68px]">
+              <div className="mt-[14px] flex flex-col justify-center items-center mx-auto lg:mx-0 max-w-[340px] md:max-w-[387.998px] lg:max-w-full lg:mt-0 h-[260.669px] lg:h-[479.531px] bg-gpgp-blue rounded-[15px] gpgp-home-map-shadow lg:px-[68px]">
                 <img
                   src={gpgpMapImage}
                   alt="GPGP Map"
@@ -36,7 +36,7 @@ const Hero = () => {
                 <h3 className="hidden lg:block text-[#050B1D] font-[be-vietnam] font-[600] text-[20px] leading-[29.502px] tracking-[3px] uppercase">
                   The Great Pacific Garbage Patch | GPGP
                 </h3>
-                <div className="m-0 p-0 w-[340px] lg:mt-[10px] lg:w-[441.693px] mx-auto lg:mx-0 leading-[28.8px] lg:leading-[57.6px] tracking-[1.2px] lg:tracking-[unset]">
+                <div className="m-0 p-0 max-w-[340px] lg:max-w-[441.693px] lg:mt-[10px]  mx-auto lg:mx-0 leading-[28.8px] lg:leading-[57.6px] tracking-[1.2px] lg:tracking-[unset]">
                   <h3 className="text-[24px] lg:text-[48px] uppercase font-be-vietnam font-[700] text-gpgp-blue">
                     Art Project by{" "}
                     <span className="text-white header-text-stroke">
@@ -58,7 +58,7 @@ const Hero = () => {
                   {/* Explore Btn */}
                   <MyLink
                     to=""
-                    className="lg:hidden xxsm:w-[110px] xsm:w-[150px]  sm:w-[187px] h-[40px] lg:w-[245.63px] lg:h-[63px] bg-white rounded-[2px] lg:rounded-[5px] shrink-0"
+                    className="lg:hidden xxsm:w-[110px] xsm:w-[150px] sm:w-[187px] lg:w-[245.63px] h-[40px] lg:h-[63px] bg-white rounded-[2px] lg:rounded-[5px] shrink-0"
                   >
                     <p className="text-gpgp-blue lg:w-[92.526px] text-center text-[15px] lg:text-[16px] uppercase font-[be-vietnam-700] leading-[22.126px] lg:leading-[23.602px] tracking-[4.125px] lg:tracking-[4.4px]">
                       Explore
@@ -67,7 +67,7 @@ const Hero = () => {
 
                   <MyLink
                     to="/contribute"
-                    className="xxsm:w-[110px] xsm:w-[150px] sm:w-[187px] h-[40px] lg:w-[245.63px] lg:h-[63px] bg-gpgp-blue rounded-[2px] lg:rounded-[5px] shrink-0"
+                    className="xxsm:w-[110px] xsm:w-[150px] sm:w-[187px] lg:w-[245.63px] h-[40px] lg:h-[63px] bg-gpgp-blue rounded-[2px] lg:rounded-[5px] shrink-0"
                   >
                     <p className="text-white lg:w-[92.526px] text-center text-[15px] lg:text-[16px] uppercase font-[be-vietnam-700] leading-[22.126px] lg:leading-[23.602px] tracking-[4.125px] lg:tracking-[4.4px]">
                       Join Us
