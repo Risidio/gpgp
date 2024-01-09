@@ -7,11 +7,11 @@ const Attention = ({ contents }: IAttentionSectionProps) => {
   return (
     <>
     <Wrapper>
-    <section className="xl:grid xl:grid-cols-2 xl:px-[60px] xxl:px-[120px] mt-[118px] xl:mt-[258px]">
+    <section className="lg:flex  mt-[118px] lg:mt-[258px] gap-x-[132px] justify-center">
         {/* Image Column */}
-        <div className="xl:order-1 flex flex-col items-center xl:items-start xl:justify-center">
+        <div className="lg:order-1 flex flex-col items-center lg:items-start lg:justify-center">
           {/* Home header Title */}
-          <div className="xl:hidden xl:w-0 xl:h-0 text-[#050B1D] uppercase text-[16px] font-[be-vietnam-600] font-semibold leading-[48px] tracking-[0.32px] text-center">
+          <div className="lg:hidden lg:w-0 lg:h-0 text-[#050B1D] uppercase text-[16px] font-[be-vietnam-600] font-semibold leading-[48px] tracking-[0.32px] text-center">
             <h1>{contents?.title[0].text}</h1>
           </div>
 
@@ -20,34 +20,34 @@ const Attention = ({ contents }: IAttentionSectionProps) => {
             <img
               src={contents?.image.url}
               alt={contents?.image.alt}
-              className="w-[293px] h-[196px] xl:w-[579px] xl:h-[498px] xl:rounded-[20px] mt-[36px] xl:mt-0"
+              className="w-[293px] h-[196px] lg:w-[579px] lg:h-[498px] lg:rounded-[20px] mt-[36px] lg:mt-0"
             />
           </div>
         </div>
 
         {/* Content Column */}
-        <div className="mx-auto xl:mx-0 xl:ml-[50px] xxl:ml-[30px] text-center xl:text-left xl:flex xl:flex-col w-[293px] xl:w-full xl:order-2">
-          <h1 className="hidden xl:block font-[be-vietnam] bold-600 text-[#050B1D] text-[40px] leading-[48px] tracking-[0.8px]">
+        <div className="mx-auto lg:mx-0 text-center lg:text-left lg:flex lg:flex-col w-[293px] lg:w-[504px] lg:order-2">
+          <h1 className="hidden lg:block font-[be-vietnam] bold-600 text-[#050B1D] text-[40px] leading-[48px] tracking-[0.8px]">
             {contents?.title[0].text}
           </h1>
-          <div className="xl:w-[500px] xxl:w-[560px]">
+          <div className="lg:w-[488px]">
             <p
               dangerouslySetInnerHTML={{
                 __html: contents?.firstparagraph[0].text,
               }}
-              className="text-[15px] xl:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[30px] tracking-[1px] mt-[33px] xl:mt-[67px]"
+              className="text-[15px] lg:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[30px] tracking-[1px] mt-[33px] lg:mt-[67px]"
             ></p>
             <p
               dangerouslySetInnerHTML={{
                 __html: contents?.secondparagraph[0].text,
               }}
-              className="hidden xl:block mt-[50px] text-[15px] xl:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[30px] font-[be-vietnam] bold"
+              className="hidden lg:block mt-[50px] text-[15px] lg:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[30px] font-[be-vietnam] bold"
             ></p>
             <p
               dangerouslySetInnerHTML={{
                 __html: contents?.thirdparagraph[0].text,
               }}
-              className="hidden xl:block mt-[50px] text-[15px] xl:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[30px] font-[be-vietnam] bold"
+              className="hidden lg:block mt-[50px] text-[15px] lg:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[30px] font-[be-vietnam] bold"
             ></p>
           </div>
         </div>
