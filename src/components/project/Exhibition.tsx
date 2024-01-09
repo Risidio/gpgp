@@ -1,4 +1,4 @@
-import GalleryImage from "../../assets/images/gpgp_gallery_art.jpg";
+import GalleryImage from "../../assets/images/gallery_image_web.jpg";
 import { IExhibitionSectionProps } from "../../types/project";
 import MyLink from "../base/MyLink";
 import Wrapper from "../layout/Wrapper";
@@ -9,7 +9,7 @@ const Exhibition = ({ contents }: IExhibitionSectionProps) => {
     <Wrapper>
     <section className="lg:flex mt-[118px] lg:mt-[258px] justify-center gap-x-[129px]">
         {/* Image Column */}
-        <div className="lg:order-2 flex flex-col items-center lg:justify-center">
+        <div className="lg:order-2 flex flex-col items-center lg:mt-[29px]">
           {/* Home header Title */}
           <div className="lg:hidden lg:w-0 lg:h-0 text-[#050B1D] uppercase text-[16px] font-[be-vietnam-600] leading-[48px] tracking-[0.32px] text-center">
             {contents?.title[0].text}
@@ -20,7 +20,7 @@ const Exhibition = ({ contents }: IExhibitionSectionProps) => {
             <img
               src={GalleryImage}
               alt="The Challenge"
-              className="w-[293px] h-[170.917px] lg:w-[585.281px] lg:h-[434px] lg:rounded-[20px] mt-[36px] lg:mt-0"
+              className="w-[293px] h-[170.917px] lg:w-[585.281px] lg:h-[434px] lg:rounded-[20px] mt-[36px] lg:mt-0 object-cover"
             />
           </div>
         </div>
