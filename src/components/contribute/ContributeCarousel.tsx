@@ -88,20 +88,18 @@ const ContributeCarousel = ({
 
           <div className="absolute top-[85px]  xxsm:top-[90px] xsm:top-[185px] sm:top-[250px] md:top-[220px] lg:top-[280px]  xl:top-[300px] xxl:top-[400px] xxxl:top-[500px] xxxxl:top-[520px] left-0  text-white min-h-150px  xl:p-[65px] w-full p-5 ">
             <div className="flex flex-col items-center">
-              <h1 className="flex gap-x-[88px] font-[be-vietnam] font-semibold mb-0 text-[20px] lg:text-[36px] lg:mb-[34px] leading-normal lg:leading-[48px] lg:tracking-[-0.72px] tracking-[-0.4px] uppercase text-center">
-                <div className="my-auto bg-gray-500">
-                  {Invitation[0]?.heading}
-                </div>
-                <HiChevronRight
-                  className="my-auto cursor-pointer"
-                  onClick={() => {
-                    handleWaveChange();
-                    setDotTracker2(InvitationCarouselDotActive);
-                    setDotTracker1(InvitationCarouselDot);
-                    handleButtonClick2();
-                  }}
-                />
+              <h1 className="flex gap-x-[88px] font-[be-vietnam] font-semibold mb-0 text-[20px] lg:text-[36px] lg:mb-[34px] leading-normal lg:leading-[48px] tracking-[-0.4px] lg:tracking-[-0.72px] uppercase text-center">
+                <span className="my-auto">{Invitation[0]?.heading}</span>
               </h1>
+              <HiChevronRight
+                className="my-auto hover:cursor-pointer"
+                onClick={() => {
+                  handleWaveChange();
+                  setDotTracker2(InvitationCarouselDotActive);
+                  setDotTracker1(InvitationCarouselDot);
+                  handleButtonClick2();
+                }}
+              />
 
               <img
                 src={Invitation[0]?.Img}
@@ -179,7 +177,7 @@ const ContributeCarousel = ({
               <h1 className="flex gap-x-[88px] font-[be-vietnam] font-semibold mb-0 text-[20px] lg:text-[36px] lg:mb-[34px] leading-normal lg:leading-[48px] lg:tracking-[-0.72px] tracking-[-0.4px] uppercase text-center">
                 <span className="my-auto">{Invitation[1]?.heading}</span>
                 <HiChevronLeft
-                  className="my-auto cursor-pointer"
+                  className="my-auto hover:cursor-pointer"
                   onClick={() => {
                     handleWaveChange();
                     setDotTracker1(InvitationCarouselDotActive);
