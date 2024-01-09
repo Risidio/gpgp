@@ -4,13 +4,14 @@ import MyLink from "../base/MyLink";
 import { IJoinSectionProps } from "../../types/project";
 import Wrapper from "../layout/Wrapper";
 
+
 const JoinUs = ({ contents }: IJoinSectionProps) => {
   return (
     <>
       <Wrapper>
         <section className="lg:flex  mt-[118px] lg:mt-[258px] justify-center gap-x-[130px]">
           {/* Image Column */}
-          <div className="lg:order-2 flex flex-col items-center lg:justify-center">
+          <div className="lg:order-2 flex flex-col items-center lg:mt-[78px]">
             {/* Home header Title */}
             <div className="lg:hidden lg:w-0 lg:h-0 text-[#050B1D] uppercase text-[16px] font-[be-vietnam] bold-600 leading-[48px] tracking-[0.32px] text-center">
               <h1>{contents?.title[0].text}</h1>
@@ -20,6 +21,7 @@ const JoinUs = ({ contents }: IJoinSectionProps) => {
             <div className="">
               <img
                 src={contents?.image.url}
+                // src={SeaSeal}
                 alt={contents?.image.alt}
                 className="w-[293px] h-[194.403px] lg:w-[585px] lg:h-[430px] lg:rounded-[20px] mt-[36px] lg:mt-0"
               />
@@ -27,28 +29,30 @@ const JoinUs = ({ contents }: IJoinSectionProps) => {
           </div>
 
           {/* Content Column */}
-          <div className="mx-auto lg:mx-0 text-center lg:text-left w-[293px] lg:w-[522px]">
-            <h1 className="hidden lg:block font-[be-vietnam-600] text-[#050B1D] text-[40px] leading-[48px] tracking-[0.8px]">
-              {contents?.title[0].text}
+          <div className="mx-auto lg:mx-0 text-center lg:text-left w-[293px] lg:w-[522px] lg:h-[482px]">
+            <h1 className="hidden lg:block font-[be-vietnam] font-semibold text-[#050B1D] text-[40px] leading-[48px] tracking-[0.8px]">
+              {/* {contents?.title[0].text} */}Join us
             </h1>
             <p
-              dangerouslySetInnerHTML={{
-                __html: contents?.firstparagraph[0].text,
-              }}
-              className="text-[15px] lg:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[30px] tracking-[1px] mt-[33px] lg:mt-[67px]"
-            ></p>
+              // dangerouslySetInnerHTML={{
+              //   __html: contents?.firstparagraph[0].text,
+              // }}
+              className="text-[15px] lg:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[32px] tracking-[1px] mt-[33px] lg:mt-[41px]"
+            >
+              <b>The Great Pacific Garbage Patch</b>&nbsp;
+              <span>presents a distinctive platform for the expression of artistic endeavours, serving as a medium to not only manifest creativity but also underscore the paramount importance of ecological custodianship.</span></p>
             <p
-              dangerouslySetInnerHTML={{
-                __html: contents?.secondparagraph[0].text,
-              }}
-              className="hidden lg:block mt-[50px] text-[15px] lg:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[30px] font-[be-vietnam] bold"
-            ></p>
+              // dangerouslySetInnerHTML={{
+              //   __html: contents?.secondparagraph[0].text,
+              // }}
+              className="hidden lg:block mt-[41px] text-[15px] lg:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[32px]"
+            ><b>We invite artists of all disciplines,</b> &nbsp;including painters, sculptors, photographers, and mixed media practitioners, to submit a maximum of three artistic pieces for consideration</p>
             <p
-              dangerouslySetInnerHTML={{
-                __html: contents?.thirdparagraph[0].text,
-              }}
-              className="hidden lg:block mt-[50px] text-[15px] lg:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[30px] font-[be-vietnam] bold"
-            ></p>
+              // dangerouslySetInnerHTML={{
+              //   __html: contents?.thirdparagraph[0].text,
+              // }}
+              className="hidden lg:block mt-[41px] text-[15px] lg:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[32px] font-bold"
+            >Join us and contribute to the global effort</p>
             <div className="flex flex-row justify-center lg:justify-start gap-x-[16px] lg:gap-x-[18.1px] mt-[33px] lg:mt-[65px]">
               <MyLink
                 to="/contribute/inviteArtist"
