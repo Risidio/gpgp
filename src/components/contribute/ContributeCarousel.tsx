@@ -90,16 +90,16 @@ const ContributeCarousel = ({
             <div className="flex flex-col items-center">
               <h1 className="flex gap-x-[88px] font-[be-vietnam] font-semibold mb-0 text-[20px] lg:text-[36px] lg:mb-[34px] leading-normal lg:leading-[48px] tracking-[-0.4px] lg:tracking-[-0.72px] uppercase text-center">
                 <span className="my-auto">{Invitation[0]?.heading}</span>
+                <HiChevronRight
+                  className="my-auto hover:cursor-pointer"
+                  onClick={() => {
+                    handleWaveChange();
+                    setDotTracker2(InvitationCarouselDotActive);
+                    setDotTracker1(InvitationCarouselDot);
+                    handleButtonClick2();
+                  }}
+                />
               </h1>
-              <HiChevronRight
-                className="my-auto hover:cursor-pointer"
-                onClick={() => {
-                  handleWaveChange();
-                  setDotTracker2(InvitationCarouselDotActive);
-                  setDotTracker1(InvitationCarouselDot);
-                  handleButtonClick2();
-                }}
-              />
 
               <img
                 src={Invitation[0]?.Img}
