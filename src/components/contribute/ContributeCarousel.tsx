@@ -88,8 +88,19 @@ const ContributeCarousel = ({
 
           <div className="absolute top-[85px]  xxsm:top-[90px] xsm:top-[185px] sm:top-[250px] md:top-[220px] lg:top-[280px]  xl:top-[300px] xxl:top-[400px] xxxl:top-[500px] xxxxl:top-[520px] left-0  text-white min-h-150px  xl:p-[65px] w-full p-5 ">
             <div className="flex flex-col items-center">
-              <h1 className="font-[be-vietnam] font-semibold text-[1rem] xsm:text-[1.5rem] mb-0 xl:text-[2.3rem] xl:mb-9 lg:text-[2rem] lg:mb-8  md:text-[1.7rem] xxl:text-[3rem] leading-normal xl:leading-[48px] xl:tracking-[-0.72px] tracking-[-0.4px] uppercase text-center">
-                {Invitation[0]?.heading}
+              <h1 className="flex gap-x-[88px] font-[be-vietnam] font-semibold mb-0 text-[20px] lg:text-[36px] lg:mb-[34px] leading-normal lg:leading-[48px] lg:tracking-[-0.72px] tracking-[-0.4px] uppercase text-center">
+                <div className="my-auto bg-gray-500">
+                  {Invitation[0]?.heading}
+                </div>
+                <HiChevronRight
+                  className="my-auto cursor-pointer"
+                  onClick={() => {
+                    handleWaveChange();
+                    setDotTracker2(InvitationCarouselDotActive);
+                    setDotTracker1(InvitationCarouselDot);
+                    handleButtonClick2();
+                  }}
+                />
               </h1>
 
               <img
@@ -125,16 +136,6 @@ const ContributeCarousel = ({
                     <img src={DotTracker2} alt="0" />
                   </button>
                 </div>
-
-                <HiChevronRight
-                  className="w-7 h-7 absolute my-auto left-[100px] lg:left-[200px] cursor-pointer"
-                  onClick={() => {
-                    handleWaveChange();
-                    setDotTracker2(InvitationCarouselDotActive);
-                    setDotTracker1(InvitationCarouselDot);
-                    handleButtonClick2();
-                  }}
-                />
               </div>
 
               <div className="mt-[57.43px] xl:mt-[113px] w-[120%] xsm:w-[100%]  sm:w-[70%] md:w-[50%]  text-center flex flex-col items-center leading-[200%]">
@@ -175,8 +176,17 @@ const ContributeCarousel = ({
 
           <div className="absolute top-[85px]  xxsm:top-[90px] xsm:top-[185px] sm:top-[250px] md:top-[220px] lg:top-[280px]  xl:top-[300px] xxl:top-[400px] xxxl:top-[500px] xxxxl:top-[520px]  left-0  text-white min-h-150px w-full p-5 ">
             <div className="flex flex-col items-center">
-              <h1 className="font-[be-vietnam] font-semibold text-[1rem] xsm:text-[1.5rem] mb-0 xl:text-[2.3rem] xl:mb-9 lg:text-[2rem] lg:mb-8  md:text-[1.7rem] xxl:text-[3rem] leading-normal xl:leading-[48px] xl:tracking-[-0.72px] tracking-[-0.4px] uppercase text-center">
-                {Invitation[1]?.heading}
+              <h1 className="flex gap-x-[88px] font-[be-vietnam] font-semibold mb-0 text-[20px] lg:text-[36px] lg:mb-[34px] leading-normal lg:leading-[48px] lg:tracking-[-0.72px] tracking-[-0.4px] uppercase text-center">
+                <span className="my-auto">{Invitation[1]?.heading}</span>
+                <HiChevronLeft
+                  className="my-auto cursor-pointer"
+                  onClick={() => {
+                    handleWaveChange();
+                    setDotTracker1(InvitationCarouselDotActive);
+                    setDotTracker2(InvitationCarouselDot);
+                    handleButtonClick1();
+                  }}
+                />
               </h1>
 
               <img
@@ -211,15 +221,6 @@ const ContributeCarousel = ({
                     <img src={DotTracker2} alt="0" />
                   </button>
                 </div>
-                <HiChevronLeft
-                  className="w-7 h-7 absolute my-auto left-[100px] lg:left-[200px] cursor-pointer"
-                  onClick={() => {
-                    handleWaveChange();
-                    setDotTracker1(InvitationCarouselDotActive);
-                    setDotTracker2(InvitationCarouselDot);
-                    handleButtonClick1();
-                  }}
-                />
               </div>
 
               <div className="text-center flex flex-col items-center mt-4 xl:mt-12 lg:mt-10 md:mt-8 sm:mt-6 text-white w-[115%] xsm:w-[95%] xl:w-[50%] lg:w-[69%] md:w-[75%]">
