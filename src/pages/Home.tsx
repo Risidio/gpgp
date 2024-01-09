@@ -1,5 +1,5 @@
 import Hero from "../components/Hero";
-import Exhibition from "../components/home/Exhibition";
+// import Exhibition from "../components/home/Exhibition";
 import HomeContent from "../components/home/HomeContent";
 import HomeExhibition from "../components/home/HomeExhibition";
 import Artist from "../components/home/Artist";
