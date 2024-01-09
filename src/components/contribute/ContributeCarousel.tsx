@@ -69,6 +69,7 @@ const ContributeCarousel = ({
     xxl:min-h-[1790px] xxxl:min-h-[2000px] overflow-hidden"
     >
       <div className="w-full h-full relative">
+        
         {/* Aritist Section */}
         {/* This Section gets content from Invitation array on [0] */}
         <div
