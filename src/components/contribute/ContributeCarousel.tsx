@@ -6,7 +6,7 @@ import InvitationCarouselDotActive from "../../assets/images/InvitationCarouselD
 import InvitationCarouselDot from "../../assets/images/InvitationCarouselDot.png";
 import { IinvitaitonSectionProps } from "../../types/contribute";
 import { HiChevronRight, HiChevronLeft } from "react-icons/hi";
-import images from "../../assets/images/CarouselImg.png";
+// import images from "../../assets/images/CarouselImg.png";
 
 const ContributeCarousel = ({
   contents1,
@@ -102,8 +102,8 @@ const ContributeCarousel = ({
               </h1>
 
               <img
-                // src={Invitation[0]?.Img}
-                src={images}
+                src={Invitation[0]?.Img}
+                // src={images}
                 alt="gpgpTile"
                 className=" w-[595px]  xsm:w-auto md:max-w-[900px] p-9 md:p-7 object-contain"
               />
