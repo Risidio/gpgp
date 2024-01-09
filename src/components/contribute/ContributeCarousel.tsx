@@ -6,6 +6,7 @@ import InvitationCarouselDotActive from "../../assets/images/InvitationCarouselD
 import InvitationCarouselDot from "../../assets/images/InvitationCarouselDot.png";
 import { IinvitaitonSectionProps } from "../../types/contribute";
 import { HiChevronRight, HiChevronLeft } from "react-icons/hi";
+import images from "../../assets/images/CarouselImg.png";
 
 const ContributeCarousel = ({
   contents1,
@@ -85,8 +86,7 @@ const ContributeCarousel = ({
           }`}
         >
           <ContributeWave />
-
-          <div className="absolute top-[85px]  xxsm:top-[90px] xsm:top-[185px] sm:top-[250px] md:top-[220px] lg:top-[280px]  xl:top-[300px] xxl:top-[400px] xxxl:top-[500px] xxxxl:top-[520px] left-0  text-white min-h-150px  xl:p-[65px] w-full p-5 ">
+          <div className="absolute top-[85px]  xxsm:top-[90px] xsm:top-[185px] sm:top-[250px] md:top-[220px] lg:top-[280px]  xl:top-[300px] xxl:top-[400px] xxxl:top-[500px] xxxxl:top-[520px] left-0  text-white min-h-150px  xl:p-[65px] w-full p-5">
             <div className="flex flex-col items-center">
               <h1 className="flex gap-x-[88px] font-[be-vietnam] font-semibold mb-0 text-[20px] lg:text-[36px] lg:mb-[34px] leading-normal lg:leading-[48px] tracking-[-0.4px] lg:tracking-[-0.72px] uppercase text-center">
                 <span className="my-auto">{Invitation[0]?.heading}</span>
@@ -94,15 +94,16 @@ const ContributeCarousel = ({
                   className="my-auto hover:cursor-pointer"
                   onClick={() => {
                     handleWaveChange();
-                    setDotTracker2(InvitationCarouselDotActive);
-                    setDotTracker1(InvitationCarouselDot);
-                    handleButtonClick2();
+                    setDotTracker1(InvitationCarouselDotActive);
+                    setDotTracker2(InvitationCarouselDot);
+                    handleButtonClick1();
                   }}
                 />
               </h1>
 
               <img
-                src={Invitation[0]?.Img}
+                // src={Invitation[0]?.Img}
+                src={images}
                 alt="gpgpTile"
                 className=" w-[595px]  xsm:w-auto md:max-w-[900px] p-9 md:p-7 object-contain"
               />
@@ -161,10 +162,10 @@ const ContributeCarousel = ({
         </div>
       </div>
 
-      {/* Sponosr Section  */}
+      {/* Sponsor Section  */}
       {/* This Section gets content from Invitation array on [1] */}
 
-      <div className="w-full h-screen absolute top-0">
+      <div className="w-full h-screen">
         <div
           className={`w-full absolute top-0 transition-transform transform ${
             showContribute ? "translate-x-full" : "translate-x-0"

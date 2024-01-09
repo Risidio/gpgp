@@ -55,7 +55,7 @@ export default function ContributeWave() {
         </defs>
       </svg>
 
-      <div className=" mt-[-4px] min-h-[689px] sm:min-h-[530px] xl:min-h-[389px]   bg-gpgp-blue "></div>
+      <div className=" mt-[-4px] min-h-[689px] sm:min-h-[530px] xl:min-h-[389px] bg-gpgp-blue"></div>
     </>
   );
 }
