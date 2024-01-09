@@ -87,7 +87,7 @@ const NavBar = () => {
       let activeNavLink = document.getElementById(`Nav-link${activeLink}`);
       if (activeNavLink) {
         activeNavLink.style.color = "black";
-        activeNavLink.style.fontWeight = 'normal';
+        activeNavLink.style.fontWeight = "normal";
       }
       setActiveLink(null);
     }
@@ -102,7 +102,7 @@ const NavBar = () => {
     if (dot && navLink) {
       dot.style.display = "block";
       navLink.style.color = "#0A2471";
-      navLink.style.fontWeight = 'bold'; 
+      navLink.style.fontWeight = "bold";
       setActiveLink(index);
     }
 
@@ -113,7 +113,7 @@ const NavBar = () => {
         if (otherDot && otherNavLink) {
           otherDot.style.display = "none";
           otherNavLink.style.color = "black";
-          otherNavLink.style.fontWeight = 'normal';
+          otherNavLink.style.fontWeight = "normal";
         }
       }
     });
@@ -219,7 +219,11 @@ const NavBar = () => {
                       <div className="text-center">
                         <p
                           id={`WebNav-dot${index}`}
-                          className={`bg-gpgp-blue rounded-full absolute  transform -translate-x-1/2 bottom-0 bottom-0 top-[32px] left-[40%] h-[6px] w-[7px] ${
+                          className={`bg-gpgp-blue rounded-full absolute  transform -translate-x-1/2 bottom-0 bottom-0 top-[32px] ${
+                            currentRoute.includes("news") 
+                              ? "left-[35%]"
+                              : "left-[40%]"
+                          } h-[6px] w-[7px] ${
                             currentRoute === "/"
                               ? "hidden"
                               : currentRoute === link.href
