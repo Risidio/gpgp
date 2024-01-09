@@ -11,7 +11,7 @@ const Home = () => {
       <div className="md:mt-[157px]">
         <Hero />
 
-        <Exhibition />
+        {/* <Exhibition /> */}
 
         <HomeExhibition />
 
