@@ -46,15 +46,6 @@ const ContributeCarousel = ({
   const [DotTracker2, setDotTracker2] = useState(InvitationCarouselDot);
   const [button1Disabled, setButton1Disabled] = useState(false);
   const [button2Disabled, setButton2Disabled] = useState(false);
-  // const [currentSlide, setCurrentSlide] = useState(0);
-
-  // const handleNextSlide = () => {
-  //   setCurrentSlide((prevSlide) => prevSlide + 1);
-  // };
-
-  // const handlePrevSlide = () => {
-  //   setCurrentSlide((prevSlide) => prevSlide - 1);
-  // };
 
   // This tracks and changes wave pattern accordingly
   const handleWaveChange = () => {
