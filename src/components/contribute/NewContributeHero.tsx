@@ -94,7 +94,7 @@ export default function NewContributeHero({
               </MyLink>
               <MyLink
                 to="/contribute/inviteArtist"
-                className="w-[216px] h-[49px] bg-gpgp-blue text-white"
+                className="w-[216px] h-[49px] bg-gpgp-blue text-white hover:text-white"
               >
                 <p className="text-[11px] font-[be-vietnam] bold-700 leading-[16.226px] tracking-[4.025px] uppercase text-center">
                   Contribute as an artist
@@ -133,9 +133,9 @@ export default function NewContributeHero({
                 </MyLink>
                 <MyLink
                   to="/contribute/inviteArtist"
-                  className="h-[63px] text-white bg-gpgp-blue rounded-[1px]"
+                  className="h-[63px] text-white bg-gpgp-blue rounded-[1px] hover:text-white"
                 >
-                  <p className="text-center font-[be-vietnam] bold-700 leading-[23.602px] uppercase tracking-[4.4px] hover:text-white">
+                  <p className="text-center font-[be-vietnam] bold-700 leading-[23.602px] uppercase tracking-[4.4px]">
                     Contribute as an artist
                   </p>
                 </MyLink>
