@@ -4,7 +4,7 @@ import MyLink from "../base/MyLink";
 const Exhibition = () => {
   return (
     <>
-      <section className="w-full bg-h-[100%] bg-w-[100%] bg-project-page-mobile-wave md:bg-project-page-wave bg-no-repeat bg-cover lg:mt-[29.47px]">
+      <section className="w-full bg-h-[100%] bg-w-[100%] bg-project-page-mobile-wave md:bg-project-page-wave bg-no-repeat bg-contain lg:mt-[29.47px]">
         <div className="pt-[100px] xsm:pt-[120px] xsm:pb-[40px] md:pt-[220px] lg:pt-[386px] pb-[33px] lg:pb-[190.17px]">
           {/* Exhibition Context */}
           <div className="flex flex-col gap-y-[13px] lg:gap-y-[70.05px]">
