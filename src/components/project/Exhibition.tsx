@@ -7,7 +7,7 @@ const Exhibition = ({ contents }: IExhibitionSectionProps) => {
   return (
     <>
     <Wrapper>
-    <section className="lg:flex mt-[118px] lg:mt-[258px] justify-center gap-x-[129px]">
+    <section className="lg:flex mt-[121px] lg:mt-[258px] justify-center gap-x-[129px]">
         {/* Image Column */}
         <div className="lg:order-2 flex flex-col items-center lg:mt-[29px]">
           {/* Home header Title */}
@@ -31,11 +31,13 @@ const Exhibition = ({ contents }: IExhibitionSectionProps) => {
             {contents?.title[0].text}
           </h1>
           <p
-            dangerouslySetInnerHTML={{
-              __html: contents?.firstparagraph[0].text,
-            }}
-            className="text-[15px] lg:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[30px] tracking-[1px] mt-[33px] lg:mt-[67px]"
-          ></p>
+            // dangerouslySetInnerHTML={{
+            //   __html: contents?.firstparagraph[0].text,
+            // }}
+            className="lg:hidden text-[15px] lg:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[30px] tracking-[1px] mt-[33px] lg:mt-[67px]"
+          > <b>The GPGP exhibition</b>&nbsp;comprises <b>2,450 physical art pieces,</b>&nbsp;thoughtfully organised to replicate the satellite depiction of the Great Pacific Garbage Patch.
+
+          Within this presentation, 888 of these physical art pieces, referred to as 'tiles’, collectively constitute the central element of the Garbage Patch's satellite representation. </p>
           <p
             dangerouslySetInnerHTML={{
               __html: contents?.secondparagraph[0].text,
