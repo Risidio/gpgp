@@ -50,7 +50,7 @@ const ArtistSection = () => {
           </div>
         </section>
       </Wrapper>
-      <div className="block lg:hidden mt-[118px]">
+      <div className="block lg:hidden mt-[124px]">
         <Artist />
       </div>
     </>

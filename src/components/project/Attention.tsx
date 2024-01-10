@@ -35,12 +35,24 @@ const Attention = ({ contents }: IAttentionSectionProps) => {
                 // dangerouslySetInnerHTML={{
                 //   __html: contents?.firstparagraph[0].text,
                 // }}
-                className="text-[15px] lg:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[32px]"
+                className="hidden lg:block text-[15px] lg:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[32px]"
               >
                 The Great Pacific Garbage Patch is a pressing environmental
                 issue that requires immediate attention. It has already caused
                 significant harm to marine life and the ecosystem, and its
                 impact will only worsen if we do nothing.
+              </p>
+              <p
+                // dangerouslySetInnerHTML={{
+                //   __html: contents?.firstparagraph[0].text,
+                // }}
+                className="lg:hidden text-[15px] lg:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[32px]"
+              >
+                <b>The Great Pacific Garbage Patch</b> is a pressing
+                environmental issue that requires immediate attention. It has
+                already caused significant harm to marine life and the
+                ecosystem. That’s why the case of the GPGP needs more creative
+                solutions.
               </p>
               <p
                 // dangerouslySetInnerHTML={{
@@ -50,14 +62,25 @@ const Attention = ({ contents }: IAttentionSectionProps) => {
               >
                 The research conducted by oceanographers and ecologists suggests
                 that a significant proportion of the marine debris,
-                approximately 70%, sinks to the ocean's bottom. <b>Thats why the
-                case of the GPGP needs more creative solutions</b>
+                approximately 70%, sinks to the ocean's bottom.&nbsp;
+                <b>
+                  Thats why the case of the GPGP needs more creative solutions
+                </b>
               </p>
               <p
                 // dangerouslySetInnerHTML={{
                 //   __html: contents?.thirdparagraph[0].text,
                 // }}
                 className="hidden lg:block mt-[41px] text-[15px] lg:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[32px]"
+              >
+                It's time to take responsibility for our actions and work
+                towards a sustainable future
+              </p>
+              <p
+                // dangerouslySetInnerHTML={{
+                //   __html: contents?.thirdparagraph[0].text,
+                // }}
+                className="lg:hidden mt-[41px] text-[15px] lg:text-[16px] font-[be-vietnam] font-[700] text-[#050B1D] leading-[32px]"
               >
                 It's time to take responsibility for our actions and work
                 towards a sustainable future
