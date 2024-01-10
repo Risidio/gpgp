@@ -112,7 +112,7 @@ const ContributeCarousel = ({
                     disabled={button1Disabled}
                     className="mr-2"
                   >
-                    <img src={DotTracker1} alt="0" />
+                    <img src={DotTracker1} alt="0" className="w-[12px]" />
                   </button>
 
                   <button
@@ -124,7 +124,7 @@ const ContributeCarousel = ({
                     }}
                     disabled={button2Disabled}
                   >
-                    <img src={DotTracker2} alt="0" />
+                    <img src={DotTracker2} alt="0" className="w-[12px]" />
                   </button>
                 </div>
               </div>
@@ -198,7 +198,7 @@ const ContributeCarousel = ({
                     disabled={button1Disabled}
                     className="mr-2"
                   >
-                    <img src={DotTracker1} alt="0" />
+                    <img src={DotTracker1} alt="0" className="w-[12px]" />
                   </button>
                   <button
                     onClick={() => {
@@ -209,7 +209,7 @@ const ContributeCarousel = ({
                     }}
                     disabled={button2Disabled}
                   >
-                    <img src={DotTracker2} alt="0" />
+                    <img src={DotTracker2} alt="0" className="w-[12px]" />
                   </button>
                 </div>
               </div>
