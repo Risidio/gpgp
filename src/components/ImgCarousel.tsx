@@ -5,7 +5,7 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 
 const responsive = {
   763: {
-    items: 3,
+    items: 1,
     itemsFit: "contain",
   },
   1024: {
@@ -38,7 +38,7 @@ const ImgCarousel = ({ contents }: IGalleryArtworksProps) => {
         // items={items.map((item, index) => (
         <div
           key={index}
-          className="product-image w-[218px] h-[218px] hover:shadow-black shadow-[2px_3px_5px_rgba(0,0,0,0.3)]"
+          className="product-image w-[218px] h-[218px] hover:shadow-black shadow-[2px_3px_5px_rgba(0,0,0,0.3)] mx-auto"
         >
           <img src={item.image.url} alt={item.image.alt} />
           {/* <img src={item.image} alt={item.name} /> */}

@@ -11,7 +11,7 @@ const Exhibition = () => {
             <h1 className="lg:w-[262px] lg:h-[48.036px] font-[be-vietnam] bold-600 leading-[48px] tracking-[-0.32px] lg:tracking-[-0.8px] uppercase text-center text-[16px] text-white lg:text-[40px] lg:capitalize lg:mx-[auto]">
               The Exhibition
             </h1>
-            <p className="w-[293px] text-center mx-auto font-[be-vietnam] lg:font-[400] text-white leading-[30px] lg:leading-[32px] text-[15px] lg:text-[16px] lg:w-[532px] lg:h-[180.137px] lg:mx-auto">
+            <p className="w-[293px] text-center mx-auto font-[be-vietnam] lg:font-[400] text-white leading-[30px] lg:leading-[32px] text-[15px] lg:text-[16px] lg:w-[532px]  lg:mx-auto">
               The Great Pacific Garbage Patch (GPGP) environmental art project
               comprises 2450 tiles, representing a recent satellite image of the
               Great Pacific Garbage Patch and draws attention to the issue of
@@ -20,7 +20,7 @@ const Exhibition = () => {
             </p>
           </div>
 
-          <div className="lg:py-[80px]">
+          <div className="hidden md:block lg:pt-[83px] lg:pb-[79.06px]">
             <NftCarousel />
           </div>
 
