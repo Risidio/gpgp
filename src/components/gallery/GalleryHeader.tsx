@@ -40,7 +40,7 @@ const GalleryHeader = () => {
             </div>
 
             <div>
-              <div className="flex gap-x-[5px] lg:gap-x-[20px]">
+              <div className="flex gap-x-[5px] lg:gap-x-[18px]">
                 {tabs.map((tab) => (
                   <span
                     onClick={() => handleSetActiveTab(tab.title)}

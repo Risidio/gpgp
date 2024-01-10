@@ -20,7 +20,7 @@ const Exhibition = () => {
             </p>
           </div>
 
-          <div className="hidden lg:py-[80px]">
+          <div className="lg:py-[80px]">
             <NftCarousel />
           </div>
 
