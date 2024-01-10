@@ -42,7 +42,7 @@ const Exhibition = ({ contents }: IExhibitionSectionProps) => {
             dangerouslySetInnerHTML={{
               __html: contents?.secondparagraph[0].text,
             }}
-            className="hidden lg:block mt-[50px] text-[15px] lg:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[30px] font-[be-vietnam] bold"
+            className="hidden lg:block mt-[50px] text-[15px] lg:text-[16px] font-[be-vietnam] text-[#050B1D] leading-[30px] bold"
           ></p>
           <MyLink
             to="/gallery"
