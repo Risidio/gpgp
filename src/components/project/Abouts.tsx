@@ -26,7 +26,7 @@ const About = ({ contents }: IAboutProps) => {
           </div>
 
           {/* Exhibition Button */}
-          <div className="hidden flex flex-col justify-center items-center md:mt-[39px] lg:mt-0">
+          <div className="hidden justify-center items-center md:mt-[39px] lg:mt-0">
             <div className="">
               <MyLink to="/gallery" className="w-[187px]">
                 <p className="px-[30px] py-[19px] font-[be-vietnam-bold] leading-[22.13px] tracking-[4.13px] uppercase text-gpgp-blue text-[15px] lg:text-[16px]">
