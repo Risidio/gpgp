@@ -24,9 +24,9 @@ export default function ContributeWave() {
             width="1440"
             height="1444"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            color-colorinterpolationfilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
