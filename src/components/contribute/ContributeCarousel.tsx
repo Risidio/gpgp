@@ -168,7 +168,6 @@ const ContributeCarousel = ({
           <div className="absolute top-[85px]  xxsm:top-[90px] xsm:top-[185px] sm:top-[250px] md:top-[220px] lg:top-[280px]  xl:top-[300px] xxl:top-[400px] xxxl:top-[500px] xxxxl:top-[520px]  left-0  text-white min-h-150px w-full p-5 ">
             <div className="flex flex-col items-center">
               <h1 className="flex gap-x-[88px] font-[be-vietnam] font-semibold mb-0 text-[20px] lg:text-[36px] lg:mb-[34px] leading-normal lg:leading-[48px] lg:tracking-[-0.72px] tracking-[-0.4px] uppercase text-center">
-                <span className="my-auto">{Invitation[1]?.heading}</span>
                 <HiChevronLeft
                   className="my-auto hover:cursor-pointer"
                   onClick={() => {
@@ -178,6 +177,7 @@ const ContributeCarousel = ({
                     handleButtonClick1();
                   }}
                 />
+                <span className="my-auto">{Invitation[1]?.heading}</span>
               </h1>
 
               <img
