@@ -21,7 +21,7 @@ const GalleryView = ({ contents }: IGalleryArtworksProps) => {
   const [artworks, setArtworks] = useState<IGalleryArtWorkImageData[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const totalItems = contents?.length;
-  const itemsPerPage = 12;
+  const itemsPerPage = 20;
 
   useEffect(function () {
     handleArtWorksDisplay();
