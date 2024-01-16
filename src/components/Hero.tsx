@@ -1,9 +1,9 @@
 import MyLink from "./base/MyLink";
 import gpgpMapImage from "../assets/images/gpgp-map-mobile.png";
 import Wrapper from "./layout/Wrapper";
-import { IHomeHeroProp } from "../types/home";
+import { IHomeHeroSectionProp } from "../types/home";
 
-const Hero = ({contents}:IHomeHeroProp) => {
+const Hero = ({contents}:IHomeHeroSectionProp) => {
   
   return (
     <>

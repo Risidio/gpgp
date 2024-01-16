@@ -6,6 +6,6 @@ export interface IHomeHeroData extends IContents {
   buton: { text: string }[];
 }
 
-export interface IHomeHeroProp {
+export interface IHomeHeroSectionProp {
   contents: IHomeHeroData;
 }
