@@ -3,7 +3,8 @@ const prismicDocumentTypes = {
     project:"project",
     gallery:"gallery",
     news : "news-page",
-    singleArticlePage : "single_article"
+    singleArticlePage : "single_article",
+    homePage:"gpgp-homepage"
 };
 
 export default prismicDocumentTypes;
