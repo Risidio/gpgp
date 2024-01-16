@@ -4,12 +4,20 @@ import HomeContent from "../components/home/HomeContent";
 import HomeExhibition from "../components/home/HomeExhibition";
 import Artist from "../components/home/Artist";
 import ContactUs from "../components/ContactUs";
+import { useSinglePrismicDocument } from "@prismicio/react";
+import prismicDocumentTypes from "../utility/prismicDocumentTypes";
 
 const Home = () => {
+
+  const [document] = useSinglePrismicDocument(prismicDocumentTypes.homePage);
+  console.log("Home page document: ", document);
+  console.log("Home page document hero image src: ", document?.data?.body[0]?.primary?.image?.url);
+
+
   return (
     <>
       <div className="md:mt-[157px]">
-        <Hero />
+        <Hero contents={document?.data?.body[0]?.primary}/>
 
         <Exhibition />
 
