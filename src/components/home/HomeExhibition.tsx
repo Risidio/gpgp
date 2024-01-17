@@ -1,4 +1,4 @@
-import guyAtExhibition from "../../assets/images/gallery_image.jpg";
+// import guyAtExhibition from "../../assets/images/gallery_image.jpg";
 import { IHomeExhibition2SectionProp } from "../../types/home";
 
 interface HomeExhibitionProps {
