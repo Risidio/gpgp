@@ -6,6 +6,8 @@ import BottomContributeWaveSection from "../components/base/BottomContributeWave
 
 const Gallery = () => {
   const [document] = useSinglePrismicDocument(prismicDocumentTypes.gallery);
+  console.log("gallery document", document);
+  
   return (
     <>
       <div className="xxxxl:w-[1440px] xxxxl:mx-auto">
