@@ -1,7 +1,7 @@
-import MyLink from "./base/MyLink";
-import gpgpMapImage from "../assets/images/gpgp-map-mobile.png";
-import Wrapper from "./layout/Wrapper";
-import { IHomeHeroSectionProp } from "../types/home";
+import MyLink from "../base/MyLink";
+import gpgpMapImage from "../../assets/images/gpgp-map-mobile.png";
+import Wrapper from "../layout/Wrapper";
+import { IHomeHeroSectionProp } from "../../types/home";
 
 const Hero = ({contents}:IHomeHeroSectionProp) => {
   
@@ -40,20 +40,22 @@ const Hero = ({contents}:IHomeHeroSectionProp) => {
                 </h3>
                 <div className="m-0 p-0 max-w-[340px] lg:max-w-[441.693px] lg:mt-[10px]  mx-auto lg:mx-0 leading-[28.8px] lg:leading-[57.6px] tracking-[1.2px] lg:tracking-[unset]">
                   <h3 className="text-[24px] lg:text-[48px] uppercase font-be-vietnam font-[700] text-gpgp-blue">
-                    Art Project by{" "}
+                    {contents?.title2[0]?.text}{" "}
                     <span className="text-white header-text-stroke">
-                      Environmental artist
+                    {contents?.title2[1]?.text}{" "}{contents?.title2[2]?.text}
+                      
                     </span>{" "}
                     <br />
-                    john Dahlsen{" "}
+                    {contents?.title2[3]?.text}{" "}
                     <span className="text-white header-text-stroke">
-                      &
+                    {contents?.title2[4]?.text}
                     </span>{" "}
-                    InfinArt
+                    {/* <br /> */}
+                    {contents?.title2[5]?.text}
                   </h3>
                 </div>
                 <h3 className="lg:w-[313px] capitalize mt-[25px] md:mt-[10px] xxl:mt-[17px] text-[#050B1D] text-[16px] lg:text-[20px] font-[be-vietnam-normal-400] leading-[19.2px] lg:leading-[29.502px] tracking-[0.8px] lg:tracking-[unset]">
-                  The art inspiring global action
+                  {contents?.title3[0]?.text}
                 </h3>
                 {/* Button Container */}
                 <div className="flex flex-row justify-center lg:justify-start gap-x-[12px] px-[19px] lg:px-0 mt-[30px] md:mt-[20px] xxl:mt-[43px]">
@@ -63,7 +65,7 @@ const Hero = ({contents}:IHomeHeroSectionProp) => {
                     className="lg:hidden xxsm:w-[110px] xsm:w-[150px] sm:w-[187px] lg:w-[245.63px] h-[40px] lg:h-[63px] bg-white rounded-[2px] lg:rounded-[5px] shrink-0"
                   >
                     <p className="text-gpgp-blue lg:w-[92.526px] text-center text-[15px] lg:text-[16px] uppercase font-[be-vietnam-700] leading-[22.126px] lg:leading-[23.602px] tracking-[4.125px] lg:tracking-[4.4px]">
-                      Explore
+                    {contents?.button2[0]?.text}
                     </p>
                   </MyLink>
 
@@ -72,7 +74,7 @@ const Hero = ({contents}:IHomeHeroSectionProp) => {
                     className="xxsm:w-[110px] xsm:w-[150px] sm:w-[187px] lg:w-[245.63px] h-[40px] lg:h-[63px] bg-gpgp-blue rounded-[2px] lg:rounded-[5px] shrink-0"
                   >
                     <p className="text-white lg:w-[92.526px] text-center text-[15px] lg:text-[16px] uppercase font-[be-vietnam-700] leading-[22.126px] lg:leading-[23.602px] tracking-[4.125px] lg:tracking-[4.4px]">
-                      {contents?.buton[0]?.text}
+                      {contents?.button[0]?.text}
                     </p>
                   </MyLink>
                 </div>
