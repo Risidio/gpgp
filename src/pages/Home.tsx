@@ -1,4 +1,4 @@
-import Hero from "../components/Hero";
+import Hero from "../components/home/Hero";
 import Exhibition from "../components/home/Exhibition";
 import HomeContent from "../components/home/HomeContent";
 import HomeExhibition from "../components/home/HomeExhibition";
@@ -19,9 +19,9 @@ const Home = () => {
       <div className="md:mt-[157px]">
         <Hero contents={document?.data?.body[0]?.primary}/>
 
-        <Exhibition />
+        <Exhibition contents={document?.data?.body[1]?.primary}/>
 
-        <HomeExhibition />
+        <HomeExhibition contents={document?.data?.body[2]?.primary}/>
 
         <HomeContent />
 
