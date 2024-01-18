@@ -1,5 +1,5 @@
 import MyLink from "../base/MyLink";
-import gpgpMapImage from "../../assets/images/gpgp-map-mobile.png";
+// import gpgpMapImage from "../../assets/images/gpgp-map-mobile.png";
 import Wrapper from "../layout/Wrapper";
 import { IHomeHeroSectionProp } from "../../types/home";
 
@@ -16,14 +16,16 @@ const Hero = ({contents}:IHomeHeroSectionProp) => {
               {/* Mobile Header */}
               <div className="lg:hidden">
                 <h3 className="text-center text-[#050B1D] font-[be-vietnam] font-[600] uppercase text-[15px] leading-[22.126px] tracking-[1.65px]">
-                  GPGP <br /> The Great Pacific Garbage Patch
+                  {contents?.pretitle[0]?.text}
+                  <br />
+                  {contents?.mobiletitle[0]?.text}
                 </h3>
               </div>
 
               {/* Image */}
               <div className="mt-[14px] flex flex-col justify-center items-center mx-auto lg:mx-0 max-w-[340px] md:max-w-[387.998px] lg:max-w-full lg:mt-0 h-[260.669px] lg:h-[479.531px] bg-gpgp-blue rounded-[15px] gpgp-home-map-shadow lg:px-[68px]">
                 <img
-                  src={gpgpMapImage}
+                  src={contents?.image?.url}
                   alt="GPGP Map"
                   className="w-[312.584px] lg:w-[575.035px] h-auto flex-shrink-0"
                 />

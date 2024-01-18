@@ -12,6 +12,7 @@ const Home = () => {
   const [document] = useSinglePrismicDocument(prismicDocumentTypes.homePage);
   console.log("Home page document: ", document);
   console.log("Home page document hero image src: ", document?.data?.body[0]?.primary?.image?.url);
+  console.log("Homecontent: ", document?.data?.body[3]?.primary);
 
 
   return (
@@ -23,7 +24,7 @@ const Home = () => {
 
         <HomeExhibition contents={document?.data?.body[2]?.primary}/>
 
-        <HomeContent />
+        <HomeContent contents={document?.data?.body[3]?.primary} />
 
         <section className="mt-[127px] xl:mt-[250px]">
           <Artist />
