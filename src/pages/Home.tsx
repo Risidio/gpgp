@@ -10,9 +10,9 @@ import prismicDocumentTypes from "../utility/prismicDocumentTypes";
 const Home = () => {
 
   const [document] = useSinglePrismicDocument(prismicDocumentTypes.homePage);
-  console.log("Home page document: ", document);
-  console.log("Home page document hero image src: ", document?.data?.body[0]?.primary?.image?.url);
-  console.log("Homecontent: ", document?.data?.body[3]?.primary);
+  // console.log("Home page document: ", document);
+  // console.log("Home page document hero image src: ", document?.data?.body[0]?.primary?.image?.url);
+  console.log("Artistcontent: ", document?.data?.body[4]?.primary);
 
 
   return (
@@ -27,7 +27,7 @@ const Home = () => {
         <HomeContent contents={document?.data?.body[3]?.primary} />
 
         <section className="mt-[127px] xl:mt-[250px]">
-          <Artist />
+          <Artist contents={document?.data?.body[4]?.primary}/>
         </section>
 
         <section className="md:hidden mt-[131px]">

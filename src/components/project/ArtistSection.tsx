@@ -1,8 +1,14 @@
+// import { useSinglePrismicDocument } from "@prismicio/react";
 import JD from "../../assets/images/JD.png";
-import Artist from "../home/Artist";
+import { IHomeArtistProp } from "../../types/home";
+// import Artist from "../home/Artist";
 import Wrapper from "../layout/Wrapper";
+import Artist from "./Artist";
+// import prismicDocumentTypes from "../../utility/prismicDocumentTypes";
 
-const ArtistSection = () => {
+const ArtistSection = ({contents}:IHomeArtistProp) => {
+  // const [document] = useSinglePrismicDocument(prismicDocumentTypes.homePage);
+
   return (
     <>
       <Wrapper>
@@ -51,7 +57,8 @@ const ArtistSection = () => {
         </section>
       </Wrapper>
       <div className="block lg:hidden mt-[124px]">
-        <Artist />
+        {/* <Artist contents={document?.data?.body[4]?.primary} /> */}
+        <Artist contents={contents}/>
       </div>
     </>
   );

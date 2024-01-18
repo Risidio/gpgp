@@ -53,3 +53,15 @@ export interface IHomeContentData extends IContents {
 export interface IHomeContentSectionProp {
   contents: IHomeContentData;
 }
+
+
+// Artist Section
+export interface IHomeArtist extends IContents {
+  name: { text: string }[];
+  title: { text: string }[];
+  description: { text: string }[];
+}
+
+export interface IHomeArtistProp {
+  contents: IHomeArtist
+}

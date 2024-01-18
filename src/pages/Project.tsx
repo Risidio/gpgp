@@ -9,6 +9,8 @@ import Exhibition from "../components/project/Exhibition";
 
 const Project = () => {
   const [document] = useSinglePrismicDocument(prismicDocumentTypes.project);
+  const [document2] = useSinglePrismicDocument(prismicDocumentTypes.homePage);
+  
   return (
     <>
       <div className="">
@@ -18,7 +20,7 @@ const Project = () => {
 
         <Exhibition contents={document?.data["body"][4].primary} />
 
-        <ArtistSection />
+        <ArtistSection contents={document2?.data?.body[4]?.primary}/>
 
         <JoinUs contents={document?.data["body"][6].primary} />
 

@@ -14,7 +14,8 @@ const HomeContentSection1 = ({ ProjectImg, MyLink, contents }) => {
           {/* Image */}
           <div className="mx-auto ">
             <img
-              src={ProjectImg}
+              // src={ProjectImg}
+              src={contents?.image1?.url}
               alt="GPGP Blue"
               className="lg:hidden w-[190px] h-[190px] lg:w-[582px] lg:h-[582px] lg:rounded-[20px]"
             />
