@@ -6,14 +6,13 @@ interface HomeExhibitionProps {
   contents: IHomeExhibition2SectionProp['contents'];
 }
 
-// const HomeExhibition = ({ classes = "" }: HomeExhibitionProps, {contents}: IHomeExhibition2SectionProp) => {
   const HomeExhibition: React.FC<HomeExhibitionProps> = ({ classes = "", contents }) => {
   return (
     <>
       <section className={`bg-lightgray w-full ${classes}`}>
         <img
           src={contents?.image?.url}
-          alt="guyAtExhibtion"
+          alt={contents?.image?.alt}
           className="w-full "
         />
       </section>

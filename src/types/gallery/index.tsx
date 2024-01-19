@@ -2,13 +2,13 @@
 
 import { IContents, IImage } from "..";
 
-export interface IGalleryHeroProps {
-  contents: IGalleryHeroData;
-}
 
 export interface IGalleryHeroData extends IContents {
   subtitle: { text: string }[];
   subtitle2: { text: string }[];
+}
+export interface IGalleryHeroProps {
+  contents: IGalleryHeroData;
 }
 
 // gallery information
@@ -29,4 +29,14 @@ export interface IGalleryArtworksProps {
 export interface IGalleryArtWorkImageData {
   image: IImage,
   imagetitle:string
+}
+
+// Bottom Wave Section For Mobile
+export interface IGalleryWave {
+  heading1: { text: string }[]; 
+  heading2: { text: string }[]; 
+}
+
+export interface IGalleryWaveProp {
+  contents: IGalleryWave
 }

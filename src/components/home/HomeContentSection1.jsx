@@ -14,14 +14,13 @@ const HomeContentSection1 = ({ ProjectImg, MyLink, contents }) => {
           {/* Image */}
           <div className="mx-auto ">
             <img
-              // src={ProjectImg}
               src={contents?.image1?.url}
-              alt="GPGP Blue"
+              alt={contents?.image1?.alt}
               className="lg:hidden w-[190px] h-[190px] lg:w-[582px] lg:h-[582px] lg:rounded-[20px]"
             />
             <img
               src={contents?.image1?.url}
-              alt="GPGP Blue"
+              alt={contents?.image1?.alt}
               className="hidden lg:block w-[190px] h-[190px] lg:w-[100%] lg:h-[100%]  lg:rounded-[20px] flex-shrink-0"
             />
           </div>

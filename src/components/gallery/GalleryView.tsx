@@ -8,7 +8,7 @@ import "lightgallery/css/lg-thumbnail.css";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import {
   IGalleryArtWorkImageData,
   IGalleryArtworksProps,
@@ -23,16 +23,29 @@ const GalleryView = ({ contents }: IGalleryArtworksProps) => {
   const totalItems = contents?.length;
   const itemsPerPage = 20;
 
-  useEffect(function () {
-    handleArtWorksDisplay();
-  });
+  // useEffect(() => {
+  //   handleArtWorksDisplay();
+  // }, [currentPage, contents]);
+  
 
-  const handleArtWorksDisplay = () => {
+  // const handleArtWorksDisplay = () => {
+  //   const startIndex = (currentPage - 1) * itemsPerPage;
+  //   const endIndex = startIndex + itemsPerPage;
+  //   const intialArtworks = contents?.slice(startIndex, endIndex);
+  //   setArtworks(intialArtworks);
+  // };
+
+  const handleArtWorksDisplay = useCallback(() => {
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
     const intialArtworks = contents?.slice(startIndex, endIndex);
     setArtworks(intialArtworks);
-  };
+  }, [currentPage, contents]);
+  
+  useEffect(() => {
+    handleArtWorksDisplay();
+  }, [handleArtWorksDisplay]);
+  
 
   const handlePageChange = (pageNumber: number) => {
     setCurrentPage(pageNumber);
@@ -61,9 +74,9 @@ const GalleryView = ({ contents }: IGalleryArtworksProps) => {
                   elementClassNames="custom-wrapper-gallery"
                   plugins={[lgThumbnail, lgZoom]}
                 >
-                  {artworks?.map((gallery) => (
+                  {artworks?.map((gallery, index) => (
                     <GalleryItem
-                      key={gallery.image.alt}
+                      key={index}
                       title={gallery.imagetitle}
                       imageUrl={gallery.image.url}
                     />

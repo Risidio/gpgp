@@ -60,8 +60,19 @@ export interface IHomeArtist extends IContents {
   name: { text: string }[];
   title: { text: string }[];
   description: { text: string }[];
+  button: { text: string }[];
 }
 
 export interface IHomeArtistProp {
   contents: IHomeArtist
+}
+
+// Bottom Wave Section For Mobile
+export interface IHomeWave {
+  heading1: { text: string }[]; 
+  heading2: { text: string }[]; 
+}
+
+export interface IHomeWaveProp {
+  contents: IHomeWave
 }

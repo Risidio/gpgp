@@ -1,10 +1,14 @@
 import { Outlet} from "react-router-dom";
 import Container from "../Container";
 import NewsFooter from "./NewsFooter";
-
 import NewsBottomWave from "./NewsBottomWave";
+import { useSinglePrismicDocument } from "@prismicio/react";
+import prismicDocumentTypes from "../../utility/prismicDocumentTypes";
 
 export const NewsLayout = () => {
+  const [document] = useSinglePrismicDocument(prismicDocumentTypes.news);
+  // console.log("news :", document);
+  
 
   // const classes = "sm:bg-gpgp-blue sm:text-white bg-white text-black";
   return (
@@ -22,7 +26,7 @@ export const NewsLayout = () => {
       </Container>
 
       <NewsFooter>
-        <NewsBottomWave />
+        <NewsBottomWave contents={document?.data?.body[6]?.primary}/>
       </NewsFooter>
     </>
   );

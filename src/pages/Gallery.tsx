@@ -11,9 +11,9 @@ const Gallery = () => {
   return (
     <>
       <div className="xxxxl:w-[1440px] xxxxl:mx-auto">
-        <GalleryHeader />
+        <GalleryHeader contents={document?.data["body"][0].primary}/>
         <GalleryView contents={document?.data["body"][2].items} />
-        <BottomContributeWaveSection/>
+        <BottomContributeWaveSection contents={document?.data["body"][3].primary}/>
       </div>
     </>
   );

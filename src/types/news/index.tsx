@@ -27,3 +27,13 @@ export interface INewsStoriesData {
   newsimage: { url: string }; // Assuming newsimage has a 'url' property
   newscaption: Array<{ text: string }>;
 }
+
+// Bottom Wave Section For Mobile
+export interface INewsWave {
+  heading1: { text: string }[]; 
+  heading2: { text: string }[]; 
+}
+
+export interface INewsWaveProp {
+  contents: INewsWave
+}

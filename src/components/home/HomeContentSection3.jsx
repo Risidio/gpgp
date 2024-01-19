@@ -1,6 +1,6 @@
 import React from "react";
 
-const HomeContentSection3 = ({ InvitationImg, MyLink, contents }) => {
+const HomeContentSection3 = ({ MyLink, contents }) => {
   return (
     <>
       <div className="flex flex-col lg:flex-row mb-[50px] lg:mb-0 mt-[127px] lg:mt-[293px] lg:gap-[121px] justify-center">
@@ -14,9 +14,8 @@ const HomeContentSection3 = ({ InvitationImg, MyLink, contents }) => {
           {/* Image */}
           <div className="mx-auto lg:h-[100%]">
             <img
-              // src={InvitationImg}
               src={contents?.image3?.url}
-              alt="GPGP Map"
+              alt={contents?.image3?.alt}
               className="w-[293px] h-[169px] lg:w-[100%] lg:h-[100%] rounded-[20px]"
             />
           </div>

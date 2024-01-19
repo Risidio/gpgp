@@ -1,5 +1,4 @@
 import MyLink from "../base/MyLink";
-// import gpgpMapImage from "../../assets/images/gpgp-map-mobile.png";
 import Wrapper from "../layout/Wrapper";
 import { IHomeHeroSectionProp } from "../../types/home";
 
@@ -26,7 +25,7 @@ const Hero = ({contents}:IHomeHeroSectionProp) => {
               <div className="mt-[14px] flex flex-col justify-center items-center mx-auto lg:mx-0 max-w-[340px] md:max-w-[387.998px] lg:max-w-full lg:mt-0 h-[260.669px] lg:h-[479.531px] bg-gpgp-blue rounded-[15px] gpgp-home-map-shadow lg:px-[68px]">
                 <img
                   src={contents?.image?.url}
-                  alt="GPGP Map"
+                  alt={contents?.image?.alt}
                   className="w-[312.584px] lg:w-[575.035px] h-auto flex-shrink-0"
                 />
               </div>

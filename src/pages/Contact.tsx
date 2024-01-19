@@ -1,5 +1,7 @@
+import { useSinglePrismicDocument } from "@prismicio/react";
 import BottomContributeWaveSection from "../components/base/BottomContributeWaveSection";
 import InvitationForm from "../components/contribute/Invitation/InvitationForm";
+import prismicDocumentTypes from "../utility/prismicDocumentTypes";
 
 export default function Contact() {
   const formFields = [
@@ -38,6 +40,8 @@ export default function Contact() {
     contact: `infinart@risidio.com`,
   };
 
+  const [document] = useSinglePrismicDocument(prismicDocumentTypes.gallery);
+
   return (
     <div className="">
       <InvitationForm
@@ -45,7 +49,7 @@ export default function Contact() {
         WavePattern={WavePattern}
         SponsorFormLegend={SponsorFormLegend}
       />
-      <BottomContributeWaveSection/>
+      <BottomContributeWaveSection contents={document?.data["body"][3].primary}/>
     </div>
   );
 }
