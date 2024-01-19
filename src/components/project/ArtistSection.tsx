@@ -1,8 +1,10 @@
 import JD from "../../assets/images/JD.png";
-import Artist from "../home/Artist";
+import { IHomeArtistProp } from "../../types/home";
 import Wrapper from "../layout/Wrapper";
+import Artist from "./Artist";
 
-const ArtistSection = () => {
+const ArtistSection = ({contents}:IHomeArtistProp) => {
+
   return (
     <>
       <Wrapper>
@@ -51,7 +53,7 @@ const ArtistSection = () => {
         </section>
       </Wrapper>
       <div className="block lg:hidden mt-[124px]">
-        <Artist />
+        <Artist contents={contents}/>
       </div>
     </>
   );

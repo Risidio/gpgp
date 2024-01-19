@@ -1,7 +1,8 @@
+import { useSinglePrismicDocument } from "@prismicio/react";
 import BottomContributeWaveSection from "../components/base/BottomContributeWaveSection";
 import InviteHero from "../components/contribute/Invitation/InviteHero";
 import NewInvitationForm from "../components/contribute/Invitation/NewInvitationForm";
-// import NewsBottomWave from "../components/news/NewsBottomWave";
+import prismicDocumentTypes from "../utility/prismicDocumentTypes";
 
 export default function InvitationSponsor() {
   const formFields = [
@@ -41,6 +42,7 @@ export default function InvitationSponsor() {
   ];
 
   const heading = "Sponsor";
+  const [document] = useSinglePrismicDocument(prismicDocumentTypes.gallery);
   return (
     <>
       <InviteHero heading={heading} />
@@ -54,7 +56,7 @@ export default function InvitationSponsor() {
       />
 
       <section className="mt-9">
-       <BottomContributeWaveSection/>
+       <BottomContributeWaveSection contents={document?.data["body"][3].primary}/>
       </section>
       </>
   );
