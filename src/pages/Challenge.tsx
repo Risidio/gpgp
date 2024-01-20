@@ -10,19 +10,20 @@ import prismicDocumentTypes from "../utility/prismicDocumentTypes";
 
 const Challenge = () => {
   const [document] = useSinglePrismicDocument(prismicDocumentTypes.challenge);
+  const [document2] = useSinglePrismicDocument(prismicDocumentTypes.homePage);
+
   console.log("challenge: ", document);
   
   return (
     <>
       <div className="mt-[60.73px] xl:mt-[89px]">
-        {/* <Header /> */}
         <Hero contents={document?.data?.body[0]?.primary}/>
-        <PlasticRevolution/>
-        <Section1 />
-        <Section2 />
-        <Section3 />
-        <Section4 />
-        <Section5 />
+        <PlasticRevolution contents={document?.data?.body[1]?.primary}/>
+        <Section1 contents={document?.data?.body[2]?.primary}/>
+        <Section2 contents={document?.data?.body[3]?.primary}/>
+        <Section3 contents={document?.data?.body[4]?.primary}/>
+        <Section4 contents={document?.data?.body[5]?.primary}/>
+        <Section5 contents={document2?.data?.body[5]?.primary}/>
       </div>
     </>
   );
