@@ -1,44 +1,43 @@
-// import { useState } from "react";
 
-import { useState } from "react";
+// import { useState } from "react";
 import Wrapper from "../layout/Wrapper";
 import { IGalleryHeroProps } from "../../types/gallery";
 
 
 const GalleryHeader = ({contents}:IGalleryHeroProps) => {
-  const [activeTab,setActiveTab] = useState("All");
+  // const [activeTab,setActiveTab] = useState("All");
 
-  const handleSetActiveTab = (tab:string) => setActiveTab(tab);
+  // const handleSetActiveTab = (tab:string) => setActiveTab(tab);
 
-  const tabs = [
-    {
-      title: "All",
-    },
-    {
-      title: "Early Work",
-    },
-    {
-      title: "Environmental Work",
-    },
-    {
-      title: "Invited Artist Work",
-    },
-  ];
+  // const tabs = [
+  //   {
+  //     title: "All",
+  //   },
+  //   {
+  //     title: "Early Work",
+  //   },
+  //   {
+  //     title: "Environmental Work",
+  //   },
+  //   {
+  //     title: "Invited Artist Work",
+  //   },
+  // ];
 
-  const mobiletabs = [
-    {
-      title: "All",
-    },
-    {
-      title: "Environmental Work",
-    },
-    {
-      title: "Early Work",
-    },
-    {
-      title: "Invited Artist Work",
-    },
-  ];
+  // const mobiletabs = [
+  //   {
+  //     title: "All",
+  //   },
+  //   {
+  //     title: "Environmental Work",
+  //   },
+  //   {
+  //     title: "Early Work",
+  //   },
+  //   {
+  //     title: "Invited Artist Work",
+  //   },
+  // ];
 
   return (
     <>
@@ -57,7 +56,7 @@ const GalleryHeader = ({contents}:IGalleryHeroProps) => {
 
             <div>
               <div className="hidden md:flex gap-x-[24px] lg:gap-x-[18px]">
-                {tabs.map((tab) => (
+                {/* {tabs.map((tab) => (
                   <span
                     onClick={() => handleSetActiveTab(tab.title)}
                     key={tab.title}
@@ -65,11 +64,11 @@ const GalleryHeader = ({contents}:IGalleryHeroProps) => {
                   >
                     {tab.title}
                   </span>
-                ))}
+                ))} */}
               </div>
 
               <div className="flex md:hidden gap-x-[24px] lg:gap-x-[18px] flex-wrap">
-                {mobiletabs.map((tab) => (
+                {/* {mobiletabs.map((tab) => (
                   <span
                     onClick={() => handleSetActiveTab(tab.title)}
                     key={tab.title}
@@ -77,7 +76,7 @@ const GalleryHeader = ({contents}:IGalleryHeroProps) => {
                   >
                     {tab.title}
                   </span>
-                ))}
+                ))} */}
               </div>
             </div>
           </div>
