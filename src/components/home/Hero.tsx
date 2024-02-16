@@ -40,19 +40,19 @@ const Hero = ({contents}:IHomeHeroSectionProp) => {
                   {contents?.title[0]?.text}
                 </h3>
                 <div className="m-0 p-0 max-w-[340px] lg:max-w-[441.693px] lg:mt-[10px]  mx-auto lg:mx-0 leading-[28.8px] lg:leading-[57.6px] tracking-[1.2px] lg:tracking-[unset]">
-                  <h3 className="text-[24px] lg:text-[48px] uppercase font-be-vietnam font-[700] text-gpgp-blue">
-                    {contents?.title2[0]?.text}{" "}
+                  <h3 className="text-[24px] lg:text-[48px] uppercase font-be-vietnam font-[700]">
+                    <span className="text-gpgp-blue">{contents?.title2[0]?.text}{" "}</span>
                     <span className="text-white header-text-stroke">
                     {contents?.title2[1]?.text}{" "}{contents?.title2[2]?.text}
                       
                     </span>{" "}
                     <br />
-                    {contents?.title2[3]?.text}{" "}
+                    <span className="text-gpgp-blue">{contents?.title2[3]?.text}{" "}</span>
                     <span className="text-white header-text-stroke">
                     {contents?.title2[4]?.text}
                     </span>{" "}
                     {/* <br /> */}
-                    {contents?.title2[5]?.text}
+                    <span className="text-gpgp-blue">{contents?.title2[5]?.text}</span>
                   </h3>
                 </div>
                 <h3 className="lg:w-[313px] capitalize mt-[25px] md:mt-[10px] xxl:mt-[17px] text-[#050B1D] text-[16px] lg:text-[20px] font-[be-vietnam-normal-400] leading-[19.2px] lg:leading-[29.502px] tracking-[0.8px] lg:tracking-[unset]">
